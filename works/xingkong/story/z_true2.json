@@ -1,0 +1,73 @@
+{
+  "id": "z_true2",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-canteen"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-08-dream-ambience"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "01-laugh",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "她把橡筋收進掌心。懸空寺那天你問了我的名字，所以這句我信。她笑了一下，酒窩很淺，說：當然可以。游牧的事，我們後來一起跟他說清楚。沒有人再借用別人的名義。"
+    },
+    {
+      "kind": "cg",
+      "action": "show",
+      "asset": "ending-zhijun-true"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-02-first-light-particles"
+    },
+    {
+      "kind": "narration",
+      "text": "當然可以"
+    },
+    {
+      "kind": "narration",
+      "text": "你在懸空寺問過她的名字。這次告白就不是角色扮演。"
+    },
+    {
+      "kind": "ending",
+      "id": "zhijun-true"
+    }
+  ]
+}

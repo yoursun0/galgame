@@ -1,0 +1,14 @@
+{
+  "id": "temple_choice__0",
+  "instructions": [
+    {
+      "kind": "set",
+      "var": "zhijunName",
+      "value": false
+    },
+    {
+      "kind": "jump",
+      "to": "temple_lie1"
+    }
+  ]
+}

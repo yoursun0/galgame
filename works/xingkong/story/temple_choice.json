@@ -1,0 +1,74 @@
+{
+  "id": "temple_choice",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-xuankong"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-10-i-swear-i-saw-it"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "qishan",
+      "expr": "05-wink",
+      "position": "near"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "02-hips",
+      "position": "far"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "芷君在偷笑。素婷和家綸還在下面。我可以把場面編成一段緣訂七世，也可以把名字問清楚，也可以先不接，等素婷上來。"
+    },
+    {
+      "kind": "choice",
+      "options": [
+        {
+          "text": "胡扯下去。指腹為婚，緣訂七世。",
+          "jump": "temple_choice__0"
+        },
+        {
+          "text": "問她的名字，也報上自己的。",
+          "jump": "temple_choice__1"
+        },
+        {
+          "text": "先別接話。看素婷還在不在下面。",
+          "jump": "temple_choice__2"
+        }
+      ]
+    }
+  ]
+}

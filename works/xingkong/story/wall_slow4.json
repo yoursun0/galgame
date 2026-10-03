@@ -1,0 +1,54 @@
+{
+  "id": "wall_slow4",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-badaling"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-05-sunset-plains"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "suting",
+      "expr": "05-spring",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "這句是假的。中學時跟她玩得最癲的就是我。她笑了，然後走在前頭。我樂於跟在背後。我以為一直這樣拾級而上，已經非常美好。跑得快的人，沒有人保證不會跌下去。"
+    },
+    {
+      "kind": "jump",
+      "to": "temple1"
+    }
+  ]
+}

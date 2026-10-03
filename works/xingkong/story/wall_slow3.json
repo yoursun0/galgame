@@ -1,0 +1,55 @@
+{
+  "id": "wall_slow3",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-badaling"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-05-sunset-plains"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "suting",
+      "expr": "01-smile",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "是呀。她喜歡認識新朋友。跟我這悶蛋有甚麼好玩的。你曉得話別人，不曉得話自己。"
+    },
+    {
+      "kind": "jump",
+      "to": "wall_slow4"
+    }
+  ]
+}

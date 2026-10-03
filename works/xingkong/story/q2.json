@@ -1,0 +1,54 @@
+{
+  "id": "q2",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-grassland"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-01-starfield-romance"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "qishan",
+      "expr": "05-wink",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "她愣了一下，說我自己講出來，她就沒那麼好玩了。我說那你就不要靠挖瘡來作結尾，故事是我在講。她把筆套套上，塞回我口袋。素婷看了我一眼。芷君也看了我一眼。大犬座沒有再被點名。"
+    },
+    {
+      "kind": "jump",
+      "to": "q3"
+    }
+  ]
+}

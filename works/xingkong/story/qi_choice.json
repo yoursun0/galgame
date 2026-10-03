@@ -1,0 +1,63 @@
+{
+  "id": "qi_choice",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-beach-day"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-16-town-theme-rpg"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "qishan",
+      "expr": "01-grin",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "綺珊站在隊尾，中學同窗，看著我手上那疊明顯短了一截的團刊。我可以照舊裝酷，也可以把弄丟的事說明白。"
+    },
+    {
+      "kind": "choice",
+      "options": [
+        {
+          "text": "裝酷，把團刊塞過去。",
+          "jump": "qi_choice__0"
+        },
+        {
+          "text": "先說明，是我們遺下一半。",
+          "jump": "qi_choice__1"
+        }
+      ]
+    }
+  ]
+}

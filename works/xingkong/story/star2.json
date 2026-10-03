@@ -1,0 +1,54 @@
+{
+  "id": "star2",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-grassland"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-01-starfield-romance"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "02-hips",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "蒙古包裡，綺珊帶著一圈女孩玩握手單眼 Killer。芷君說恆星不會走，怎會不等人，然後翻牌喊醫生救她。我卻在想，要是坐在旁邊的是素婷，我就可以握著她的手，把她救回來。綺珊把我們趕了出去。"
+    },
+    {
+      "kind": "jump",
+      "to": "star3"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "wall_choice__1",
+  "instructions": [
+    {
+      "kind": "set",
+      "var": "sutingWalk",
+      "value": false
+    },
+    {
+      "kind": "jump",
+      "to": "wall_run1"
+    }
+  ]
+}

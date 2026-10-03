@@ -1,0 +1,48 @@
+{
+  "id": "z3",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-firefly"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-15-bird-in-hand-night"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "cg",
+      "action": "show",
+      "asset": "cg-lingchen-beach"
+    },
+    {
+      "kind": "narration",
+      "text": "後來家綸還是在夜裡哭了，哭在素婷懷裡。他們在一起。我發了一場連自己也說不清的脾氣，走到石灘上。素婷沒有追出來。家綸不敢追。"
+    },
+    {
+      "kind": "jump",
+      "to": "z3b"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": "star3",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-grassland"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-01-starfield-romance"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "05-fire",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "激光筆在我口中叫神劍。家綸講天蠍，我把青綠的光劃上去。他說人馬座像茶壺。茶壺不夠看。我指向銀河另一頭：天津四、牛郎、織女，夏季大三角。每年只准見一次。我說，那比永遠不見更殘酷。永遠不見，痛會過去。每年見一次，沒有結果的愛情就永遠糾纏下去。"
+    },
+    {
+      "kind": "jump",
+      "to": "star4"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": "z3b",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-firefly"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-15-bird-in-hand-night"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "01-laugh",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "show",
+      "asset": "cg-zhijun-firefly"
+    },
+    {
+      "kind": "narration",
+      "text": "芷君在。天上沒有星，石縫裡卻湧出黃綠的光，一閃一閃，像有人把星星放低了。我問我是不是很傻。她說，是哦，你的確很傻。然後她留下來。"
+    },
+    {
+      "kind": "jump",
+      "to": "z4"
+    }
+  ]
+}

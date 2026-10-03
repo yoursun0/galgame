@@ -1,0 +1,62 @@
+{
+  "id": "temple1",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-xuankong"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-10-i-swear-i-saw-it"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "qishan",
+      "expr": "01-grin",
+      "position": "near"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "01-laugh",
+      "position": "far"
+    },
+    {
+      "kind": "cg",
+      "action": "show",
+      "asset": "cg-qishan-temple"
+    },
+    {
+      "kind": "narration",
+      "text": "寺貼在崖上。綺珊把相機塞給我，要在刻著「壯觀」的大石下跟大鼻他們拍照。拍完，素婷不知去了哪裡。綺珊又把我按在石上。階梯上有人笑著叫她：怎麼又在欺負男孩子。"
+    },
+    {
+      "kind": "jump",
+      "to": "temple2"
+    }
+  ]
+}

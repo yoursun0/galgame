@@ -1,0 +1,48 @@
+{
+  "id": "s_leap",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-firefly"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-15-bird-in-hand-night"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "cg",
+      "action": "show",
+      "asset": "cg-jialun-leap"
+    },
+    {
+      "kind": "narration",
+      "text": "同一片石灘，另一個子夜。惡犬貼著浪撲過來。家綸比我先動，那一躍先於任何一句話。要不是他，我過不了那一晚。"
+    },
+    {
+      "kind": "jump",
+      "to": "s_choice"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "id": "s_good2",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-firefly"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-15-bird-in-hand-night"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "suting",
+      "expr": "04-tears",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "她說，你說得很完整，完整得像懸空寺那晚編給我聽的典故。我說這次是真的。她說她知道。可是我總是先跑去別的地方，再回頭補這一句。家綸會說錯話，他至少會停在那裡。她沒有討厭我。後來他們還是在一起。我沒有退莊。夏季大三角升起的時候，我先把激光筆交給別人。"
+    },
+    {
+      "kind": "cg",
+      "action": "show",
+      "asset": "ending-suting-good"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-04-yoiyami-core-theme"
+    },
+    {
+      "kind": "narration",
+      "text": "半步"
+    },
+    {
+      "kind": "narration",
+      "text": "你告白了，可是長城那天你跑在前面。她把這句聽成補救。"
+    },
+    {
+      "kind": "ending",
+      "id": "suting-good"
+    }
+  ]
+}

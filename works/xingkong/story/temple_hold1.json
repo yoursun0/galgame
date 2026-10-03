@@ -1,0 +1,61 @@
+{
+  "id": "temple_hold1",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-xuankong"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-10-i-swear-i-saw-it"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "qishan",
+      "expr": "05-wink",
+      "position": "near"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "01-laugh",
+      "position": "far"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "我看了一眼階梯下面。素婷還沒上來。話到了嘴邊，又吞回去。芷君還在笑。我連名字都沒問，就把相機還給綺珊。她嘖了一聲，沒有再加碼。"
+    },
+    {
+      "kind": "jump",
+      "to": "star1"
+    }
+  ]
+}

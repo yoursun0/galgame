@@ -1,0 +1,74 @@
+{
+  "id": "q_bad_setup",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-mmw"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-09-nighttime-solitude"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "qishan",
+      "expr": "03-angry",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "show",
+      "asset": "cg-ajun-roof"
+    },
+    {
+      "kind": "narration",
+      "text": "我幫家綸把人約到天台。夏季大三角還在，欄杆另一頭已有細雨。他自己沒有把話說圓，綺珊全部聽懂了。她在 coffee corner 站起來，杯子碰得很大聲。她說：你為了去找素婷，就把他推給我？你打算陷我於不義嗎？人家喜歡我沒有罪。有罪的是你，把朋友當成道具。她走了。素婷後來還是去找了那個哭的人。跟原本的故事一樣。只是綺珊再也沒問，真正屬於我的故事是哪一則。"
+    },
+    {
+      "kind": "cg",
+      "action": "show",
+      "asset": "ending-qishan-bad-setup"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-11-at-the-end-of-hope"
+    },
+    {
+      "kind": "narration",
+      "text": "陷人於不義"
+    },
+    {
+      "kind": "narration",
+      "text": "你幫家綸鋪了局。這是原文裡她最氣的那一件事。"
+    },
+    {
+      "kind": "ending",
+      "id": "qishan-bad-setup"
+    }
+  ]
+}

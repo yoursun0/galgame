@@ -1,0 +1,55 @@
+{
+  "id": "s4b",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-firefly"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-15-bird-in-hand-night"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "suting",
+      "expr": "01-smile",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "show",
+      "asset": "cg-suting-orion"
+    },
+    {
+      "kind": "narration",
+      "text": "後來我才看清：會追出去找他的人，是素婷。獵戶座升起來。暗處有兩個影子。我再晚一步，他會在她懷裡哭出來，然後他們就手牽手，走成一對。"
+    },
+    {
+      "kind": "jump",
+      "to": "s_leap"
+    }
+  ]
+}

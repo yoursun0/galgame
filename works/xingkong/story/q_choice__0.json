@@ -1,0 +1,18 @@
+{
+  "id": "q_choice__0",
+  "instructions": [
+    {
+      "kind": "jump",
+      "to": "q_true1",
+      "when": {
+        "cmp": "eq",
+        "var": "qishanHonest",
+        "value": true
+      }
+    },
+    {
+      "kind": "jump",
+      "to": "q_good1"
+    }
+  ]
+}

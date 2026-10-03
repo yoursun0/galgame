@@ -1,0 +1,68 @@
+{
+  "id": "z_choice",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-canteen"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-08-dream-ambience"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "03-glare",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "你今晚約我，不會又是要我幫你演一場戲吧。"
+    },
+    {
+      "kind": "choice",
+      "options": [
+        {
+          "text": "認真問：可不可以，當我的女朋友。",
+          "jump": "z_choice__0"
+        },
+        {
+          "text": "笑著借她的名義，好讓自己可以安心離開。",
+          "jump": "z_bad_shield"
+        },
+        {
+          "text": "要來游牧的聯絡，勸她回到那段沒有結果的愛情。",
+          "jump": "z_bad_bridge"
+        }
+      ]
+    }
+  ]
+}

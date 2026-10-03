@@ -1,0 +1,73 @@
+{
+  "id": "q_bad_cool",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-coffee"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-07-emotional-piano-loop"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "qishan",
+      "expr": "03-angry",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "我說有甚麼好說的，往事不堪回首，杯子喝完了我走了。她把杯子推回我這邊，自己先走。以後重聚她還是笑，還是跑在最前。只是不再單獨約我。裝酷這件事，我終於裝到一個沒有觀眾的地方。"
+    },
+    {
+      "kind": "cg",
+      "action": "show",
+      "asset": "ending-qishan-bad-cool"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-11-at-the-end-of-hope"
+    },
+    {
+      "kind": "narration",
+      "text": "裝酷"
+    },
+    {
+      "kind": "narration",
+      "text": "你把她約出來，又拒絕把故事給她。"
+    },
+    {
+      "kind": "ending",
+      "id": "qishan-bad-cool"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "s_choice__0",
+  "instructions": [
+    {
+      "kind": "jump",
+      "to": "s_true1",
+      "when": {
+        "cmp": "eq",
+        "var": "sutingWalk",
+        "value": true
+      }
+    },
+    {
+      "kind": "jump",
+      "to": "s_good1"
+    }
+  ]
+}

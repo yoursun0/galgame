@@ -1,0 +1,55 @@
+{
+  "id": "s4",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-firefly"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-15-bird-in-hand-night"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "suting",
+      "expr": "02-sigh",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "show",
+      "asset": "cg-huizhang-stone"
+    },
+    {
+      "kind": "narration",
+      "text": "重聚的海邊。午後石灘還沒有紅日，有人把石子投進浮波，浪花打在小腿上。家綸整晚心神不寧。我一度以為他要在星空下對綺珊開口。"
+    },
+    {
+      "kind": "jump",
+      "to": "s4b"
+    }
+  ]
+}

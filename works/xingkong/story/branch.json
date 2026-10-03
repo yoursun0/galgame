@@ -1,0 +1,67 @@
+{
+  "id": "branch",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-grassland"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-01-starfield-romance"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "04-cold",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "我停下來。夜風把空袖吹起來。這一聲若是叫錯了人，後面的故事會整段改寫。"
+    },
+    {
+      "kind": "choice",
+      "options": [
+        {
+          "text": "回頭。我希望站在那裡的是素婷。",
+          "jump": "s1"
+        },
+        {
+          "text": "先別作聲。如果她是叫我看星星的，我就抬頭。",
+          "jump": "z1"
+        },
+        {
+          "text": "走回去，把激光筆奪回來。這場笑話還沒講完。",
+          "jump": "q1"
+        }
+      ]
+    }
+  ]
+}

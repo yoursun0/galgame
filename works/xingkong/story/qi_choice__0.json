@@ -1,0 +1,14 @@
+{
+  "id": "qi_choice__0",
+  "instructions": [
+    {
+      "kind": "set",
+      "var": "qishanHonest",
+      "value": false
+    },
+    {
+      "kind": "jump",
+      "to": "qi_cool1"
+    }
+  ]
+}
