@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>星空情緣 · gameplay</title>
+  <style>
+    html, body { margin: 0; background: #070b14; }
+    .stage {
+      position: relative;
+      width: 1280px;
+      height: 720px;
+      overflow: hidden;
+      margin: 0 auto;
+      font-family: "Noto Serif CJK TC", "Noto Serif TC", serif;
+      color: #f4f0e8;
+    }
+    .bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+    .sprite {
+      position: absolute;
+      left: 80px;
+      bottom: 0;
+      height: 108%;
+      width: auto;
+      z-index: 1;
+    }
+    .say {
+      position: absolute;
+      left: 36px;
+      right: 36px;
+      bottom: 22px;
+      height: 148px;
+      z-index: 2;
+      background: rgba(28, 32, 48, 0.62);
+      border: 1px solid rgba(232, 224, 206, 0.55);
+      box-shadow: 0 0 0 1px rgba(20, 16, 28, 0.35) inset;
+    }
+    .name {
+      position: absolute;
+      top: -28px;
+      left: 18px;
+      margin: 0;
+      padding: 3px 14px 4px;
+      background: rgba(36, 40, 58, 0.88);
+      border: 1px solid rgba(232, 224, 206, 0.45);
+      font-size: 18px;
+      letter-spacing: 0.16em;
+      font-weight: 600;
+    }
+    .line {
+      margin: 0;
+      padding: 28px 36px 0;
+      font-size: 22px;
+      line-height: 1.75;
+      font-weight: 500;
+      text-shadow: 0 1px 2px rgba(0,0,0,.45);
+    }
+  </style>
+</head>
+<body>
+  <div class="stage">
+    <img class="bg" src="img/bg-night-camp.jpg" alt="">
+    <img class="sprite" src="img/sprite-suting-half.png" alt="素婷">
+    <div class="say">
+      <p class="name">素婷</p>
+      <p class="line">「風比白天更大。<br>你若是跑在前面，回頭就看不見了。」</p>
+    </div>
+  </div>
+</body>
+</html>
