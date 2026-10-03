@@ -1,6 +1,16 @@
 # tech_spec.md
 
-狀態：草稿，等 Helic 審。未批准前不寫 v1.0 程式，不開新 PR。
+狀態：Helic 於 2026-10-03 批准。實作拆成 issue，一次只做標了 `ai:ready` 的那張。
+
+1. [#3](https://github.com/yoursun0/galgame/issues/3) A：工程骨架（現在做）
+2. [#4](https://github.com/yoursun0/galgame/issues/4) B：播放器
+3. [#5](https://github.com/yoursun0/galgame/issues/5) 把 v0.3 遷成 JSON
+4. [#6](https://github.com/yoursun0/galgame/issues/6) C：存讀檔
+5. [#7](https://github.com/yoursun0/galgame/issues/7) D：企劃同美術樣板（等 Helic）
+6. [#8](https://github.com/yoursun0/galgame/issues/8) E：品質試玩（等 D）
+7. [#9](https://github.com/yoursun0/galgame/issues/9) F：離線包同非戀愛 fixture
+
+缺圖問梵高，不要自己生人臉。對白同原文問九把刀，不要自己改情節。
 
 v0.3 prototype 已及格，留在 `prototype/` 當對照，不再加功能。這份文件決定正式版怎麼做。範圍跟 [PLAN.md](PLAN.md) 的首版一樣：一個跟作品分開的播放器，一段 10–15 分鐘《星空情緣》品質試玩，再加一個小型非戀愛作品證明播放器沒有把攻略寫死。整本小說、配音、Live2D、雲端存檔、桌面版都不在 v1.0。
 
