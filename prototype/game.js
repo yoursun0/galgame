@@ -33,7 +33,9 @@ const sceneExpr = {
   qi_cool4: "04-loud.png",
   qi_honest2: "05-wink.png",
   qi_honest4: "05-wink.png",
-  temple_choice: "02-hips.png",
+  temple2: "04-loud.png",
+  temple_choice: "05-wink.png",
+  temple_hold1: "05-wink.png",
   temple_name2: "05-tearsmile.png",
   star1: "02-sigh.png",
   star2: "02-hips.png",
@@ -70,6 +72,14 @@ const sceneExpr = {
 
 const figureName = { lingchen: "凌晨", suting: "素婷", zhijun: "芷君", qishan: "綺珊" };
 
+// Far sprite (right, smaller). Files live in that character's folder.
+const sceneFarExpr = {
+  temple1: "01-laugh.png",
+  temple2: "02-hips.png",
+  temple_choice: "02-hips.png",
+  temple_hold1: "01-laugh.png",
+};
+
 const speakerClass = {
   凌晨: "who-ling",
   素婷: "who-su",
@@ -99,7 +109,11 @@ const ui = {
   play: $("play"),
   sky: $("sky"),
   laser: $("laser"),
+  figureSlot: $("figure-slot"),
   figure: $("figure"),
+  figureFar: $("figure-far"),
+  cg: $("cg"),
+  cgImg: $("cg-img"),
   chapter: $("chapter"),
   place: $("place"),
   flagrow: $("flagrow"),
@@ -112,8 +126,8 @@ const ui = {
   line: $("line"),
   choices: $("choices"),
   hint: $("hint"),
-  pageNo: $("page-no"),
   ending: $("ending"),
+  endingCg: $("ending-cg"),
   endingTier: $("ending-tier"),
   endingTitle: $("ending-title"),
   endingWhy: $("ending-why"),
@@ -129,6 +143,7 @@ const ui = {
   bgmVolume: $("bgm-volume"),
   sfxToggle: $("sfx-toggle"),
   saveNote: $("save-note"),
+  bgmCredit: $("bgm-credit"),
 };
 
 const emptyFlags = () => ({ qishanHonest: false, sutingWalk: false, zhijunName: false });
@@ -147,7 +162,36 @@ for (const [name, url] of Object.entries(sfxUrl)) {
   audio.preload = "auto";
   sfx[name] = audio;
 }
-const bgm = new Audio("../bgm/01-starfield-romance.mp3");
+// CC0 tracks only (01–16). 17–20 are CC-BY; credit text shows if one is ever selected.
+const bgmByPlace = {
+  soc: "13-peaceful-tune-2.mp3",
+  day: "16-town-theme-rpg.mp3",
+  bus: "12-village-2018.mp3",
+  wall: "05-sunset-plains.mp3",
+  temple: "10-i-swear-i-saw-it.mp3",
+  stars: "01-starfield-romance.mp3",
+  beach: "15-bird-in-hand-night.mp3",
+  roof: "09-nighttime-solitude.mp3",
+  canteen: "08-dream-ambience.mp3",
+  coffee: "07-emotional-piano-loop.mp3",
+  dawn: "02-first-light-particles.mp3",
+};
+
+const endingBgm = {
+  TRUE: "02-first-light-particles.mp3",
+  GOOD: "04-yoiyami-core-theme.mp3",
+  BAD: "11-at-the-end-of-hope.mp3",
+};
+
+const bgmCreditText = {
+  "17-love-theme.mp3": "Love Theme — peastman · CC BY 3.0",
+  "18-lullaby-kly.mp3": "Lullaby — Kim Lightyear · CC BY 3.0",
+  "19-memories-kly.mp3": "Memories — Kim Lightyear · CC BY 3.0",
+  "20-piano-theme.mp3": "Piano Theme — tcarisland · CC BY 4.0",
+};
+
+let currentBgm = "";
+const bgm = new Audio();
 bgm.id = "bgm";
 bgm.loop = true;
 bgm.preload = "auto";
@@ -199,7 +243,36 @@ function ensureBgm() {
     bgm.pause();
     return;
   }
-  bgm.play().catch(() => {});
+  if (!currentBgm) setBgm(bgmByPlace.stars);
+  else bgm.play().catch(() => {});
+}
+
+function setBgm(file) {
+  if (!file) return;
+  const credit = bgmCreditText[file] || "";
+  if (ui.bgmCredit) {
+    ui.bgmCredit.hidden = !credit;
+    ui.bgmCredit.textContent = credit;
+  }
+  if (file === currentBgm) {
+    bgm.volume = audioPref.bgm;
+    if (audioPref.bgm > 0) bgm.play().catch(() => {});
+    else bgm.pause();
+    return;
+  }
+  currentBgm = file;
+  bgm.src = `../bgm/${file}`;
+  bgm.loop = true;
+  bgm.volume = audioPref.bgm;
+  if (audioPref.bgm > 0) bgm.play().catch(() => {});
+  else bgm.pause();
+}
+
+function bgmForScene(s) {
+  if (s.bgm) return s.bgm;
+  const plate = scenePlate[state.sceneId] || s.bg;
+  if (plate && bgmByPlace[plate]) return bgmByPlace[plate];
+  return currentBgm || bgmByPlace.soc;
 }
 
 function loadSave() {
@@ -234,27 +307,38 @@ function setFlagRow() {
   }
 }
 
-function showFigure(id) {
-  if (!id || !figureDir[id]) {
-    ui.figure.classList.remove("show");
-    ui.figure.hidden = true;
-    ui.figure.removeAttribute("src");
-    ui.figure.alt = "";
+function paintFigure(img, id, file) {
+  if (!img) return;
+  if (!id || !figureDir[id] || !file) {
+    img.classList.remove("show");
+    img.hidden = true;
+    img.removeAttribute("src");
+    img.alt = "";
     return;
   }
-  const src = figureDir[id] + (sceneExpr[state.sceneId] || defaultExpr[id]);
-  const same = ui.figure.getAttribute("src") === src && !ui.figure.hidden;
-  ui.figure.alt = figureName[id];
-  ui.figure.hidden = false;
+  const src = figureDir[id] + file;
+  const same = img.getAttribute("src") === src && !img.hidden;
+  img.alt = figureName[id] || "";
+  img.hidden = false;
   if (!same) {
-    ui.figure.classList.remove("show");
-    ui.figure.src = src;
-    const reveal = () => ui.figure.classList.add("show");
-    if (ui.figure.complete && ui.figure.naturalWidth) reveal();
-    else ui.figure.addEventListener("load", reveal, { once: true });
+    img.classList.remove("show");
+    img.src = src;
+    const reveal = () => img.classList.add("show");
+    if (img.complete && img.naturalWidth) reveal();
+    else img.addEventListener("load", reveal, { once: true });
   } else {
-    ui.figure.classList.add("show");
+    img.classList.add("show");
   }
+}
+
+function showFigure(id) {
+  paintFigure(ui.figure, id, id ? (sceneExpr[state.sceneId] || defaultExpr[id]) : "");
+}
+
+function showFarFigure(id) {
+  const file = id ? (sceneFarExpr[state.sceneId] || defaultExpr[id]) : "";
+  paintFigure(ui.figureFar, id, file);
+  ui.figureSlot?.classList.toggle("dual", Boolean(id && figureDir[id]));
 }
 
 // script.js reuses one bg token for two rooms. Coffee-corner beats stay on
@@ -349,10 +433,20 @@ function enter(id) {
   ui.chapter.textContent = s.chapter || ui.chapter.textContent;
   ui.place.textContent = s.place || ui.place.textContent;
   applySky(s);
+  setBgm(bgmForScene(s));
   if ("figure" in s) showFigure(s.figure);
+  if ("figureFar" in s && s.figureFar) showFarFigure(s.figureFar);
+  else showFarFigure(null);
+  if (s.cg) {
+    ui.cgImg.src = s.cg;
+    ui.cgImg.alt = "";
+    ui.cg.hidden = false;
+  } else {
+    ui.cg.hidden = true;
+    ui.cgImg.removeAttribute("src");
+  }
   setFlagRow();
   ui.ending.hidden = true;
-  ui.pageNo.textContent = String(page).padStart(2, "0");
 
   if (s.card) {
     ui.booklet.hidden = true;
@@ -379,7 +473,7 @@ function pushBacklog() {
   const s = scene();
   if (!s || s.card) return;
   const last = state.backlog[state.backlog.length - 1];
-  const entry = { speaker: s.speaker || "團刊", text: s.text || "" };
+  const entry = { speaker: s.speaker || "", text: s.text || "" };
   if (!last || last.text !== entry.text) state.backlog.push(entry);
 }
 
@@ -402,7 +496,6 @@ function advance() {
   const s = scene();
   if (!s) return;
   if (typing) {
-    playSfx("page");
     finishType();
     if (!s.card) renderChoices(s.choices);
     return;
@@ -413,7 +506,6 @@ function advance() {
     openEnding();
     return;
   }
-  playSfx("page");
   if (s.card) {
     go(s.next);
     return;
@@ -426,12 +518,25 @@ function openEnding() {
   if (!ending) return;
   state.seen[ending.id] = true;
   ui.booklet.hidden = true;
+  ui.cg.hidden = true;
   ui.ending.hidden = false;
   ui.endingTier.textContent = ending.tier;
   ui.endingTier.dataset.tier = ending.tier;
   ui.endingRoute.textContent = `${ending.route}線`;
   ui.endingTitle.textContent = ending.title;
   ui.endingWhy.textContent = ending.why;
+  const cg = ending.cg || null;
+  ui.ending.classList.toggle("has-cg", Boolean(cg));
+  ui.ending.classList.toggle("no-cg", !cg);
+  if (cg) {
+    ui.endingCg.hidden = false;
+    ui.endingCg.src = cg;
+    ui.endingCg.alt = ending.title || "";
+  } else {
+    ui.endingCg.hidden = true;
+    ui.endingCg.removeAttribute("src");
+  }
+  if (endingBgm[ending.tier]) setBgm(endingBgm[ending.tier]);
   $("back-to-branch").hidden = !state.checkpoint;
   playSfx("notify");
   persist();
@@ -538,12 +643,15 @@ function renderLog() {
   }
   for (const entry of state.backlog) {
     const item = document.createElement("article");
-    const who = document.createElement("p");
-    who.className = "log-who";
-    who.textContent = entry.speaker;
     const body = document.createElement("p");
     body.textContent = entry.text;
-    item.append(who, body);
+    if (entry.speaker) {
+      const who = document.createElement("p");
+      who.className = "log-who";
+      who.textContent = entry.speaker;
+      item.append(who);
+    }
+    item.append(body);
     ui.logList.append(item);
   }
   ui.logList.scrollTop = ui.logList.scrollHeight;
@@ -647,6 +755,9 @@ function bind() {
   $("booklet").addEventListener("click", (event) => {
     if (event.target.closest("button")) return;
     advance();
+  });
+  $("cg").addEventListener("click", () => {
+    ui.cg.hidden = true;
   });
   $("card-go").addEventListener("click", advance);
   $("btn-log").addEventListener("click", () => openPanel("log"));
