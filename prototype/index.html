@@ -14,6 +14,7 @@
 <body>
   <div id="app">
     <section id="title-screen">
+      <img class="title-ornament" src="../ui-gameplay2/img/frame-circle.png" alt="">
       <p class="kicker">話當年之二</p>
       <h1 class="mast">星空情緣</h1>
       <p class="deck">原型。共通線走到草原那一夜，再鎖進素婷、芷君或綺珊其中一條。一條線大約十分鐘。TRUE 要靠中局之前記下的一件事。</p>
@@ -23,7 +24,7 @@
         <li>綺珊 · 車站有沒有裝酷</li>
       </ol>
       <div class="title-actions">
-        <button type="button" id="start" class="depart">起程</button>
+        <button type="button" id="start" class="depart plate">起程</button>
         <button type="button" id="continue" class="texty" hidden>從這一頁繼續</button>
         <button type="button" id="open-gallery" class="texty">十二個結局</button>
       </div>
@@ -58,19 +59,19 @@
         </div>
       </header>
 
-      <div id="card" class="card" hidden>
+      <div id="card" class="card framed" hidden>
         <p id="card-kicker" class="card-kicker"></p>
         <h2 id="card-title"></h2>
         <p id="card-text"></p>
-        <button type="button" id="card-go" class="depart">繼續</button>
+        <button type="button" id="card-go" class="depart plate">繼續</button>
       </div>
 
-      <div id="booklet">
+      <div id="booklet" class="framed">
         <div class="booklet-head">
-          <span>內蒙團團刊</span>
+          <p id="speaker" class="speaker"></p>
+          <span id="booklet-kicker">內蒙團團刊</span>
           <span id="page-no">01</span>
         </div>
-        <p id="speaker" class="speaker"></p>
         <p id="line" class="line"></p>
         <div id="choices"></div>
         <p id="hint" class="hint">點一下，或按空白鍵</p>
@@ -78,21 +79,21 @@
     </section>
 
     <section id="ending" class="overlay" hidden>
-      <div class="ending-card">
+      <div class="ending-card framed">
         <p id="ending-route" class="kicker"></p>
         <p id="ending-tier" class="tier"></p>
         <h2 id="ending-title"></h2>
         <p id="ending-why"></p>
         <div class="title-actions">
           <button type="button" id="end-again" class="texty">再看這一頁</button>
-          <button type="button" id="back-to-branch" class="depart">回到中局</button>
+          <button type="button" id="back-to-branch" class="depart plate">回到中局</button>
           <button type="button" id="end-title" class="texty">回標題</button>
         </div>
       </div>
     </section>
 
     <section id="log" class="overlay" hidden>
-      <div class="sheet">
+      <div class="sheet framed">
         <div class="sheet-head">
           <h2>紀錄</h2>
           <button type="button" id="close-log" class="texty">關閉</button>
@@ -101,7 +102,7 @@
       </div>
     </section>
 
-    <aside id="chart" hidden>
+    <aside id="chart" class="framed" hidden>
       <div class="sheet-head">
         <h2>星圖</h2>
         <button type="button" id="close-chart" class="texty">關閉</button>
@@ -109,8 +110,27 @@
       <dl id="chart-body"></dl>
     </aside>
 
+    <section id="settings" class="overlay" hidden>
+      <div class="sheet framed">
+        <div class="sheet-head">
+          <h2>設定</h2>
+          <button type="button" id="close-settings" class="texty">關閉</button>
+        </div>
+        <label class="setting-row">
+          <span>背景音樂</span>
+          <input id="bgm-volume" type="range" min="0" max="100" value="32">
+        </label>
+        <label class="setting-row setting-check">
+          <input id="sfx-toggle" type="checkbox" checked>
+          <span>音效</span>
+        </label>
+        <button type="button" id="btn-save" class="depart plate">存檔</button>
+        <p id="save-note" class="save-note"></p>
+      </div>
+    </section>
+
     <section id="gallery" class="overlay" hidden>
-      <div class="sheet">
+      <div class="sheet framed">
         <div class="sheet-head">
           <h2>十二個結局</h2>
           <button type="button" id="close-gallery" class="texty">關閉</button>
@@ -119,6 +139,9 @@
       </div>
     </section>
   </div>
+  <button type="button" id="btn-gear" class="gear-btn" aria-label="設定">
+    <img class="gear-icon" src="../ui-gameplay2/img/icon-gear.png" alt="">
+  </button>
   <script type="module" src="game.js"></script>
 </body>
 </html>
