@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": 1,
+  "id": "mystery-fixture",
+  "title": "mystery-fixture",
+  "language": "zh-Hant",
+  "start": "corridor",
+  "characters": [{ "id": "admin", "name": "管理員" }],
+  "variables": [{ "name": "locked", "type": "boolean", "initial": false }],
+  "scenes": [
+    "story/corridor.json",
+    "story/lock.json",
+    "story/drawer.json",
+    "story/ask.json",
+    "story/done.json"
+  ]
+}

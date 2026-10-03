@@ -1,0 +1,4 @@
+{
+  "id": "hall",
+  "instructions": [{ "kind": "jump", "to": "nowhere" }]
+}

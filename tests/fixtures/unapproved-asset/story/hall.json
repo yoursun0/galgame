@@ -1,0 +1,4 @@
+{
+  "id": "hall",
+  "instructions": [{ "kind": "background", "asset": "bg-secret" }]
+}

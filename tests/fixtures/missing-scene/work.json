@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": 1,
+  "id": "missing-scene",
+  "title": "missing-scene",
+  "language": "zh-Hant",
+  "start": "gone",
+  "characters": [],
+  "variables": [],
+  "scenes": ["story/missing.json"]
+}

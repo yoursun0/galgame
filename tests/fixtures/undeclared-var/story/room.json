@@ -1,0 +1,4 @@
+{
+  "id": "room",
+  "instructions": [{ "kind": "set", "var": "ghost", "value": true }]
+}
