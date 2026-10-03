@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": 1,
+  "id": "unapproved-asset",
+  "title": "unapproved-asset",
+  "language": "zh-Hant",
+  "start": "hall",
+  "characters": [],
+  "variables": [],
+  "scenes": ["story/hall.json"]
+}

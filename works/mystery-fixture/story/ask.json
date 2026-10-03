@@ -1,0 +1,4 @@
+{
+  "id": "ask",
+  "instructions": [{ "kind": "jump", "to": "done" }]
+}

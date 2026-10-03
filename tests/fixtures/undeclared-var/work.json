@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": 1,
+  "id": "undeclared-var",
+  "title": "undeclared-var",
+  "language": "zh-Hant",
+  "start": "room",
+  "characters": [],
+  "variables": [],
+  "scenes": ["story/room.json"]
+}

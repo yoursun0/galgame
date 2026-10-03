@@ -1,0 +1,7 @@
+{
+  "id": "lock",
+  "instructions": [
+    { "kind": "set", "var": "locked", "value": true },
+    { "kind": "jump", "to": "done" }
+  ]
+}

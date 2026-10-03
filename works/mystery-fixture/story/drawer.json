@@ -1,0 +1,4 @@
+{
+  "id": "drawer",
+  "instructions": [{ "kind": "jump", "to": "done" }]
+}

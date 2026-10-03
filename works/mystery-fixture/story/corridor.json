@@ -1,0 +1,16 @@
+{
+  "id": "corridor",
+  "instructions": [
+    { "kind": "background", "asset": "bg-soc" },
+    { "kind": "narration", "text": "走廊盡頭的燈滅了一盞，門還開著一條縫。" },
+    { "kind": "dialogue", "speaker": "admin", "text": "鑰匙不在櫃上。" },
+    {
+      "kind": "choice",
+      "options": [
+        { "text": "回去把門鎖上", "jump": "lock" },
+        { "text": "在抽屜裡再找一次", "jump": "drawer" },
+        { "text": "先去問樓下", "jump": "ask" }
+      ]
+    }
+  ]
+}
