@@ -1,0 +1,660 @@
+// PROTOTYPE script. One play of the common route plus one heroine line
+// is the ten-minute session. Twelve endings are the thing to discuss.
+
+export const flagMeta = [
+  { id: "qishanHonest", label: "實話", hint: "車站對綺珊說明團刊" },
+  { id: "sutingWalk", label: "步伐", hint: "長城跟上素婷，沒有追去跑" },
+  { id: "zhijunName", label: "名字", hint: "懸空寺問了芷君的名字" },
+];
+
+/** @type {Record<string, object>} */
+export const scenes = {
+  open1: {
+    bg: "soc",
+    chapter: "序",
+    place: "中大 · 中天 soc 房",
+    figure: "lingchen",
+    speaker: "",
+    text: "陽光普照的午後。泳池把光反射進會室，桌上鋪著問答比賽、藝墟，還有去年內蒙古團的宣傳單。下莊沒有收拾。想起來，我們當年也是這樣。",
+    next: "open2",
+  },
+  open2: {
+    figure: "lingchen",
+    speaker: "",
+    text: "一點五十分。團刊的事，我和家綸各以為是對方去拿，二十多本遺在這間房裡。芷君她們只好合看一本。我對壁報上的合照說：喂，我現在來啦。",
+    next: "open3",
+  },
+  open3: {
+    figure: "lingchen",
+    speaker: "凌晨",
+    text: "打開門。刺眼的陽光灑在臉上。起程了。",
+    next: "st1",
+  },
+
+  st1: {
+    bg: "day",
+    chapter: "第一話　陽光燦爛，不及昔日笑聲燦爛",
+    place: "北京站外",
+    figure: null,
+    speaker: "會長",
+    text: "起程了！人數齊了，跟著走。",
+    next: "st2",
+  },
+  st2: {
+    figure: "suting",
+    speaker: "素婷",
+    text: "啊，好刺眼啊。",
+    next: "st3",
+  },
+  st3: {
+    figure: "suting",
+    speaker: "凌晨",
+    text: "素婷，陽光刺眼代表天氣好。我們這群仰賴天氣維生的，晴天比陰天好得多。",
+    next: "st4",
+  },
+  st4: {
+    figure: "lingchen",
+    speaker: "家綸",
+    text: "白天下雨的話，拖著行李箱就狼狽了。幸好天公造美。",
+    next: "st5",
+  },
+  st5: {
+    figure: "suting",
+    speaker: "",
+    text: "領隊辦手續。團刊發下來，不夠。會長倒還從容：莊員自己先別拿，認識的人合看。我說，這次怪我和家綸，我去派。",
+    next: "qi_choice",
+  },
+
+  qi_choice: {
+    figure: "qishan",
+    speaker: "",
+    text: "綺珊站在隊尾，中學同窗，看著我手上那疊明顯短了一截的團刊。我可以照舊裝酷，也可以把弄丟的事說明白。",
+    choices: [
+      { label: "裝酷，把團刊塞過去。", next: "qi_cool1", set: { qishanHonest: false } },
+      { label: "先說明，是我們遺下一半。", next: "qi_honest1", set: { qishanHonest: true } },
+    ],
+  },
+  qi_cool1: {
+    figure: "qishan",
+    speaker: "凌晨",
+    text: "唏，同學，團刊。",
+    next: "qi_cool2",
+  },
+  qi_cool2: {
+    figure: "qishan",
+    speaker: "綺珊",
+    text: "辛苦你啊，偉大的莊員。怎麼這麼少？偷工減料嗎？",
+    next: "qi_cool3",
+  },
+  qi_cool3: {
+    figure: "qishan",
+    speaker: "凌晨",
+    text: "對，我私吞了一半。有些人只好兩個人看一本。偉大的莊員，只好犧牲。",
+    next: "qi_cool4",
+  },
+  qi_cool4: {
+    figure: "qishan",
+    speaker: "",
+    text: "她說貴重的東西她不要，反正拿了也不會看，說完便掉頭走了。才不會不看。這個人連天橋底的樓宇單張也大看特看。家綸在背後問她是誰。我說，中學同學。",
+    next: "zj1",
+  },
+  qi_honest1: {
+    figure: "qishan",
+    speaker: "凌晨",
+    text: "團刊不夠。我和家綸都以為是對方拿了，遺下一半在中大。你跟朋友合看一本，可以嗎？",
+    next: "qi_honest2",
+  },
+  qi_honest2: {
+    figure: "qishan",
+    speaker: "綺珊",
+    text: "……你今天居然沒有裝酷。太陽這麼大，把你曬傻了？",
+    next: "qi_honest3",
+  },
+  qi_honest3: {
+    figure: "qishan",
+    speaker: "凌晨",
+    text: "沒傻。這次不想先講笑話。",
+    next: "qi_honest4",
+  },
+  qi_honest4: {
+    figure: "qishan",
+    speaker: "",
+    text: "她接過去，沒有掉頭就走，只說她還是會看，叫我少在心裡編排她。家綸問她是誰。我仍說中學同學。綺珊回頭看了我一眼。",
+    next: "zj1",
+  },
+
+  zj1: {
+    figure: "zhijun",
+    speaker: "",
+    text: "剩下的團刊，要派給三五成群的人。一個編著馬尾的女孩轉過身。圓眼睛，笑起來有一點酒窩，沒有架著都市人那種近視。",
+    next: "zj2",
+  },
+  zj2: {
+    figure: "zhijun",
+    speaker: "芷君",
+    text: "當然啦。還不是跟你一樣，都是一起去內蒙古的。",
+    next: "zj3",
+  },
+  zj3: {
+    figure: "qishan",
+    speaker: "綺珊",
+    text: "對，這小子是出名冒失的。",
+    next: "zj4",
+  },
+  zj4: {
+    figure: "zhijun",
+    speaker: "",
+    text: "大家都呆了一下。馬尾女孩卻笑了，問：所以呢？我彆扭地請她們合看一本。她說，當然可以啦。那笑容像身後的陽光，刺眼。我還不知道她的名字。",
+    next: "wall1",
+  },
+
+  wall1: {
+    bg: "wall",
+    chapter: "第二話　汗水淋漓，流盡了無數希冀",
+    place: "八達嶺",
+    figure: "suting",
+    speaker: "",
+    text: "第三天。大鼻用童謠的調子哼著萬里長城，跟阿俊、寶方、綺珊跑在前頭。我沒有追。我認定的歷史意義，走在後面。",
+    next: "wall2",
+  },
+  wall2: {
+    figure: "suting",
+    speaker: "凌晨",
+    text: "怎麼樣了？你累了嗎？",
+    next: "wall3",
+  },
+  wall3: {
+    figure: "suting",
+    speaker: "素婷",
+    text: "嗯。前面那個關口坐坐，吹吹風吧。",
+    next: "wall_choice",
+  },
+  wall_choice: {
+    figure: "suting",
+    speaker: "",
+    text: "家綸和會長在關口拍照。再往上是最陡的一段，綺珊跑在最前。素婷用手帕印著汗，笑我孱弱。我可以陪她把這段走完，也可以追上去，證明自己不是悶蛋。",
+    choices: [
+      { label: "在關口坐下，然後一級一級跟在她後面。", next: "wall_slow1", set: { sutingWalk: true } },
+      { label: "追上去。總不能看起來跑輸給綺珊。", next: "wall_run1", set: { sutingWalk: false } },
+    ],
+  },
+  wall_slow1: {
+    figure: "suting",
+    speaker: "凌晨",
+    text: "好。就在這裡停一停。秦始皇啊，你真是太偉大了。",
+    next: "wall_slow2",
+  },
+  wall_slow2: {
+    figure: "suting",
+    speaker: "素婷",
+    text: "你在看甚麼？聽說那個叫綺珊的，是你中學同學？",
+    next: "wall_slow3",
+  },
+  wall_slow3: {
+    figure: "suting",
+    speaker: "凌晨",
+    text: "是呀。她喜歡認識新朋友。跟我這悶蛋有甚麼好玩的。你曉得話別人，不曉得話自己。",
+    next: "wall_slow4",
+  },
+  wall_slow4: {
+    figure: "suting",
+    speaker: "",
+    text: "這句是假的。中學時跟她玩得最癲的就是我。她笑了，然後走在前頭。我樂於跟在背後。我以為一直這樣拾級而上，已經非常美好。跑得快的人，沒有人保證不會跌下去。",
+    next: "temple1",
+  },
+  wall_run1: {
+    figure: "suting",
+    speaker: "",
+    text: "我說去看看那段有多陡，就追了上去。回頭時，素婷還在下面那一級，小得像一粒石子。她也在看我。她沒有叫我。",
+    next: "wall_run2",
+  },
+  wall_run2: {
+    figure: "suting",
+    speaker: "",
+    text: "她後來只說，你們同一所中學，怎麼人家那麼有活力。我們還是並排走完了長城。步伐從那裡開始不一樣。我走得太前。她沒有說不行。",
+    next: "temple1",
+  },
+
+  temple1: {
+    bg: "temple",
+    chapter: "第三話　懸在半空的寺，懸在半空的心",
+    place: "恒山 · 懸空寺",
+    figure: "qishan",
+    speaker: "",
+    text: "寺貼在崖上。綺珊把相機塞給我，要在刻著「壯觀」的大石下跟大鼻他們拍照。拍完，素婷不知去了哪裡。綺珊又把我按在石上。階梯上有人笑著叫她：怎麼又在欺負男孩子。",
+    next: "temple2",
+  },
+  temple2: {
+    figure: "zhijun",
+    speaker: "綺珊",
+    text: "她是黎芷君，聯宿認識的。想認識嗎？我當紅娘的經驗，多如天上繁星！",
+    next: "temple_choice",
+  },
+  temple_choice: {
+    figure: "zhijun",
+    speaker: "",
+    text: "芷君在偷笑。素婷和家綸還在下面。我可以把場面編成一段緣訂七世，也可以把名字問清楚。",
+    choices: [
+      { label: "胡扯下去。指腹為婚，緣訂七世。", next: "temple_lie1", set: { zhijunName: false } },
+      { label: "問她的名字，也報上自己的。", next: "temple_name1", set: { zhijunName: true } },
+    ],
+  },
+  temple_lie1: {
+    figure: "zhijun",
+    speaker: "凌晨",
+    text: "我們老早就認識了！我早在母腹裡就認識她。凌晨這個名字，還是她媽媽起的。",
+    next: "temple_lie2",
+  },
+  temple_lie2: {
+    figure: "suting",
+    speaker: "",
+    text: "綺珊拆穿我。家綸卻在這時鑽出來，身後還跟著素婷，一口一句緣訂七世。我看著素婷，把懸空寺編成牛郎織女第五世的假典故。她聽得很認真。我到最後也沒問那個名字。她一直是「當然可以小姐」。",
+    next: "star1",
+  },
+  temple_name1: {
+    figure: "zhijun",
+    speaker: "凌晨",
+    text: "紅娘免了。我還沒請教。我叫凌晨，中天的。那天團刊的事，多謝你。名字比較不容易弄丟。",
+    next: "temple_name2",
+  },
+  temple_name2: {
+    figure: "zhijun",
+    speaker: "",
+    text: "她說她叫黎芷君，中文系，合看一本團刊而已，倒不必記到畢業。綺珊嘖了一聲，居然沒有再加碼。素婷和家綸上來時，素婷只提醒欄杆別靠那麼出去。我這次沒有編典故。",
+    next: "star1",
+  },
+
+  star1: {
+    bg: "stars",
+    laser: true,
+    chapter: "第四話　群星灑遍，你我頭頂上的一片天",
+    place: "草原之夜",
+    figure: "suting",
+    speaker: "",
+    text: "第六天夜裡，冷。我把兩件外套都披到素婷身上。望遠鏡總算架好。銀河橫在天頂上。任何人到過那片天空，都會忽然覺得自己很小。",
+    next: "star2",
+  },
+  star2: {
+    laser: true,
+    figure: "zhijun",
+    speaker: "",
+    text: "蒙古包裡，綺珊帶著一圈女孩玩握手單眼 Killer。芷君說恆星不會走，怎會不等人，然後翻牌喊醫生救她。我卻在想，要是坐在旁邊的是素婷，我就可以握著她的手，把她救回來。綺珊把我們趕了出去。",
+    next: "star3",
+  },
+  star3: {
+    laser: true,
+    figure: "lingchen",
+    speaker: "凌晨",
+    text: "激光筆在我口中叫神劍。家綸講天蠍，我把青綠的光劃上去。他說人馬座像茶壺。茶壺不夠看。我指向銀河另一頭：天津四、牛郎、織女，夏季大三角。每年只准見一次。我說，那比永遠不見更殘酷。永遠不見，痛會過去。每年見一次，沒有結果的愛情就永遠糾纏下去。",
+    next: "star4",
+  },
+  star4: {
+    laser: true,
+    figure: "qishan",
+    speaker: "綺珊",
+    text: "更殘酷的，是派大犬座和小犬座守在鵲橋邊。怕狗的牛郎，七夕也不敢上橋。碼頭那個 checkpoint，五十塊請船家載你到二十步外的事，要不要自己說？",
+    next: "star5",
+  },
+  star5: {
+    laser: true,
+    figure: "lingchen",
+    speaker: "",
+    text: "素婷別開臉在笑。芷君也在笑。我說我去對望遠鏡，往暗處走了十米。背後有人叫我。",
+    next: "midcard",
+  },
+
+  midcard: {
+    card: true,
+    kicker: "中局",
+    title: "三條線在這裡分開",
+    text: "前面三件事已經記下，不會再改。對綺珊有沒有把團刊說明白，長城有沒有跟上素婷，懸空寺有沒有問芷君的名字。接下來你只選要回頭看見誰。TRUE 還是 GOOD，要到這條線的最後一句才分。",
+    next: "branch",
+  },
+  branch: {
+    checkpoint: true,
+    bg: "stars",
+    laser: true,
+    chapter: "第四話　群星灑遍，你我頭頂上的一片天",
+    place: "草原之夜 · 分歧",
+    figure: "lingchen",
+    speaker: "",
+    text: "我停下來。夜風把空袖吹起來。這一聲若是叫錯了人，後面的故事會整段改寫。",
+    choices: [
+      { label: "回頭。我希望站在那裡的是素婷。", next: "s1" },
+      { label: "先別作聲。如果她是叫我看星星的，我就抬頭。", next: "z1" },
+      { label: "走回去，把激光筆奪回來。這場笑話還沒講完。", next: "q1" },
+    ],
+  },
+
+  s1: {
+    bg: "stars",
+    chapter: "素婷線",
+    place: "草原之夜",
+    figure: "suting",
+    speaker: "素婷",
+    text: "他們笑夠了就會來找你。兩件外套都給我，你自己在發抖。",
+    next: "s2",
+  },
+  s2: {
+    figure: "suting",
+    speaker: "",
+    text: "她把其中一件披回我肩上，手帕按了按我的手腕，很輕。那句話已經到了牙齒後面。銀河還在。我沒有說。",
+    next: "s3",
+  },
+  s3: {
+    bg: "canteen",
+    laser: false,
+    place: "中大 · coffee corner",
+    figure: "qishan",
+    speaker: "綺珊",
+    text: "回來以後她把我約出來。她不要聽牛郎織女。她問：你跟素婷到底怎麼搞的。人要是先走了，你還裝沒事嗎？",
+    next: "s4",
+  },
+  s4: {
+    bg: "beach",
+    place: "貝澳 · 夜",
+    figure: "suting",
+    speaker: "",
+    text: "重聚的海邊。家綸整晚心神不寧。我一度以為他要在星空下對綺珊開口。後來我才看清：會追出去找他的人，是素婷。獵戶座升起來。暗處有兩個影子。我再晚一步，他會在她懷裡哭出來，然後他們就手牽手，走成一對。",
+    next: "s_choice",
+  },
+  s_choice: {
+    figure: "suting",
+    speaker: "",
+    text: "參宿四是紅的。電筒還在我手裡。這一次，沒有典故可以借。",
+    choices: [
+      {
+        label: "在他開口之前去找素婷，把那句話說完。",
+        next: { flag: "sutingWalk", yes: "s_true1", no: "s_good1" },
+      },
+      { label: "關掉電筒。讓那兩個影子靠在一起。", next: "s_bad_leave" },
+      { label: "走過去把他們拉開，問這算甚麼兄弟。", next: "s_bad_rip" },
+    ],
+  },
+  s_true1: {
+    figure: "suting",
+    speaker: "凌晨",
+    text: "素婷。我喜歡你。不是兄弟，不是莊員，不是走在你後面就算了的那種。",
+    next: "s_true2",
+  },
+  s_true2: {
+    figure: "suting",
+    speaker: "素婷",
+    text: "長城那天你沒有追上去。我以為你終於會說。你沒有。所以我一直在等你走到跟我一樣的速度。",
+    next: "s_true3",
+  },
+  s_true3: {
+    bg: "dawn",
+    figure: "suting",
+    speaker: "",
+    laser: false,
+    text: "黎明時我去告訴家綸。他哭了，可是他聽懂了。沒有人被推進一個假故事裡。素婷站在石灘上，海風把頭髮吹過來。我們沒有立刻成為傳說。我們只是從那一夜開始，走在同一級石階上。",
+    ending: {
+      id: "suting-true",
+      route: "素婷",
+      tier: "TRUE",
+      title: "星夜",
+      why: "長城上你跟了她的步伐。最後這句才不像又一次表演。",
+    },
+  },
+  s_good1: {
+    figure: "suting",
+    speaker: "凌晨",
+    text: "素婷。我喜歡你。不是兄弟，不是莊員，不是走在你後面就算了的那種。",
+    next: "s_good2",
+  },
+  s_good2: {
+    figure: "suting",
+    speaker: "",
+    text: "她說，你說得很完整，完整得像懸空寺那晚編給我聽的典故。我說這次是真的。她說她知道。可是我總是先跑去別的地方，再回頭補這一句。家綸會說錯話，他至少會停在那裡。她沒有討厭我。後來他們還是在一起。我沒有退莊。夏季大三角升起的時候，我先把激光筆交給別人。",
+    ending: {
+      id: "suting-good",
+      route: "素婷",
+      tier: "GOOD",
+      title: "半步",
+      why: "你告白了，可是長城那天你跑在前面。她把這句聽成補救。",
+    },
+  },
+  s_bad_leave: {
+    figure: null,
+    speaker: "",
+    text: "我關掉電筒。兩個影子靠在一起。星光照清楚的那張臉，是素婷。我沒有出聲。回到中大，我用物理系的功課推掉每一次莊聚。講室裡的激光筆劃過白板。我看不進去。原來，沒有。",
+    ending: {
+      id: "suting-bad-leave",
+      route: "素婷",
+      tier: "BAD",
+      title: "原來沒有",
+      why: "你看見了，然後離開。這是原文裡那個沒有說出口的夜晚。",
+    },
+  },
+  s_bad_rip: {
+    figure: "suting",
+    speaker: "",
+    text: "我走過去叫家綸鬆手。素婷的眼淚掉下來，不是因為感動。家綸看我的樣子，像看一個把他推下長城的人。後來綺珊在電話裡罵我：要追就追，不要拿兄弟的難堪來成全自己。海邊的宿營散了。三個人，誰也不再把誰叫出來。",
+    ending: {
+      id: "suting-bad-rip",
+      route: "素婷",
+      tier: "BAD",
+      title: "拆穿",
+      why: "你把話說成了審判。兩個人都傷在你手上。",
+    },
+  },
+
+  z1: {
+    bg: "stars",
+    chapter: "芷君線",
+    place: "草原之夜",
+    figure: "zhijun",
+    speaker: "芷君",
+    text: "喂。才沒你這麼無聊，終日只會胡謅。難得這樣的星空，可不可以別作聲，抬頭看看。",
+    next: "z2",
+  },
+  z2: {
+    figure: "zhijun",
+    speaker: "",
+    text: "我問，跟你一起的話？她叉著腰反問不可以嗎。我說當然可以。我們一起抬頭。好美。我沒有再講那套理論。",
+    next: "z3",
+  },
+  z3: {
+    bg: "beach",
+    laser: false,
+    place: "貝澳 · 石灘",
+    figure: "zhijun",
+    speaker: "",
+    text: "後來家綸還是在夜裡哭了，哭在素婷懷裡。他們在一起。我發了一場連自己也說不清的脾氣，走到石灘上。素婷沒有追出來。家綸不敢追。芷君在。我問我是不是很傻。她說，是哦，你的確很傻。然後她留下來。",
+    next: "z4",
+  },
+  z4: {
+    bg: "canteen",
+    place: "眾志堂",
+    figure: "zhijun",
+    speaker: "",
+    text: "她玩著一根橡筋，想折一顆星，折不好。她在等的那個人叫游牧。六年前，他為了救一個怕狗的小孩受了傷。那個小孩是我。她不知道我聽懂了她的心還在那邊。我也不知道，她有沒有留一點位置給現在這個坐到打烊的人。",
+    next: "z_choice",
+  },
+  z_choice: {
+    figure: "zhijun",
+    speaker: "芷君",
+    text: "你今晚約我，不會又是要我幫你演一場戲吧。",
+    choices: [
+      {
+        label: "認真問：可不可以，當我的女朋友。",
+        next: { flag: "zhijunName", yes: "z_true1", no: "z_good1" },
+      },
+      { label: "笑著借她的名義，好讓自己可以安心離開。", next: "z_bad_shield" },
+      { label: "要來游牧的聯絡，勸她回到那段沒有結果的愛情。", next: "z_bad_bridge" },
+    ],
+  },
+  z_true1: {
+    figure: "zhijun",
+    speaker: "凌晨",
+    text: "可不可以，當我的女朋友。這次不是為了瞞素婷，也不是為了氣游牧。",
+    next: "z_true2",
+  },
+  z_true2: {
+    bg: "dawn",
+    figure: "zhijun",
+    speaker: "",
+    text: "她把橡筋收進掌心。懸空寺那天你問了我的名字，所以這句我信。她笑了一下，酒窩很淺，說：當然可以。游牧的事，我們後來一起跟他說清楚。沒有人再借用別人的名義。",
+    ending: {
+      id: "zhijun-true",
+      route: "芷君",
+      tier: "TRUE",
+      title: "當然可以",
+      why: "你在懸空寺問過她的名字。這次告白就不是角色扮演。",
+    },
+  },
+  z_good1: {
+    figure: "zhijun",
+    speaker: "",
+    text: "她說你很認真。可是你到現在還叫我當然可以小姐。我補問她的名字。她說晚了。不是不喜歡你。是你認識她的第一天，就替她編了一整段故事。她不要在下一段故事裡，才第一次出現自己的名字。她還是把我送到車站。眾志堂的位子，她有時還會坐。",
+    ending: {
+      id: "zhijun-good",
+      route: "芷君",
+      tier: "GOOD",
+      title: "未問之名",
+      why: "告白是真的，可是你第一天沒有問名字。她留下門，沒有答應。",
+    },
+  },
+  z_bad_shield: {
+    figure: "zhijun",
+    speaker: "",
+    text: "我說你借我個名義吧，我跟他們說我有女朋友，就可以安心走了。她說當然不可以。只有三歲小朋友才信這個。而且我到現在還不清楚，是誰在背後替我收拾這些無聊事。橡筋彈在我臉上。她站起來。以後她還是會笑，只是不再等我講完。",
+    ending: {
+      id: "zhijun-bad-shield",
+      route: "芷君",
+      tier: "BAD",
+      title: "擋箭牌",
+      why: "你把她變成掩飾。原文裡她看穿的就是這個。",
+    },
+  },
+  z_bad_bridge: {
+    figure: "zhijun",
+    speaker: "",
+    text: "我把草原上那套理論原封不動送給她：沒有結果的愛情最殘酷，所以你更應該回去。我退出。她看我的樣子，像看一個親手把銀河劃寬的人。游牧來找她的晚上，我不在場。聽說他們試了，也聽說還是過不成。而我連再問一次「可不可以」的資格都交出去了。",
+    ending: {
+      id: "zhijun-bad-bridge",
+      route: "芷君",
+      tier: "BAD",
+      title: "劃河",
+      why: "你把自己講過的殘酷懲罰，做成了她的結局。",
+    },
+  },
+
+  q1: {
+    bg: "stars",
+    chapter: "綺珊線",
+    place: "草原之夜",
+    figure: "qishan",
+    speaker: "凌晨",
+    text: "我走回去，把激光筆拿回來。碼頭那件事是真的。小狗一貼過來，我花了五十塊，請船家把我載到二十步外。你們笑吧。",
+    next: "q2",
+  },
+  q2: {
+    figure: "qishan",
+    speaker: "",
+    text: "她愣了一下，說我自己講出來，她就沒那麼好玩了。我說那你就不要靠挖瘡來作結尾，故事是我在講。她把筆套套上，塞回我口袋。素婷看了我一眼。芷君也看了我一眼。大犬座沒有再被點名。",
+    next: "q3",
+  },
+  q3: {
+    bg: "canteen",
+    laser: false,
+    place: "中大 · coffee corner",
+    figure: "qishan",
+    speaker: "綺珊",
+    text: "暑假她把頭髮剪短了一點，看起來更清爽，也更不像會坐下來聽人說心事。咖啡攪到涼。她說：你就只會為了這些事才約我。我要聽真正屬於你的故事。不是牛郎，也不是素婷的版本。",
+    next: "q4",
+  },
+  q4: {
+    figure: "qishan",
+    speaker: "",
+    text: "家綸昨天問我，今晚能不能幫他製造一個跟綺珊獨處的機會。他要表白。我如果點頭，綺珊就變成我送給別人的台階，我就可以空出身去找素婷。",
+    next: "q_choice",
+  },
+  q_choice: {
+    figure: "qishan",
+    speaker: "",
+    text: "黑加侖子的冰融了。她看著我，等一個不是笑話的開頭。",
+    choices: [
+      {
+        label: "告訴她：我約你，不是為了素婷，也不是為了家綸。",
+        next: { flag: "qishanHonest", yes: "q_true1", no: "q_good1" },
+      },
+      { label: "答應家綸。讓他去說。你去忙你的。", next: "q_bad_setup" },
+      { label: "把杯子喝完，打個哈哈就走。", next: "q_bad_cool" },
+    ],
+  },
+  q_true1: {
+    figure: "qishan",
+    speaker: "凌晨",
+    text: "車站那天我沒有裝酷。所以今天這句你也不准當成表演。聽我說故事的那個人，我一直當成觀眾。今天我不講了。我問你。可不可以不要再當紅娘。留下來的人是你。",
+    next: "q_true2",
+  },
+  q_true2: {
+    bg: "dawn",
+    figure: "qishan",
+    speaker: "",
+    text: "她愣了一下，然後笑罵了一句很長的話。沒有掉頭走。咖啡涼了也沒關係。家綸的事，我當天親自跟他說了不。他難過，可是他沒有被推進一個局裡。",
+    ending: {
+      id: "qishan-true",
+      route: "綺珊",
+      tier: "TRUE",
+      title: "不當觀眾",
+      why: "車站你先把團刊說明白了。她才相信這次不是歡迎辭。",
+    },
+  },
+  q_good1: {
+    figure: "qishan",
+    speaker: "",
+    text: "我說留下來的人是你，可不可以不要再當紅娘。她說這段說得真好，好得像團刊開頭那段編給團友看的歡迎辭。車站那天我把團刊塞過去，連多的半句都沒有。她說這份認真先存著。等哪天我不用靠一個故事來見她，再問一次。她還是會接電話。只是接起來先笑我。故事還是她在聽。",
+    ending: {
+      id: "qishan-good",
+      route: "綺珊",
+      tier: "GOOD",
+      title: "歡迎辭",
+      why: "你轉向她了，可是車站那天仍在裝酷。她把告白先存著。",
+    },
+  },
+  q_bad_setup: {
+    bg: "roof",
+    figure: "qishan",
+    speaker: "",
+    text: "我幫家綸把人約到天台。他自己沒有把話說圓，綺珊全部聽懂了。她在 coffee corner 站起來，杯子碰得很大聲。她說：你為了去找素婷，就把他推給我？你打算陷我於不義嗎？人家喜歡我沒有罪。有罪的是你，把朋友當成道具。她走了。素婷後來還是去找了那個哭的人。跟原本的故事一樣。只是綺珊再也沒問，真正屬於我的故事是哪一則。",
+    ending: {
+      id: "qishan-bad-setup",
+      route: "綺珊",
+      tier: "BAD",
+      title: "陷人於不義",
+      why: "你幫家綸鋪了局。這是原文裡她最氣的那一件事。",
+    },
+  },
+  q_bad_cool: {
+    figure: "qishan",
+    speaker: "",
+    text: "我說有甚麼好說的，往事不堪回首，杯子喝完了我走了。她把杯子推回我這邊，自己先走。以後重聚她還是笑，還是跑在最前。只是不再單獨約我。裝酷這件事，我終於裝到一個沒有觀眾的地方。",
+    ending: {
+      id: "qishan-bad-cool",
+      route: "綺珊",
+      tier: "BAD",
+      title: "裝酷",
+      why: "你把她約出來，又拒絕把故事給她。",
+    },
+  },
+};
+
+export function nextOf(next, flags) {
+  if (!next) return null;
+  if (typeof next === "string") return next;
+  return flags[next.flag] ? next.yes : next.no;
+}
+
+export function listEndings() {
+  const list = [];
+  for (const scene of Object.values(scenes)) {
+    if (scene.ending) list.push(scene.ending);
+  }
+  const order = { TRUE: 0, GOOD: 1, BAD: 2 };
+  const routeOrder = { 素婷: 0, 芷君: 1, 綺珊: 2 };
+  list.sort((a, b) => routeOrder[a.route] - routeOrder[b.route] || order[a.tier] - order[b.tier] || a.title.localeCompare(b.title, "zh"));
+  return list;
+}

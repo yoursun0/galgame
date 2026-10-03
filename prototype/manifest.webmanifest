@@ -1,0 +1,9 @@
+{
+  "name": "星空情緣",
+  "short_name": "星空情緣",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#101624",
+  "theme_color": "#101624",
+  "lang": "zh-Hant"
+}

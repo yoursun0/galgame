@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>星空情緣 · 原型</title>
+  <meta name="theme-color" content="#101624">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;600&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <section id="title-screen">
+      <p class="kicker">話當年之二</p>
+      <h1 class="mast">星空情緣</h1>
+      <p class="deck">原型。共通線走到草原那一夜，再鎖進素婷、芷君或綺珊其中一條。一條線大約十分鐘。TRUE 要靠中局之前記下的一件事。</p>
+      <ol class="routes" aria-label="三條線">
+        <li>素婷 · 長城的步伐</li>
+        <li>芷君 · 懸空寺的名字</li>
+        <li>綺珊 · 車站有沒有裝酷</li>
+      </ol>
+      <div class="title-actions">
+        <button type="button" id="start" class="depart">起程</button>
+        <button type="button" id="continue" class="texty" hidden>從這一頁繼續</button>
+        <button type="button" id="open-gallery" class="texty">十二個結局</button>
+      </div>
+      <p class="fine">空白鍵或點團刊前進。選擇用滑鼠或點按。紀錄可回看。星圖看三個旗標。進度只留在這個分頁。</p>
+    </section>
+
+    <section id="play" hidden>
+      <div id="sky" data-bg="soc"></div>
+      <svg id="laser" class="laser" viewBox="0 0 1200 800" preserveAspectRatio="none" hidden aria-hidden="true">
+        <line x1="280" y1="640" x2="860" y2="150"></line>
+      </svg>
+      <div class="figure-slot">
+        <img id="figure" alt="" hidden>
+      </div>
+      <header class="topbar">
+        <div>
+          <p id="chapter" class="chapter"></p>
+          <p id="place" class="place"></p>
+        </div>
+        <div class="top-tools">
+          <ul id="flagrow" class="flagrow">
+            <li data-flag="qishanHonest">實話</li>
+            <li data-flag="sutingWalk">步伐</li>
+            <li data-flag="zhijunName">名字</li>
+          </ul>
+          <div class="hud">
+            <button type="button" id="btn-log">紀錄</button>
+            <button type="button" id="btn-chart">星圖</button>
+            <button type="button" id="btn-skip">略過至選擇</button>
+            <button type="button" id="btn-title">標題</button>
+          </div>
+        </div>
+      </header>
+
+      <div id="card" class="card" hidden>
+        <p id="card-kicker" class="card-kicker"></p>
+        <h2 id="card-title"></h2>
+        <p id="card-text"></p>
+        <button type="button" id="card-go" class="depart">繼續</button>
+      </div>
+
+      <div id="booklet">
+        <div class="booklet-head">
+          <span>內蒙團團刊</span>
+          <span id="page-no">01</span>
+        </div>
+        <p id="speaker" class="speaker"></p>
+        <p id="line" class="line"></p>
+        <div id="choices"></div>
+        <p id="hint" class="hint">點一下，或按空白鍵</p>
+      </div>
+    </section>
+
+    <section id="ending" class="overlay" hidden>
+      <div class="ending-card">
+        <p id="ending-route" class="kicker"></p>
+        <p id="ending-tier" class="tier"></p>
+        <h2 id="ending-title"></h2>
+        <p id="ending-why"></p>
+        <div class="title-actions">
+          <button type="button" id="end-again" class="texty">再看這一頁</button>
+          <button type="button" id="back-to-branch" class="depart">回到中局</button>
+          <button type="button" id="end-title" class="texty">回標題</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="log" class="overlay" hidden>
+      <div class="sheet">
+        <div class="sheet-head">
+          <h2>紀錄</h2>
+          <button type="button" id="close-log" class="texty">關閉</button>
+        </div>
+        <div id="log-list"></div>
+      </div>
+    </section>
+
+    <aside id="chart" hidden>
+      <div class="sheet-head">
+        <h2>星圖</h2>
+        <button type="button" id="close-chart" class="texty">關閉</button>
+      </div>
+      <dl id="chart-body"></dl>
+    </aside>
+
+    <section id="gallery" class="overlay" hidden>
+      <div class="sheet">
+        <div class="sheet-head">
+          <h2>十二個結局</h2>
+          <button type="button" id="close-gallery" class="texty">關閉</button>
+        </div>
+        <ol id="gallery-list" class="gallery-list"></ol>
+      </div>
+    </section>
+  </div>
+  <script type="module" src="game.js"></script>
+</body>
+</html>
