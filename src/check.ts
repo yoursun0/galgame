@@ -1,5 +1,6 @@
 import { existsSync, readFileSync } from "node:fs";
-import { join, normalize, relative, sep } from "node:path";
+import { dirname, join, normalize, relative, resolve, sep } from "node:path";
+import { inspectAssetFile } from "./links.ts";
 import type {
   AssetRecord,
   CheckIssue,
@@ -105,6 +106,16 @@ export function checkWork(rootDir: string): {
           work: workId,
           file: asset.path,
           message: `missing file ${asset.path}`,
+        });
+        continue;
+      }
+      const inspected = inspectAssetFile(join(root, asset.path), projectRoot(root));
+      if (inspected.kind === "broken") {
+        errors.push({
+          level: "error",
+          work: workId,
+          file: asset.path,
+          message: `broken link ${asset.path}`,
         });
       }
     }
@@ -380,6 +391,18 @@ function readJsonFile<T>(
     });
     return null;
   }
+}
+
+/** Work directories live under works/<id>. Link targets live next to that, in the repo. */
+function projectRoot(workRoot: string): string {
+  let dir = resolve(workRoot);
+  for (let i = 0; i < 6; i++) {
+    if (existsSync(join(dir, "package.json")) && existsSync(join(dir, "works"))) return dir;
+    const parent = dirname(dir);
+    if (parent === dir) break;
+    dir = parent;
+  }
+  return resolve(workRoot);
 }
 
 function fileInside(root: string, relPath: string): boolean {
