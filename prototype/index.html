@@ -14,7 +14,6 @@
 <body>
   <div id="app">
     <section id="title-screen">
-      <img class="title-ornament" src="../ui-gameplay2/img/frame-circle.png" alt="">
       <p class="kicker">話當年之二</p>
       <h1 class="mast">星空情緣</h1>
       <p class="deck">原型。共通線走到草原那一夜，再鎖進素婷、芷君或綺珊其中一條。一條線大約十分鐘。TRUE 要靠中局之前記下的一件事。</p>
@@ -28,7 +27,7 @@
         <button type="button" id="continue" class="texty" hidden>從這一頁繼續</button>
         <button type="button" id="open-gallery" class="texty">十二個結局</button>
       </div>
-      <p class="fine">空白鍵或點團刊前進。選擇用滑鼠或點按。紀錄可回看。星圖看三個旗標。進度只留在這個分頁。</p>
+      <p class="fine">空白鍵或點對話前進。選擇用滑鼠或點按。紀錄可回看。星圖看三個旗標。進度只留在這個分頁。</p>
     </section>
 
     <section id="play" hidden>
@@ -36,8 +35,12 @@
       <svg id="laser" class="laser" viewBox="0 0 1200 800" preserveAspectRatio="none" hidden aria-hidden="true">
         <line x1="280" y1="640" x2="860" y2="150"></line>
       </svg>
-      <div class="figure-slot">
+      <div id="figure-slot" class="figure-slot">
         <img id="figure" alt="" hidden>
+        <img id="figure-far" alt="" hidden>
+      </div>
+      <div id="cg" class="cg-layer" hidden>
+        <img id="cg-img" alt="">
       </div>
       <header class="topbar">
         <div>
@@ -68,17 +71,17 @@
 
       <div id="booklet" class="framed">
         <div class="booklet-head">
-          <p id="speaker" class="speaker"></p>
-          <span id="booklet-kicker">內蒙團團刊</span>
-          <span id="page-no">01</span>
+          <p id="speaker" class="speaker" hidden></p>
         </div>
         <p id="line" class="line"></p>
         <div id="choices"></div>
         <p id="hint" class="hint">點一下，或按空白鍵</p>
       </div>
+      <p id="bgm-credit" class="bgm-credit" hidden></p>
     </section>
 
-    <section id="ending" class="overlay" hidden>
+    <section id="ending" class="overlay no-cg" hidden>
+      <img id="ending-cg" class="ending-cg" alt="" hidden>
       <div class="ending-card framed">
         <p id="ending-route" class="kicker"></p>
         <p id="ending-tier" class="tier"></p>
