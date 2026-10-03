@@ -24,6 +24,7 @@ export class AudioMixer {
   private buses: Record<"bgm" | "se" | "ambience", GainNode> | null = null;
   private volumes = { bgm: 0.35, se: 0.55, ambience: 0.22 };
   private muted = { bgm: false, se: false, ambience: false };
+  private reducedMotion = false;
   private bgm: LoopSlot | null = null;
   private ambience: LoopSlot | null = null;
   private bgmGen = 0;
@@ -62,6 +63,11 @@ export class AudioMixer {
     this.applyBusGains();
   }
 
+  /** Player animation preference. Reduced motion skips audible fades. */
+  setReducedMotion(reduced: boolean): void {
+    this.reducedMotion = reduced;
+  }
+
   sync(desired: ResolvedAudio): void {
     if (!this.unlocked || !this.ctx || !this.buses) return;
     this.syncLoop("bgm", desired.bgm);
@@ -79,6 +85,7 @@ export class AudioMixer {
   }
 
   private fadeSeconds(): number {
+    if (this.reducedMotion) return 0.01;
     if (typeof matchMedia === "function" && matchMedia("(prefers-reduced-motion: reduce)").matches) {
       return 0.01;
     }

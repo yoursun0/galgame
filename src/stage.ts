@@ -5,12 +5,17 @@ export type StageHandlers = {
   onAdvance: () => void;
   onChoose: (index: number) => void;
   onDismissCg: () => void;
+  onTypingComplete?: () => void;
 };
 
 export type Stage = {
   render: (state: PlayState) => void;
   typing: () => boolean;
   finishTyping: () => void;
+  /** Drop in-flight typing so a load can redraw without the old timer. */
+  cancel: () => void;
+  setTextSpeed: (charsPerSecond: number) => void;
+  setInstant: (instant: boolean) => void;
 };
 
 type ActorBox = { heightPercent: number; bottomPercent: number };
@@ -27,9 +32,10 @@ export function mountStage(
   urls: Map<string, string>,
   handlers: StageHandlers,
 ): Stage {
-  const reduced =
+  const reducedMotion =
     typeof matchMedia === "function" && matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const cps = reduced ? 10_000 : theme.charsPerSecond;
+  let instant = reducedMotion;
+  let cps = reducedMotion ? 10_000 : theme.charsPerSecond;
 
   const style = document.createElement("style");
   style.textContent = css(theme);
@@ -88,6 +94,7 @@ export function mountStage(
   let fullText = "";
   let shown = 0;
   let timer = 0;
+  let epoch = 0;
   let dismissedCg: string | null = null;
   let latest: PlayState | null = null;
 
@@ -103,22 +110,53 @@ export function mountStage(
   };
 
   const finishTyping = () => {
+    if (!typing()) return;
     shown = fullText.length;
     stopTimer();
     paintLine();
+    handlers.onTypingComplete?.();
+  };
+
+  const cancel = () => {
+    epoch += 1;
+    stopTimer();
+    lineKey = "";
+    fullText = "";
+    shown = 0;
+    line.textContent = "";
+  };
+
+  const setTextSpeed = (charsPerSecond: number) => {
+    if (!Number.isFinite(charsPerSecond) || charsPerSecond <= 0) return;
+    cps = charsPerSecond;
+  };
+
+  const setInstant = (next: boolean) => {
+    instant = next;
+    if (next && typing()) finishTyping();
   };
 
   const startTyping = (text: string) => {
+    const token = ++epoch;
     fullText = text;
     shown = 0;
     stopTimer();
     paintLine();
-    if (!text) return;
+    if (!text || instant) {
+      shown = fullText.length;
+      paintLine();
+      if (text) handlers.onTypingComplete?.();
+      return;
+    }
     const stepMs = Math.max(16, Math.round(1000 / cps));
     timer = window.setInterval(() => {
+      if (token !== epoch) return;
       shown = Math.min(fullText.length, shown + 1);
       paintLine();
-      if (shown >= fullText.length) stopTimer();
+      if (shown >= fullText.length) {
+        stopTimer();
+        handlers.onTypingComplete?.();
+      }
     }, stepMs);
   };
 
@@ -133,10 +171,6 @@ export function mountStage(
   stage.addEventListener("click", (event) => {
     const target = event.target as Element | null;
     if (target?.closest(".choice, .cg")) return;
-    if (typing()) {
-      finishTyping();
-      return;
-    }
     handlers.onAdvance();
   });
 
@@ -272,7 +306,7 @@ export function mountStage(
     }
   };
 
-  return { render, typing, finishTyping };
+  return { render, typing, finishTyping, cancel, setTextSpeed, setInstant };
 }
 
 function el(tag: string, className: string): HTMLElement {

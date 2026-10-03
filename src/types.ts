@@ -54,6 +54,21 @@ export type CharacterDecl = {
   sprites?: Record<string, string>;
 };
 
+export type RecallScript = {
+  id: string;
+  /** Player-facing name. Show only after this recall is unlocked. */
+  title: string;
+  /** Scene the isolated playback starts at. */
+  start: string;
+  /** Stop before entering this scene. Omit to play until an ending. */
+  end?: string;
+  vars?: Record<string, VarValue>;
+  /** Unlock when this CG asset has been seen. */
+  unlockCg?: string;
+  /** Unlock when this ending id has been reached. */
+  unlockEnding?: string;
+};
+
 export type WorkManifest = {
   schemaVersion: number;
   contentVersion: number;
@@ -65,6 +80,8 @@ export type WorkManifest = {
   variables: VariableDecl[];
   /** Paths relative to the work directory. */
   scenes: string[];
+  /** Optional scene recalls. Absence means the work defines none. */
+  recalls?: RecallScript[];
 };
 
 export type Scene = {
