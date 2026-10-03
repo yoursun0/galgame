@@ -257,8 +257,20 @@ function showFigure(id) {
   }
 }
 
+// script.js reuses one bg token for two rooms. Coffee-corner beats stay on
+// the coffee plate; 眾志堂 stays on the canteen plate, including the true
+// ending that only flips the token to "dawn" without leaving the room.
+const scenePlate = {
+  s3: "coffee",
+  q3: "coffee",
+  q_true2: "coffee",
+  z4: "canteen",
+  z_true2: "canteen",
+};
+
 function applySky(s) {
-  if (s.bg) ui.sky.dataset.bg = s.bg;
+  const plate = scenePlate[state.sceneId] || s.bg;
+  if (plate) ui.sky.dataset.bg = plate;
   if (!("laser" in s)) return;
   ui.laser.hidden = !s.laser;
   if (s.laser) {

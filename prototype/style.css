@@ -15,7 +15,7 @@
   --ui-text: url("../ui-gameplay2/img/text-box.png");
   --ui-plate: url("../ui-gameplay2/img/btn-plate.png");
   --ui-plate-on: url("../ui-gameplay2/img/btn-plate-active.png");
-  --ui-night: url("../ui-gameplay2/img/bg-night-camp.jpg");
+  --ui-night: url("../bg/bg-camp-night.jpg");
   color-scheme: dark;
 }
 
@@ -170,73 +170,20 @@ button:focus-visible, .choice:focus-visible {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(to top, rgba(8, 10, 18, 0.45), rgba(8, 10, 18, 0.12) 36%, rgba(8, 10, 18, 0.2)),
-    var(--ui-night) center / cover no-repeat;
+    linear-gradient(to top, rgba(8, 10, 18, 0.42), rgba(8, 10, 18, 0.08) 38%, rgba(8, 10, 18, 0.16)),
+    var(--sky-plate, url("../bg/bg-soc.jpg")) center / cover no-repeat;
 }
 
-#sky[data-bg="soc"] {
-  background:
-    radial-gradient(ellipse at 18% 78%, rgba(120, 190, 200, 0.28), transparent 32%),
-    radial-gradient(ellipse at 80% 10%, rgba(226, 177, 90, 0.16), transparent 28%),
-    linear-gradient(#1a2236, #121826 60%, #0e141f);
-}
-
-#sky[data-bg="day"] {
-  background:
-    radial-gradient(circle at 78% 18%, rgba(255, 236, 190, 0.95) 0 18px, transparent 19px),
-    linear-gradient(#f2e4c8 0%, #d5e2ee 42%, #8ea0b4 100%);
-}
-
-#sky[data-bg="wall"] {
-  background: linear-gradient(#e7d3ae, #c9a678 40%, #6d5136 100%);
-}
-
-#sky[data-bg="wall"]::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 48%;
-  background: linear-gradient(#8b6240, #4e3424);
-  clip-path: polygon(0 58%, 15% 34%, 32% 50%, 49% 16%, 67% 42%, 84% 24%, 100% 46%, 100% 100%, 0 100%);
-}
-
-#sky[data-bg="temple"] {
-  background:
-    linear-gradient(100deg, transparent 0 42%, rgba(92, 64, 48, 0.55) 42% 46%, transparent 46%),
-    linear-gradient(#243044, #141a24 70%);
-}
-
-#sky[data-bg="stars"],
-#sky[data-bg="beach"],
-#sky[data-bg="roof"] {
-  background:
-    linear-gradient(to top, rgba(6, 8, 16, 0.5), rgba(6, 8, 16, 0.05) 34%, rgba(6, 8, 16, 0.22)),
-    var(--ui-night) center / cover no-repeat;
-}
-
-#sky[data-bg="beach"] {
-  background:
-    linear-gradient(to top, rgba(4, 14, 24, 0.62), rgba(10, 28, 46, 0.28) 42%, rgba(6, 10, 20, 0.25)),
-    var(--ui-night) center 72% / cover no-repeat;
-}
-
-#sky[data-bg="roof"] {
-  background:
-    linear-gradient(rgba(6, 10, 18, 0.42), rgba(6, 10, 18, 0.55)),
-    var(--ui-night) center 28% / cover no-repeat;
-}
-
-#sky[data-bg="canteen"] {
-  background:
-    radial-gradient(ellipse at 50% 100%, rgba(226, 177, 90, 0.35), transparent 46%),
-    linear-gradient(#3a2c24, #241910);
-}
-
-#sky[data-bg="dawn"] {
-  background: linear-gradient(#f0ddc4 0%, #d5c2b0 28%, #8ea4c0 100%);
-}
+#sky[data-bg="soc"] { --sky-plate: url("../bg/bg-soc.jpg"); }
+#sky[data-bg="day"] { --sky-plate: url("../bg/bg-beach-day.jpg"); }
+#sky[data-bg="wall"] { --sky-plate: url("../bg/bg-badaling.jpg"); }
+#sky[data-bg="temple"] { --sky-plate: url("../bg/bg-xuankong.jpg"); }
+#sky[data-bg="stars"] { --sky-plate: url("../bg/bg-grassland.jpg"); }
+#sky[data-bg="beach"] { --sky-plate: url("../bg/bg-firefly.jpg"); }
+#sky[data-bg="roof"] { --sky-plate: url("../bg/bg-mmw.jpg"); }
+#sky[data-bg="canteen"] { --sky-plate: url("../bg/bg-canteen.jpg"); }
+#sky[data-bg="coffee"] { --sky-plate: url("../bg/bg-coffee.jpg"); }
+#sky[data-bg="dawn"] { --sky-plate: url("../bg/bg-beach-day.jpg"); }
 
 .laser {
   position: absolute;

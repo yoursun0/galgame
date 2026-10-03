@@ -1,6 +1,6 @@
 const protoRoot = new URL("./", import.meta.url);
 const repoRoot = new URL("../", protoRoot);
-const sharedPrefixes = ["characters/", "ui-gameplay2/", "sound/", "bgm/"];
+const sharedPrefixes = ["characters/", "ui-gameplay2/", "sound/", "bgm/", "bg/"];
 
 const server = Bun.serve({
   port: 4173,
@@ -23,7 +23,7 @@ const server = Bun.serve({
       }
     }
 
-    // prototype/index.html references ../characters, ../ui-gameplay2, ../sound, ../bgm.
+    // prototype/index.html references ../characters, ../ui-gameplay2, ../sound, ../bgm, ../bg.
     // From the site root those URLs arrive as /characters/… and so on.
     if (!sharedPrefixes.some((prefix) => rel.startsWith(prefix))) {
       return new Response("not found", { status: 404 });
