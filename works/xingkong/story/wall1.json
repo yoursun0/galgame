@@ -1,0 +1,54 @@
+{
+  "id": "wall1",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-badaling"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-05-sunset-plains"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "suting",
+      "expr": "03-worry",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "第三天。大鼻用童謠的調子哼著萬里長城，跟阿俊、寶方、綺珊跑在前頭。我沒有追。我認定的歷史意義，走在後面。"
+    },
+    {
+      "kind": "jump",
+      "to": "wall2"
+    }
+  ]
+}

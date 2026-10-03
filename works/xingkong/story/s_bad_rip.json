@@ -1,0 +1,73 @@
+{
+  "id": "s_bad_rip",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-firefly"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-15-bird-in-hand-night"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "suting",
+      "expr": "04-tears",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "我走過去叫家綸鬆手。素婷的眼淚掉下來，不是因為感動。家綸看我的樣子，像看一個把他推下長城的人。後來綺珊在電話裡罵我：要追就追，不要拿兄弟的難堪來成全自己。海邊的宿營散了。三個人，誰也不再把誰叫出來。"
+    },
+    {
+      "kind": "cg",
+      "action": "show",
+      "asset": "ending-suting-bad-rip"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-11-at-the-end-of-hope"
+    },
+    {
+      "kind": "narration",
+      "text": "拆穿"
+    },
+    {
+      "kind": "narration",
+      "text": "你把話說成了審判。兩個人都傷在你手上。"
+    },
+    {
+      "kind": "ending",
+      "id": "suting-bad-rip"
+    }
+  ]
+}

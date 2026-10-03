@@ -1,0 +1,54 @@
+{
+  "id": "temple_name2",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-xuankong"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-10-i-swear-i-saw-it"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "05-tearsmile",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "她說她叫黎芷君，中文系，合看一本團刊而已，倒不必記到畢業。綺珊嘖了一聲，居然沒有再加碼。素婷和家綸上來時，素婷只提醒欄杆別靠那麼出去。我這次沒有編典故。"
+    },
+    {
+      "kind": "jump",
+      "to": "star1"
+    }
+  ]
+}

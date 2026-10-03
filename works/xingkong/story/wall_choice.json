@@ -1,0 +1,63 @@
+{
+  "id": "wall_choice",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-badaling"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-05-sunset-plains"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "suting",
+      "expr": "01-smile",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "家綸和會長在關口拍照。再往上是最陡的一段，綺珊跑在最前。素婷用手帕印著汗，笑我孱弱。我可以陪她把這段走完，也可以追上去，證明自己不是悶蛋。"
+    },
+    {
+      "kind": "choice",
+      "options": [
+        {
+          "text": "在關口坐下，然後一級一級跟在她後面。",
+          "jump": "wall_choice__0"
+        },
+        {
+          "text": "追上去。總不能看起來跑輸給綺珊。",
+          "jump": "wall_choice__1"
+        }
+      ]
+    }
+  ]
+}

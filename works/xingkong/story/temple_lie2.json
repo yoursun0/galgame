@@ -1,0 +1,54 @@
+{
+  "id": "temple_lie2",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-xuankong"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-10-i-swear-i-saw-it"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "suting",
+      "expr": "01-smile",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "綺珊拆穿我。家綸卻在這時鑽出來，身後還跟著素婷，一口一句緣訂七世。我看著素婷，把懸空寺編成牛郎織女第五世的假典故。她聽得很認真。我到最後也沒問那個名字。她一直是「當然可以小姐」。"
+    },
+    {
+      "kind": "jump",
+      "to": "star1"
+    }
+  ]
+}

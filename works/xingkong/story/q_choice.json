@@ -1,0 +1,67 @@
+{
+  "id": "q_choice",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-coffee"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-07-emotional-piano-loop"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "qishan",
+      "expr": "05-wink",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "黑加侖子的冰融了。她看著我，等一個不是笑話的開頭。"
+    },
+    {
+      "kind": "choice",
+      "options": [
+        {
+          "text": "告訴她：我約你，不是為了素婷，也不是為了家綸。",
+          "jump": "q_choice__0"
+        },
+        {
+          "text": "答應家綸。讓他去說。你去忙你的。",
+          "jump": "q_bad_setup"
+        },
+        {
+          "text": "把杯子喝完，打個哈哈就走。",
+          "jump": "q_bad_cool"
+        }
+      ]
+    }
+  ]
+}

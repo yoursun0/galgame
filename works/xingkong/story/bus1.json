@@ -1,0 +1,48 @@
+{
+  "id": "bus1",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-bus"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-12-village-2018"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "cg",
+      "action": "show",
+      "asset": "cg-baofang-bus"
+    },
+    {
+      "kind": "narration",
+      "text": "去長城的車上很擠。寶方佔了窗，把牌攤在膝上給人看。我抱著不夠的團刊，一下也不敢放。"
+    },
+    {
+      "kind": "jump",
+      "to": "wall1"
+    }
+  ]
+}

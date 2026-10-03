@@ -1,0 +1,73 @@
+{
+  "id": "q_true2",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-coffee"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-07-emotional-piano-loop"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "qishan",
+      "expr": "02-laugh",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "她愣了一下，然後笑罵了一句很長的話。沒有掉頭走。咖啡涼了也沒關係。家綸的事，我當天親自跟他說了不。他難過，可是他沒有被推進一個局裡。"
+    },
+    {
+      "kind": "cg",
+      "action": "show",
+      "asset": "ending-qishan-true"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-02-first-light-particles"
+    },
+    {
+      "kind": "narration",
+      "text": "不當觀眾"
+    },
+    {
+      "kind": "narration",
+      "text": "車站你先把團刊說明白了。她才相信這次不是歡迎辭。"
+    },
+    {
+      "kind": "ending",
+      "id": "qishan-true"
+    }
+  ]
+}

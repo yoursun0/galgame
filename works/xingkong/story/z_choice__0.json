@@ -1,0 +1,18 @@
+{
+  "id": "z_choice__0",
+  "instructions": [
+    {
+      "kind": "jump",
+      "to": "z_true1",
+      "when": {
+        "cmp": "eq",
+        "var": "zhijunName",
+        "value": true
+      }
+    },
+    {
+      "kind": "jump",
+      "to": "z_good1"
+    }
+  ]
+}

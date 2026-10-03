@@ -1,0 +1,73 @@
+{
+  "id": "z_bad_shield",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-canteen"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-08-dream-ambience"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "03-glare",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "我說你借我個名義吧，我跟他們說我有女朋友，就可以安心走了。她說當然不可以。只有三歲小朋友才信這個。而且我到現在還不清楚，是誰在背後替我收拾這些無聊事。橡筋彈在我臉上。她站起來。以後她還是會笑，只是不再等我講完。"
+    },
+    {
+      "kind": "cg",
+      "action": "show",
+      "asset": "ending-zhijun-bad-shield"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-11-at-the-end-of-hope"
+    },
+    {
+      "kind": "narration",
+      "text": "擋箭牌"
+    },
+    {
+      "kind": "narration",
+      "text": "你把她變成掩飾。原文裡她看穿的就是這個。"
+    },
+    {
+      "kind": "ending",
+      "id": "zhijun-bad-shield"
+    }
+  ]
+}

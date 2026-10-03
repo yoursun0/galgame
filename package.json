@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "vite",
     "test": "bun test",
-    "check": "bun src/check-cli.ts works/mystery-fixture"
+    "check": "bun src/check-cli.ts works/mystery-fixture && bun src/check-cli.ts works/xingkong"
   },
   "devDependencies": {
     "bun-types": "^1.4.2",

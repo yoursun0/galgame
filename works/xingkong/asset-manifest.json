@@ -1,0 +1,444 @@
+[
+  {
+    "id": "bg-badaling",
+    "path": "assets/bg/bg-badaling.jpg",
+    "type": "background",
+    "approved": true
+  },
+  {
+    "id": "bg-beach-day",
+    "path": "assets/bg/bg-beach-day.jpg",
+    "type": "background",
+    "approved": true
+  },
+  {
+    "id": "bg-bus",
+    "path": "assets/bg/bg-bus.jpg",
+    "type": "background",
+    "approved": true
+  },
+  {
+    "id": "bg-canteen",
+    "path": "assets/bg/bg-canteen.jpg",
+    "type": "background",
+    "approved": true
+  },
+  {
+    "id": "bg-coffee",
+    "path": "assets/bg/bg-coffee.jpg",
+    "type": "background",
+    "approved": true
+  },
+  {
+    "id": "bg-firefly",
+    "path": "assets/bg/bg-firefly.jpg",
+    "type": "background",
+    "approved": true
+  },
+  {
+    "id": "bg-grassland",
+    "path": "assets/bg/bg-grassland.jpg",
+    "type": "background",
+    "approved": true
+  },
+  {
+    "id": "bg-mmw",
+    "path": "assets/bg/bg-mmw.jpg",
+    "type": "background",
+    "approved": true
+  },
+  {
+    "id": "bg-soc",
+    "path": "assets/bg/bg-soc.jpg",
+    "type": "background",
+    "approved": true
+  },
+  {
+    "id": "bg-xuankong",
+    "path": "assets/bg/bg-xuankong.jpg",
+    "type": "background",
+    "approved": true
+  },
+  {
+    "id": "bgm-01-starfield-romance",
+    "path": "assets/bgm/01-starfield-romance.mp3",
+    "type": "bgm",
+    "approved": true,
+    "license": "CC0-1.0",
+    "credit": ""
+  },
+  {
+    "id": "bgm-02-first-light-particles",
+    "path": "assets/bgm/02-first-light-particles.mp3",
+    "type": "bgm",
+    "approved": true,
+    "license": "CC0-1.0",
+    "credit": ""
+  },
+  {
+    "id": "bgm-04-yoiyami-core-theme",
+    "path": "assets/bgm/04-yoiyami-core-theme.mp3",
+    "type": "bgm",
+    "approved": true,
+    "license": "CC0-1.0",
+    "credit": ""
+  },
+  {
+    "id": "bgm-05-sunset-plains",
+    "path": "assets/bgm/05-sunset-plains.mp3",
+    "type": "bgm",
+    "approved": true,
+    "license": "CC0-1.0",
+    "credit": ""
+  },
+  {
+    "id": "bgm-07-emotional-piano-loop",
+    "path": "assets/bgm/07-emotional-piano-loop.mp3",
+    "type": "bgm",
+    "approved": true,
+    "license": "CC0-1.0",
+    "credit": ""
+  },
+  {
+    "id": "bgm-08-dream-ambience",
+    "path": "assets/bgm/08-dream-ambience.mp3",
+    "type": "bgm",
+    "approved": true,
+    "license": "CC0-1.0",
+    "credit": ""
+  },
+  {
+    "id": "bgm-09-nighttime-solitude",
+    "path": "assets/bgm/09-nighttime-solitude.mp3",
+    "type": "bgm",
+    "approved": true,
+    "license": "CC0-1.0",
+    "credit": ""
+  },
+  {
+    "id": "bgm-10-i-swear-i-saw-it",
+    "path": "assets/bgm/10-i-swear-i-saw-it.mp3",
+    "type": "bgm",
+    "approved": true,
+    "license": "CC0-1.0",
+    "credit": ""
+  },
+  {
+    "id": "bgm-11-at-the-end-of-hope",
+    "path": "assets/bgm/11-at-the-end-of-hope.mp3",
+    "type": "bgm",
+    "approved": true,
+    "license": "CC0-1.0",
+    "credit": ""
+  },
+  {
+    "id": "bgm-12-village-2018",
+    "path": "assets/bgm/12-village-2018.mp3",
+    "type": "bgm",
+    "approved": true,
+    "license": "CC0-1.0",
+    "credit": ""
+  },
+  {
+    "id": "bgm-13-peaceful-tune-2",
+    "path": "assets/bgm/13-peaceful-tune-2.mp3",
+    "type": "bgm",
+    "approved": true,
+    "license": "CC0-1.0",
+    "credit": ""
+  },
+  {
+    "id": "bgm-15-bird-in-hand-night",
+    "path": "assets/bgm/15-bird-in-hand-night.mp3",
+    "type": "bgm",
+    "approved": true,
+    "license": "CC0-1.0",
+    "credit": ""
+  },
+  {
+    "id": "bgm-16-town-theme-rpg",
+    "path": "assets/bgm/16-town-theme-rpg.mp3",
+    "type": "bgm",
+    "approved": true,
+    "license": "CC0-1.0",
+    "credit": ""
+  },
+  {
+    "id": "cg-ajun-roof",
+    "path": "assets/cg/cg-ajun-roof.jpg",
+    "type": "cg",
+    "approved": true
+  },
+  {
+    "id": "cg-baofang-bus",
+    "path": "assets/cg/cg-baofang-bus.jpg",
+    "type": "cg",
+    "approved": true
+  },
+  {
+    "id": "cg-huizhang-stone",
+    "path": "assets/cg/cg-huizhang-stone.jpg",
+    "type": "cg",
+    "approved": true
+  },
+  {
+    "id": "cg-jialun-leap",
+    "path": "assets/cg/cg-jialun-leap.jpg",
+    "type": "cg",
+    "approved": true
+  },
+  {
+    "id": "cg-lingchen-beach",
+    "path": "assets/cg/cg-lingchen-beach.jpg",
+    "type": "cg",
+    "approved": true
+  },
+  {
+    "id": "cg-qishan-temple",
+    "path": "assets/cg/cg-qishan-temple.jpg",
+    "type": "cg",
+    "approved": true
+  },
+  {
+    "id": "cg-suting-orion",
+    "path": "assets/cg/cg-suting-orion.jpg",
+    "type": "cg",
+    "approved": true
+  },
+  {
+    "id": "cg-youmu-night",
+    "path": "assets/cg/cg-youmu-night.jpg",
+    "type": "cg",
+    "approved": true
+  },
+  {
+    "id": "cg-zhijun-firefly",
+    "path": "assets/cg/cg-zhijun-firefly.jpg",
+    "type": "cg",
+    "approved": true
+  },
+  {
+    "id": "ending-qishan-bad-cool",
+    "path": "assets/cg/ending-qishan-bad-cool.jpg",
+    "type": "cg",
+    "approved": true
+  },
+  {
+    "id": "ending-qishan-bad-setup",
+    "path": "assets/cg/ending-qishan-bad-setup.jpg",
+    "type": "cg",
+    "approved": true
+  },
+  {
+    "id": "ending-qishan-good",
+    "path": "assets/cg/ending-qishan-good.jpg",
+    "type": "cg",
+    "approved": true
+  },
+  {
+    "id": "ending-qishan-true",
+    "path": "assets/cg/ending-qishan-true.jpg",
+    "type": "cg",
+    "approved": true
+  },
+  {
+    "id": "ending-suting-bad-leave",
+    "path": "assets/cg/ending-suting-bad-leave.jpg",
+    "type": "cg",
+    "approved": true
+  },
+  {
+    "id": "ending-suting-bad-rip",
+    "path": "assets/cg/ending-suting-bad-rip.jpg",
+    "type": "cg",
+    "approved": true
+  },
+  {
+    "id": "ending-suting-good",
+    "path": "assets/cg/ending-suting-good.jpg",
+    "type": "cg",
+    "approved": true
+  },
+  {
+    "id": "ending-suting-true",
+    "path": "assets/cg/ending-suting-true.jpg",
+    "type": "cg",
+    "approved": true
+  },
+  {
+    "id": "ending-zhijun-bad-bridge",
+    "path": "assets/cg/ending-zhijun-bad-bridge.jpg",
+    "type": "cg",
+    "approved": true
+  },
+  {
+    "id": "ending-zhijun-bad-shield",
+    "path": "assets/cg/ending-zhijun-bad-shield.jpg",
+    "type": "cg",
+    "approved": true
+  },
+  {
+    "id": "ending-zhijun-good",
+    "path": "assets/cg/ending-zhijun-good.jpg",
+    "type": "cg",
+    "approved": true
+  },
+  {
+    "id": "ending-zhijun-true",
+    "path": "assets/cg/ending-zhijun-true.jpg",
+    "type": "cg",
+    "approved": true
+  },
+  {
+    "id": "sprite-lingchen-01-shrug",
+    "path": "assets/sprites/lingchen/01-shrug.png",
+    "type": "actor",
+    "approved": true,
+    "character": "lingchen",
+    "expr": "01-shrug"
+  },
+  {
+    "id": "sprite-lingchen-02-blush",
+    "path": "assets/sprites/lingchen/02-blush.png",
+    "type": "actor",
+    "approved": true,
+    "character": "lingchen",
+    "expr": "02-blush"
+  },
+  {
+    "id": "sprite-lingchen-04-cold",
+    "path": "assets/sprites/lingchen/04-cold.png",
+    "type": "actor",
+    "approved": true,
+    "character": "lingchen",
+    "expr": "04-cold"
+  },
+  {
+    "id": "sprite-lingchen-05-fire",
+    "path": "assets/sprites/lingchen/05-fire.png",
+    "type": "actor",
+    "approved": true,
+    "character": "lingchen",
+    "expr": "05-fire"
+  },
+  {
+    "id": "sprite-qishan-01-grin",
+    "path": "assets/sprites/qishan/01-grin.png",
+    "type": "actor",
+    "approved": true,
+    "character": "qishan",
+    "expr": "01-grin"
+  },
+  {
+    "id": "sprite-qishan-02-laugh",
+    "path": "assets/sprites/qishan/02-laugh.png",
+    "type": "actor",
+    "approved": true,
+    "character": "qishan",
+    "expr": "02-laugh"
+  },
+  {
+    "id": "sprite-qishan-03-angry",
+    "path": "assets/sprites/qishan/03-angry.png",
+    "type": "actor",
+    "approved": true,
+    "character": "qishan",
+    "expr": "03-angry"
+  },
+  {
+    "id": "sprite-qishan-04-loud",
+    "path": "assets/sprites/qishan/04-loud.png",
+    "type": "actor",
+    "approved": true,
+    "character": "qishan",
+    "expr": "04-loud"
+  },
+  {
+    "id": "sprite-qishan-05-wink",
+    "path": "assets/sprites/qishan/05-wink.png",
+    "type": "actor",
+    "approved": true,
+    "character": "qishan",
+    "expr": "05-wink"
+  },
+  {
+    "id": "sprite-suting-01-smile",
+    "path": "assets/sprites/suting/01-smile.png",
+    "type": "actor",
+    "approved": true,
+    "character": "suting",
+    "expr": "01-smile"
+  },
+  {
+    "id": "sprite-suting-02-sigh",
+    "path": "assets/sprites/suting/02-sigh.png",
+    "type": "actor",
+    "approved": true,
+    "character": "suting",
+    "expr": "02-sigh"
+  },
+  {
+    "id": "sprite-suting-03-worry",
+    "path": "assets/sprites/suting/03-worry.png",
+    "type": "actor",
+    "approved": true,
+    "character": "suting",
+    "expr": "03-worry"
+  },
+  {
+    "id": "sprite-suting-04-tears",
+    "path": "assets/sprites/suting/04-tears.png",
+    "type": "actor",
+    "approved": true,
+    "character": "suting",
+    "expr": "04-tears"
+  },
+  {
+    "id": "sprite-suting-05-spring",
+    "path": "assets/sprites/suting/05-spring.png",
+    "type": "actor",
+    "approved": true,
+    "character": "suting",
+    "expr": "05-spring"
+  },
+  {
+    "id": "sprite-zhijun-01-laugh",
+    "path": "assets/sprites/zhijun/01-laugh.png",
+    "type": "actor",
+    "approved": true,
+    "character": "zhijun",
+    "expr": "01-laugh"
+  },
+  {
+    "id": "sprite-zhijun-02-hips",
+    "path": "assets/sprites/zhijun/02-hips.png",
+    "type": "actor",
+    "approved": true,
+    "character": "zhijun",
+    "expr": "02-hips"
+  },
+  {
+    "id": "sprite-zhijun-03-glare",
+    "path": "assets/sprites/zhijun/03-glare.png",
+    "type": "actor",
+    "approved": true,
+    "character": "zhijun",
+    "expr": "03-glare"
+  },
+  {
+    "id": "sprite-zhijun-04-puff",
+    "path": "assets/sprites/zhijun/04-puff.png",
+    "type": "actor",
+    "approved": true,
+    "character": "zhijun",
+    "expr": "04-puff"
+  },
+  {
+    "id": "sprite-zhijun-05-tearsmile",
+    "path": "assets/sprites/zhijun/05-tearsmile.png",
+    "type": "actor",
+    "approved": true,
+    "character": "zhijun",
+    "expr": "05-tearsmile"
+  }
+]

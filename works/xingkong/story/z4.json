@@ -1,0 +1,55 @@
+{
+  "id": "z4",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-canteen"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-08-dream-ambience"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "04-puff",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "show",
+      "asset": "cg-youmu-night"
+    },
+    {
+      "kind": "narration",
+      "text": "她玩著一根橡筋，想折一顆星，折不好。她在等的那個人叫游牧。六年前那一夜，他為了救一個怕狗的小孩受了傷。那個小孩是我。她不知道我聽懂了她的心還在那邊。我也不知道，她有沒有留一點位置給現在這個坐到打烊的人。"
+    },
+    {
+      "kind": "jump",
+      "to": "z_choice"
+    }
+  ]
+}

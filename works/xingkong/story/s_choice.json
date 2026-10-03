@@ -1,0 +1,67 @@
+{
+  "id": "s_choice",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-firefly"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-15-bird-in-hand-night"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "suting",
+      "expr": "01-smile",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "參宿四是紅的。電筒還在我手裡。這一次，沒有典故可以借。"
+    },
+    {
+      "kind": "choice",
+      "options": [
+        {
+          "text": "在他開口之前去找素婷，把那句話說完。",
+          "jump": "s_choice__0"
+        },
+        {
+          "text": "關掉電筒。讓那兩個影子靠在一起。",
+          "jump": "s_bad_leave"
+        },
+        {
+          "text": "走過去把他們拉開，問這算甚麼兄弟。",
+          "jump": "s_bad_rip"
+        }
+      ]
+    }
+  ]
+}

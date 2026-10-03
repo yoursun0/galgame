@@ -1,0 +1,73 @@
+{
+  "id": "z_good1",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-canteen"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-08-dream-ambience"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "05-tearsmile",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "她說你很認真。可是你到現在還叫我當然可以小姐。我補問她的名字。她說晚了。不是不喜歡你。懸空寺那天你沒有問。不論是胡扯一場，還是把話吞回去，她都沒有在第一天聽見自己的名字。她不要在下一段故事裡，才第一次出現。她還是把我送到車站。眾志堂的位子，她有時還會坐。"
+    },
+    {
+      "kind": "cg",
+      "action": "show",
+      "asset": "ending-zhijun-good"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-04-yoiyami-core-theme"
+    },
+    {
+      "kind": "narration",
+      "text": "未問之名"
+    },
+    {
+      "kind": "narration",
+      "text": "告白是真的，可是你第一天沒有問名字。她留下門，沒有答應。"
+    },
+    {
+      "kind": "ending",
+      "id": "zhijun-good"
+    }
+  ]
+}

@@ -4,51 +4,91 @@ import { mountStage } from "./stage.ts";
 import { loadTheme } from "./theme.ts";
 import type { AssetRecord, PlayState, Scene, Work, WorkManifest } from "./types.ts";
 
-import manifest from "../works/mystery-fixture/work.json";
-import assetManifest from "../works/mystery-fixture/asset-manifest.json";
-import ask from "../works/mystery-fixture/story/ask.json";
-import corridor from "../works/mystery-fixture/story/corridor.json";
-import done from "../works/mystery-fixture/story/done.json";
-import drawer from "../works/mystery-fixture/story/drawer.json";
-import lock from "../works/mystery-fixture/story/lock.json";
-
-const scenes = [corridor, lock, drawer, ask, done] as Scene[];
-const work: Work = {
-  manifest: manifest as WorkManifest,
-  scenes,
-};
-const assets = assetManifest as AssetRecord[];
-
-const bundled: Record<string, string> = {
-  "assets/bg-soc.jpg": new URL("../works/mystery-fixture/assets/bg-soc.jpg", import.meta.url).href,
-  "assets/actor-admin-near.png": new URL(
-    "../works/mystery-fixture/assets/actor-admin-near.png",
-    import.meta.url,
-  ).href,
-  "assets/actor-admin-far.png": new URL(
-    "../works/mystery-fixture/assets/actor-admin-far.png",
-    import.meta.url,
-  ).href,
-  "assets/ending-stop.jpg": new URL(
-    "../works/mystery-fixture/assets/ending-stop.jpg",
-    import.meta.url,
-  ).href,
-  "assets/bgm-starfield.mp3": new URL(
-    "../works/mystery-fixture/assets/bgm-starfield.mp3",
-    import.meta.url,
-  ).href,
-  "assets/bgm-village.mp3": new URL(
-    "../works/mystery-fixture/assets/bgm-village.mp3",
-    import.meta.url,
-  ).href,
-};
-
-const urls = new Map<string, string>();
-for (const asset of assets) {
-  const url = bundled[asset.path];
-  if (!url) throw new Error(`missing bundled asset ${asset.path}`);
-  urls.set(asset.id, url);
+/**
+ * Default playable work is xingkong (v0.3 trial).
+ * `?work=mystery-fixture` loads the other bundled work. Any id under works/ is accepted.
+ */
+declare global {
+  interface ImportMeta {
+    glob: (
+      pattern: string,
+      options?: { eager?: boolean; query?: string; import?: string },
+    ) => Record<string, unknown>;
+  }
 }
+
+const workModules = import.meta.glob("../works/*/work.json", { eager: true });
+const assetModules = import.meta.glob("../works/*/asset-manifest.json", { eager: true });
+const storyModules = import.meta.glob("../works/*/story/*.json", { eager: true });
+const assetUrlModules = import.meta.glob("../works/*/assets/**/*", {
+  eager: true,
+  query: "?url",
+  import: "default",
+});
+
+function unwrap<T>(mod: unknown): T {
+  if (mod && typeof mod === "object" && "default" in mod) {
+    return (mod as { default: T }).default;
+  }
+  return mod as T;
+}
+
+function asUrl(value: unknown): string | null {
+  if (typeof value === "string") return value;
+  return unwrap<string>(value) || null;
+}
+
+function endsWithWorkPath(key: string, id: string, rel: string): boolean {
+  const normalized = key.replaceAll("\\", "/");
+  return normalized.endsWith(`/works/${id}/${rel}`);
+}
+
+function moduleFor(table: Record<string, unknown>, id: string, rel: string): unknown {
+  const key = Object.keys(table).find((item) => endsWithWorkPath(item, id, rel));
+  if (!key) return undefined;
+  return table[key];
+}
+
+function bundledWorkIds(): string[] {
+  const ids = new Set<string>();
+  for (const key of Object.keys(workModules)) {
+    const match = key.replaceAll("\\", "/").match(/\/works\/([^/]+)\/work\.json$/);
+    if (match) ids.add(match[1]);
+  }
+  return [...ids];
+}
+
+function loadBundled(id: string): { work: Work; assets: AssetRecord[]; urls: Map<string, string> } {
+  const manifestMod = moduleFor(workModules, id, "work.json");
+  const assetMod = moduleFor(assetModules, id, "asset-manifest.json");
+  if (!manifestMod || !assetMod) {
+    throw new Error(
+      `unknown work ${id}. bundled: ${bundledWorkIds().join(", ") || "(none)"}`,
+    );
+  }
+  const manifest = unwrap<WorkManifest>(manifestMod);
+  const assets = unwrap<AssetRecord[]>(assetMod);
+  const scenes = manifest.scenes.map((rel) => {
+    const mod = moduleFor(storyModules, id, rel);
+    if (!mod) throw new Error(`missing bundled scene ${id} ${rel}`);
+    return unwrap<Scene>(mod);
+  });
+  const urls = new Map<string, string>();
+  for (const asset of assets) {
+    const mod = moduleFor(assetUrlModules, id, asset.path);
+    const url = mod === undefined ? null : asUrl(mod);
+    if (!url) throw new Error(`missing bundled asset ${id} ${asset.path}`);
+    urls.set(asset.id, url);
+  }
+  return { work: { manifest, scenes }, assets, urls };
+}
+
+const requested = new URLSearchParams(window.location.search).get("work");
+const workId = requested && requested.length > 0 ? requested : "xingkong";
+const loaded = loadBundled(workId);
+const work = loaded.work;
+const assets = loaded.assets;
+const urls = loaded.urls;
 
 const theme = loadTheme();
 const app = document.querySelector("#app");

@@ -1,0 +1,73 @@
+{
+  "id": "q_good1",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-coffee"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-07-emotional-piano-loop"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "qishan",
+      "expr": "05-wink",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "我說留下來的人是你，可不可以不要再當紅娘。她說這段說得真好，好得像團刊開頭那段編給團友看的歡迎辭。車站那天我把團刊塞過去，連多的半句都沒有。她說這份認真先存著。等哪天我不用靠一個故事來見她，再問一次。她還是會接電話。只是接起來先笑我。故事還是她在聽。"
+    },
+    {
+      "kind": "cg",
+      "action": "show",
+      "asset": "ending-qishan-good"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-04-yoiyami-core-theme"
+    },
+    {
+      "kind": "narration",
+      "text": "歡迎辭"
+    },
+    {
+      "kind": "narration",
+      "text": "你轉向她了，可是車站那天仍在裝酷。她把告白先存著。"
+    },
+    {
+      "kind": "ending",
+      "id": "qishan-good"
+    }
+  ]
+}

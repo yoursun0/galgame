@@ -1,0 +1,58 @@
+{
+  "id": "midcard",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-grassland"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-01-starfield-romance"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "02-blush",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "背後有人叫我"
+    },
+    {
+      "kind": "narration",
+      "text": "風把空袖吹起來。車站有沒有把團刊對綺珊說明白，長城有沒有停在素婷那一級，懸空寺有沒有問出黎芷君的名字——都已經發生過，風帶不走。我沒有回頭查對。我只聽見暗處有人叫我。這一聲要是接錯，後面的夜就不是同一夜。"
+    },
+    {
+      "kind": "jump",
+      "to": "branch"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "id": "z_bad_bridge",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-canteen"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-08-dream-ambience"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "04-puff",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "我把草原上那套理論原封不動送給她：沒有結果的愛情最殘酷，所以你更應該回去。我退出。她看我的樣子，像看一個親手把銀河劃寬的人。游牧來找她的晚上，我不在場。聽說他們試了，也聽說還是過不成。而我連再問一次「可不可以」的資格都交出去了。"
+    },
+    {
+      "kind": "cg",
+      "action": "show",
+      "asset": "ending-zhijun-bad-bridge"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-11-at-the-end-of-hope"
+    },
+    {
+      "kind": "narration",
+      "text": "劃河"
+    },
+    {
+      "kind": "narration",
+      "text": "你把自己講過的殘酷懲罰，做成了她的結局。"
+    },
+    {
+      "kind": "ending",
+      "id": "zhijun-bad-bridge"
+    }
+  ]
+}

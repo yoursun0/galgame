@@ -1,0 +1,73 @@
+{
+  "id": "s_true3",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-beach-day"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-02-first-light-particles"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "suting",
+      "expr": "05-spring",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "黎明時我去告訴家綸。他哭了，可是他聽懂了。沒有人被推進一個假故事裡。素婷站在石灘上，海風把頭髮吹過來。我們沒有立刻成為傳說。我們只是從那一夜開始，走在同一級石階上。"
+    },
+    {
+      "kind": "cg",
+      "action": "show",
+      "asset": "ending-suting-true"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-02-first-light-particles"
+    },
+    {
+      "kind": "narration",
+      "text": "星夜"
+    },
+    {
+      "kind": "narration",
+      "text": "長城上你跟了她的步伐。最後這句才不像又一次表演。"
+    },
+    {
+      "kind": "ending",
+      "id": "suting-true"
+    }
+  ]
+}

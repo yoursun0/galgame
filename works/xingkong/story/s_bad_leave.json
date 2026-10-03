@@ -1,0 +1,66 @@
+{
+  "id": "s_bad_leave",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-firefly"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-15-bird-in-hand-night"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "我關掉電筒。兩個影子靠在一起。星光照清楚的那張臉，是素婷。我沒有出聲。回到中大，我用物理系的功課推掉每一次莊聚。講室裡的激光筆劃過白板。我看不進去。原來，沒有。"
+    },
+    {
+      "kind": "cg",
+      "action": "show",
+      "asset": "ending-suting-bad-leave"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-11-at-the-end-of-hope"
+    },
+    {
+      "kind": "narration",
+      "text": "原來沒有"
+    },
+    {
+      "kind": "narration",
+      "text": "你看見了，然後離開。這是原文裡那個沒有說出口的夜晚。"
+    },
+    {
+      "kind": "ending",
+      "id": "suting-bad-leave"
+    }
+  ]
+}

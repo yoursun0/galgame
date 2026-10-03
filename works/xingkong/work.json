@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": 1,
+  "id": "xingkong",
+  "title": "星空情緣",
+  "language": "zh-Hant",
+  "start": "open1",
+  "characters": [
+    {
+      "id": "lingchen",
+      "name": "凌晨",
+      "sprites": {
+        "01-shrug": "sprite-lingchen-01-shrug",
+        "05-fire": "sprite-lingchen-05-fire",
+        "02-blush": "sprite-lingchen-02-blush",
+        "04-cold": "sprite-lingchen-04-cold",
+        "near": "sprite-lingchen-01-shrug",
+        "far": "sprite-lingchen-01-shrug"
+      }
+    },
+    {
+      "id": "suting",
+      "name": "素婷",
+      "sprites": {
+        "01-smile": "sprite-suting-01-smile",
+        "02-sigh": "sprite-suting-02-sigh",
+        "03-worry": "sprite-suting-03-worry",
+        "05-spring": "sprite-suting-05-spring",
+        "04-tears": "sprite-suting-04-tears",
+        "near": "sprite-suting-01-smile",
+        "far": "sprite-suting-01-smile"
+      }
+    },
+    {
+      "id": "qishan",
+      "name": "綺珊",
+      "sprites": {
+        "01-grin": "sprite-qishan-01-grin",
+        "04-loud": "sprite-qishan-04-loud",
+        "05-wink": "sprite-qishan-05-wink",
+        "03-angry": "sprite-qishan-03-angry",
+        "02-laugh": "sprite-qishan-02-laugh",
+        "near": "sprite-qishan-01-grin",
+        "far": "sprite-qishan-01-grin"
+      }
+    },
+    {
+      "id": "zhijun",
+      "name": "芷君",
+      "sprites": {
+        "01-laugh": "sprite-zhijun-01-laugh",
+        "02-hips": "sprite-zhijun-02-hips",
+        "05-tearsmile": "sprite-zhijun-05-tearsmile",
+        "03-glare": "sprite-zhijun-03-glare",
+        "04-puff": "sprite-zhijun-04-puff",
+        "near": "sprite-zhijun-01-laugh",
+        "far": "sprite-zhijun-01-laugh"
+      }
+    },
+    {
+      "id": "jialun",
+      "name": "家綸"
+    },
+    {
+      "id": "huizhang",
+      "name": "會長"
+    }
+  ],
+  "variables": [
+    {
+      "name": "qishanHonest",
+      "type": "boolean",
+      "initial": false
+    },
+    {
+      "name": "sutingWalk",
+      "type": "boolean",
+      "initial": false
+    },
+    {
+      "name": "zhijunName",
+      "type": "boolean",
+      "initial": false
+    }
+  ],
+  "scenes": [
+    "story/open1.json",
+    "story/open2.json",
+    "story/open3.json",
+    "story/st1.json",
+    "story/st2.json",
+    "story/st3.json",
+    "story/st4.json",
+    "story/st5.json",
+    "story/qi_choice.json",
+    "story/qi_cool1.json",
+    "story/qi_cool2.json",
+    "story/qi_cool3.json",
+    "story/qi_cool4.json",
+    "story/qi_honest1.json",
+    "story/qi_honest2.json",
+    "story/qi_honest3.json",
+    "story/qi_honest4.json",
+    "story/zj1.json",
+    "story/zj2.json",
+    "story/zj3.json",
+    "story/zj4.json",
+    "story/bus1.json",
+    "story/wall1.json",
+    "story/wall2.json",
+    "story/wall3.json",
+    "story/wall_choice.json",
+    "story/wall_slow1.json",
+    "story/wall_slow2.json",
+    "story/wall_slow3.json",
+    "story/wall_slow4.json",
+    "story/wall_run1.json",
+    "story/wall_run2.json",
+    "story/temple1.json",
+    "story/temple2.json",
+    "story/temple_choice.json",
+    "story/temple_hold1.json",
+    "story/temple_lie1.json",
+    "story/temple_lie2.json",
+    "story/temple_name1.json",
+    "story/temple_name2.json",
+    "story/star1.json",
+    "story/star2.json",
+    "story/star3.json",
+    "story/star4.json",
+    "story/star5.json",
+    "story/midcard.json",
+    "story/branch.json",
+    "story/s1.json",
+    "story/s2.json",
+    "story/s3.json",
+    "story/s4.json",
+    "story/s4b.json",
+    "story/s_leap.json",
+    "story/s_choice.json",
+    "story/s_true1.json",
+    "story/s_true2.json",
+    "story/s_true3.json",
+    "story/s_good1.json",
+    "story/s_good2.json",
+    "story/s_bad_leave.json",
+    "story/s_bad_rip.json",
+    "story/z1.json",
+    "story/z2.json",
+    "story/z3.json",
+    "story/z3b.json",
+    "story/z4.json",
+    "story/z_choice.json",
+    "story/z_true1.json",
+    "story/z_true2.json",
+    "story/z_good1.json",
+    "story/z_bad_shield.json",
+    "story/z_bad_bridge.json",
+    "story/q1.json",
+    "story/q2.json",
+    "story/q3.json",
+    "story/q4.json",
+    "story/q_choice.json",
+    "story/q_true1.json",
+    "story/q_true2.json",
+    "story/q_good1.json",
+    "story/q_bad_setup.json",
+    "story/q_bad_cool.json",
+    "story/qi_choice__0.json",
+    "story/qi_choice__1.json",
+    "story/wall_choice__0.json",
+    "story/wall_choice__1.json",
+    "story/temple_choice__0.json",
+    "story/temple_choice__1.json",
+    "story/temple_choice__2.json",
+    "story/s_choice__0.json",
+    "story/z_choice__0.json",
+    "story/q_choice__0.json"
+  ]
+}
