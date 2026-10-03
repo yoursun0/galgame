@@ -1,7 +1,35 @@
 {
   "id": "lock",
   "instructions": [
-    { "kind": "set", "var": "locked", "value": true },
-    { "kind": "jump", "to": "done" }
+    {
+      "kind": "set",
+      "var": "locked",
+      "value": true
+    },
+    {
+      "kind": "actor",
+      "action": "update",
+      "id": "admin",
+      "position": "far"
+    },
+    {
+      "kind": "audio",
+      "action": "stop",
+      "channel": "bgm"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-village"
+    },
+    {
+      "kind": "wait",
+      "ms": 400
+    },
+    {
+      "kind": "jump",
+      "to": "done"
+    }
   ]
 }

@@ -5,8 +5,23 @@
   "title": "mystery-fixture",
   "language": "zh-Hant",
   "start": "corridor",
-  "characters": [{ "id": "admin", "name": "管理員" }],
-  "variables": [{ "name": "locked", "type": "boolean", "initial": false }],
+  "characters": [
+    {
+      "id": "admin",
+      "name": "管理員",
+      "sprites": {
+        "near": "actor-admin-near",
+        "far": "actor-admin-far"
+      }
+    }
+  ],
+  "variables": [
+    {
+      "name": "locked",
+      "type": "boolean",
+      "initial": false
+    }
+  ],
   "scenes": [
     "story/corridor.json",
     "story/lock.json",

@@ -110,6 +110,25 @@ export function checkWork(rootDir: string): {
     }
   }
 
+  if (Array.isArray(manifest.characters)) {
+    for (const character of manifest.characters) {
+      const sprites = character && typeof character === "object" ? character.sprites : undefined;
+      if (!sprites || typeof sprites !== "object") continue;
+      for (const assetId of Object.values(sprites)) {
+        if (typeof assetId !== "string") continue;
+        const asset = assetById.get(assetId);
+        if (!asset || asset.approved !== true) {
+          errors.push({
+            level: "error",
+            work: workId,
+            file: "work.json",
+            message: `unapproved asset ${assetId}`,
+          });
+        }
+      }
+    }
+  }
+
   const scenes: Scene[] = [];
   const sceneFiles = Array.isArray(manifest.scenes) ? manifest.scenes : [];
   for (const scenePath of sceneFiles) {
@@ -236,14 +255,23 @@ function checkInstruction(
       }
       break;
     }
-    case "set":
-      if (!declaredVars.has(instruction.var)) {
+    case "set": {
+      const declared = declaredVars.get(instruction.var);
+      if (!declared) {
         errors.push({
           ...base(),
           message: `undeclared variable ${instruction.var}`,
         });
+        break;
+      }
+      if (!valueMatches(declared, instruction.value)) {
+        errors.push({
+          ...base(),
+          message: `set ${instruction.var} value type ${typeof instruction.value} does not match ${declared}`,
+        });
       }
       break;
+    }
     case "jump":
       if (!sceneIds.has(instruction.to)) {
         errors.push({
