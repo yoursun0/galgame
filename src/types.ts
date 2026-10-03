@@ -50,6 +50,8 @@ export type VariableDecl = {
 export type CharacterDecl = {
   id: string;
   name: string;
+  /** expr or position id -> approved asset id. Data only. */
+  sprites?: Record<string, string>;
 };
 
 export type WorkManifest = {
@@ -76,6 +78,13 @@ export type AssetRecord = {
   path: string;
   type: string;
   approved: boolean;
+  /** CC0-1.0 or CC-BY-*. CC-BY must be credited on screen. */
+  license?: string;
+  credit?: string;
+  character?: string;
+  /** near / far, or an expr id. */
+  position?: string;
+  expr?: string;
 };
 
 export type Work = {

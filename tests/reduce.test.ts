@@ -38,6 +38,10 @@ describe("mystery-fixture reduce", () => {
     });
     expect(state.waiting).toBe(true);
     expect(state.choices).toBeNull();
+    expect(state.actors).toEqual([
+      { id: "admin", expr: null, position: "near" },
+    ]);
+    expect(state.audio.bgm).toBe("bgm-starfield");
   });
 
   test("advance moves from narration to dialogue", () => {
@@ -64,15 +68,24 @@ describe("mystery-fixture reduce", () => {
     expect(state.ending).toBeNull();
   });
 
-  test("choose lock sets locked and reaches ending stop", () => {
+  test("choose lock sets locked, shows the far actor, and the next advance ends", () => {
     let state = initialState(work);
     state = reduce(work, state, { type: "advance" });
     state = reduce(work, state, { type: "advance" });
     state = reduce(work, state, { type: "advance" });
     state = reduce(work, state, { type: "choose", index: 0 });
     expect(state.vars.locked).toBe(true);
-    expect(state.ending).toEqual({ id: "stop" });
+    expect(state.sceneId).toBe("lock");
+    expect(state.waiting).toBe(true);
+    expect(state.ending).toBeNull();
+    expect(state.actors).toEqual([
+      { id: "admin", expr: null, position: "far" },
+    ]);
+    expect(state.audio.bgm).toBe("bgm-village");
+    state = reduce(work, state, { type: "advance" });
     expect(state.sceneId).toBe("done");
+    expect(state.ending).toEqual({ id: "stop" });
+    expect(state.cg).toBe("ending-stop");
   });
 
   test("choose drawer does not set locked", () => {

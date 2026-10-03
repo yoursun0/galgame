@@ -1,0 +1,44 @@
+{
+  "id": "ui-gameplay2",
+  "pageBackground": "#070b14",
+  "stageWidth": 1280,
+  "stageHeight": 720,
+  "fontFamily": "\"Noto Serif CJK TC\", \"Noto Serif TC\", \"Songti TC\", serif",
+  "color": "#f4f0e8",
+  "charsPerSecond": 28,
+  "textBox": {
+    "image": "ui-gameplay2/img/text-box.png",
+    "left": 36,
+    "right": 36,
+    "bottom": 22,
+    "height": 176,
+    "fontSize": 22,
+    "lineHeight": 1.75,
+    "paddingTop": 40,
+    "paddingX": 44
+  },
+  "nameplate": {
+    "background": "rgba(36, 40, 58, 0.88)",
+    "border": "rgba(232, 224, 206, 0.45)",
+    "fontSize": 18,
+    "letterSpacing": "0.16em"
+  },
+  "choice": {
+    "image": "ui-gameplay2/img/btn-plate.png",
+    "imageActive": "ui-gameplay2/img/btn-plate-active.png",
+    "color": "#f7f2e6",
+    "fontSize": 18,
+    "minHeight": 54,
+    "gap": 10
+  },
+  "endingCard": {
+    "background": "rgba(28, 32, 48, 0.82)",
+    "border": "rgba(232, 224, 206, 0.55)",
+    "maxWidth": 440
+  },
+  "actors": {
+    "near": { "heightPercent": 108, "bottomPercent": 0 },
+    "far": { "heightPercent": 52, "bottomPercent": 8 }
+  },
+  "creditColor": "rgba(244, 239, 228, 0.78)"
+}

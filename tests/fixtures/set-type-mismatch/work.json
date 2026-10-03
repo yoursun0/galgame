@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": 1,
+  "id": "set-type-mismatch",
+  "title": "set-type-mismatch",
+  "language": "zh-Hant",
+  "start": "room",
+  "characters": [],
+  "variables": [{ "name": "locked", "type": "boolean", "initial": false }],
+  "scenes": ["story/room.json"]
+}

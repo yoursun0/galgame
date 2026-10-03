@@ -1,4 +1,14 @@
 {
   "id": "done",
-  "instructions": [{ "kind": "ending", "id": "stop" }]
+  "instructions": [
+    {
+      "kind": "cg",
+      "action": "show",
+      "asset": "ending-stop"
+    },
+    {
+      "kind": "ending",
+      "id": "stop"
+    }
+  ]
 }

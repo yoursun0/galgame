@@ -4,5 +4,43 @@
     "path": "assets/bg-soc.jpg",
     "type": "background",
     "approved": true
+  },
+  {
+    "id": "actor-admin-near",
+    "path": "assets/actor-admin-near.png",
+    "type": "actor",
+    "approved": true,
+    "character": "admin",
+    "position": "near"
+  },
+  {
+    "id": "actor-admin-far",
+    "path": "assets/actor-admin-far.png",
+    "type": "actor",
+    "approved": true,
+    "character": "admin",
+    "position": "far"
+  },
+  {
+    "id": "ending-stop",
+    "path": "assets/ending-stop.jpg",
+    "type": "cg",
+    "approved": true
+  },
+  {
+    "id": "bgm-starfield",
+    "path": "assets/bgm-starfield.mp3",
+    "type": "bgm",
+    "approved": true,
+    "license": "CC0-1.0",
+    "credit": ""
+  },
+  {
+    "id": "bgm-village",
+    "path": "assets/bgm-village.mp3",
+    "type": "bgm",
+    "approved": true,
+    "license": "CC0-1.0",
+    "credit": ""
   }
 ]
