@@ -1,0 +1,103 @@
+{
+  "id": "ch06-saved",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-soc"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-16-town-theme-rpg"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "suting",
+      "text": "他說他早上有事要在中大辦，所以還是改在中大開會好了。十二點，中天 soc 房。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "想好了！哈哈！明天三點 coffee corner 吧？就依你的！"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "約定了哦！別說了算數啊！"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "當然啦！就是推掉一切約會我也會準時趕來！"
+    },
+    {
+      "kind": "narration",
+      "text": "他回素婷：十二點，中天 soc 房，收到了。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "好了好了，我要看電視啦，不跟你談了。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "電視比我還吸引嗎？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "當然啦！總之我要掛了啦，明天見啦！"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "suting",
+      "text": "我要下線了啦，明天見。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "啊，要走了嗎？明天見。"
+    },
+    {
+      "kind": "narration",
+      "text": "他打下：明天見。電話先掛了。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch06-bye"
+    }
+  ]
+}

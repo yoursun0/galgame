@@ -1,0 +1,73 @@
+{
+  "id": "su-friend",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-coffee"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-07-emotional-piano-loop"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "05-spring",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "凌晨分別握著他們的手。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "素婷，家綸。無論如何，我們都會是好朋友，永遠也是好朋友。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "jialun",
+      "text": "對，我們是好朋友，一直也是，永遠也是。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "suting",
+      "text": "嗯，好朋友。"
+    },
+    {
+      "kind": "narration",
+      "text": "她露出微笑。"
+    },
+    {
+      "kind": "jump",
+      "to": "su-roof"
+    }
+  ]
+}

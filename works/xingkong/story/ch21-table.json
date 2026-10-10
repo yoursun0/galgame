@@ -1,0 +1,96 @@
+{
+  "id": "ch21-table",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-canteen"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-07-emotional-piano-loop"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "02-hips",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "二零零七年。貝澳之後一個禮拜。眾志堂外頭。"
+    },
+    {
+      "kind": "narration",
+      "text": "凌晨把六年前那一夜告訴她。幸運星也對得上。應是同一個游牧。他出院以後，凌晨就沒有再見過他。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "你真的這麼想再見他嗎？"
+    },
+    {
+      "kind": "narration",
+      "text": "芷君手裡玩著橡筋星。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "他是我的恩人。那天要不是他，我也沒有勇氣保護你。我想謝謝他。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "聯絡方法我寫給你。可是你別再說甚麼男子漢了。那個傢伙明明自身也是個膽小鬼。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "他當初不想分手？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "我覺得是。他聽到我媽媽反對，就一聲不作，也不加以挽留。"
+    },
+    {
+      "kind": "choice",
+      "options": [
+        {
+          "text": "先讓她說完",
+          "jump": "ch21-story"
+        },
+        {
+          "text": "認真去問",
+          "jump": "ch21-table__1"
+        }
+      ]
+    }
+  ]
+}

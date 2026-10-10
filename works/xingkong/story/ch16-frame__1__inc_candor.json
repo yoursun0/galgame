@@ -1,0 +1,45 @@
+{
+  "id": "ch16-frame__1__inc_candor",
+  "instructions": [
+    {
+      "kind": "jump",
+      "to": "ch16-frame__1__set_candor_4",
+      "when": {
+        "cmp": "eq",
+        "var": "candor",
+        "value": 3
+      }
+    },
+    {
+      "kind": "jump",
+      "to": "ch16-frame__1__set_candor_3",
+      "when": {
+        "cmp": "eq",
+        "var": "candor",
+        "value": 2
+      }
+    },
+    {
+      "kind": "jump",
+      "to": "ch16-frame__1__set_candor_2",
+      "when": {
+        "cmp": "eq",
+        "var": "candor",
+        "value": 1
+      }
+    },
+    {
+      "kind": "jump",
+      "to": "ch16-frame__1__set_candor_1",
+      "when": {
+        "cmp": "eq",
+        "var": "candor",
+        "value": 0
+      }
+    },
+    {
+      "kind": "jump",
+      "to": "ch16-plain"
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "id": "ch18-cry",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-firefly"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-15-bird-in-hand-night"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "05-tearsmile",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "第十八話　陰晴難定，光影螢螢，含淚眼，未忘形"
+    },
+    {
+      "kind": "narration",
+      "text": "烏雲還在。螢火蟲也還在。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "不知道為甚麼，有點想哭。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "對喔，我也有點想哭呢。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "凌晨，我有件事想告訴你，你不要介意。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "你講吧。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "看到這麼美的景色，我又想起他了。想起以前跟他在一起的日子。之前還勸你放手，現在自己這個樣子。很笨吧？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "你想起了甚麼？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "以前他很疼我。帶我去玩，唱歌，寫詩。有危險的時候會保護我。可是現在這一切都過去了，是吧？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "我曾經想過，有可能跟他復合。對上一次約會，他告訴我了……"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "告訴你了？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "他告訴我他有女朋友了。他已經有女朋友了。"
+    },
+    {
+      "kind": "narration",
+      "text": "她倒在他身上哭。"
+    },
+    {
+      "kind": "choice",
+      "options": [
+        {
+          "text": "只遞紙巾",
+          "jump": "ch18-tissue"
+        },
+        {
+          "text": "手抬起來，又放下",
+          "jump": "ch18-almost"
+        }
+      ]
+    }
+  ]
+}

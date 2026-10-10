@@ -1,0 +1,108 @@
+{
+  "id": "ch08-night",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-coffee"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-16-town-theme-rpg"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-grin",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "將近夜深。烏雲把天蓋住。中天 soc 房裡只剩凌晨和家綸。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "jialun",
+      "text": "不好意思啊，凌晨。到底還是沒有依你的話，硬要加入了個人問答。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "哈哈，不要緊呀，效果還挺不錯的嘛。你找的時機也很對，跟我後來的問答沒有抵觸，那些偷偷燒的光碟也送出去了。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "只是我想不到你這個聽聽話話的老實頭，也會先斬後奏。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "jialun",
+      "text": "究竟是誇我還是貶我啊？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "曉變通的才夠醒目嘛。甚麼都依我的話去做，哪裡好玩。你遇著我這種甚麼都要說了算的人，不反抗就只會一直被我欺負。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "jialun",
+      "text": "也不是哩。你辦事效率蠻高的，做事又勤快，我得跟你學。"
+    },
+    {
+      "kind": "narration",
+      "text": "他沒有提，這個最高負責人剛才在哪裡吃晚飯。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "我哪有你說的那麼能幹。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "jialun",
+      "text": "至少你在台上比我成熟，對著一大班人抖也不抖。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "台下的觀眾又不是狗，我哪裡需要害怕。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "jialun",
+      "text": "那你為甚麼怕狗怕得要死？"
+    },
+    {
+      "kind": "jump",
+      "to": "ch08-dog"
+    }
+  ]
+}

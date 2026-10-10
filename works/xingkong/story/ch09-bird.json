@@ -1,0 +1,169 @@
+{
+  "id": "ch09-bird",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-soc"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-15-bird-in-hand-night"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-smile",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "對了，你剛才考的是甚麼大通？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "UGD，愛情哲學。卷不太難。我是大通之鬼，這一科應該過得去。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "男人老狗修甚麼愛情哲學啊？難怪沒有朋友跟你一起修。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "男人老狗就不可以修嗎？小姐你有性別歧視呀？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "很少男孩子肯花精神去研究這個。追的時候一股勁追，追到手才發覺不知道喜歡人家甚麼，過不久就說性格不合，分了。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "怎麼了？芷君姐姐。是不是你自己給不負責任的男孩子傷害過，所以才這麼說？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "我才沒有這麼沒眼光！我看是你自己陷入了甚麼感情煩惱，所以才去修。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "唉！要是感情煩惱可以單靠修一個課就解決得了的話，這個煩惱似乎也不見得嚴重得那裡去。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "怎麼了？真的有？修個課解決不了。告訴姐姐，讓姐姐賜你幾道板斧。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "好啊。不過你先告訴我，我才告訴你。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "告訴你甚麼？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "你自身的愛情故事。"
+    },
+    {
+      "kind": "narration",
+      "text": "一隻麻雀落到桌面上。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "小明！怎麼了？你何時變得這麼八卦？竟然偷聽！"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "甚麼小明了？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "這隻麻雀是眾志堂的老主顧。我叫牠小明。全名是「明明隔離枱面沒有人多的是冷飯剩菜偏偏不去吃硬是要到我們枱面偷飯吃的衰雀」，簡稱小明。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "嘻嘻，真是古靈精怪。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "怎麼了？小明，你也想聽芷君姐姐說她的情史對不對？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "你別以為利用一隻麻雀便可以哄我說出來。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "那姐姐要怎麼才肯說？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "三餐飯。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "一餐好了。小明很窮的，窮到要討飯吃。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "兩餐。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "好，小明請。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch09-story"
+    }
+  ]
+}

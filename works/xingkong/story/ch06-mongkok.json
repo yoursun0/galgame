@@ -1,0 +1,129 @@
+{
+  "id": "ch06-mongkok",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-soc"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-16-town-theme-rpg"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "suting",
+      "text": "不是啊，明天打算出去吃，十二點旺角地鐵站恒生銀行。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "呀，芷君你開會開到三點嗎？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "是呀。你不行嗎？也要開會？"
+    },
+    {
+      "kind": "narration",
+      "text": "凌晨打給素婷：怎麼不在中大？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "改做晚飯可不可以一餐一次過請？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "你還真是好吝嗇啊！鬼才等你的晚飯，我可是要回家跟家人吃的啦。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "那麼，至少給我一點時間趕過來……"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "suting",
+      "text": "跟家綸慶祝，吃得豪氣一點不好嗎？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "你也要開會甚麼的吧？何時開完會？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "我也不知道。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "我不管你喔。總之明天三時給我到 coffee corner 來，別忘了你還欠我錢啊。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "這樣嘛……我想想看……"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "suting",
+      "text": "等等，會長剛剛發訊息來。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "他說甚麼？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "想完了沒有？我不等了，我要掛線了啦。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "等多一會。一會兒就好。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch06-saved"
+    }
+  ]
+}

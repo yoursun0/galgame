@@ -1,0 +1,70 @@
+{
+  "id": "ch13-beach",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-beach-day"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-05-sunset-plains"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "suting",
+      "expr": "01-smile",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "第十三話　陽光燦爛，唯獨不及昔日笑聲燦爛"
+    },
+    {
+      "kind": "narration",
+      "text": "貝澳。內蒙團 re-union。兩日一夜。"
+    },
+    {
+      "kind": "narration",
+      "text": "來的人裡面有那一對。素婷，和家綸。"
+    },
+    {
+      "kind": "narration",
+      "text": "沙灘上他們在跑。凌晨沒有加入。他走到石灘上的望遠鏡旁邊，撿碎石，往遠處那塊高礁丟。丟不中。"
+    },
+    {
+      "kind": "narration",
+      "text": "旁邊站著會長。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch13-sky"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "id": "ch12-call__0",
+  "instructions": [
+    {
+      "kind": "jump",
+      "to": "ch12-call__0__inc_courage"
+    }
+  ]
+}

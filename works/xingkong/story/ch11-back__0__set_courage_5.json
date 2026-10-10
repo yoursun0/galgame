@@ -1,0 +1,14 @@
+{
+  "id": "ch11-back__0__set_courage_5",
+  "instructions": [
+    {
+      "kind": "set",
+      "var": "courage",
+      "value": 5
+    },
+    {
+      "kind": "jump",
+      "to": "ch11-saw"
+    }
+  ]
+}

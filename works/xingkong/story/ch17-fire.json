@@ -1,0 +1,186 @@
+{
+  "id": "ch17-fire",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-beach-day"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-01-starfield-romance"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-laugh",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "雖然我很欣賞你的心意，但是這樣，是不行的。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "追不到女孩子又怎麼樣？我一心為她好，難道有錯嗎？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "沒有錯。只是你這樣得不到好結果。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "她好，她找到屬於她的幸福，我還有甚麼要在乎？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "你真的不在乎？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "不在乎。"
+    },
+    {
+      "kind": "narration",
+      "text": "她退後兩步。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "你真傻。人家已經有自己喜歡的人。家綸跟素婷在一起，即使他心裡想著別人，你作為外人管得了嗎？凌晨，放手吧。"
+    },
+    {
+      "kind": "narration",
+      "text": "一浪打上來。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "可惜今天晚上一顆星星也沒有。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "不是沒有。星座還在，只是被雲遮住。換個天氣，換個心境，就看得見。你看，統統都是你愛的星星。"
+    },
+    {
+      "kind": "narration",
+      "text": "她左右各一顆橡筋星。凌晨伸手去接。耳邊嗡的一聲。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "是蜜蜂嗎？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "你看那邊！"
+    },
+    {
+      "kind": "narration",
+      "text": "石縫裡有一點黃光。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "螢火蟲！"
+    },
+    {
+      "kind": "narration",
+      "text": "不止一隻。還有綠色的。他們不上電筒。凌晨扶著她的手，爬上石堆。"
+    },
+    {
+      "kind": "narration",
+      "text": "他蹲下去，要捉一隻。浪打過來，腳下一滑。人反彈到她身上。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "對不起！"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "你沒事吧？"
+    },
+    {
+      "kind": "narration",
+      "text": "她的手沒有放。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "哇！你看天空！螢火蟲都飛出來了！"
+    },
+    {
+      "kind": "narration",
+      "text": "黃的，綠的，繞著他們。她閉上眼。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "希望凌晨早日忘記傷痛，努力振作，找到真正屬於他的幸福！"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "滿天的流星你還不趕緊許願？"
+    },
+    {
+      "kind": "narration",
+      "text": "他沒有閉眼。他捉住她的雙手。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "芷君。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "嗯？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "謝謝你。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch18-cry"
+    }
+  ]
+}

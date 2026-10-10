@@ -1,0 +1,14 @@
+{
+  "id": "ch19-shore__0__set_courage_3",
+  "instructions": [
+    {
+      "kind": "set",
+      "var": "courage",
+      "value": 3
+    },
+    {
+      "kind": "jump",
+      "to": "ch19-lure"
+    }
+  ]
+}

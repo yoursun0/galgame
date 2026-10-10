@@ -1,0 +1,93 @@
+{
+  "id": "ch13-run",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-beach-day"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-05-sunset-plains"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-smile",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "算了吧，往者已矣，別要再提了。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "huizhang",
+      "text": "不。只有從自己的回憶裡，才能夠找到自己的影子。一個動人的故事，不會沒有意義的。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "huizhang",
+      "text": "怎樣了？凌晨小子！自己說完故事，要不要來聽聽會長大人，漫話當年我自己星空下的情緣？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "當然想聽了！"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "huizhang",
+      "text": "真的想聽？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "想！"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "huizhang",
+      "text": "不告訴你。"
+    },
+    {
+      "kind": "narration",
+      "text": "他往綺珊他們的沙灘跑。凌晨追下去。"
+    },
+    {
+      "kind": "narration",
+      "text": "陽光還是很猛。石灘上剩下那支望遠鏡。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch14-heat"
+    }
+  ]
+}

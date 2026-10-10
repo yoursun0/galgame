@@ -71,8 +71,8 @@
       "text": "星還在頭上。回程的車還沒開——第五話以後，劇本尚待接入。"
     },
     {
-      "kind": "ending",
-      "id": "playtest-midcard"
+      "kind": "jump",
+      "to": "ch05-road"
     }
   ]
 }

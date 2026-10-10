@@ -1,0 +1,58 @@
+{
+  "id": "ch05-road",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-bus"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-12-village-2018"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "01-laugh",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "第五話　歡聚有時，離別亦有時，卻離不開一個情字"
+    },
+    {
+      "kind": "narration",
+      "text": "內蒙團最後一天。回程的旅遊車上。窗外的草原和沙漠往後退。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch05-bus"
+    }
+  ]
+}

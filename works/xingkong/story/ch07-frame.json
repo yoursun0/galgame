@@ -1,0 +1,108 @@
+{
+  "id": "ch07-frame",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-coffee"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-13-peaceful-tune-2"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-laugh",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "同一張桌子。綺珊還沒放過他。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "qishan",
+      "text": "你又是的，怎麼可以第一次約會女朋友就遲到啦！還要遲到足足半個小時！簡直不成樣子！"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "你胡說甚麼了？不是約會女朋友，是普通朋友約吃飯罷了。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "qishan",
+      "text": "怎麼也好啦！男生約會女生，應該是男生等女生。你遲了足足半小時，就是犯了天條！"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "我也知道自己犯了天條啦，但是沒法子呀！"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "qishan",
+      "text": "還好意思笑！你究竟搞甚麼搞得這麼遲啊！"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "不是告訴你了嗎？中天開會啊。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "qishan",
+      "text": "別撒賴了。你們中天開會不知多有效率，而且你跟伊人有約，絕對有權早走的嘛！"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "那麼人家黑加侖子生日嘛！當朋友的當然要跟他慶祝，怎麼可以蛋糕也不吃就走？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "qishan",
+      "text": "車！我才不相信你是為了黑加侖子！我看你還不是為了那個素婷。"
+    },
+    {
+      "kind": "choice",
+      "options": [
+        {
+          "text": "低著頭，說是人之常情",
+          "jump": "ch07-dodge"
+        },
+        {
+          "text": "照直說，我是為了素婷才沒走",
+          "jump": "ch07-frame__1"
+        }
+      ]
+    }
+  ]
+}

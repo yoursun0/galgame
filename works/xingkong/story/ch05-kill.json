@@ -1,0 +1,133 @@
+{
+  "id": "ch05-kill",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-bus"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-12-village-2018"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-laugh",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "要是我是殺手，我第一個殺了你。"
+    },
+    {
+      "kind": "narration",
+      "text": "寶方在另一邊捏了凌晨兩下。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "可惜。我知道你不是殺手。因為我是殺手。"
+    },
+    {
+      "kind": "narration",
+      "text": "他捏了她的手一下。她鬆開手。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "qishan",
+      "text": "啊！又有人死了！我舉報，凌晨小子是殺手！"
+    },
+    {
+      "kind": "narration",
+      "text": "芷君翻開卡牌。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "你這傢伙好笨，害我死了，還得給舉了出來。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "對不起啊，讓你枉死，是小弟保護不周呢！"
+    },
+    {
+      "kind": "narration",
+      "text": "綺珊數完票。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "qishan",
+      "text": "七個人和議，凌晨，你要拜拜了！"
+    },
+    {
+      "kind": "narration",
+      "text": "凌晨翻開自己的牌。是醫生。芷君在眾人不知不覺中活了過來，別過臉。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "小姐，已經為了保護你而枉死了，還不滿意嗎？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "哼，不理你。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "念在我拚了命也要保護你的份上，這就原諒我這個死人頭啦，好不好？"
+    },
+    {
+      "kind": "narration",
+      "text": "芷君轉過頭，瞇起單眼。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "你這傢伙，好～討～厭～啊！"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "你還不是一樣討厭。"
+    },
+    {
+      "kind": "narration",
+      "text": "他再度牽起她的手。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch05-stop"
+    }
+  ]
+}

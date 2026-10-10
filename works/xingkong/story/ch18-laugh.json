@@ -1,0 +1,91 @@
+{
+  "id": "ch18-laugh",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-firefly"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-15-bird-in-hand-night"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "05-tearsmile",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "我好掛住他。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "別想太多了。你再哭，星星都嚇跑了。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "那些星星見我哭得可憐，跑過來安慰我都來不及。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "傻瓜！星星們看到有我這個英俊瀟灑玉樹臨風氣宇軒昂風度翩翩的俊男在這兒安慰你，那裡還有他們的份兒嘛！"
+    },
+    {
+      "kind": "narration",
+      "text": "她破涕。含著淚，還是在笑。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "因為甚麼你剛才想哭？"
+    },
+    {
+      "kind": "narration",
+      "text": "凌晨沒有答。"
+    },
+    {
+      "kind": "narration",
+      "text": "岸上的走道那邊，一隻大犬瞪著他們。後面又冒出一個黑影。另一頭。"
+    },
+    {
+      "kind": "narration",
+      "text": "兩頭狗吼了一聲。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch19-past"
+    }
+  ]
+}

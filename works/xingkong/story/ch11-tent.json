@@ -1,0 +1,58 @@
+{
+  "id": "ch11-tent",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-grassland"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-09-nighttime-solitude"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "04-cold",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "第十一話　再勇猛的獵人，也躲不過那毒蠍的一針，躲不過那滅亡的命運"
+    },
+    {
+      "kind": "narration",
+      "text": "星講完了。深宵，風冷。莊員擠在一個營裡。外頭的風在吹。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch11-go"
+    }
+  ]
+}

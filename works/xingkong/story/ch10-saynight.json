@@ -1,0 +1,100 @@
+{
+  "id": "ch10-saynight",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-firefly"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-01-starfield-romance"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "03-worry",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "綺珊的聲音從海上那頭過來。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "qishan",
+      "text": "喂！凌晨小子！聽說石灘出了名很多野狗出沒，你可要小心一點，免得又大出洋相了啊。"
+    },
+    {
+      "kind": "narration",
+      "text": "入夜以後，獵戶座掛在頂上。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "suting",
+      "text": "怎麼不見了家綸呢？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "不用管那小子。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "suting",
+      "text": "我們用不用去找一找家綸了？"
+    },
+    {
+      "kind": "narration",
+      "text": "她仍是愁眉。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "suting",
+      "text": "但是……"
+    },
+    {
+      "kind": "narration",
+      "text": "她沒有因為下午那句留下。她還是要去找他。"
+    },
+    {
+      "kind": "narration",
+      "text": "洗手間裡沒有人。手電筒沒有交給凌晨。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "suting",
+      "text": "也許他走到下午的石灘。"
+    },
+    {
+      "kind": "jump",
+      "to": "su-find"
+    }
+  ]
+}

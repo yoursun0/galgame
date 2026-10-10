@@ -1,0 +1,111 @@
+{
+  "id": "ch09-hall",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-soc"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-15-bird-in-hand-night"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-smile",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "第九話　一次錯身的邂逅，一次錯落的交流"
+    },
+    {
+      "kind": "narration",
+      "text": "寒假前。崇基，眾志堂。剛考完。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "嗨！凌晨，這麼巧啊！"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "黎芷君！我們還真有緣呀，吃下午茶嗎？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "好呀，你一個人嗎？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "是呀。剛剛才考完大通，沒有熟朋友跟我一起修，所以一個人來。"
+    },
+    {
+      "kind": "narration",
+      "text": "他往窗邊指。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "還是坐外面吧，外面空氣比較通爽。"
+    },
+    {
+      "kind": "narration",
+      "text": "兩人坐到外面。桌上爬過蟑螂。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "你看，旁邊枱面上就有一隻在吃剩飯。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "哈哈！好得意啊！"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "小強又不會咬人，又沒過來跟我們搶飯。你這個怕狗怕得要死的人都不怕蟑螂，難道我會被一隻小強嚇到？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "真衰，老是翻舊帳。算了，傷心事就別提了。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch09-bird"
+    }
+  ]
+}

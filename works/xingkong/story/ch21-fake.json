@@ -1,0 +1,82 @@
+{
+  "id": "ch21-fake",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-canteen"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-07-emotional-piano-loop"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "02-hips",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "凌晨看著小明。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "我很掛念素婷。芷君，可不可以，當我的女朋友？"
+    },
+    {
+      "kind": "narration",
+      "text": "筷子掉在地上。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "當然……不可以啦！反正你又不是認真的。你想借我來瞞過素婷和家綸，好讓自己可以安心去美國。這一招不成。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "你不肯幫忙，我就去找綺珊。"
+    },
+    {
+      "kind": "narration",
+      "text": "她用那條打狗的橡筋彈在他臉上。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "你這樣可不成。還讓人家幫你騙別的女孩子。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch22-corner"
+    }
+  ]
+}

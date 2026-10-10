@@ -1,0 +1,107 @@
+{
+  "id": "ch17-shore",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-beach-day"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-01-starfield-romance"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-laugh",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "貝澳，石灘。子夜。烏雲比傍晚更密。月亮只露一角。"
+    },
+    {
+      "kind": "narration",
+      "text": "素婷沒有追出來。家綸也不在。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "芷君。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "嗯？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "我是不是很傻？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "是哦。你的確很傻。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "謝謝你。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "別人說你傻，也值得道謝？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "不，謝謝你陪伴我。每次我有煩惱，不也是你陪著。這個時候我來看你，是應該的。我已經跟莊員說過，你可能只是一時意氣。我看著你，等你下了火。我叫他們不用跟來。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "你到底在想甚麼？"
+    },
+    {
+      "kind": "choice",
+      "options": [
+        {
+          "text": "說，要是有狗跑出來",
+          "jump": "ch17-dog"
+        },
+        {
+          "text": "不說出來",
+          "jump": "ch17-quiet"
+        }
+      ]
+    }
+  ]
+}

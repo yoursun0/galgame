@@ -1,0 +1,86 @@
+{
+  "id": "ch05-stop",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-bus"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-12-village-2018"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-laugh",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "車子到站。眾人鬆手，收拾行李。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "喂。"
+    },
+    {
+      "kind": "narration",
+      "text": "她指了指他的右手。凌晨這才放開。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "你啊，怎搞的？怎可以玩到一半也可以睡著？看，還流口水！別用手抹！這個拿去！"
+    },
+    {
+      "kind": "narration",
+      "text": "她丟下一塊手帕。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "髒死了！別打算還我！遲些買一條新的賠我好了，可以了嗎？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "當，當然可以。"
+    },
+    {
+      "kind": "narration",
+      "text": "她下車。凌晨把手帕放進背囊。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch05-end"
+    }
+  ]
+}

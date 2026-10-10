@@ -1,0 +1,138 @@
+{
+  "id": "ch11-go",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-grassland"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-09-nighttime-solitude"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "04-cold",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "營裡的手電筒快沒電了。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "你放心吧，家綸他沒事的，我一個人去找他就好了。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "suting",
+      "text": "不，我也要去。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "現在這麼晚了，外頭很危險，你還是留在這兒。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "suting",
+      "text": "不，我要跟你一起去。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "那好吧，就一起走好了。那我們出去了啦。"
+    },
+    {
+      "kind": "narration",
+      "text": "布簾一翻。獵戶座在上面。洗手間裡沒有家綸。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "你那邊也沒有看到他吧？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "suting",
+      "text": "沒有啊。究竟他到那裡去了？我們剛才大叫了好幾聲，也沒有回應。我怕他走到下午去過的石灘。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "這個嘛……"
+    },
+    {
+      "kind": "narration",
+      "text": "阿俊：嗨！凌晨！素婷！你們找到家綸那小子沒有？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "suting",
+      "text": "還沒有。我們打算到石灘去看看。"
+    },
+    {
+      "kind": "narration",
+      "text": "阿俊：犯不著走到那麼遠吧？他人這麼大，自己懂得回去。這兒這麼冷，回營裡等他吧。"
+    },
+    {
+      "kind": "narration",
+      "text": "大鼻：對了，這裡又很安全。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "suting",
+      "text": "找了這麼久也找不著，也不要緊嗎？"
+    },
+    {
+      "kind": "narration",
+      "text": "大鼻：不要緊。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "對了對了，先回營裡再說吧。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "suting",
+      "text": "那好吧。"
+    },
+    {
+      "kind": "narration",
+      "text": "她只是勉強答應。電話響了。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch11-phone"
+    }
+  ]
+}

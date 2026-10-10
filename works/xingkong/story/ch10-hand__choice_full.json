@@ -1,0 +1,22 @@
+{
+  "id": "ch10-hand__choice_full",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-firefly"
+    },
+    {
+      "kind": "choice",
+      "options": [
+        {
+          "text": "我喜歡你",
+          "jump": "ch10-say"
+        },
+        {
+          "text": "沒甚麼了",
+          "jump": "ch10-cut"
+        }
+      ]
+    }
+  ]
+}

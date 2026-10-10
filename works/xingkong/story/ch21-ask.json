@@ -1,0 +1,77 @@
+{
+  "id": "ch21-ask",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-canteen"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-07-emotional-piano-loop"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "02-hips",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "要是他那天給你堅持，繼續給你說好聽的話，你還會不會單單因為媽媽的話就放下？"
+    },
+    {
+      "kind": "narration",
+      "text": "橡筋在她拳頭裡。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "我說呀，他根本就不重視這段感情。"
+    },
+    {
+      "kind": "narration",
+      "text": "過了一會，聲音小下去。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "不過自己心底還是依戀著游牧。這是事實。"
+    },
+    {
+      "kind": "narration",
+      "text": "她沒有把這句說成別的人。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch21-story"
+    }
+  ]
+}

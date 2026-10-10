@@ -1,0 +1,79 @@
+{
+  "id": "ch07-cake",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-coffee"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-13-peaceful-tune-2"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "suting",
+      "expr": "01-laugh",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "第七話　一刻的生氣，締造出下一刻的歡喜"
+    },
+    {
+      "kind": "narration",
+      "text": "同一天中午。snack bar。中天開會，家綸生日。"
+    },
+    {
+      "kind": "narration",
+      "text": "檢討會不到半小時就開完。燈滅了。素婷捧著插滿蠟燭的蛋糕進來。家綸幾乎叫出來。"
+    },
+    {
+      "kind": "narration",
+      "text": "會長把禮物交到他手上：黑加侖子娃娃、黑加侖子汁、黑加侖子糖。"
+    },
+    {
+      "kind": "narration",
+      "text": "蛋糕吃過。大鼻忽然說要玩 Killer。已經快三點。"
+    },
+    {
+      "kind": "narration",
+      "text": "素婷繞了遠路，坐到壽星仔旁邊，牽起他的手。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "suting",
+      "text": "生日快樂。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch07-seat"
+    }
+  ]
+}

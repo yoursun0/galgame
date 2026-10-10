@@ -1,0 +1,68 @@
+{
+  "id": "ch15-snap",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-beach-day"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-04-yoiyami-core-theme"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "03-angry",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "凌晨回到自己那個爐。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "qishan",
+      "text": "怎麼了？怎麼一臉火大，好像全世界都欠了你？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "還不是因為你！"
+    },
+    {
+      "kind": "narration",
+      "text": "她跟他頂起來。芷君看著，只是無奈。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch16-frame"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "id": "ch06-bye",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-soc"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-16-town-theme-rpg"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "素婷的名字變成離線。那句「明天見」送不出去。"
+    },
+    {
+      "kind": "narration",
+      "text": "中午十二點，中天 soc 房。下午三點，coffee corner。二十塊錢，和一條新手帕，都還欠著。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch07-cake"
+    }
+  ]
+}

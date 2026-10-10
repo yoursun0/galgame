@@ -1,0 +1,148 @@
+{
+  "id": "ch16-dare",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-grassland"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-08-dream-ambience"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-grin",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "re-union 那晚。望遠鏡抬回來以後，大家玩 Killer。家綸答應洗碗，人卻在圈裡。素婷牽著他的手。"
+    },
+    {
+      "kind": "narration",
+      "text": "凌晨跟芷君在廚房洗碗。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "難道他們不應該在一起嗎？素婷現在不是相當幸福嗎？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "要是她真的那麼幸福，你幹嘛現在又這麼擔心？"
+    },
+    {
+      "kind": "narration",
+      "text": "她擦乾最後一隻碟，回到大廳。"
+    },
+    {
+      "kind": "narration",
+      "text": "大鼻說人多了不好玩。芷君提議 Truth or Dare。阿俊搶過撲克牌來派。"
+    },
+    {
+      "kind": "narration",
+      "text": "寶方問大鼻有沒有喜歡的女孩子。大鼻說有，第二問不肯答。"
+    },
+    {
+      "kind": "narration",
+      "text": "第五回。會長問素婷。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "huizhang",
+      "text": "你跟家綸是怎麼在一起的？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "suting",
+      "text": "不就是大家都是莊員，認識多了，相熟了……就在一起了嘛。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "huizhang",
+      "text": "第一天是怎樣開始的？是家綸向你求愛嗎？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "suting",
+      "text": "沒有甚麼第一天啦。大家喜歡大家，順其自然的……就在一起了啦。"
+    },
+    {
+      "kind": "narration",
+      "text": "家綸臉紅。綺珊叫下一個。"
+    },
+    {
+      "kind": "narration",
+      "text": "寶方問芷君有沒有男朋友。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "分手了。"
+    },
+    {
+      "kind": "narration",
+      "text": "阿俊：你是不是喜歡凌晨？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "qishan",
+      "text": "痴線！"
+    },
+    {
+      "kind": "narration",
+      "text": "他問了又問，還說要是轉 Dare，就讓她錫凌晨一啖。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "qishan",
+      "text": "沒有啊！沒有喜歡呀！真是神經病！"
+    },
+    {
+      "kind": "narration",
+      "text": "第十三回。家綸問凌晨。"
+    },
+    {
+      "kind": "choice",
+      "options": [
+        {
+          "text": "選 Dare",
+          "jump": "ch16-pick"
+        },
+        {
+          "text": "讓他問",
+          "jump": "ch16-ask"
+        }
+      ]
+    }
+  ]
+}

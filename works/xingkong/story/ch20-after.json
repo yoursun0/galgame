@@ -1,0 +1,84 @@
+{
+  "id": "ch20-after",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-beach-day"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-02-first-light-particles"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-laugh",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "芷君撲進來。她哭得比剛才更厲害。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "傻瓜。那兩隻惡狗都走了。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "你為甚麼要丟下我一個人去引開那兩隻狗？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "我要保護你。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "我怕你會死掉。我怕你會像游牧一樣離我而去。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "甚麼游牧？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "我的男朋友啊！"
+    },
+    {
+      "kind": "jump",
+      "to": "ch21-hospital"
+    }
+  ]
+}

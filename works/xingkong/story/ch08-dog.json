@@ -1,0 +1,137 @@
+{
+  "id": "ch08-dog",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-coffee"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-16-town-theme-rpg"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-grin",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "我從來都是個膽小的人。初中一個夜裡，我在郊外被一頭惡犬追。我不會往安全的地方逃，被逼到絕處。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "jialun",
+      "text": "那後來怎麼了？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "最危急的時候走來一個大男孩，年紀也不比我大多少。他用掃帚替我趕那隻狗。狗不怕掃帚，撲上去，在他大腿咬了一口。我尖叫。他被咬了也不吭聲，揮拳往狗的臉上打。狗才鬆口跑了。"
+    },
+    {
+      "kind": "narration",
+      "text": "家綸打了個冷顫。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "我去看他的傷，傷口裂開，血不停地透出來。他淚也沒流，還笑著說沒大礙。我扶他，自己的手一直抖。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "jialun",
+      "text": "難怪你以後看見狗就怕。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "我哪及得上他。他看見我的手在抖，還笑我：身為男子漢怎麼可以這樣膽小，將來怎麼保護喜歡的女孩子。他有個很酷的名字。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "jialun",
+      "text": "他叫甚麼名字？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "游牧。依我看，他就是牧夫座的化身。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "jialun",
+      "text": "太厲害了。我想我拍馬也及不上他。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "我自小拿他當偶像。可是這麼多年，我看見狗還是怕。"
+    },
+    {
+      "kind": "narration",
+      "text": "家綸指著外面的天。天上半顆星也沒有。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "別奉承我了。我的缺點多得很。家綸你才是個百分百的好人，優點比我多。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "jialun",
+      "text": "甚麼？我也有優點嗎？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "怎麼沒有？多似內蒙古的星空，不是這裡這片烏雲。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "jialun",
+      "text": "我有甚麼優點？快告訴我！"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "你嘛。"
+    },
+    {
+      "kind": "narration",
+      "text": "電話又響了。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch08-call"
+    }
+  ]
+}

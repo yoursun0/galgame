@@ -1,0 +1,93 @@
+{
+  "id": "ch20-throw",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-beach-day"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-02-first-light-particles"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-laugh",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "惡狗已經貼近芷君。"
+    },
+    {
+      "kind": "narration",
+      "text": "凌晨撿起石灘上的石子。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "一字記之曰，心！"
+    },
+    {
+      "kind": "narration",
+      "text": "石子打中了。牠停了一停。他又連丟三塊。家綸折返回來，也在撿石子。芷君才脫得開，跑到他身旁。素婷已經往度假屋去。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "jialun",
+      "text": "凌晨，讓我們來掩護你，你衝過來吧！"
+    },
+    {
+      "kind": "narration",
+      "text": "凌晨停了手，握著拳頭往岸上衝。水裡那頭又爬上來，撞倒他，咬住他的腳。另一頭也過來。"
+    },
+    {
+      "kind": "narration",
+      "text": "家綸從石上撲下，把壓住他的那頭撞開。他自己腿上擦破一點，爬起來了。"
+    },
+    {
+      "kind": "narration",
+      "text": "會長兩手各一塊石頭。大鼻在噴氣。寶方拿著廚房的菜刀。綺珊拿手電筒照過來。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "suting",
+      "text": "凌晨，振作啊！"
+    },
+    {
+      "kind": "narration",
+      "text": "人是她叫來的。兩頭狗退了。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch20-after"
+    }
+  ]
+}

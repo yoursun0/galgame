@@ -1,0 +1,93 @@
+{
+  "id": "ch22-claim",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-coffee"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-04-yoiyami-core-theme"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-grin",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "實不相瞞，我就是芷君她現時的男朋友。"
+    },
+    {
+      "kind": "narration",
+      "text": "游牧下巴幾乎掉下來。"
+    },
+    {
+      "kind": "narration",
+      "text": "游牧："
+    },
+    {
+      "kind": "narration",
+      "text": "你跟芷君在一起？甚麼時候的事？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "差不多半年了。"
+    },
+    {
+      "kind": "narration",
+      "text": "游牧："
+    },
+    {
+      "kind": "narration",
+      "text": "不可能。芷君怎麼沒告訴我？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "芷君跟我說過，你也有一個很要好的女朋友。"
+    },
+    {
+      "kind": "narration",
+      "text": "游牧："
+    },
+    {
+      "kind": "narration",
+      "text": "開玩笑！我游牧哪有甚麼女朋友？我游牧的女朋友，從來就只有黎芷君一個。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch22-table"
+    }
+  ]
+}

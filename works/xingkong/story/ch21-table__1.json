@@ -1,0 +1,14 @@
+{
+  "id": "ch21-table__1",
+  "instructions": [
+    {
+      "kind": "set",
+      "var": "ch21_ask",
+      "value": true
+    },
+    {
+      "kind": "jump",
+      "to": "ch21-ask"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "id": "ch11-walk",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-grassland"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-09-nighttime-solitude"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "04-cold",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "沙沙還在左邊。凌晨沒有轉頭。電筒照著回營的路。"
+    },
+    {
+      "kind": "narration",
+      "text": "那一夜後來的事，他不是親眼看見的。"
+    },
+    {
+      "kind": "narration",
+      "text": "落莊那天的過莊飯，會長要家綸親口承認：他和素婷在一起。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch12-year"
+    }
+  ]
+}

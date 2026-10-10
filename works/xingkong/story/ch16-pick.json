@@ -1,0 +1,104 @@
+{
+  "id": "ch16-pick",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-grassland"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-08-dream-ambience"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-grin",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "Dare。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "qishan",
+      "text": "為甚麼不是 Truth？有甚麼不能說的秘密嗎？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "沒甚麼。大家都在玩 Truth，沒人玩 Dare，會沒新意。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "qishan",
+      "text": "真是有夠爛的藉口。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "suting",
+      "text": "大家都一起玩，不用管新意不新意。你選 Truth 也可以。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "jialun",
+      "text": "凌晨，你真的不想回答嗎？我有一條問題，很想很想問你。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "甚麼問題？"
+    },
+    {
+      "kind": "narration",
+      "text": "他不說。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "有多想問？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "jialun",
+      "text": "很想。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "你問吧。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch16-ask"
+    }
+  ]
+}

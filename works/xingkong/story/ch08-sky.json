@@ -1,0 +1,68 @@
+{
+  "id": "ch08-sky",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-coffee"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-16-town-theme-rpg"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-grin",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "凌晨收起電話。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "jialun",
+      "text": "是誰？綺珊嗎？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "哈！八卦！不告訴你！要是你想給自己再添一個優點，就不要學阿俊那樣，甚麼事也要問一餐飽！"
+    },
+    {
+      "kind": "narration",
+      "text": "兩個人對看，大笑。然後一起看那片沒有星的夜空。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch09-hall"
+    }
+  ]
+}

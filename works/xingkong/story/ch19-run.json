@@ -1,0 +1,78 @@
+{
+  "id": "ch19-run",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-beach-day"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-10-i-swear-i-saw-it"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "03-glare",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "凌晨沒有往右邊走。"
+    },
+    {
+      "kind": "narration",
+      "text": "他從牠們讓出的那一隙，往度假屋跑。沒有回頭。"
+    },
+    {
+      "kind": "narration",
+      "text": "再出來的時候，人是跟著來了。芷君已經不在石上。家綸和素婷把她救回岸上。她站在他們中間。"
+    },
+    {
+      "kind": "narration",
+      "text": "凌晨叫她。"
+    },
+    {
+      "kind": "narration",
+      "text": "她看著他。沒有應。之後也沒有再跟他說話。"
+    },
+    {
+      "kind": "narration",
+      "text": "游牧："
+    },
+    {
+      "kind": "narration",
+      "text": "你要是老是這個又膽小又婆媽的樣子，怎麼保護自己喜歡的女孩子啊。"
+    },
+    {
+      "kind": "jump",
+      "to": "end-no-look-back"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "id": "ch11-back",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-grassland"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-09-nighttime-solitude"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "04-cold",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "由洗手間走回營，一個人。沙沙。左手邊，不遠。"
+    },
+    {
+      "kind": "choice",
+      "options": [
+        {
+          "text": "回頭看",
+          "jump": "ch11-back__0"
+        },
+        {
+          "text": "繼續往營帳走",
+          "jump": "ch11-walk"
+        }
+      ]
+    }
+  ]
+}

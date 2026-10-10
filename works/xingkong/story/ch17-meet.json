@@ -1,0 +1,122 @@
+{
+  "id": "ch17-meet",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-beach-day"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-01-starfield-romance"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-laugh",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "第十七話　悲春風，夏蟲送，莫問天涯覓影踪"
+    },
+    {
+      "kind": "narration",
+      "text": "二零零六年十月。天文工作坊檢討。中天 soc 房。這是貝澳之前的事。"
+    },
+    {
+      "kind": "narration",
+      "text": "阿俊：凌晨，這次稍微有點超支。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "不好意思。食物、螢光星星和天文光碟，花多了。"
+    },
+    {
+      "kind": "narration",
+      "text": "阿俊：你的預算沒有列天文光碟。"
+    },
+    {
+      "kind": "narration",
+      "text": "家綸正要解釋。凌晨打斷他。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "這是我們先前安排失誤，忘記了個人問答的獎品。家綸臨時提議燒光碟。學會在這件事上賠了錢，不好意思。"
+    },
+    {
+      "kind": "narration",
+      "text": "阿俊：幾張光碟也花不了多少。財政沒問題了。散會吧。"
+    },
+    {
+      "kind": "narration",
+      "text": "散會後，家綸把凌晨拉到泳池邊。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "jialun",
+      "text": "那些光碟的錢我自己付就可以，怎麼你又去跟學會報？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "以學會名義派的禮物，用學會的錢。中天的錢還夠，多一點零錢不用不好意思。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "jialun",
+      "text": "可是那些光碟是我自把自為弄的。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "你知道自己自把自為也就好了。下次要堅持，先跟我們商量。一場拍檔，犯不著你瞞我、我瞞你。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "jialun",
+      "text": "對不起。請你原諒。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "哈哈，幹嘛說對不起？一場兄弟，有甚麼原諒不原諒的？我之前不是誇過你嗎？這種當機立斷，才像個大丈夫。黑加侖子長大了。"
+    },
+    {
+      "kind": "narration",
+      "text": "他跟著笑了。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch17-shore"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "id": "ch23-bar",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-mmw"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-01-starfield-romance"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "04-tears",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "第二十三話　東邊星光西邊雨，道是無晴卻有晴"
+    },
+    {
+      "kind": "narration",
+      "text": "第二天晚上。又是「大宋江山」。"
+    },
+    {
+      "kind": "narration",
+      "text": "游牧："
+    },
+    {
+      "kind": "narration",
+      "text": "靠，昨晚居然被你擺了一道。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "誰叫你自己先騙芷君，說已經有女朋友。"
+    },
+    {
+      "kind": "narration",
+      "text": "他還是不信他們打退過那兩頭狗，直到凌晨說起橡皮筋和落水的那頭。他肩膀抖了一下。"
+    },
+    {
+      "kind": "narration",
+      "text": "游牧："
+    },
+    {
+      "kind": "narration",
+      "text": "我跟她是兩個世界。酒吧裡的人配不上大學生。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "我也想真的當她的男朋友。被她拒絕了。她心裡只容得下你。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch23-roof"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "id": "ch16-ask",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-grassland"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-08-dream-ambience"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-grin",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "jialun",
+      "text": "凌晨，請問你，可不可以原諒我？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "jialun",
+      "text": "請你回答我，可以原諒我嗎？"
+    },
+    {
+      "kind": "narration",
+      "text": "其他人不響。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "不。我不知道你在說甚麼。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "jialun",
+      "text": "凌晨……"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "不用說了。你自己做了甚麼你自己知。我想出去一下。"
+    },
+    {
+      "kind": "narration",
+      "text": "他打開門，離開度假屋。背後有人叫他的名字。是素婷。"
+    },
+    {
+      "kind": "narration",
+      "text": "他沒有回頭。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch17-meet"
+    }
+  ]
+}

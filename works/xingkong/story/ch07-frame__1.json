@@ -1,0 +1,9 @@
+{
+  "id": "ch07-frame__1",
+  "instructions": [
+    {
+      "kind": "jump",
+      "to": "ch07-frame__1__inc_candor"
+    }
+  ]
+}

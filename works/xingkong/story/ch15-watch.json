@@ -1,0 +1,56 @@
+{
+  "id": "ch15-watch",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-beach-day"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-04-yoiyami-core-theme"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "凌晨沒有立刻走。他們的聲音低下去。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "jialun",
+      "text": "晚上的星，被雲蓋住了。"
+    },
+    {
+      "kind": "narration",
+      "text": "再站下去，也沒有新的話。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch15-snap"
+    }
+  ]
+}

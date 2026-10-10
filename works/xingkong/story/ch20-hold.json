@@ -1,0 +1,63 @@
+{
+  "id": "ch20-hold",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-beach-day"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-02-first-light-particles"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-laugh",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "石子在手心裡。凌晨沒有丟。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "該我了。"
+    },
+    {
+      "kind": "narration",
+      "text": "這一記留到不得不中的時候。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch20-throw"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "ch07-frame__1__set_candor_2",
+  "instructions": [
+    {
+      "kind": "set",
+      "var": "candor",
+      "value": 2
+    },
+    {
+      "kind": "jump",
+      "to": "ch07-plain"
+    }
+  ]
+}

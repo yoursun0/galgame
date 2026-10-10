@@ -1,0 +1,110 @@
+{
+  "id": "ch14-heat",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-canteen"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-16-town-theme-rpg"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "第十四話　汗水淋漓，流不盡心底希冀"
+    },
+    {
+      "kind": "narration",
+      "text": "傍晚。望遠鏡留在石灘上。女孩子先洗澡。凌晨排在最後。"
+    },
+    {
+      "kind": "narration",
+      "text": "大鼻進門前對他單眼扮鬼臉。"
+    },
+    {
+      "kind": "narration",
+      "text": "大鼻：慢慢等囉。"
+    },
+    {
+      "kind": "narration",
+      "text": "沒洗澡的被叫到屋外透爐。"
+    },
+    {
+      "kind": "narration",
+      "text": "阿俊：可惡呀！怎麼老是煽不起火頭來？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "大鼻空有一身好武功，自己跑去洗澡了。"
+    },
+    {
+      "kind": "narration",
+      "text": "家綸拿著報紙走過來。另一頭的火是他起的。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "jialun",
+      "text": "透爐不是用蠻力就可以。要掌握火起的節奏，像跳舞一樣按拍子。"
+    },
+    {
+      "kind": "narration",
+      "text": "阿俊：嘩！好厲害，真的越煽越旺了！"
+    },
+    {
+      "kind": "narration",
+      "text": "家綸把報紙遞過來。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "jialun",
+      "text": "你來試一試。"
+    },
+    {
+      "kind": "choice",
+      "options": [
+        {
+          "text": "叫他自己煽",
+          "jump": "ch14-leave"
+        },
+        {
+          "text": "把報紙接過來",
+          "jump": "ch14-fan"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "id": "ch08-dinner",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-coffee"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-16-town-theme-rpg"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-grin",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "傍晚。又是 coffee corner。這頓是凌晨約內蒙團團友晚飯聚的。"
+    },
+    {
+      "kind": "narration",
+      "text": "寶方：啐，凌晨，慴慴，過一會兒你們中天是不是搞甚麼的，慴慴，天文工作坊？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "對啊，本季最後一次。莊員親自指導觀星，絕不容錯過。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "你不是說天文工作坊都是在 MMW 的講室裡舉行的嗎？在室內怎麼指導觀星？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "總之，我們保證即使在室內，依然可以給各位有如親臨星空下的享受。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "qishan",
+      "text": "就老愛替自己搞的活動賣廣告。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "晚飯後就一起來吧。這個月天氣不穩，很久沒星星看了。今夜天朗氣清，工作坊完了或者還可以到 MMW 天台。"
+    },
+    {
+      "kind": "narration",
+      "text": "他身後是一大片烏雲。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "不好意思哩，我過一會兒還得開中文系系莊的會。能上來吃頓晚飯已經很給面子了。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "qishan",
+      "text": "我也不來了。去了也只是聽你胡說八道，省得沾污我的耳朵。"
+    },
+    {
+      "kind": "narration",
+      "text": "寶方：不用慌，凌晨，他們不理睬你，還有我這個老友捧你的場。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "寶方兄！我太感動了！"
+    },
+    {
+      "kind": "narration",
+      "text": "他看見寶方滿嘴肉醬，沒有抱下去。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch08-phone"
+    }
+  ]
+}

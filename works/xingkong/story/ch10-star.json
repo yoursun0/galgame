@@ -1,0 +1,130 @@
+{
+  "id": "ch10-star",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-firefly"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-01-starfield-romance"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "03-worry",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "露營那一夜。天色晴。會長拿著激光筆講冬季星空。獵戶座。參宿四。腰帶三星。冬季大三角。"
+    },
+    {
+      "kind": "narration",
+      "text": "不在場的，除了還在跟火鍋耗著的寶方和阿俊，就是不知何時不見了的家綸和綺珊。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "suting",
+      "text": "喂，凌晨，怎麼不見了家綸呢？知不知道他在哪裡？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "哈，不用管那小子。也許他正在幹他的人生大事呢！"
+    },
+    {
+      "kind": "narration",
+      "text": "阿俊：人生大事？你是指上洗手間嗎？"
+    },
+    {
+      "kind": "narration",
+      "text": "會長還在講獵人奧瑞恩和毒蠍。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "suting",
+      "text": "我們用不用去找一找家綸了？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "不用了。他只不過行開一會兒，很快便會回來。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "suting",
+      "text": "但是，萬一他發生了甚麼意外呢？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "他可以打電話。那小子硬漢一條，死不了的。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "suting",
+      "text": "不過，凌晨啊，這兒晚上漆黑一片，他迷了路怎麼回來。不如去找一找他吧。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "不用了呀，他有手電筒。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "suting",
+      "text": "但是……"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "我說不用擔心就不用擔心了。是他自己叫我們不用找他的。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "suting",
+      "text": "是嗎？真的叫我們不用找他？為甚麼呢？"
+    },
+    {
+      "kind": "choice",
+      "options": [
+        {
+          "text": "守著答應家綸的秘密",
+          "jump": "ch10-keep"
+        },
+        {
+          "text": "說出家綸在向綺珊表白",
+          "jump": "ch10-spill"
+        }
+      ]
+    }
+  ]
+}

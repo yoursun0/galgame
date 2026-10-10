@@ -1,0 +1,142 @@
+{
+  "id": "ch06-split",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-soc"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-16-town-theme-rpg"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "suting",
+      "text": "明天中天開會，內蒙團檢討，你知不知道？"
+    },
+    {
+      "kind": "narration",
+      "text": "凌晨對著電話應了一聲。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "唔唔……廢話多人不怪。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "才不是哩！廢話多多，經常不正經的男生，最令人討厭的了。怎麼了小朋友？打給我有甚麼事了？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "沒有甚麼特別的啦。我倆這麼久沒見，打算聊到天亮罷了。"
+    },
+    {
+      "kind": "narration",
+      "text": "他同時打給素婷：不知道啊，怎麼這麼趕急？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "又在胡說八道了。我才不跟你瘋啦，明天還要一大早回中大。系會有些莊務要辦。哪像你這麼空閒。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "suting",
+      "text": "明天家綸生日啊，所以打算開完會後跟他慶祝，你不知道？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "是嗎？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "當然啦。全個內蒙團最愛說廢話的就是你了。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "說兩三句廢話也不代表不務正業吧？一回到香港就是不停補習。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "是嗎？你補習多少個學生？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "suting",
+      "text": "已經問過家綸了，他明天會來。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "大約二、三十個左右啦。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "你以為自己開補習班嗎？整天只會搜刮民財。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "才不是。我可是很用心教的。還有很多有意義的事忙。例如跟你……"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "suting",
+      "text": "總之明天開會就是了。"
+    },
+    {
+      "kind": "narration",
+      "text": "後半句沒打完。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "例如跟我甚麼？例如跟我聊電話聊個通宵？"
+    },
+    {
+      "kind": "jump",
+      "to": "ch06-debt"
+    }
+  ]
+}

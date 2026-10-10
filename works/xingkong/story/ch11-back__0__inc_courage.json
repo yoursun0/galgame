@@ -1,0 +1,54 @@
+{
+  "id": "ch11-back__0__inc_courage",
+  "instructions": [
+    {
+      "kind": "jump",
+      "to": "ch11-back__0__set_courage_5",
+      "when": {
+        "cmp": "eq",
+        "var": "courage",
+        "value": 4
+      }
+    },
+    {
+      "kind": "jump",
+      "to": "ch11-back__0__set_courage_4",
+      "when": {
+        "cmp": "eq",
+        "var": "courage",
+        "value": 3
+      }
+    },
+    {
+      "kind": "jump",
+      "to": "ch11-back__0__set_courage_3",
+      "when": {
+        "cmp": "eq",
+        "var": "courage",
+        "value": 2
+      }
+    },
+    {
+      "kind": "jump",
+      "to": "ch11-back__0__set_courage_2",
+      "when": {
+        "cmp": "eq",
+        "var": "courage",
+        "value": 1
+      }
+    },
+    {
+      "kind": "jump",
+      "to": "ch11-back__0__set_courage_1",
+      "when": {
+        "cmp": "eq",
+        "var": "courage",
+        "value": 0
+      }
+    },
+    {
+      "kind": "jump",
+      "to": "ch11-saw"
+    }
+  ]
+}

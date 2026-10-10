@@ -1,0 +1,91 @@
+{
+  "id": "ch21-story",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-canteen"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-07-emotional-piano-loop"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "02-hips",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "她還是把那天說完了。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "媽媽發現情信，罵了一夜。第二天他仍把信塞進抽屜。放學本來只想訴苦，兩個人吵起來。我後來告訴他，媽媽不讓我們來往。他以為那是分手，說既然我決定了，自己也不便挽留。我把信丟下。那個晚上他沒有打電話來。會考之後就沒有聯絡。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "上次不好意思說，所以說得輕描淡寫一點。"
+    },
+    {
+      "kind": "narration",
+      "text": "小明立在沒有剩菜的桌上。她把橡皮筋掛到牠脖子上。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "小明雖然很可愛，螢火蟲也很迷人，但我心裡知道，自己心底還是依戀著游牧。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch21-hankie",
+      "when": {
+        "all": [
+          {
+            "cmp": "eq",
+            "var": "ch21_ask",
+            "value": true
+          },
+          {
+            "cmp": "gte",
+            "var": "courage",
+            "value": 3
+          }
+        ]
+      }
+    },
+    {
+      "kind": "jump",
+      "to": "ch21-fake"
+    }
+  ]
+}

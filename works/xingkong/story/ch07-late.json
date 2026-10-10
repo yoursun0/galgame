@@ -1,0 +1,97 @@
+{
+  "id": "ch07-late",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-coffee"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-13-peaceful-tune-2"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-laugh",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "中大，coffee corner。下午三點半。"
+    },
+    {
+      "kind": "narration",
+      "text": "凌晨一身汗，在芷君面前坐下。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "喂，你遲到了。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "嗄，嗄，我知道。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "知道的話，那應該怎辦？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "嗄，對不起。可不可以，原諒我？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "不，可，以。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "不對啊不對啊。你應該說「當然可以啦！」，那是你的經典對白啊！"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "說不可以，就不可以。"
+    },
+    {
+      "kind": "narration",
+      "text": "她瞪著他。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch07-frame"
+    }
+  ]
+}

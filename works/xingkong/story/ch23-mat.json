@@ -1,0 +1,85 @@
+{
+  "id": "ch23-mat",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-mmw"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-01-starfield-romance"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "04-tears",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "會長對著人群喊。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "huizhang",
+      "text": "有沒有人想看黑洞呀？"
+    },
+    {
+      "kind": "narration",
+      "text": "沒有人看見黑洞。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "huizhang",
+      "text": "想看的話，就把望遠鏡、腳架、重錘、地墊拿回 soc 房，免得淋濕。"
+    },
+    {
+      "kind": "narration",
+      "text": "凌晨卷起一張地墊。游牧還在問要搬去哪裡。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "跟著我來。以後別再叫我小鬼。"
+    },
+    {
+      "kind": "narration",
+      "text": "游牧："
+    },
+    {
+      "kind": "narration",
+      "text": "笨蛋。快下雨了，還得意甚麼。"
+    },
+    {
+      "kind": "jump",
+      "to": "end-canon-rain"
+    }
+  ]
+}
