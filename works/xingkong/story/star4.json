@@ -45,7 +45,17 @@
     {
       "kind": "dialogue",
       "speaker": "qishan",
-      "text": "更殘酷的，是派大犬座和小犬座守在鵲橋邊。怕狗的牛郎，七夕也不敢上橋。碼頭那個 checkpoint，五十塊請船家載你到二十步外的事，要不要自己說？"
+      "text": "更殘酷的，是派大犬座和小犬座守在鵲橋邊。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "qishan",
+      "text": "怕狗的牛郎，七夕也不敢上橋。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "qishan",
+      "text": "碼頭那個 checkpoint，五十塊請船家載你到二十步外——要不要自己說？"
     },
     {
       "kind": "jump",

@@ -45,7 +45,12 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "對，我私吞了一半。有些人只好兩個人看一本。偉大的莊員，只好犧牲。"
+      "text": "對，我私吞了一半。有些人只好兩個人看一本。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "偉大的莊員，只好犧牲一下了。"
     },
     {
       "kind": "jump",

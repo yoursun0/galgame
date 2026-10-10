@@ -45,7 +45,12 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "我們老早就認識了！我早在母腹裡就認識她。凌晨這個名字，還是她媽媽起的。"
+      "text": "我們老早就認識了！"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "我早在母腹裡就認識她。凌晨這個名字，還是她媽媽起的。"
     },
     {
       "kind": "jump",

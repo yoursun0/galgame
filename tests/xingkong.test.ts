@@ -68,17 +68,69 @@ function play(work: Work, picks: string[]): PlayState {
   return state;
 }
 
-const qiCool = "裝酷，把團刊塞過去。";
-const qiHonest = "先說明，是我們遺下一半。";
-const wallSlow = "在關口坐下，然後一級一級跟在她後面。";
-const wallRun = "追上去。總不能看起來跑輸給綺珊。";
-const templeLie = "胡扯下去。指腹為婚，緣訂七世。";
+const qiCool = "唏，同學，團刊。";
+const qiHonest = "先說清楚——我們遺了一半。";
+const wallSlow = "在關口坐下，再跟在她後面。";
+const wallRun = "追上去。總不能輸給綺珊。";
+const templeLie = "胡扯下去——緣訂七世。";
 const templeName = "問她的名字，也報上自己的。";
-const templeHold = "先別接話。看素婷還在不在下面。";
-const starLeave = "說要去 set 望遠鏡，離開。";
+const templeHold = "先不接話。看素婷還在不在下面。";
+const starLeave = "去 set 望遠鏡。";
 const starStay = "留下，把話講完。";
-/** Scenes rewritten for quality playtest (#8); no longer byte-match v0.3 prototype. */
-const playtestRewritten = new Set(["open1", "open2", "open3", "star5", "midcard"]);
+/** Scenes rewritten for quality playtest (#8 / #21 VN prose); no longer byte-match v0.3 prototype. */
+const playtestRewritten = new Set([
+  "open1",
+  "open2",
+  "open3",
+  "st1",
+  "st2",
+  "st3",
+  "st4",
+  "st5",
+  "qi_choice",
+  "qi_cool1",
+  "qi_cool2",
+  "qi_cool3",
+  "qi_cool4",
+  "qi_honest1",
+  "qi_honest2",
+  "qi_honest3",
+  "qi_honest4",
+  "zj1",
+  "zj2",
+  "zj3",
+  "zj4",
+  "bus1",
+  "wall1",
+  "wall2",
+  "wall3",
+  "wall_choice",
+  "wall_slow1",
+  "wall_slow2",
+  "wall_slow3",
+  "wall_slow4",
+  "wall_run1",
+  "wall_run2",
+  "wall_mister",
+  "temple1",
+  "temple2",
+  "temple_choice",
+  "temple_hold1",
+  "temple_lie1",
+  "temple_lie2",
+  "temple_name1",
+  "temple_name2",
+  "star1",
+  "star2",
+  "star3",
+  "star4",
+  "star5",
+  "star_choice",
+  "star_leave",
+  "star_stay",
+  "star_poem",
+  "midcard",
+]);
 
 describe("xingkong work", () => {
   const work = loadXingkong();

@@ -43,8 +43,17 @@
       "action": "hide"
     },
     {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "我去看看那段有多陡。"
+    },
+    {
       "kind": "narration",
-      "text": "我說去看看那段有多陡，就追了上去。回頭時，素婷還在下面那一級，小得像一粒石子。她也在看我。她沒有叫我。"
+      "text": "他追了上去。回頭時，素婷還在下面那一級，小得像一粒石子。"
+    },
+    {
+      "kind": "narration",
+      "text": "她也在看他。她沒有叫他。"
     },
     {
       "kind": "jump",

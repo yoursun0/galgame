@@ -43,6 +43,10 @@
       "action": "hide"
     },
     {
+      "kind": "narration",
+      "text": "素婷用手帕印了印額上的汗。"
+    },
+    {
       "kind": "dialogue",
       "speaker": "suting",
       "text": "嗯。前面那個關口坐坐，吹吹風吧。"

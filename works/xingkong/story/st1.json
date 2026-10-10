@@ -36,6 +36,10 @@
       "action": "hide"
     },
     {
+      "kind": "narration",
+      "text": "陽光很大。旅行箱的輪子軋過石屎地。"
+    },
+    {
       "kind": "dialogue",
       "speaker": "huizhang",
       "text": "起程了！人數齊了，跟著走。"

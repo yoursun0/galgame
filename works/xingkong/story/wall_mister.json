@@ -51,7 +51,22 @@
     {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "哈，當然可以啦！不過，你可不可以說話不要總是可不可以的？可不可以跟你朋友分享一本團刊？可不可以借個零錢給我？可不可以告訴我你的名字？你叫做可不可以先生嗎？"
+      "text": "哈，當然可以啦！"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "不過，你可不可以說話不要總是可不可以的？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "可不可以跟你朋友分享一本團刊？可不可以借個零錢給我？可不可以告訴我你的名字？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "你叫做可不可以先生嗎？"
     },
     {
       "kind": "dialogue",

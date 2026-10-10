@@ -45,7 +45,12 @@
     {
       "kind": "dialogue",
       "speaker": "qishan",
-      "text": "辛苦你啊，偉大的莊員。怎麼這麼少？偷工減料嗎？"
+      "text": "辛苦你啊，偉大的莊員。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "qishan",
+      "text": "怎麼這麼少？偷工減料嗎？"
     },
     {
       "kind": "jump",

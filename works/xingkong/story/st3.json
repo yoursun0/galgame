@@ -45,7 +45,12 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "素婷，陽光刺眼代表天氣好。我們這群仰賴天氣維生的，晴天比陰天好得多。"
+      "text": "素婷，陽光刺眼代表天氣好。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "我們這群仰賴天氣維生的，晴天比陰天好得多。"
     },
     {
       "kind": "jump",

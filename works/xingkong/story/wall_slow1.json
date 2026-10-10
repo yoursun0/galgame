@@ -45,7 +45,12 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "好。就在這裡停一停。秦始皇啊，你真是太偉大了。"
+      "text": "好。就在這裡停一停。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "秦始皇啊，你真是太偉大了。"
     },
     {
       "kind": "jump",

@@ -44,6 +44,11 @@
     },
     {
       "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "請問……我們太冒失，遺了一些團刊，所以不夠派……"
+    },
+    {
+      "kind": "dialogue",
       "speaker": "qishan",
       "text": "對，這小子是出名冒失的。"
     },

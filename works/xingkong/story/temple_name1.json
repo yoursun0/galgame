@@ -45,7 +45,17 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "紅娘免了。我還沒請教。我叫凌晨，中天的。那天團刊的事，多謝你。名字比較不容易弄丟。"
+      "text": "紅娘免了。我還沒請教。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "我叫凌晨，中天的。那天團刊的事，多謝你。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "名字比較不容易弄丟。"
     },
     {
       "kind": "jump",

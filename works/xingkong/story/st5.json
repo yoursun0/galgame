@@ -44,7 +44,22 @@
     },
     {
       "kind": "narration",
-      "text": "領隊辦手續。團刊發下來，不夠。會長倒還從容：莊員自己先別拿，認識的人合看。我說，這次怪我和家綸，我去派。"
+      "text": "眾人停在旅遊巴士旁，等領隊辦手續。團刊發下來——不夠。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "suting",
+      "text": "團刊不夠？那怎麼辦？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "huizhang",
+      "text": "不用怕。莊員自己先別拿，認識的朋友合看就好。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "對不起各位。這次怪我和家綸。且讓我倆將功補過，負責去派。"
     },
     {
       "kind": "jump",

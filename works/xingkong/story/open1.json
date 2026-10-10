@@ -44,12 +44,21 @@
     },
     {
       "kind": "narration",
-      "text": "午後。泳池旁的中天 soc 房。只有凌晨。桌上鋪著天文活動的單張，地上倒著營具。下莊沒有收拾。"
+      "text": "午後。中大游泳池旁，中天學會的 soc 房。"
+    },
+    {
+      "kind": "narration",
+      "text": "桌上攤著天文活動單張，地上倒著營具。下莊沒有收拾。房裡只有凌晨。"
     },
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "話當年。就從這間房說起。團刊遺在這張桌上，我們才出發。"
+      "text": "話當年……就從這間房說起。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "團刊遺在這張桌上。我們，才出發。"
     },
     {
       "kind": "jump",
