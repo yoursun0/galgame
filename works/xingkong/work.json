@@ -198,5 +198,6 @@
     "story/s_choice__0.json",
     "story/z_choice__0.json",
     "story/q_choice__0.json"
-  ]
+  ],
+  "titleBgm": "bgm-xingkong-luoyin"
 }

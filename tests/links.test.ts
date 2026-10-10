@@ -26,6 +26,11 @@ test("xingkong unify sprite is a real image file", () => {
   expect(inspectAssetFile(file, repo)).toEqual({ kind: "file" });
 });
 
+test("xingkong title theme is a real mp3 file", () => {
+  const file = join(repo, "works/xingkong/assets/bgm/xingkong-luoyin.mp3");
+  expect(inspectAssetFile(file, repo)).toEqual({ kind: "file" });
+});
+
 test("a real image is not treated as a link", () => {
   const file = join(repo, "bg/bg-beach-day.jpg");
   expect(inspectAssetFile(file, repo)).toEqual({ kind: "file" });

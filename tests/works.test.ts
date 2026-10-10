@@ -80,4 +80,27 @@ describe("works are data-only under works/", () => {
     expect(work.manifest.id).toBe("xingkong");
     expect(work.scenes.length).toBeGreaterThan(5);
   });
+
+  test("xingkong titleBgm points at approved Doubao theme asset", () => {
+    const work = loadWork("xingkong");
+    expect(work.manifest.titleBgm).toBe("bgm-xingkong-luoyin");
+    const fixture = loadWork("mystery-fixture");
+    expect(fixture.manifest.titleBgm).toBeUndefined();
+
+    const assets = JSON.parse(
+      readFileSync(join(worksRoot, "xingkong/asset-manifest.json"), "utf8"),
+    ) as { id: string; path: string; type: string; approved: boolean; license?: string; credit?: string }[];
+    const theme = assets.find((a) => a.id === "bgm-xingkong-luoyin");
+    expect(theme).toBeDefined();
+    expect(theme?.type).toBe("bgm");
+    expect(theme?.approved).toBe(true);
+    expect(theme?.path).toBe("assets/bgm/xingkong-luoyin.mp3");
+    expect(theme?.license).toBe("Helic/Doubao");
+    expect(theme?.credit).toContain("星空烙印");
+    expect(statSync(join(worksRoot, "xingkong", theme!.path)).isFile()).toBe(true);
+
+    const main = readFileSync(join(repo, "src/main.ts"), "utf8");
+    expect(main).toContain("playTitleBgm");
+    expect(main).toContain("titleBgm");
+  });
 });

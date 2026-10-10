@@ -454,6 +454,14 @@
     "approved": true
   },
   {
+    "id": "bgm-xingkong-luoyin",
+    "path": "assets/bgm/xingkong-luoyin.mp3",
+    "type": "bgm",
+    "approved": true,
+    "license": "Helic/Doubao",
+    "credit": "星空烙印 · 豆包"
+  },
+  {
     "id": "title-cover",
     "path": "assets/ui/title-cover.jpg",
     "type": "title",

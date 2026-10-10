@@ -244,6 +244,20 @@ function silence(): void {
   );
 }
 
+/** Title / load / settings / gallery share one track; AudioMixer skips same id. */
+function playTitleBgm(): void {
+  if (!audio.unlocked || screen !== "title") return;
+  const id = work.manifest.titleBgm;
+  if (!id) return;
+  const url = urls.get(id);
+  if (!url) return;
+  audio.sync(
+    resolveAudio({ bgm: id, se: null, ambience: null }, (assetId) =>
+      assetId === id ? url : null,
+    ),
+  );
+}
+
 async function persistProgress(): Promise<void> {
   if (recall) return;
   progress = recordUnlocks(withSeen(progress, seen), state, false);
@@ -825,6 +839,7 @@ async function renderTitle(): Promise<void> {
   note.textContent = `作品 ${work.manifest.id} · ?work=<id> 可切換（無需改播放器）`;
   wrap.append(heading, menu, note);
   overlay.append(wrap);
+  playTitleBgm();
   if (panel !== "none") renderOverlay();
 }
 
@@ -834,6 +849,8 @@ function unlockFromGesture(): void {
   applySettings();
   if (screen === "play") {
     audio.sync(resolveAudio(state.audio, (id) => urls.get(id) ?? null));
+  } else if (screen === "title") {
+    playTitleBgm();
   }
 }
 
