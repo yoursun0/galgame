@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "contentVersion": 1,
+  "contentVersion": 2,
   "id": "mystery-fixture",
-  "title": "mystery-fixture",
+  "title": "晚班鑰匙",
   "language": "zh-Hant",
   "start": "corridor",
   "characters": [

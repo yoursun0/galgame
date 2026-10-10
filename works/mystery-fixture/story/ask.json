@@ -1,4 +1,37 @@
 {
   "id": "ask",
-  "instructions": [{ "kind": "jump", "to": "done" }]
+  "instructions": [
+    {
+      "kind": "actor",
+      "action": "update",
+      "id": "admin",
+      "position": "far"
+    },
+    {
+      "kind": "narration",
+      "text": "你下到一樓。值班室的燈還亮，玻璃窗後有人抬眼。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "admin",
+      "text": "問過了。他們說末班離開時，鑰匙不在任何人手上。"
+    },
+    {
+      "kind": "narration",
+      "text": "值班的人攤開記錄本，指著一行空白簽名欄。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "admin",
+      "text": "交接沒簽完。走廊那扇門，他們也記得是開著的。"
+    },
+    {
+      "kind": "narration",
+      "text": "你沒再追問。樓道很靜，只有燈管低鳴。"
+    },
+    {
+      "kind": "jump",
+      "to": "done"
+    }
+  ]
 }

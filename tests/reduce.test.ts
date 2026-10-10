@@ -68,7 +68,7 @@ describe("mystery-fixture reduce", () => {
     expect(state.ending).toBeNull();
   });
 
-  test("choose lock sets locked, shows the far actor, and the next advance ends", () => {
+  test("choose lock sets locked, shows the far actor, and can reach the ending", () => {
     let state = initialState(work);
     state = reduce(work, state, { type: "advance" });
     state = reduce(work, state, { type: "advance" });
@@ -82,19 +82,42 @@ describe("mystery-fixture reduce", () => {
       { id: "admin", expr: null, position: "far" },
     ]);
     expect(state.audio.bgm).toBe("bgm-village");
-    state = reduce(work, state, { type: "advance" });
+    expect(state.line?.kind).toBe("narration");
+    for (let i = 0; i < 12 && !state.ending; i++) {
+      state = reduce(work, state, { type: "advance" });
+    }
     expect(state.sceneId).toBe("done");
     expect(state.ending).toEqual({ id: "stop" });
     expect(state.cg).toBe("ending-stop");
   });
 
-  test("choose drawer does not set locked", () => {
+  test("choose drawer does not set locked and still ends", () => {
     let state = initialState(work);
     state = reduce(work, state, { type: "advance" });
     state = reduce(work, state, { type: "advance" });
     state = reduce(work, state, { type: "advance" });
     state = reduce(work, state, { type: "choose", index: 1 });
     expect(state.vars.locked).toBe(false);
+    expect(state.sceneId).toBe("drawer");
+    expect(state.ending).toBeNull();
+    expect(state.line?.kind).toBe("narration");
+    for (let i = 0; i < 12 && !state.ending; i++) {
+      state = reduce(work, state, { type: "advance" });
+    }
+    expect(state.ending).toEqual({ id: "stop" });
+  });
+
+  test("choose ask reaches ending without locking", () => {
+    let state = initialState(work);
+    state = reduce(work, state, { type: "advance" });
+    state = reduce(work, state, { type: "advance" });
+    state = reduce(work, state, { type: "advance" });
+    state = reduce(work, state, { type: "choose", index: 2 });
+    expect(state.vars.locked).toBe(false);
+    expect(state.sceneId).toBe("ask");
+    for (let i = 0; i < 12 && !state.ending; i++) {
+      state = reduce(work, state, { type: "advance" });
+    }
     expect(state.ending).toEqual({ id: "stop" });
   });
 });

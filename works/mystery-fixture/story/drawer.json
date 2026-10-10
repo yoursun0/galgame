@@ -1,4 +1,31 @@
 {
   "id": "drawer",
-  "instructions": [{ "kind": "jump", "to": "done" }]
+  "instructions": [
+    {
+      "kind": "narration",
+      "text": "你拉開櫃下第一層抽屜。迴紋針、舊名牌、一截斷鞋帶——沒有金屬碰撞的聲音。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "admin",
+      "text": "第二層也翻過了。沒有。"
+    },
+    {
+      "kind": "narration",
+      "text": "最裡頭卡著一張皺掉的便條，字跡被水暈開：交給下一班。後面空白。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "admin",
+      "text": "……便條在，鑰匙不在。門就這樣敞著，不對勁。"
+    },
+    {
+      "kind": "narration",
+      "text": "你沒有上鎖。燈滅著那一盞，門縫仍開著。"
+    },
+    {
+      "kind": "jump",
+      "to": "done"
+    }
+  ]
 }
