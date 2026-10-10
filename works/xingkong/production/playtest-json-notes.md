@@ -35,3 +35,10 @@
 
 - `branch` 及 `s*`／`z*`／`q*` 線結局檔仍在倉庫（完整版藍本），試玩路徑不進入。
 - player 程式、tweego／html。
+
+
+## Puppy 整合（P0 CG）
+
+- `wall_choice` 顯示 `cg-wall-wind`（長城關口的風）。
+- 新增 `wall_mister`（twee Ch02-Name 對白）：顯示 `cg-keyi-keshi`（可不可以先生）；`wall_slow4`／`wall_run2` → `wall_mister` → `temple1`。
+- 梵高表情／P0 實體檔已放回 `characters/`，`assets/` 維持 git symlink pointer（同既有慣例）。

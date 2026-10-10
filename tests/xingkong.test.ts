@@ -197,6 +197,23 @@ describe("xingkong work", () => {
     expect(seen.has("midcard")).toBe(true);
   });
 
+  test("P0 playtest CGs wire into wall scenes", () => {
+    let state = initialState(work);
+    for (let guard = 0; guard < 400 && state.sceneId !== "wall_choice"; guard++) {
+      if (state.choices) state = reduce(work, state, { type: "choose", index: 0 });
+      else state = reduce(work, state, { type: "advance" });
+    }
+    expect(state.sceneId).toBe("wall_choice");
+    expect(state.cg).toBe("cg-wall-wind");
+
+    for (let guard = 0; guard < 80 && state.sceneId !== "wall_mister"; guard++) {
+      if (state.choices) state = reduce(work, state, { type: "choose", index: 0 });
+      else state = reduce(work, state, { type: "advance" });
+    }
+    expect(state.sceneId).toBe("wall_mister");
+    expect(state.cg).toBe("cg-keyi-keshi");
+  });
+
   test("prototype ending scene files still declare ending ids", () => {
     const endingScenes = [
       "s_true3",
