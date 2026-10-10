@@ -833,11 +833,15 @@ async function renderTitle(): Promise<void> {
     button.addEventListener("click", () => item.on());
     menu.append(button);
   }
-  const note = document.createElement("p");
-  note.className = "note";
-  note.dataset.note = "1";
-  note.textContent = `作品 ${work.manifest.id} · ?work=<id> 可切換（無需改播放器）`;
-  wrap.append(heading, menu, note);
+  wrap.append(heading, menu);
+  const titleNote = work.manifest.titleNote?.trim();
+  if (titleNote) {
+    const note = document.createElement("p");
+    note.className = "note";
+    note.dataset.note = "1";
+    note.textContent = titleNote;
+    wrap.append(note);
+  }
   overlay.append(wrap);
   playTitleBgm();
   if (panel !== "none") renderOverlay();
@@ -986,7 +990,14 @@ async function boot(): Promise<void> {
   if (import.meta.env.PROD) {
     const ok = await registerServiceWorker(import.meta.env.BASE_URL);
     if (ok && isWorkOfflineReady(work.manifest)) {
-      const note = overlay.querySelector(".note");
+      const screen = overlay.querySelector(".title-screen");
+      let note = overlay.querySelector(".note");
+      if (!(note instanceof HTMLElement) && screen instanceof HTMLElement) {
+        note = document.createElement("p");
+        note.className = "note";
+        note.dataset.note = "1";
+        screen.append(note);
+      }
       if (note instanceof HTMLElement) {
         note.textContent = "此作品已標可離線：首次載入後斷網亦可重開遊玩。";
       }

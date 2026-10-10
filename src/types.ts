@@ -86,6 +86,8 @@ export type WorkManifest = {
   offlineReady?: boolean;
   /** Optional title-screen BGM asset id; omitted works stay silent on title. */
   titleBgm?: string;
+  /** Optional title-screen credit/note; omitted works show no title note. */
+  titleNote?: string;
 };
 
 export type Scene = {
