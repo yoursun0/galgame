@@ -28,5 +28,6 @@
     "story/drawer.json",
     "story/ask.json",
     "story/done.json"
-  ]
+  ],
+  "offlineReady": true
 }

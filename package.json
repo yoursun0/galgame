@@ -4,8 +4,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "build": "vite build",
+    "build:base": "BASE_PATH=/galgame/ vite build",
+    "preview": "vite preview",
     "test": "bun test",
-    "check": "bun src/check-cli.ts works/mystery-fixture && bun src/check-cli.ts works/xingkong"
+    "check": "bun src/check-cli.ts works/mystery-fixture && bun src/check-cli.ts works/xingkong",
+    "verify:offline": "bun tools/verify-offline.ts"
   },
   "devDependencies": {
     "bun-types": "^1.4.2",

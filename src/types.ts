@@ -82,6 +82,8 @@ export type WorkManifest = {
   scenes: string[];
   /** Optional scene recalls. Absence means the work defines none. */
   recalls?: RecallScript[];
+  /** When true, advertise offline after shell+assets cached. */
+  offlineReady?: boolean;
 };
 
 export type Scene = {
