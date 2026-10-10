@@ -84,6 +84,8 @@ export type WorkManifest = {
   recalls?: RecallScript[];
   /** When true, advertise offline after shell+assets cached. */
   offlineReady?: boolean;
+  /** Optional title-screen BGM asset id; omitted works stay silent on title. */
+  titleBgm?: string;
 };
 
 export type Scene = {
