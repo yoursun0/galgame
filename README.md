@@ -29,7 +29,7 @@ bun run verify:offline   # 本機離線包驗收（不部署）
 
 ## 怎麼玩
 
-1. 標題頁：「新遊戲」「繼續」「讀檔」「設定」「鑑賞」。標題／讀檔／設定／鑑賞共用主題曲《星空烙印》（豆包；`titleBgm`，作品可省略）。
+1. 標題頁：「新遊戲」「繼續」「讀檔」「設定」「鑑賞」。標題／讀檔／設定／鑑賞共用主題曲《星空烙印》（豆包；`titleBgm`，作品可省略）。標題備註可選 `titleNote`（`xingkong` 為「改篇自凌晨《話當年之二》@ 2011」；未設則不顯示）。
 2. 點畫面／空白鍵／Enter 前進；選項出現時點選。
 3. HUD：快進、自動、存／讀、設定、紀錄、回想、標題。
 4. `?work=mystery-fixture` →「晚班鑰匙」：走廊缺鑰匙 → 上鎖／翻抽屜／問樓下 → 結局 `stop`（非戀愛）。
@@ -38,7 +38,7 @@ bun run verify:offline   # 本機離線包驗收（不部署）
 
 | 路徑 | 用途 |
 | --- | --- |
-| `works/<id>/work.json` | 作品清單、角色、變數、場景；可設 `offlineReady` |
+| `works/<id>/work.json` | 作品清單、角色、變數、場景；可設 `offlineReady`、`titleBgm`、`titleNote` |
 | `works/<id>/story/*.json` | 對白／指令（純資料） |
 | `works/<id>/assets/` | 已批准給玩家用的圖與聲音 |
 | `works/<id>/asset-manifest.json` | 素材 id、路徑、`approved` |

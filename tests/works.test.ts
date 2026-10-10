@@ -103,4 +103,15 @@ describe("works are data-only under works/", () => {
     expect(main).toContain("playTitleBgm");
     expect(main).toContain("titleBgm");
   });
+
+  test("xingkong titleNote is adaptation credit; mystery-fixture omits it", () => {
+    const work = loadWork("xingkong");
+    expect(work.manifest.titleNote).toBe("改篇自凌晨《話當年之二》@ 2011");
+    const fixture = loadWork("mystery-fixture");
+    expect(fixture.manifest.titleNote).toBeUndefined();
+
+    const main = readFileSync(join(repo, "src/main.ts"), "utf8");
+    expect(main).toContain("titleNote");
+    expect(main).not.toContain("可切換（無需改播放器）");
+  });
 });
