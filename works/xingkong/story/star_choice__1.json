@@ -1,0 +1,19 @@
+{
+  "id": "star_choice__1",
+  "instructions": [
+    {
+      "kind": "set",
+      "var": "courage",
+      "value": 1
+    },
+    {
+      "kind": "set",
+      "var": "ch4_faced",
+      "value": true
+    },
+    {
+      "kind": "jump",
+      "to": "star_stay"
+    }
+  ]
+}

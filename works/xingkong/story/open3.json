@@ -43,9 +43,17 @@
       "action": "hide"
     },
     {
+      "kind": "narration",
+      "text": "壁報上貼著去年的合照。他看著照片，沒有開門。"
+    },
+    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "打開門。刺眼的陽光灑在臉上。起程了。"
+      "text": "我現在講。從火車站那天開始。"
+    },
+    {
+      "kind": "narration",
+      "text": "一年前。內蒙團出發那天。火車站外。"
     },
     {
       "kind": "jump",

@@ -1,15 +1,15 @@
 {
-  "id": "open2",
+  "id": "star_leave",
   "instructions": [
     {
       "kind": "background",
-      "asset": "bg-soc"
+      "asset": "bg-grassland"
     },
     {
       "kind": "audio",
       "action": "play",
       "channel": "bgm",
-      "asset": "bgm-13-peaceful-tune-2"
+      "asset": "bgm-01-starfield-romance"
     },
     {
       "kind": "actor",
@@ -35,7 +35,7 @@
       "kind": "actor",
       "action": "show",
       "id": "lingchen",
-      "expr": "01-shrug",
+      "expr": "02-blush",
       "position": "near"
     },
     {
@@ -43,22 +43,22 @@
       "action": "hide"
     },
     {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "哼，我要去 set 望遠鏡，失陪了。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "qishan",
+      "text": "哈哈哈，怎麼走了啦？不繼續說你的故事了嗎？"
+    },
+    {
       "kind": "narration",
-      "text": "凌晨翻開內蒙團的宣傳單張。一點五十分。路線跟去年幾乎一樣。"
-    },
-    {
-      "kind": "dialogue",
-      "speaker": "lingchen",
-      "text": "首先到北京，故宮、長城、頤和園、王府井。然後大同，懸空寺、雲岡石窟，還有那個名字很長的草原、響沙灣。下莊這條路線，照抄我們。"
-    },
-    {
-      "kind": "dialogue",
-      "speaker": "lingchen",
-      "text": "二十多本團刊，出發前遺在這裡。莊員沒有團刊。有些人只好共用一本。"
+      "text": "他離開人群，往暗處走了幾步。風從袖口灌進來。頭上仍是那片銀河。"
     },
     {
       "kind": "jump",
-      "to": "open3"
+      "to": "star_poem"
     }
   ]
 }

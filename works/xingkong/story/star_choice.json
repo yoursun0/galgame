@@ -1,15 +1,15 @@
 {
-  "id": "open1",
+  "id": "star_choice",
   "instructions": [
     {
       "kind": "background",
-      "asset": "bg-soc"
+      "asset": "bg-grassland"
     },
     {
       "kind": "audio",
       "action": "play",
       "channel": "bgm",
-      "asset": "bgm-13-peaceful-tune-2"
+      "asset": "bgm-01-starfield-romance"
     },
     {
       "kind": "actor",
@@ -34,8 +34,8 @@
     {
       "kind": "actor",
       "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
+      "id": "qishan",
+      "expr": "04-loud",
       "position": "near"
     },
     {
@@ -44,16 +44,20 @@
     },
     {
       "kind": "narration",
-      "text": "午後。泳池旁的中天 soc 房。只有凌晨。桌上鋪著天文活動的單張，地上倒著營具。下莊沒有收拾。"
+      "text": "全場大笑。素婷在人群裡，沒有走過來。激光筆還指著天上的兩隻犬。我可以找藉口去對望遠鏡，也可以把剛才那句話留在現場講完。"
     },
     {
-      "kind": "dialogue",
-      "speaker": "lingchen",
-      "text": "話當年。就從這間房說起。團刊遺在這張桌上，我們才出發。"
-    },
-    {
-      "kind": "jump",
-      "to": "open2"
+      "kind": "choice",
+      "options": [
+        {
+          "text": "說要去 set 望遠鏡，離開。",
+          "jump": "star_choice__0"
+        },
+        {
+          "text": "留下，把話講完。",
+          "jump": "star_choice__1"
+        }
+      ]
     }
   ]
 }

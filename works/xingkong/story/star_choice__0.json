@@ -1,0 +1,14 @@
+{
+  "id": "star_choice__0",
+  "instructions": [
+    {
+      "kind": "set",
+      "var": "ch4_faced",
+      "value": false
+    },
+    {
+      "kind": "jump",
+      "to": "star_leave"
+    }
+  ]
+}

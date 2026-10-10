@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "contentVersion": 1,
+  "contentVersion": 2,
   "id": "xingkong",
   "title": "星空情緣",
   "language": "zh-Hant",
@@ -81,6 +81,21 @@
       "name": "zhijunName",
       "type": "boolean",
       "initial": false
+    },
+    {
+      "name": "courage",
+      "type": "number",
+      "initial": 0
+    },
+    {
+      "name": "candor",
+      "type": "number",
+      "initial": 0
+    },
+    {
+      "name": "ch4_faced",
+      "type": "boolean",
+      "initial": false
     }
   ],
   "scenes": [
@@ -129,6 +144,12 @@
     "story/star3.json",
     "story/star4.json",
     "story/star5.json",
+    "story/star_choice.json",
+    "story/star_choice__0.json",
+    "story/star_choice__1.json",
+    "story/star_leave.json",
+    "story/star_stay.json",
+    "story/star_poem.json",
     "story/midcard.json",
     "story/branch.json",
     "story/s1.json",

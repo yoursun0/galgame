@@ -1,15 +1,15 @@
 {
-  "id": "open2",
+  "id": "star_stay",
   "instructions": [
     {
       "kind": "background",
-      "asset": "bg-soc"
+      "asset": "bg-grassland"
     },
     {
       "kind": "audio",
       "action": "play",
       "channel": "bgm",
-      "asset": "bgm-13-peaceful-tune-2"
+      "asset": "bgm-01-starfield-romance"
     },
     {
       "kind": "actor",
@@ -35,7 +35,7 @@
       "kind": "actor",
       "action": "show",
       "id": "lingchen",
-      "expr": "01-shrug",
+      "expr": "05-fire",
       "position": "near"
     },
     {
@@ -44,21 +44,20 @@
     },
     {
       "kind": "narration",
-      "text": "凌晨翻開內蒙團的宣傳單張。一點五十分。路線跟去年幾乎一樣。"
+      "text": "凌晨沒有走。"
     },
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "首先到北京，故宮、長城、頤和園、王府井。然後大同，懸空寺、雲岡石窟，還有那個名字很長的草原、響沙灣。下莊這條路線，照抄我們。"
+      "text": "再浪漫、再美麗、再可歌可泣也好，畢竟是沒結果的愛情。"
     },
     {
-      "kind": "dialogue",
-      "speaker": "lingchen",
-      "text": "二十多本團刊，出發前遺在這裡。莊員沒有團刊。有些人只好共用一本。"
+      "kind": "narration",
+      "text": "綺珊仍笑著。激光筆還指著天上的兩隻犬。素婷在人群裡，沒有走過來。凌晨閉上嘴，抬起頭。"
     },
     {
       "kind": "jump",
-      "to": "open3"
+      "to": "star_poem"
     }
   ]
 }
