@@ -45,7 +45,17 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "團刊不夠。我和家綸都以為是對方拿了，遺下一半在中大。你跟朋友合看一本，可以嗎？"
+      "text": "團刊不夠。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "我和家綸都以為是對方拿了，結果遺下一半在中大。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "你跟朋友合看一本，可以嗎？"
     },
     {
       "kind": "jump",

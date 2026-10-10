@@ -52,7 +52,12 @@
     {
       "kind": "dialogue",
       "speaker": "qishan",
-      "text": "她是黎芷君，聯宿認識的。想認識嗎？我當紅娘的經驗，多如天上繁星！"
+      "text": "她是黎芷君，聯宿認識的。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "qishan",
+      "text": "想認識嗎？我當紅娘的經驗，多如天上繁星！"
     },
     {
       "kind": "jump",

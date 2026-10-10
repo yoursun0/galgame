@@ -43,6 +43,10 @@
       "action": "hide"
     },
     {
+      "kind": "narration",
+      "text": "素婷一手拖著大旅行箱，一手遮在眼前。"
+    },
+    {
       "kind": "dialogue",
       "speaker": "suting",
       "text": "啊，好刺眼啊。"

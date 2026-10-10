@@ -43,8 +43,27 @@
       "action": "hide"
     },
     {
+      "kind": "dialogue",
+      "speaker": "qishan",
+      "text": "啊，這麼偉大嘛。那麼貴重的東西我不要了——反正拿了也不會看。"
+    },
+    {
       "kind": "narration",
-      "text": "她說貴重的東西她不要，反正拿了也不會看，說完便掉頭走了。才不會不看。這個人連天橋底的樓宇單張也大看特看。家綸在背後問她是誰。我說，中學同學。"
+      "text": "她掉頭走了。"
+    },
+    {
+      "kind": "narration",
+      "text": "才不會不看。這個人連天橋底的樓宇單張也大看特看。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "jialun",
+      "text": "喂，凌晨，那個女孩子是誰？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "沒甚麼啦，就中學同學。"
     },
     {
       "kind": "jump",

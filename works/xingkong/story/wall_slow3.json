@@ -45,7 +45,22 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "是呀。她喜歡認識新朋友。跟我這悶蛋有甚麼好玩的。你曉得話別人，不曉得話自己。"
+      "text": "是呀。她喜歡認識新朋友。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "都老同學了，跟我這悶蛋一起有甚麼好玩的。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "suting",
+      "text": "那你也應該去認識一下新朋友啊。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "你曉得話別人，不曉得話自己。"
     },
     {
       "kind": "jump",

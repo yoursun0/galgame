@@ -44,7 +44,26 @@
     },
     {
       "kind": "narration",
-      "text": "她接過去，沒有掉頭就走，只說她還是會看，叫我少在心裡編排她。家綸問她是誰。我仍說中學同學。綺珊回頭看了我一眼。"
+      "text": "她接過去，沒有掉頭就走。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "qishan",
+      "text": "我還是會看的。少在心裡編排我。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "jialun",
+      "text": "喂，凌晨，那個女孩子是誰？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "中學同學。"
+    },
+    {
+      "kind": "narration",
+      "text": "綺珊回頭看了他一眼。"
     },
     {
       "kind": "jump",
