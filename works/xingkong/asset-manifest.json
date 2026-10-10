@@ -452,5 +452,11 @@
     "path": "assets/cg/cg-keyi-keshi.jpg",
     "type": "cg",
     "approved": true
+  },
+  {
+    "id": "title-cover",
+    "path": "assets/ui/title-cover.jpg",
+    "type": "title",
+    "approved": true
   }
 ]
