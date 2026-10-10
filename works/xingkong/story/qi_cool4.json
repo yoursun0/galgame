@@ -45,15 +45,25 @@
     {
       "kind": "dialogue",
       "speaker": "qishan",
-      "text": "啊，這麼偉大嘛。那麼貴重的東西我不要了——反正拿了也不會看。"
+      "text": "啊，這麼偉大嘛。那麼貴重的東西我還是不要了，反正我拿了也不會看。"
     },
     {
       "kind": "narration",
-      "text": "她掉頭走了。"
+      "text": "凌晨把團刊往她手裡送。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "來，拿著吧。頂多你自己跟身邊的朋友分享，犯不著一會跟其他人乞乞討討。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "qishan",
+      "text": "我說過不拿就不拿，別這麼婆婆媽媽。"
     },
     {
       "kind": "narration",
-      "text": "才不會不看。這個人連天橋底的樓宇單張也大看特看。"
+      "text": "她掉頭走了。團刊還在凌晨手上。"
     },
     {
       "kind": "dialogue",
@@ -63,7 +73,7 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "沒甚麼啦，就中學同學。"
+      "text": "綺珊？沒甚麼啦，就我的中學同學啦。"
     },
     {
       "kind": "jump",

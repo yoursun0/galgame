@@ -128,7 +128,6 @@ const playtestRewritten = new Set([
   "star_choice",
   "star_leave",
   "star_stay",
-  "star_poem",
   "midcard",
 ]);
 

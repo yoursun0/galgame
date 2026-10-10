@@ -37,12 +37,16 @@
     },
     {
       "kind": "narration",
-      "text": "陽光很大。旅行箱的輪子軋過石屎地。"
+      "text": "一年前。內蒙團出發第一天。北京火車站。"
+    },
+    {
+      "kind": "narration",
+      "text": "會長點齊人數。"
     },
     {
       "kind": "dialogue",
-      "speaker": "huizhang",
-      "text": "起程了！人數齊了，跟著走。"
+      "text": "大家起程了！",
+      "speaker": "huizhang"
     },
     {
       "kind": "jump",

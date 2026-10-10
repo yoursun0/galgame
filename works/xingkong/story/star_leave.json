@@ -48,17 +48,67 @@
       "text": "哼，我要去 set 望遠鏡，失陪了。"
     },
     {
+      "kind": "narration",
+      "text": "他離開人群。"
+    },
+    {
       "kind": "dialogue",
       "speaker": "qishan",
       "text": "哈哈哈，怎麼走了啦？不繼續說你的故事了嗎？"
     },
     {
       "kind": "narration",
-      "text": "他離開人群，往暗處走了幾步。風從袖口灌進來。頭上仍是那片銀河。"
+      "text": "走了十米，背後有人叫。"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "01-laugh",
+      "position": "near"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "喂，可不可以先生。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "怎麼了？還要來挖苦我嗎？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "才沒你這麼無聊。難得身處這麼美妙的星空下，可不可以靜靜別作聲，抬起頭，欣賞一下？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "欣賞大自然自是不錯。不過，跟你一起嘛？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "怎麼了？不可以嗎？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "當然可以啦！"
+    },
+    {
+      "kind": "narration",
+      "text": "兩人一起抬頭。"
     },
     {
       "kind": "jump",
-      "to": "star_poem"
+      "to": "midcard"
     }
   ]
 }
