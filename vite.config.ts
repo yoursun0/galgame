@@ -2,6 +2,8 @@ import { readFileSync } from "node:fs";
 import { basename, extname, relative, resolve, sep } from "node:path";
 import { defineConfig, type Plugin } from "vite";
 import { inspectAssetFile } from "./src/links.ts";
+import { normalizeBase } from "./src/offline.ts";
+import { galgamePwa } from "./src/pwa-plugin.ts";
 
 const mediaTypes: Record<string, string> = {
   ".jpg": "image/jpeg",
@@ -38,7 +40,6 @@ function followStoredLinks(root: string): Plugin {
     configureServer(server) {
       server.middlewares.use((req, res, next) => {
         const [pathname, query = ""] = (req.url ?? "").split("?");
-        // ?import / ?url are Vite module requests. The image element requests the path alone.
         if (!pathname || !pathname.startsWith("/") || /(^|&)(import|url|raw)(&|$)/.test(query)) {
           return next();
         }
@@ -75,7 +76,15 @@ function fsPath(id: string): string {
   return file;
 }
 
+const base = normalizeBase(process.env.BASE_PATH ?? "/");
+
 export default defineConfig({
   root: ".",
-  plugins: [followStoredLinks(process.cwd())],
+  base,
+  plugins: [followStoredLinks(process.cwd()), galgamePwa({ base })],
+  publicDir: "public",
+  build: {
+    outDir: "dist",
+    emptyOutDir: true,
+  },
 });

@@ -38,6 +38,7 @@ import {
 } from "./save.ts";
 import { mountStage } from "./stage.ts";
 import { loadTheme } from "./theme.ts";
+import { isWorkOfflineReady, registerServiceWorker } from "./offline.ts";
 import type { AssetRecord, PlayState, Scene, Work, WorkManifest } from "./types.ts";
 
 /**
@@ -821,6 +822,7 @@ async function renderTitle(): Promise<void> {
   const note = document.createElement("p");
   note.className = "note";
   note.dataset.note = "1";
+  note.textContent = `作品 ${work.manifest.id} · ?work=<id> 可切換（無需改播放器）`;
   wrap.append(heading, menu, note);
   overlay.append(wrap);
   if (panel !== "none") renderOverlay();
@@ -964,6 +966,15 @@ async function boot(): Promise<void> {
   applySettings();
   renderHud();
   await renderTitle();
+  if (import.meta.env.PROD) {
+    const ok = await registerServiceWorker(import.meta.env.BASE_URL);
+    if (ok && isWorkOfflineReady(work.manifest)) {
+      const note = overlay.querySelector(".note");
+      if (note instanceof HTMLElement) {
+        note.textContent = "此作品已標可離線：首次載入後斷網亦可重開遊玩。";
+      }
+    }
+  }
 }
 
 void boot();
