@@ -1,0 +1,67 @@
+{
+  "id": "ch10-badend",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-grassland"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-02-first-light-particles"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "qishan",
+      "expr": "01-shrug",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "家綸的話沒有說完。素婷沒有留下。只有綺珊對凌晨大罵。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "qishan",
+      "text": "看你這傢伙一早就甚麼都知道吧！你怎樣要在其他人面前胡言亂語？你有在意朋友的感受嗎？"
+    },
+    {
+      "kind": "narration",
+      "text": "三個人都傷在這一夜。凌晨失去了所有中天的朋友。"
+    },
+    {
+      "kind": "narration",
+      "text": "壞結局：「守不住的秘密」。"
+    },
+    {
+      "kind": "ending",
+      "id": "ch10-bad-secret"
+    }
+  ]
+}

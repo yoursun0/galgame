@@ -1,0 +1,63 @@
+{
+  "id": "ch23-stand",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-mmw"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-01-starfield-romance"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "04-tears",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "雨點密了一點。凌晨沒有去卷地墊，先把腳架從柱上拆下來，挾在腋下。"
+    },
+    {
+      "kind": "narration",
+      "text": "會長那句黑洞，還是叫大家來搬東西。重錘交給大鼻。游牧空著手跟在後面。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "跟著我來。這些都要回 soc 房。"
+    },
+    {
+      "kind": "jump",
+      "to": "end-canon-rain"
+    }
+  ]
+}

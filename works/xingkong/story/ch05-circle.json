@@ -1,0 +1,96 @@
+{
+  "id": "ch05-circle",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-bus"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-12-village-2018"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-laugh",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "綺珊派牌。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "qishan",
+      "text": "加多了人，這回合兩個殺手，兩個醫生，開始！"
+    },
+    {
+      "kind": "narration",
+      "text": "凌晨握住寶方的手，又牽起芷君的手。後面有人慘叫。"
+    },
+    {
+      "kind": "narration",
+      "text": "阿俊：啊！我死了！誰殺我呀！"
+    },
+    {
+      "kind": "narration",
+      "text": "芷君四下看。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "看甚麼？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "看你。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "看我幹甚麼？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "看你該不該死。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "你才該死！"
+    },
+    {
+      "kind": "jump",
+      "to": "ch05-kill"
+    }
+  ]
+}

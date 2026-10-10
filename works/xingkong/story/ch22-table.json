@@ -1,0 +1,117 @@
+{
+  "id": "ch22-table",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-coffee"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-04-yoiyami-core-theme"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-grin",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "晚飯。coffee corner。家綸、素婷、綺珊，和凌晨。"
+    },
+    {
+      "kind": "narration",
+      "text": "凌晨牽起綺珊的手。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "我今天約你們出來，是要告訴你們一件事。我跟綺珊開始拍拖了。"
+    },
+    {
+      "kind": "narration",
+      "text": "家綸愣了一愣。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "jialun",
+      "text": "無論怎樣，恭喜你們。"
+    },
+    {
+      "kind": "narration",
+      "text": "綺珊立刻靠過來。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "qishan",
+      "text": "然後第二時間跟你們說，我跟凌晨小子只是假裝拍拖。他請了我吃三頓飯加一頓下午茶，收買我來騙你們。"
+    },
+    {
+      "kind": "narration",
+      "text": "她握著他的手，用力捏了一下。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "qishan",
+      "text": "玩夠了。我約了別人去 MMW 天台看星星。告辭啦。"
+    },
+    {
+      "kind": "narration",
+      "text": "她走了。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "suting",
+      "text": "你不會是真心想要欺騙我們的吧？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "suting",
+      "text": "我們都知道，你還有一星期不到就要到美國當交換生去了。"
+    },
+    {
+      "kind": "narration",
+      "text": "]"
+    },
+    {
+      "kind": "jump",
+      "to": "ch22-table__choice_full",
+      "when": {
+        "cmp": "gte",
+        "var": "candor",
+        "value": 2
+      }
+    },
+    {
+      "kind": "jump",
+      "to": "ch22-table__choice_plain"
+    }
+  ]
+}

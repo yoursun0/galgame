@@ -1,0 +1,59 @@
+{
+  "id": "ch07-dodge",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-coffee"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-13-peaceful-tune-2"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-laugh",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "凌晨低著頭。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "那，那也是人之常情嘛。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch07-ask"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "id": "ch06-debt",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-soc"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-16-town-theme-rpg"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "對了對了，你明天是不是要回中大？"
+    },
+    {
+      "kind": "narration",
+      "text": "他問素婷：明天幾點開會？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "怎麼了？你又要回中大嗎？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "對啊，我還欠你二十塊錢和一條手帕。也許明天請你吃個午飯抵債吧。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "suting",
+      "text": "中午十二點，順便一起吃飯。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "午飯嗎？好啊。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "呀，還是下午茶好了。你不知道 coffee corner 新出品了火辣辣鐵板燒下午茶餐嗎？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "這麼吝嗇啊小朋友。二十塊錢在中大可以吃鐵板燒的了。又在胡說八道。還有你買了手帕還我沒有？我不要沾了你的口水的那條。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "我才不懂買女孩子的手帕。賠你一頓飯你就該心足了。"
+    },
+    {
+      "kind": "narration",
+      "text": "他問素婷：是不是十二點在中天 soc 房等？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "下午茶的話則至少要兩頓才成。怎樣了？明天三點 coffee corner？"
+    },
+    {
+      "kind": "jump",
+      "to": "ch06-mongkok"
+    }
+  ]
+}

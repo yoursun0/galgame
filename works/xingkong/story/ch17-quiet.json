@@ -1,0 +1,58 @@
+{
+  "id": "ch17-quiet",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-beach-day"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-01-starfield-romance"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "01-laugh",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "凌晨沒有出聲。"
+    },
+    {
+      "kind": "narration",
+      "text": "聖誕那一夜還在。這句留在嘴裡。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch17-fire"
+    }
+  ]
+}

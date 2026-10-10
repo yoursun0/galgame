@@ -1,0 +1,103 @@
+{
+  "id": "ch13-leave",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-beach-day"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-05-sunset-plains"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-smile",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "會長大人，你知道嗎？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "huizhang",
+      "text": "嗯？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "我要走了。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "huizhang",
+      "text": "要走了？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "這個暑期便要離開香港，到美國去，當交換生，翌年才回來。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "huizhang",
+      "text": "啊，那麼你回來的時候，我們不就幾乎要畢業了嗎？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "對。"
+    },
+    {
+      "kind": "narration",
+      "text": "他撿起一塊碎石。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "huizhang",
+      "text": "那你有沒有甚麼捨不得的事物？"
+    },
+    {
+      "kind": "choice",
+      "options": [
+        {
+          "text": "說，人都要走了",
+          "jump": "ch13-dodge"
+        },
+        {
+          "text": "說，家綸是個好人",
+          "jump": "ch13-plain"
+        }
+      ]
+    }
+  ]
+}

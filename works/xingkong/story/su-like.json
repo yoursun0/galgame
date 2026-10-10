@@ -1,0 +1,59 @@
+{
+  "id": "su-like",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-coffee"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-07-emotional-piano-loop"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "05-spring",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "我很喜歡素婷，以前也是，現在也是。知道你們兩個人在一起，我是非常非常的不開心。不過……"
+    },
+    {
+      "kind": "narration",
+      "text": "她沒有把這句接成別的意思。"
+    },
+    {
+      "kind": "jump",
+      "to": "su-friend"
+    }
+  ]
+}

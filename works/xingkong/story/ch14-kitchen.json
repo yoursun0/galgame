@@ -1,0 +1,176 @@
+{
+  "id": "ch14-kitchen",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-canteen"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-16-town-theme-rpg"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "qishan",
+      "text": "喂，凌晨！你進來廚房幫我們一下！"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "不了，我還沒洗澡，免得弄髒你們的食物。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "qishan",
+      "text": "那你洗了手，到大廳幫芷君去掉蝦殼。我們要煮蝦仁炒蛋。"
+    },
+    {
+      "kind": "narration",
+      "text": "凌晨洗了手，看了素婷一眼。她在切菜。"
+    },
+    {
+      "kind": "narration",
+      "text": "大廳裡，他坐在芷君旁邊剝蝦。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "凌晨，你覺得今天晚上會不會有星星看？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "看天色。入黑前起了好幾片烏雲，不太樂觀。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "難得到貝澳，望遠鏡也帶來了，沒有星星看，不是很可惜嗎？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "是很可惜。可以怎樣？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "花了這麼多心機卻沒有星星，你會不開心嗎？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "難不成要感到好開心？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "不用怕。我這兒給你看星星。"
+    },
+    {
+      "kind": "narration",
+      "text": "她從膠袋上抽下橡皮筋。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "單星。雙星。還有，炫目的銀河，送給你。"
+    },
+    {
+      "kind": "narration",
+      "text": "拉開來，是一團說不出名字的形狀。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "哈，你這個叫做銀河嗎？看起來更像乾炒牛河。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "乾炒牛河不是更好嗎？配上蝦仁炒蛋。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "三星我忘了怎麼弄。來，教教我。"
+    },
+    {
+      "kind": "narration",
+      "text": "四隻手纏在一起。"
+    },
+    {
+      "kind": "narration",
+      "text": "阿俊在他肩上拍了一下。"
+    },
+    {
+      "kind": "narration",
+      "text": "阿俊：喂，凌晨，該你洗澡了！"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "你先去洗吧，剩下的蝦殼我來。還有，謝謝。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "啊，太客氣了吧。"
+    },
+    {
+      "kind": "narration",
+      "text": "芷君用橡筋彈他的肩。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "去把身子沖乾淨。一餐晚飯在等你。飯後，我有事情想跟你單獨聊一聊。"
+    },
+    {
+      "kind": "narration",
+      "text": "又彈一下，這次在胸口。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "知道了，好痛啊！發甚麼神經啦？"
+    },
+    {
+      "kind": "jump",
+      "to": "ch15-grill"
+    }
+  ]
+}

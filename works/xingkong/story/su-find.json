@@ -1,0 +1,66 @@
+{
+  "id": "su-find",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-coffee"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-07-emotional-piano-loop"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "suting",
+      "expr": "05-spring",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "石灘上燈很少。家綸在。"
+    },
+    {
+      "kind": "narration",
+      "text": "素婷走過去。凌晨停在後面。"
+    },
+    {
+      "kind": "narration",
+      "text": "獵戶座主星參宿四放出紅光，落在他們臉上。兩個人慢慢靠在一起。"
+    },
+    {
+      "kind": "narration",
+      "text": "凌晨沒有出聲。她沒有回頭。"
+    },
+    {
+      "kind": "jump",
+      "to": "su-stay"
+    }
+  ]
+}

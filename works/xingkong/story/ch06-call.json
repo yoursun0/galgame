@@ -1,0 +1,120 @@
+{
+  "id": "ch06-call",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-soc"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-16-town-theme-rpg"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "飯後。MSN 上，團友差不多都聊過了。黎芷君十四天沒有出現。"
+    },
+    {
+      "kind": "narration",
+      "text": "凌晨撥她的電話。電話接通的同時，素婷上線，送了一句過來。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "喂，請問找誰？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "呀呀，麻煩找黎芷君。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "suting",
+      "text": "在嗎？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "喂，是凌晨嗎？這麼快不認得我的聲音了？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "我在。"
+    },
+    {
+      "kind": "narration",
+      "text": "他打的是給素婷的。電話那邊芷君還在等。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "喂，怎麼不答話了？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "沒有哦。聽了你的聲音，一時不知道該說心神恍惚，還是誤打給天仙。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "你還真多廢話的啊！"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "suting",
+      "text": "你明天有沒有空？"
+    },
+    {
+      "kind": "narration",
+      "text": "鍵盤上停著一行還沒送出的字：怎麼了？想約我去街嗎？"
+    },
+    {
+      "kind": "choice",
+      "options": [
+        {
+          "text": "刪掉那句，改說有空",
+          "jump": "ch06-safe"
+        },
+        {
+          "text": "把「想約我去街嗎」送出去",
+          "jump": "ch06-sent"
+        }
+      ]
+    }
+  ]
+}

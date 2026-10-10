@@ -1,0 +1,84 @@
+{
+  "id": "ch22-askfirst",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-coffee"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-04-yoiyami-core-theme"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-grin",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "恩人現在有女朋友了沒有？"
+    },
+    {
+      "kind": "narration",
+      "text": "游牧："
+    },
+    {
+      "kind": "narration",
+      "text": "我游牧哪有甚麼女朋友？我游牧的女朋友，從來就只有黎芷君一個。"
+    },
+    {
+      "kind": "narration",
+      "text": "他說得很急。凌晨還是把那句說了。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "實不相瞞，我就是芷君她現時的男朋友。"
+    },
+    {
+      "kind": "narration",
+      "text": "他這回連杯子都沒拿穩。"
+    },
+    {
+      "kind": "narration",
+      "text": "游牧："
+    },
+    {
+      "kind": "narration",
+      "text": "不可能。芷君怎麼沒告訴我？"
+    },
+    {
+      "kind": "jump",
+      "to": "ch22-table"
+    }
+  ]
+}

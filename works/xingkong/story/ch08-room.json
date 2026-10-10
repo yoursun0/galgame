@@ -1,0 +1,89 @@
+{
+  "id": "ch08-room",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-coffee"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-16-town-theme-rpg"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-grin",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "MMW 講室。燈關了。牆上的螢光星發著一點光。進門的人先「嘩」一聲。"
+    },
+    {
+      "kind": "narration",
+      "text": "家綸拿著激光筆講北斗和北極星。凌晨坐在台前，兩支電筒替他打光。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "jialun",
+      "text": "好了，我的介紹到此為止，請問大家有沒有問題？"
+    },
+    {
+      "kind": "narration",
+      "text": "台下沒有人問。他拿出幾張光碟，說先問幾個問題，答對了送天文光碟。"
+    },
+    {
+      "kind": "narration",
+      "text": "他沒有聽凌晨的。"
+    },
+    {
+      "kind": "narration",
+      "text": "大鼻：怎麼了？一會兒不是還有你主打的問答嗎？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "沒法了。將在外，君命有所不受。站在台上的人有著最高的決策權。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "jialun",
+      "text": "答對了！這位同學真厲害！連怎麼找到北極星都記得清清楚楚！"
+    },
+    {
+      "kind": "narration",
+      "text": "凌晨和大鼻對看，都笑了。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch08-night"
+    }
+  ]
+}

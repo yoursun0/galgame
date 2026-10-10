@@ -1,0 +1,121 @@
+{
+  "id": "ch22-forgive",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-coffee"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-04-yoiyami-core-theme"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-grin",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "我騙你們是我的不好，不關綺珊的事。對不起。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "suting",
+      "text": "那為甚麼要騙我們？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "我不想你們掛心。記得度假屋那天晚上，你問我可不可以原諒你。我好像沒有回答你。"
+    },
+    {
+      "kind": "narration",
+      "text": "凌晨看著家綸。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "不可以再問這種無聊的問題。連惡狗我們都一起擊退了。一場兄弟，有甚麼原諒不原諒的？這一次你沒有做錯。"
+    },
+    {
+      "kind": "narration",
+      "text": "家綸還是低著頭。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "jialun",
+      "text": "我瞞著你，跟素婷在一起。你會不高興。"
+    },
+    {
+      "kind": "narration",
+      "text": "凌晨握住他的手。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "別這樣說。無論如何，我原諒你。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "家綸，別哭。你還要照顧素婷。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "我很喜歡素婷，以前也是，現在也是。知道你們兩個人在一起，我是非常非常的不開心。不過……"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "素婷，家綸。無論如何，我們都會是好朋友，永遠也是好朋友。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "jialun",
+      "text": "對，我們是好朋友，一直也是，永遠也是。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "suting",
+      "text": "嗯，好朋友。"
+    },
+    {
+      "kind": "narration",
+      "text": "她露出微笑。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch23-bar"
+    }
+  ]
+}

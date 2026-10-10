@@ -1,0 +1,63 @@
+{
+  "id": "ch07-sit",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-coffee"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-13-peaceful-tune-2"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-laugh",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "凌晨在大鼻抓住他之前站起來，走到素婷另一邊坐下。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "生日快樂。"
+    },
+    {
+      "kind": "narration",
+      "text": "她的手還在家綸那邊。她看了他一眼，沒有把座位讓開。遊戲照樣開始。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch07-jealous"
+    }
+  ]
+}

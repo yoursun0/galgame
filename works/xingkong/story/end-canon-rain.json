@@ -1,0 +1,58 @@
+{
+  "id": "end-canon-rain",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-grassland"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-02-first-light-particles"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "雨還在下。天台上的人把望遠鏡收了。"
+    },
+    {
+      "kind": "narration",
+      "text": "素婷沒有改口。芷君沒有放下游牧。綺珊沒有把那句問話答完。家綸仍是那個會撲上來的人。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch24-wind"
+    }
+  ]
+}

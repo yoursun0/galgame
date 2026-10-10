@@ -1,0 +1,85 @@
+{
+  "id": "ch09-story",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-soc"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-15-bird-in-hand-night"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "01-smile",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "中一、中二，我也記不清。班主任叫北極洪，也叫北極熊，最恨人在他課上睡覺。那個男生就坐在我旁邊，老是睡。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "有一次我怕他再被罵，拍他的肩。他彈起來大嚷：對不起！我不敢再睡覺了！全班笑。他被留堂一個星期。我覺得是自己害的。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "第二天小息，他卻來道謝。後來我才知道，他放學要去茶餐廳做夜班，幫補家用。成績不好，會問我功課。小息和午飯我教他。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "中四情人節他沒回校，右腳受傷，住院一個星期。我摺了一小瓶幸運星送去。他抓住我的手，謝了又謝。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "他沒錢買花。情詩壞，幸運星也摺得不成樣子。有一次我煩了，在情信上寫了「夠了」，把幸運星壓扁還他。一個星期沒再教他。我並不討厭他，只是受不了那樣纏。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "那個週末晚上，我路過茶餐廳。禿頭老闆當眾罵他。他低著頭，手裡捏的是那顆被壓扁的幸運星。眼睛是濕的。我知道他不是被罵哭的。我自己也掉了一滴眼淚，轉身就跑。他追上來。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "茶餐廳那次之後，老闆幾乎要解僱他。他不准我回去解釋。老闆後來不再追究。我們在一起。越近會考，他塞進我抽屜的字條越多。也就是那些字條，斷了那點苗。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch09-quiet"
+    }
+  ]
+}

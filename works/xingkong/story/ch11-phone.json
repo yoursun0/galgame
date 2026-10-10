@@ -1,0 +1,337 @@
+{
+  "id": "ch11-phone",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-grassland"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-09-nighttime-solitude"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "04-cold",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "喂，是誰？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "喂，凌晨，有件事打算跟你講，有沒有打擾你？"
+    },
+    {
+      "kind": "narration",
+      "text": "凌晨向素婷他們揮電筒，叫他們先回營。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "也不算太打擾。甚麼事？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "你……你現在在那裡？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "在大坳門露營。不過沒關係，你講就好了。"
+    },
+    {
+      "kind": "narration",
+      "text": "三個人的身影沒進暗裡。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "你記不記得兩星期前在眾志堂，我跟你說的那個中學的故事？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "怎麼可能不記得？那個故事可價值兩頓午餐。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "我早前打了個電話給他，想約他出來。聖誕大家都有假期。他答應了。就在今天，吃了一頓飯。他已經沒繼續讀書。以前那間茶餐廳轉了手，做酒吧，新老闆留他全職。他說日子過得很好，叫我不用掛心。飯後各自付帳。他也沒有你這麼豪氣。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "不。我是問你感覺怎樣。心如止水？如同陌路人？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "不。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "愛火重燃？舊情復熾？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "也不可以這樣說。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "即是怎樣？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "我……我其實不知道他怎樣想。只是我發覺，原來，我一直都仍然……仍然……"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "你一直都喜歡他，對吧？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "對。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "那你有沒有告訴他？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "當然沒有了！這麼尷尬的話，怎麼可能說出口？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "那你覺得他是不是仍然喜歡你？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "我不知道。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "據我猜，一開始提出分開的是你。你仍然喜歡他，他仍然喜歡你的可能就大。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "真的？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "假的。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "我要掛線了。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "犯不著這樣。我有個提議，可以讓你看穿他想甚麼。你再約他出來一次，然後只消如此如此。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "這怎麼可以？這樣做太狡猾了！"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "他不會知道的。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "不成不成。還有沒有別的？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "要不你見面的時候，這般這般。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "這樣？真的可以嗎？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "可以。一試便知。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "但要是他不這樣這樣，而只是那樣那樣，我應該怎麼辦？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "要是他那樣那樣，那他多半已經對你死心了。真是這樣，你就隨緣跟他做朋友。要是他這樣這樣，你就別害羞，給他一點暗示。情意要是曖昧不明，會很危險。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "是嗎。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "都隔了這麼久，是時候翻一翻熱了。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "但我怕他。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "怕甚麼。只有不敢做的人，沒有做不到的事。一日未上戰場，一日未知道勝負如何。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "嗯。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "這件事你還有沒有告訴別人？你可以多問幾個人，不用只聽我。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "不。我從沒告訴過其他朋友。我也不想讓別的人知道。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "那沒辦法了。你把一切都寄託在我身上了。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "對。我只好把一切都寄託在你身上了。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "談了這許久，我得回營了。他們在等我。有進展你再告訴我。我當你的專屬軍師。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "那好吧。遲些再聊。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "好，晚安了。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "呀，等等。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "怎樣了？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "凌晨，謝謝。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "不用客氣。我們是朋友嘛。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "還有一件事。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "還有甚麼？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "喂！小鬼！你自己也得加油啊！你的素婷在等你呢！"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "哼哼，知道了！"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "再見啦，可不可以先生。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "後會有期啦，當然可以小姐。"
+    },
+    {
+      "kind": "narration",
+      "text": "他掛了線。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch11-back"
+    }
+  ]
+}

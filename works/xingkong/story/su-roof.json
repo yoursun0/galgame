@@ -1,0 +1,80 @@
+{
+  "id": "su-roof",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-coffee"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-07-emotional-piano-loop"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "05-spring",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "MMW 天台。人很多。望遠鏡在中間。夏季大三角在上面。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "jialun",
+      "text": "今天晚上是下莊舉辦的春季天文工作坊最後一天。"
+    },
+    {
+      "kind": "narration",
+      "text": "阿俊：凌晨，這也許是你去美國之前最後一次觀星了。要不要在臨別之前來一次大顯身手，為參加者們來一遍星空解說？來，神劍拿去。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "哈哈，落莊了還僭越別人的工作來做？還不快把激光神劍還給現莊莊員？"
+    },
+    {
+      "kind": "narration",
+      "text": "他沒有接。"
+    },
+    {
+      "kind": "narration",
+      "text": "吐露港那一頭，素婷的背影慢慢靠在家綸肩上。"
+    },
+    {
+      "kind": "narration",
+      "text": "這一夜是他們跟他上來的。她沒有改口。"
+    },
+    {
+      "kind": "jump",
+      "to": "end-suting-early"
+    }
+  ]
+}

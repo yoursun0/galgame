@@ -1,0 +1,85 @@
+{
+  "id": "ch19-shore",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-beach-day"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-10-i-swear-i-saw-it"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "03-glare",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "貝澳。螢火蟲已經散了。面前是兩頭狗。身旁是芷君。"
+    },
+    {
+      "kind": "narration",
+      "text": "游牧那句還在。"
+    },
+    {
+      "kind": "narration",
+      "text": "凌晨走到她前面。腿在抖。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "不用害怕。我們一定會平安無事的。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "嗯嗯，我不害怕。"
+    },
+    {
+      "kind": "narration",
+      "text": "兩頭狗還是走近。出路在牠們那邊。"
+    },
+    {
+      "kind": "choice",
+      "options": [
+        {
+          "text": "引開那兩頭狗",
+          "jump": "ch19-shore__0"
+        },
+        {
+          "text": "自己跑回去求救",
+          "jump": "ch19-run"
+        }
+      ]
+    }
+  ]
+}

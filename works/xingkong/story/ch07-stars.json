@@ -1,0 +1,117 @@
+{
+  "id": "ch07-stars",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-coffee"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-13-peaceful-tune-2"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-laugh",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "就算香港可以看到燦爛的星空，也得坐船到離島那麼遠。而且，現在大白天看甚麼星星！要是你可以現在立即給我看到星星，我就原諒你。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "啊！你說了的呀，你說了可要算數啊。我現在就給你看星星！"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "別裝高興了，你哪會拿到星星給我看。"
+    },
+    {
+      "kind": "narration",
+      "text": "凌晨在桌子底下掏。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "你又搞甚麼花樣了？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "你看，星星啊！"
+    },
+    {
+      "kind": "narration",
+      "text": "一顆橡筋星。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "車！才這樣一顆，你說要給我看滿天星空啊！"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "這個易辦。看，雙星。然後，三星。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "果然有點本事哩。"
+    },
+    {
+      "kind": "narration",
+      "text": "凌晨把膠筋拉緊。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "最後，炫目的銀河。送給你。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "不錯嘛。真是服了你這小子啦。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "我是星夜之凌晨嘛，漫天星宿當然任我驅使了。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch07-tea"
+    }
+  ]
+}

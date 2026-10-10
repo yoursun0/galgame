@@ -1,0 +1,59 @@
+{
+  "id": "ch09-said",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-soc"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-15-bird-in-hand-night"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-smile",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "喜歡人家的話，就要懂得體諒人家。"
+    },
+    {
+      "kind": "narration",
+      "text": "芷君眉頭深鎖。頭仍低著。桌面上只有啄飯的聲音。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch09-turn"
+    }
+  ]
+}

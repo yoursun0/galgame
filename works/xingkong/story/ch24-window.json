@@ -1,0 +1,58 @@
+{
+  "id": "ch24-window",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-soc"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-11-at-the-end-of-hope"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "凌晨沒有再打字。窗外的風把雨壓在玻璃上。稿還在。"
+    },
+    {
+      "kind": "narration",
+      "text": "他那個悲劇結局，凌晨沒有採用。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch24-dawn"
+    }
+  ]
+}

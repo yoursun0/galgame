@@ -1,0 +1,65 @@
+{
+  "id": "ch17-dog",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-beach-day"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-01-starfield-romance"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-laugh",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "我在想，半夜的沙灘要是有狗跑出來，該怎麼辦。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "唏！男子漢大丈夫，怎麼常常生人唔生膽的？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "童年陰影罷了。被狗追的經歷。算了，不提。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch17-fire"
+    }
+  ]
+}

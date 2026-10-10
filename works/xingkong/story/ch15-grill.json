@@ -1,0 +1,70 @@
+{
+  "id": "ch15-grill",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-beach-day"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-04-yoiyami-core-theme"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "qishan",
+      "expr": "03-angry",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "第十五話　藏在密雲後的星，藏在火光中的燈"
+    },
+    {
+      "kind": "narration",
+      "text": "貝澳那一夜。屋外兩個燒烤爐。"
+    },
+    {
+      "kind": "narration",
+      "text": "素婷坐在其中一個。凌晨跟寶方坐到另一個爐。家綸出來，沒有坐去她那邊，走到這邊坐下。"
+    },
+    {
+      "kind": "narration",
+      "text": "莊員大多在那一邊。家綸不跟其他莊員說話。沒有烤糖心雞翼給素婷。"
+    },
+    {
+      "kind": "narration",
+      "text": "凌晨跟綺珊聊得起勁的時候，家綸盯著他們。那個眼神是哀怨的。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch15-phone"
+    }
+  ]
+}

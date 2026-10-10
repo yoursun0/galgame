@@ -1,0 +1,137 @@
+{
+  "id": "ch15-phone",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-beach-day"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-04-yoiyami-core-theme"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "03-angry",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "凌晨在樓上廁所。電話那頭是芷君。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "甚麼！那傢伙明明已經有女朋友了，難道仍然未能放手嗎？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "我沒有證據，不敢說死。可是那個眼神不是裝的。綺珊性子衝動。我沒有告訴她，也沒有告訴素婷。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "要是素婷並不知道你喜歡她，你有甚麼必要抵毀家綸？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "將來如果有機會……那就不好辦了。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "別做夢了。現在不是說這種事的時候。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "要是他不是真心喜歡素婷，是一心喜歡綺珊，卻跟素婷在一起，兩個人都可憐。我替你留意一下。現在他在對面那個爐，開始跟莊員聊了。你可以出來看看。"
+    },
+    {
+      "kind": "narration",
+      "text": "凌晨走回燒烤場。家綸在跟會長小聲說話。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "喂！家綸，會長大人，在聊甚麼？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "jialun",
+      "text": "沒有在聊甚麼。只是在討論今天晚上可以看到哪些星座。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "今晚烏雲密佈，還討論看得到哪些星座？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "jialun",
+      "text": "所以嘛，我們在討論本來可以看到甚麼。被雲蓋住，可惜。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "huizhang",
+      "text": "今天晚上觀不成星了。吃完飯，你跟我和大鼻到石灘，把望遠鏡收回來，可好？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "家綸，我們一起去吧？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "jialun",
+      "text": "我答應了素婷，一會兒陪她洗碗，不能幫你們。不好意思。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "那麼會長大人，你吃飽再叫我。末將隨時效勞。"
+    },
+    {
+      "kind": "choice",
+      "options": [
+        {
+          "text": "先回綺珊那邊",
+          "jump": "ch15-snap"
+        },
+        {
+          "text": "再站一會",
+          "jump": "ch15-watch"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "id": "ch07-ask",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-coffee"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-13-peaceful-tune-2"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-laugh",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "要不你來告訴我，你要怎樣才肯原諒我吧。"
+    },
+    {
+      "kind": "narration",
+      "text": "芷君不答。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "一餐飯？兩餐飯？外加一條全新的手帕？要不外加一場電影，午夜場也沒問題。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "跟你看電影？你想的美！"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "不喜歡看電影，不要緊。要不我帶你去看星星吧？你還記得我們一起看過的星空多美嗎？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "你就只會說！在香港這兒燈火通明，那有甚麼星星看？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "甚麼香港沒有星星看！西貢東壩的夜空都不知多麼清晰，蒲台島的星光都不知多麼燦爛，我甚至在長洲看過銀河呢！"
+    },
+    {
+      "kind": "narration",
+      "text": "長洲那句，是亂講的。他看過的銀河，只有內蒙古那一次。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch07-stars"
+    }
+  ]
+}

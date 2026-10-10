@@ -1,0 +1,65 @@
+{
+  "id": "ch10-say",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-firefly"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-01-starfield-romance"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "03-worry",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "我喜歡你。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "suting",
+      "text": "你說甚麼？風太大我聽不清楚。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "我剛才說呢……"
+    },
+    {
+      "kind": "jump",
+      "to": "ch10-saynight"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "id": "ch16-frame",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-grassland"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-08-dream-ambience"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-grin",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "qishan",
+      "text": "喂！那其實也不關我的事呀！"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "你說得沒錯。那天晚上我向你發脾氣，是我不對。我道歉。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "qishan",
+      "text": "你可害我越來越討厭家綸。如此一來，連他的女朋友素婷也只會越來越討厭。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "又關素婷甚麼事？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "qishan",
+      "text": "家綸搶走了你心愛的女孩，卻又不好好待她。你居然也不跑去跟他對質。凌晨呀凌晨，你真是好人得太過份了。"
+    },
+    {
+      "kind": "choice",
+      "options": [
+        {
+          "text": "不接這句",
+          "jump": "ch16-coat"
+        },
+        {
+          "text": "照直說",
+          "jump": "ch16-frame__1"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "id": "ch19-past",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-beach-day"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-10-i-swear-i-saw-it"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "03-glare",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "第十九話　鐵漢柔情震哮天，未許佳人念恩師"
+    },
+    {
+      "kind": "narration",
+      "text": "六年前。二零零一年二月十三日。大尾篤燒烤場。街燈昏黃。一頭黑狗橫在路上。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "救命啊！"
+    },
+    {
+      "kind": "narration",
+      "text": "游牧："
+    },
+    {
+      "kind": "narration",
+      "text": "停手！"
+    },
+    {
+      "kind": "narration",
+      "text": "他拿著從公廁拿來的掃帚。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "大哥哥！快來救我啊！"
+    },
+    {
+      "kind": "narration",
+      "text": "游牧："
+    },
+    {
+      "kind": "narration",
+      "text": "別著急，有我游牧在此。"
+    },
+    {
+      "kind": "narration",
+      "text": "他對那頭狗說。"
+    },
+    {
+      "kind": "narration",
+      "text": "游牧："
+    },
+    {
+      "kind": "narration",
+      "text": "好狗唔攔路。"
+    },
+    {
+      "kind": "narration",
+      "text": "狗還是撲過來，把他左腿咬下一塊。後來那頭狗跑了。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "你的腳沒事吧？"
+    },
+    {
+      "kind": "narration",
+      "text": "游牧："
+    },
+    {
+      "kind": "narration",
+      "text": "唏！男子漢怎麼這般婆婆媽媽的！你要是老是這個又膽小又婆媽的樣子，怎麼保護自己喜歡的女孩子啊！"
+    },
+    {
+      "kind": "narration",
+      "text": "那一夜的星空很亮。牧夫座大角星是紅的。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch19-shore"
+    }
+  ]
+}

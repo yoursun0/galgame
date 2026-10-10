@@ -1,0 +1,63 @@
+{
+  "id": "ch07-seat",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-coffee"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-13-peaceful-tune-2"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "01-laugh",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "大鼻的手伸到凌晨背後。"
+    },
+    {
+      "kind": "choice",
+      "options": [
+        {
+          "text": "被他拉著坐下",
+          "jump": "ch07-held"
+        },
+        {
+          "text": "走過去，坐到素婷另一邊",
+          "jump": "ch07-seat__1"
+        }
+      ]
+    }
+  ]
+}

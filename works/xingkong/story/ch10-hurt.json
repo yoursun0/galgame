@@ -1,0 +1,70 @@
+{
+  "id": "ch10-hurt",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-firefly"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-01-starfield-romance"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "suting",
+      "expr": "03-worry",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "她拿起手電筒，沒有坐回他身邊，往暗處走。凌晨跟上去。"
+    },
+    {
+      "kind": "narration",
+      "text": "洗手間外頭的燈還亮著。家綸在。綺珊也在。話停在一半。"
+    },
+    {
+      "kind": "narration",
+      "text": "家綸看見素婷，又看見凌晨。他看凌晨的眼神變了，恨恨地盯著凌晨。"
+    },
+    {
+      "kind": "narration",
+      "text": "綺珊睜大眼睛，也是一臉夷鄙眾人的樣子，也沒有把場面圓回去。"
+    },
+    {
+      "kind": "narration",
+      "text": "素婷的手電筒垂下來。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch10-badend"
+    }
+  ]
+}

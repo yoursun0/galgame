@@ -1,0 +1,47 @@
+{
+  "id": "ch14-fan",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-canteen"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-16-town-theme-rpg"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "凌晨接過報紙，按那個拍子煽了幾下。火旺了一點。他把報紙還給家綸，還是進屋。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch14-kitchen"
+    }
+  ]
+}

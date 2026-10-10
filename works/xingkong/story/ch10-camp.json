@@ -1,0 +1,122 @@
+{
+  "id": "ch10-camp",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-firefly"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-01-starfield-romance"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "suting",
+      "expr": "03-worry",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "第十話　陣陣寒風呼出浪漫，洋洋愛海泛起浪花"
+    },
+    {
+      "kind": "narration",
+      "text": "中天最後一個野外觀星。名字叫聖誕浪漫觀星夜。兩日一夜。"
+    },
+    {
+      "kind": "narration",
+      "text": "大鼻：終於把營紮起來了。這裡就是我們最後一役的藏身之所。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "suting",
+      "text": "對呀，今日之後，不知還有沒有再度紮營的機會了。"
+    },
+    {
+      "kind": "narration",
+      "text": "阿俊：別想那麼多了，現在且一起去玩個不醉無歸吧！"
+    },
+    {
+      "kind": "narration",
+      "text": "石灘盡頭。大鼻和阿俊丟石頭，丟不中浮波。"
+    },
+    {
+      "kind": "narration",
+      "text": "寶方：好差勁啊，讓我來，我啛！"
+    },
+    {
+      "kind": "narration",
+      "text": "還是偏了。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "huizhang",
+      "text": "真的有這麼難嗎？"
+    },
+    {
+      "kind": "narration",
+      "text": "寶方把一顆小石子遞過去。"
+    },
+    {
+      "kind": "narration",
+      "text": "大鼻：寶方你可沒見識過。我們的會長投石的功夫，可說是投石界的火雲邪神。"
+    },
+    {
+      "kind": "narration",
+      "text": "會長用食指和中指夾著石子。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "huizhang",
+      "text": "天下武功，無堅不破，唯快不破！"
+    },
+    {
+      "kind": "narration",
+      "text": "石子擊中那截浮波。"
+    },
+    {
+      "kind": "narration",
+      "text": "寶方：嘩，你好厲害啊會長大人！你是怎麼辦到的？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "huizhang",
+      "text": "一字記之曰心。只要用心，任何人都能投得到！"
+    },
+    {
+      "kind": "narration",
+      "text": "浪花打在身上。還沒有紅日。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch10-hand"
+    }
+  ]
+}

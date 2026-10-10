@@ -1,0 +1,80 @@
+{
+  "id": "ch22-roof",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-coffee"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-04-yoiyami-core-theme"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-grin",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "凌晨沒有留在那張枱。"
+    },
+    {
+      "kind": "narration",
+      "text": "MMW 天台的燈很少。她還沒走到望遠鏡那邊。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "第十六話那天，阿俊問你是不是喜歡我。你後來說，我有沒有喜歡你，難道我自己看不出來。我還是看不出來。"
+    },
+    {
+      "kind": "narration",
+      "text": "她沒有答這一句。"
+    },
+    {
+      "kind": "narration",
+      "text": "她握住他的手，捏了兩下，然後放開。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "qishan",
+      "text": "回港再說。"
+    },
+    {
+      "kind": "narration",
+      "text": "那一晚他沒有回去。喜歡素婷的那句沒有說。家綸那句「可不可以原諒我」，也沒有答成原諒。"
+    },
+    {
+      "kind": "jump",
+      "to": "end-qishan-pinch"
+    }
+  ]
+}

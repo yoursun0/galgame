@@ -1,0 +1,81 @@
+{
+  "id": "ch19-lure",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-beach-day"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-10-i-swear-i-saw-it"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "03-glare",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "芷君，我走到右邊引開牠們。你從左邊上岸，回度假屋求援。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "你瘋了嗎？這樣太危險了。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "就這麼決定。"
+    },
+    {
+      "kind": "narration",
+      "text": "他往右跑，對著牠們喊。兩頭狗轉過來。她還在叫他回去。他沒有停。"
+    },
+    {
+      "kind": "narration",
+      "text": "岸上忽然一聲尖叫。是家綸和素婷。"
+    },
+    {
+      "kind": "narration",
+      "text": "大的那頭立刻回頭，往他們撲。芷君已經爬上左邊的高地。一條橡皮筋彈出去。那頭狗摔進水裡。"
+    },
+    {
+      "kind": "narration",
+      "text": "剩下的一頭朝她衝。她第二條橡皮筋沒有扣穩。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch20-morning"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "id": "ch09-turn",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-soc"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-15-bird-in-hand-night"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-smile",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "喂，該你了。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "該我了？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "你跟你的素婷現在怎麼了？你快快一五一十道來，不然小明也不會放過你。"
+    },
+    {
+      "kind": "narration",
+      "text": "芷君和小明一起瞪著他。凌晨笑了。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch10-camp"
+    }
+  ]
+}

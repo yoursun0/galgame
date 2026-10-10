@@ -1,0 +1,90 @@
+{
+  "id": "ch12-go",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-coffee"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-07-emotional-piano-loop"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "02-sigh",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "下星期，敢問當然可以小姐你，哪一天有空？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "哈，星期二、四晚上，和星期六、日兩天也成。不過，要是可不可以先生邀約的話，即使是再忙的日子我也可以推掉別的約會，跟你奉賠到底。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "星期三、五我都得交功課，前一個晚上幾乎都不用睡。就週末吧，可以嗎？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "當然可以啦！"
+    },
+    {
+      "kind": "narration",
+      "text": "凌晨拿起電話，鍵入那個他其實一直沒有忘記的號碼。"
+    },
+    {
+      "kind": "narration",
+      "text": "離開　奔走各自萬里前程"
+    },
+    {
+      "kind": "narration",
+      "text": "離開　終止彼此長久約定"
+    },
+    {
+      "kind": "narration",
+      "text": "離開　卻拋不開我的感情"
+    },
+    {
+      "kind": "narration",
+      "text": "懷念著你　夜空中的背影"
+    },
+    {
+      "kind": "jump",
+      "to": "ch13-beach"
+    }
+  ]
+}

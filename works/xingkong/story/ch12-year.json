@@ -1,0 +1,70 @@
+{
+  "id": "ch12-year",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-coffee"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-07-emotional-piano-loop"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "suting",
+      "expr": "02-sigh",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "第十二話　原來……沒有"
+    },
+    {
+      "kind": "narration",
+      "text": "二零零七年。新的學年。"
+    },
+    {
+      "kind": "narration",
+      "text": "講室裡，教授用激光筆講相對論。凌晨沒有看進去。"
+    },
+    {
+      "kind": "narration",
+      "text": "落莊兩個多月。莊聚他都推了，說物理系的功課忙。他不想見到那一個人。"
+    },
+    {
+      "kind": "narration",
+      "text": "午後。眾志堂。一杯特濃咖啡。桌上沒有小明，也沒有小強。然後，等一個人。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch12-coffee"
+    }
+  ]
+}

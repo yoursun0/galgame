@@ -1,0 +1,80 @@
+{
+  "id": "ch21-hankie",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-canteen"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-07-emotional-piano-loop"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "02-hips",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "赴美之前。眾志堂還沒坐滿。"
+    },
+    {
+      "kind": "narration",
+      "text": "凌晨沒有再找人假扮女朋友。綺珊那頓飯沒有約。游牧那間酒吧也沒有去。"
+    },
+    {
+      "kind": "narration",
+      "text": "他把一條新手帕放到桌上。洗過的那條，早就用一頓下午茶抵了。這條是新的。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "我還是不懂怎麼挑。赴美前，親手還你。"
+    },
+    {
+      "kind": "narration",
+      "text": "她沒有立刻拿。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "努力做好自己，長大一點再說吧。"
+    },
+    {
+      "kind": "narration",
+      "text": "說完，她還是把那條手帕收進袋裡。游牧的名字沒有換掉。"
+    },
+    {
+      "kind": "jump",
+      "to": "end-zhijun-hankie"
+    }
+  ]
+}

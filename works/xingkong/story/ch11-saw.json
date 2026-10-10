@@ -1,0 +1,74 @@
+{
+  "id": "ch11-saw",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-grassland"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-09-nighttime-solitude"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "04-cold",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "凌晨轉過頭。"
+    },
+    {
+      "kind": "narration",
+      "text": "星光底下兩個人影。其中一個是家綸。他沒有用電筒照他們。電筒關掉。"
+    },
+    {
+      "kind": "narration",
+      "text": "參宿四的紅光落下來。家綸眼睛下面有淚。女孩的臉也被淚洗過。"
+    },
+    {
+      "kind": "narration",
+      "text": "是素婷。"
+    },
+    {
+      "kind": "narration",
+      "text": "他們在獵戶座底下，慢慢靠攏，擁在一起。"
+    },
+    {
+      "kind": "narration",
+      "text": "凌晨沒有出聲。一顆淚掉下來。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch12-year"
+    }
+  ]
+}

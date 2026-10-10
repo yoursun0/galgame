@@ -1,0 +1,125 @@
+{
+  "id": "ch23-roof",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-mmw"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-01-starfield-romance"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "04-tears",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "MMW 天台。人很多。春季天文工作坊的最後一天。望遠鏡在中間。夏季大三角在上面。"
+    },
+    {
+      "kind": "narration",
+      "text": "阿俊把神劍遞過來。"
+    },
+    {
+      "kind": "narration",
+      "text": "阿俊：凌晨，這也許是你去美國之前最後一次觀星了。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "落莊了還僭越別人的工作？還給現莊的人吧。"
+    },
+    {
+      "kind": "narration",
+      "text": "芷君把他們領到吐露港那一側。跟綺珊說話的那個西裝男子是游牧。情信的句子被他們背給彼此聽。他拉凌晨到面對水塔的欄杆。"
+    },
+    {
+      "kind": "narration",
+      "text": "游牧："
+    },
+    {
+      "kind": "narration",
+      "text": "我今天跟芷君表白了。我問她可不可以當我女朋友。她拒絕了。她說我的勇氣和決心，就連凌晨小子也不如。又說我們兩個都太單純，太幼稚，努力做好自己，長大一點再說。"
+    },
+    {
+      "kind": "narration",
+      "text": "牛郎星那邊，芷君在跟綺珊笑。她沒有過來改口。"
+    },
+    {
+      "kind": "narration",
+      "text": "天蠍座尾巴底下，素婷慢慢靠在家綸肩上。"
+    },
+    {
+      "kind": "narration",
+      "text": "游牧看著北斗。"
+    },
+    {
+      "kind": "narration",
+      "text": "游牧："
+    },
+    {
+      "kind": "narration",
+      "text": "我可不要輸給你。我要自修重考中七高考。我要入讀這間大學的中文系。一日未上戰場，一日未知道勝負如何。"
+    },
+    {
+      "kind": "narration",
+      "text": "游牧："
+    },
+    {
+      "kind": "narration",
+      "text": "小鬼，你可不可以支持我？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "當然可以了。"
+    },
+    {
+      "kind": "narration",
+      "text": "風裡開始有雨點。很細。"
+    },
+    {
+      "kind": "choice",
+      "options": [
+        {
+          "text": "去卷地墊",
+          "jump": "ch23-mat"
+        },
+        {
+          "text": "去搬腳架",
+          "jump": "ch23-stand"
+        }
+      ]
+    }
+  ]
+}

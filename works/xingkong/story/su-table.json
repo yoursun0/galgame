@@ -1,0 +1,73 @@
+{
+  "id": "su-table",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-coffee"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-07-emotional-piano-loop"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "suting",
+      "expr": "05-spring",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "赴美前，不到一星期。coffee corner。家綸、素婷，和凌晨。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "suting",
+      "text": "凌晨，我們都知道，你還有一星期不到就要到美國當交換生去了。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "suting",
+      "text": "我知道你一向很關心我，很照顧我。我很感激你從來都對我很好，我也一直覺得你像個大哥哥一樣體貼。"
+    },
+    {
+      "kind": "choice",
+      "options": [
+        {
+          "text": "說，我很喜歡素婷",
+          "jump": "su-like"
+        },
+        {
+          "text": "說，我們永遠是好朋友",
+          "jump": "su-friend"
+        }
+      ]
+    }
+  ]
+}

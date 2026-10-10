@@ -1,0 +1,103 @@
+{
+  "id": "ch22-corner",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-coffee"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-04-yoiyami-core-theme"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-grin",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "第二十二話　情海翻波，妄語如狂，虛實交織惹風浪"
+    },
+    {
+      "kind": "narration",
+      "text": "coffee corner。下午茶已經換上晚餐。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "qishan",
+      "text": "就僅僅因為這樣，你就要聯同我一起，撒謊騙家綸他們了嗎？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "對。只有這樣，才能令家綸和素婷放心。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "qishan",
+      "text": "你這個想法真是有夠神經病的。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "那你是會幫忙的囉？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "qishan",
+      "text": "喂，你是認真的嗎？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "對。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "qishan",
+      "text": "唉。怕了你啦。多年同學，你要發神經，我怎不跟你奉陪到底？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "qishan",
+      "text": "素婷這邊也就罷了。你的芷君姐姐那邊又怎麼辦？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "我到底還是親自走了一趟。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch22-bar"
+    }
+  ]
+}

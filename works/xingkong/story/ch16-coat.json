@@ -1,0 +1,120 @@
+{
+  "id": "ch16-coat",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-grassland"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-08-dream-ambience"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-grin",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "第十六話　風雲色變，覆蓋你我身後的一片天"
+    },
+    {
+      "kind": "narration",
+      "text": "貝澳那晚。碗還在水裡。他想起更早的一次。"
+    },
+    {
+      "kind": "narration",
+      "text": "二零零六年三月二十一日。中天春季觀星營。素婷是 Chief PIC。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "suting",
+      "text": "這裡可以的了，凌晨你過去那邊幫忙 set 鏡吧。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "望遠鏡我已經幫忙架好了，會長在指導參加者。我來準備食物。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "suting",
+      "text": "營帳呢？你不是負責架營帳的嗎？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "弄好了。你們去洗手間的時候，我跟大鼻架好了。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "suting",
+      "text": "那麼參加者那些爐頭呢……乞嚏！"
+    },
+    {
+      "kind": "narration",
+      "text": "凌晨把外套脫下來。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "爐火我弄好了，等水滾就行。入黑了會涼。你還是衣衫單薄。Chief PIC 冷病了，今晚不好辦。這件你披上。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "suting",
+      "text": "不……不用了。那你自己呢？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "我待會到營帳拿。莊員不用這麼客氣。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "suting",
+      "text": "你呀，你真是好人得太過份了吔。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "哈哈，我自己也覺得自己很好人。"
+    },
+    {
+      "kind": "narration",
+      "text": "從那天起，過夜觀星、內蒙露營，他都為她多帶一件外套。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch16-dare"
+    }
+  ]
+}

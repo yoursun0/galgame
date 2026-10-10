@@ -1,0 +1,98 @@
+{
+  "id": "ch13-dodge",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-beach-day"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-05-sunset-plains"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-smile",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "畢竟人都要走了，還有甚麼好留戀？"
+    },
+    {
+      "kind": "narration",
+      "text": "他用力一丟，擊中那塊礁石，噹的一聲。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "huizhang",
+      "text": "說謊。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "別人回答你的問題，你卻要說人家說謊。那你要我說甚麼？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "huizhang",
+      "text": "說實話。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "家綸他，是個好人。所以……"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "huizhang",
+      "text": "所以？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "所以，就是這樣。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "huizhang",
+      "text": "很好。"
+    },
+    {
+      "kind": "narration",
+      "text": "石塊沿著石灘滾進海裡。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch13-run"
+    }
+  ]
+}

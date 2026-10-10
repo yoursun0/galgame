@@ -1,0 +1,18 @@
+{
+  "id": "ch22-table__choice_plain",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-coffee"
+    },
+    {
+      "kind": "choice",
+      "options": [
+        {
+          "text": "留下來，把話說完",
+          "jump": "ch22-forgive"
+        }
+      ]
+    }
+  ]
+}

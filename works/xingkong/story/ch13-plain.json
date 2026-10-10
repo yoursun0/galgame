@@ -1,0 +1,64 @@
+{
+  "id": "ch13-plain",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-beach-day"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-05-sunset-plains"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-smile",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "家綸他，是個好人。所以，就是這樣。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "huizhang",
+      "text": "很好。"
+    },
+    {
+      "kind": "narration",
+      "text": "石塊沿著石灘滾進海裡。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch13-run"
+    }
+  ]
+}

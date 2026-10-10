@@ -1,0 +1,14 @@
+{
+  "id": "ch07-seat__1",
+  "instructions": [
+    {
+      "kind": "set",
+      "var": "ch7_faced",
+      "value": true
+    },
+    {
+      "kind": "jump",
+      "to": "ch07-seat__1__inc_courage"
+    }
+  ]
+}

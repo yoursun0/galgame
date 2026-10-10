@@ -1,0 +1,9 @@
+{
+  "id": "ch19-shore__0",
+  "instructions": [
+    {
+      "kind": "jump",
+      "to": "ch19-shore__0__inc_courage"
+    }
+  ]
+}

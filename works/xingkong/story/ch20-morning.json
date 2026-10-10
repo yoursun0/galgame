@@ -1,0 +1,102 @@
+{
+  "id": "ch20-morning",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-beach-day"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-02-first-light-particles"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-laugh",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "第二十話　閉門推出雲邊月，投石擊破水底天"
+    },
+    {
+      "kind": "narration",
+      "text": "一年前。二零零六年三月二十二日。春季觀星營的早上。海邊。"
+    },
+    {
+      "kind": "narration",
+      "text": "阿俊刮水片石，彈了兩下就沉。大鼻說他破不了五下的紀錄。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "喂，你們玩夠了，就過來幫忙執拾啦。"
+    },
+    {
+      "kind": "narration",
+      "text": "大鼻把一塊碎石塞進他手心。"
+    },
+    {
+      "kind": "narration",
+      "text": "大鼻：你讀物理的，試試看能不能投中那浮標。"
+    },
+    {
+      "kind": "narration",
+      "text": "凌晨丟了。偏了。會長過來，食指和拇指一鬆，石子擊中搖擺的浮標。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "huizhang",
+      "text": "視綫集中一點。你的對象不是整個浮標，而是浮標上的某一點。最重要的一點，一字記之曰心。每一擊，都要有無論如何也不得不擊中目標的覺悟。"
+    },
+    {
+      "kind": "narration",
+      "text": "他把另一塊碎石遞過來。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "huizhang",
+      "text": "來，試一個。這回該你了。"
+    },
+    {
+      "kind": "choice",
+      "options": [
+        {
+          "text": "再投一次",
+          "jump": "ch20-again"
+        },
+        {
+          "text": "先把石子握緊",
+          "jump": "ch20-hold"
+        }
+      ]
+    }
+  ]
+}

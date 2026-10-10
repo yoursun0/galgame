@@ -50,7 +50,7 @@ function textsOf(instructions: Instruction[]): string[] {
 function play(work: Work, picks: string[]): PlayState {
   let state = initialState(work);
   const pending = [...picks];
-  for (let guard = 0; guard < 800 && !state.ending; guard++) {
+  for (let guard = 0; guard < 20000 && !state.ending; guard++) {
     if (state.choices) {
       const want = pending.shift();
       const index = state.choices.findIndex((option) => option.text === want);
@@ -194,7 +194,7 @@ describe("xingkong work", () => {
     expect(state.background).toBe("bg-xuankong");
   });
 
-  test("quality playtest stops at midcard with route flags", () => {
+  test("Ch01–Ch04 flags then continue into Ch05 (full revise-plot)", () => {
     const routes: [string[], Record<string, boolean | number>][] = [
       [
         [qiHonest, wallSlow, templeName, starStay],
@@ -210,20 +210,33 @@ describe("xingkong work", () => {
       ],
     ];
     for (const [picks, flags] of routes) {
-      const state = play(work, picks);
-      expect(state.ending?.id, picks.join("|")).toBe("playtest-midcard");
-      expect(state.sceneId, picks.join("|")).toBe("midcard");
+      let state = initialState(work);
+      const pending = [...picks];
+      for (let guard = 0; guard < 20000 && state.sceneId !== "ch05-road" && !state.ending; guard++) {
+        if (state.choices) {
+          const want = pending[0];
+          const index = state.choices.findIndex((option) => option.text === want);
+          if (index < 0) {
+            state = reduce(work, state, { type: "choose", index: 0 });
+          } else {
+            pending.shift();
+            state = reduce(work, state, { type: "choose", index });
+          }
+        } else {
+          state = reduce(work, state, { type: "advance" });
+        }
+      }
+      expect(state.sceneId, picks.join("|")).toBe("ch05-road");
+      expect(state.ending, picks.join("|")).toBeNull();
       expect(state.vars, picks.join("|")).toMatchObject(flags);
+      expect(pending.length, picks.join("|")).toBe(0);
     }
   });
 
-  test("playtest path never enters branch", () => {
-    const state = play(work, [qiHonest, wallSlow, templeName, starStay]);
-    expect(state.sceneId).toBe("midcard");
-    expect(state.ending?.id).toBe("playtest-midcard");
+  test("early path never enters prototype branch hub", () => {
     let probe = initialState(work);
     const seen = new Set<string>();
-    for (let guard = 0; guard < 800 && !probe.ending; guard++) {
+    for (let guard = 0; guard < 20000 && probe.sceneId !== "ch05-road" && !probe.ending; guard++) {
       seen.add(probe.sceneId);
       if (probe.choices) {
         const text = probe.choices[0]?.text;
@@ -245,7 +258,34 @@ describe("xingkong work", () => {
     }
     expect(seen.has("branch")).toBe(false);
     expect(seen.has("star_choice")).toBe(true);
-    expect(seen.has("midcard")).toBe(true);
+    expect(seen.has("midcard")).toBe(false);
+    expect(probe.sceneId).toBe("ch05-road");
+  });
+
+  test("full game can reach a revise-plot ending from Ch05+", () => {
+    // Prefer first option at every choice after entering Ch05; must end.
+    let state = initialState(work);
+    for (let guard = 0; guard < 50000 && !state.ending; guard++) {
+      if (state.choices) {
+        const text = state.choices[0]?.text ?? "";
+        const prefer =
+          text === qiCool || text === qiHonest
+            ? qiHonest
+            : text === wallSlow || text === wallRun
+              ? wallSlow
+              : text === templeLie || text === templeName || text === templeHold
+                ? templeName
+                : text === starLeave || text === starStay
+                  ? starStay
+                  : text;
+        const index = Math.max(0, state.choices.findIndex((option) => option.text === prefer));
+        state = reduce(work, state, { type: "choose", index });
+      } else {
+        state = reduce(work, state, { type: "advance" });
+      }
+    }
+    expect(state.ending?.id).toBeTruthy();
+    expect(state.ending?.id).not.toBe("playtest-midcard");
   });
 
   test("P0 playtest CGs wire into wall scenes", () => {

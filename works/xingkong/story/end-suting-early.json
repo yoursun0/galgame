@@ -1,0 +1,62 @@
+{
+  "id": "end-suting-early",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-grassland"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-02-first-light-particles"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "聖誕夜前說了喜歡。那晚她仍去找家綸。莊聚沒有再缺席。赴美前，她和家綸在天台送行。"
+    },
+    {
+      "kind": "narration",
+      "text": "她的心意沒有改。"
+    },
+    {
+      "kind": "narration",
+      "text": "這是素婷線「早一步」。故事在這裡停下。"
+    },
+    {
+      "kind": "ending",
+      "id": "end-suting-early"
+    }
+  ]
+}

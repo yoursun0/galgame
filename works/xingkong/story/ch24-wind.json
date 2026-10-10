@@ -1,0 +1,98 @@
+{
+  "id": "ch24-wind",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-soc"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-11-at-the-end-of-hope"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "第二十四話　當年……以後"
+    },
+    {
+      "kind": "narration",
+      "text": "二零零九年。九月。八號風球。星月都沒有。"
+    },
+    {
+      "kind": "narration",
+      "text": "畢業以後，凌晨留在中大，讀計算機科學的研究課程。螢光幕上，這件事寫了兩年。"
+    },
+    {
+      "kind": "narration",
+      "text": "案頭上，從會長那裡買回來的伽利略望遠鏡壓著一疊文件。天氣不好，一直沒有打開。"
+    },
+    {
+      "kind": "narration",
+      "text": "旁邊是一疊明信片。最上面一張從波蘭寄來，沒有署名。"
+    },
+    {
+      "kind": "narration",
+      "text": "螢光幕上只有一個人還醒著。家綸的名字掛著黑加侖子。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "還沒睡？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "jialun",
+      "text": "打風吹走哂 d 稿。太傷心。唔寫落去。就咁 la。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "真是個悲劇結局啊。"
+    },
+    {
+      "kind": "choice",
+      "options": [
+        {
+          "text": "先回他一句",
+          "jump": "ch24-reply"
+        },
+        {
+          "text": "先看窗外的風",
+          "jump": "ch24-window"
+        }
+      ]
+    }
+  ]
+}

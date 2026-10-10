@@ -1,0 +1,62 @@
+{
+  "id": "ch24-dawn",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-soc"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-11-at-the-end-of-hope"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "將近六點。風雨小了一點。"
+    },
+    {
+      "kind": "narration",
+      "text": "工程大樓的天台還趕得及日出。剩下的結局，上去寫完。"
+    },
+    {
+      "kind": "narration",
+      "text": "牛郎織女、牧夫大角、大犬小犬、天蠍獵戶，天亮以後都看不見。明天再有明天的星。"
+    },
+    {
+      "kind": "ending",
+      "id": "end-canon-dawn"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "ch10-hand__choice_plain",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-firefly"
+    },
+    {
+      "kind": "choice",
+      "options": [
+        {
+          "text": "沒甚麼了",
+          "jump": "ch10-cut"
+        }
+      ]
+    }
+  ]
+}

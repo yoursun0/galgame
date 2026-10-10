@@ -1,0 +1,240 @@
+{
+  "id": "ch12-call",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-coffee"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-07-emotional-piano-loop"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "02-sigh",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "喂，找誰？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "huizhang",
+      "text": "凌晨，你最近怎麼了？沒甚麼事吧？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "沒甚麼事啊。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "huizhang",
+      "text": "怎麼這麼久的莊聚都不見你？物理系真的這麼忙嗎？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "你知道的，物理嘛，不是人讀的科目。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "huizhang",
+      "text": "實在很久沒見了。你到底甚麼時候才有空？"
+    },
+    {
+      "kind": "narration",
+      "text": "過莊飯以後，已經兩個多月沒聽過他的聲音。那頓飯上，是他逼家綸親口承認和素婷在一起。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "沒有特別甚麼時候啦。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "huizhang",
+      "text": "我們打算下星期搞內蒙團 re-union。時間地點還沒決定。大家都說要預你一份。你給我一個日子。這次不要再推。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "沒需要特別為我設想。哪一天最多人有空就成了。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "huizhang",
+      "text": "大伙兒都沒有你這麼忙。你快快決定好了。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "那好吧。你且稍等，我過一會再覆你。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "huizhang",
+      "text": "好，我們等你。"
+    },
+    {
+      "kind": "narration",
+      "text": "凌晨掛了，看著芷君。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "誰啊？莊員？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "會長。內蒙團 re-union。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "是嘛。那一天？時間？地點？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "時間地點還沒決定。去不去，也還沒決定。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "去嘛。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "你想我去？你自己呢？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "去，怎麼不去。有空的話我每次都捧場。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "那你下星期哪一天有空？他們叫我決定日期。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "讓你決定日期，一定是怕你又撇下他們。那麼這一次，你想逃也逃不掉了。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "要是真的想逃，斷不會逃不掉。我可以推說一整個星期都忙，或者臨時有事爽約。我的話，總有法子。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "面對著他倆，真的那麼痛苦嗎？"
+    },
+    {
+      "kind": "narration",
+      "text": "凌晨沒有答。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "不好意思。"
+    },
+    {
+      "kind": "narration",
+      "text": "他還是沒有答。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "但是你總不能因此一直缺席。依你的話，你點的咖啡，可還沒有喝完哩。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "這也沒甚麼。任何事也有離開的一天。畢竟人都快要走了，還有甚麼好留戀？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "不，你錯了。你告訴過我的，沒有做不到的事，只有不敢做的人。無論如何，事情總要有個了斷。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "對，我是告訴過你。就是因為這樣，才害你再一次去勾那些往事，現在跟我坐在這裡看咖啡涼。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "我沒後悔。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "真的？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "真的。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "很好。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "那麼，你下定了決心沒有？"
+    },
+    {
+      "kind": "choice",
+      "options": [
+        {
+          "text": "聽她的，去 re-union",
+          "jump": "ch12-call__0"
+        },
+        {
+          "text": "連她的話也不聽",
+          "jump": "ch12-alone"
+        }
+      ]
+    }
+  ]
+}

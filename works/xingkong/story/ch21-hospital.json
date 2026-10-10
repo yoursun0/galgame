@@ -1,0 +1,121 @@
+{
+  "id": "ch21-hospital",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-canteen"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-07-emotional-piano-loop"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "02-hips",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "第二十一話　牧夫大角表心跡，晨星細數話深情"
+    },
+    {
+      "kind": "narration",
+      "text": "六年前。二零零一年二月十六日。沙田威爾斯親王醫院。"
+    },
+    {
+      "kind": "narration",
+      "text": "游牧的左腳包得像木乃伊。他接過葡萄汁。"
+    },
+    {
+      "kind": "narration",
+      "text": "游牧："
+    },
+    {
+      "kind": "narration",
+      "text": "沒有傷到骨頭。神經倒是扯傷了。"
+    },
+    {
+      "kind": "narration",
+      "text": "櫃上有一瓶幸運星。紙星星裡面寫著「早日康復」。"
+    },
+    {
+      "kind": "narration",
+      "text": "游牧："
+    },
+    {
+      "kind": "narration",
+      "text": "是喜歡的女同學摺的。還不是女朋友。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "這個女孩這麼關心你，你一定要好好努力追求。"
+    },
+    {
+      "kind": "narration",
+      "text": "游牧："
+    },
+    {
+      "kind": "narration",
+      "text": "我的眼中永遠就只有她。我這輩子是非她不娶的了。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "你要表白就跟她說。跟我這個小鬼說有甚麼用。"
+    },
+    {
+      "kind": "narration",
+      "text": "游牧："
+    },
+    {
+      "kind": "narration",
+      "text": "對了，應該說甚麼表白才好？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "就說你剛才那堆話。要不就寫點情詩。女孩子好像都喜歡這個。"
+    },
+    {
+      "kind": "narration",
+      "text": "游牧："
+    },
+    {
+      "kind": "narration",
+      "text": "小鬼，你今晚就跟我一起構思。完成之前別想溜。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch21-table"
+    }
+  ]
+}

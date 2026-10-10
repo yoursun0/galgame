@@ -1,0 +1,14 @@
+{
+  "id": "ch12-call__0__set_courage_4",
+  "instructions": [
+    {
+      "kind": "set",
+      "var": "courage",
+      "value": 4
+    },
+    {
+      "kind": "jump",
+      "to": "ch12-go"
+    }
+  ]
+}

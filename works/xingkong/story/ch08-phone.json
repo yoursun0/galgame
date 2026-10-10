@@ -1,0 +1,145 @@
+{
+  "id": "ch08-phone",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-coffee"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-16-town-theme-rpg"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-grin",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "qishan",
+      "text": "你這凌晨小子不是說自己是這季天文工作坊的主打 PIC 嗎？你不用籌備活動嗎？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "夫為大將者，運籌帷幄之中，決勝千里之外嘛。"
+    },
+    {
+      "kind": "narration",
+      "text": "電話響了。是家綸。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "喂，怎樣？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "jialun",
+      "text": "喂，凌晨，是不是真的不用燒那些天文相光碟當問答環節的禮物？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "唏！早跟你說過不用了。問答要分組，禮物用一組人分得了的糖果包。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "jialun",
+      "text": "但我只是認為燒錄些天文相光碟不但較吸引，還可以推廣天文。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "我們又不知道一組有多少人。每組二十多人，每答對一題送一隻光碟，哪來這麼多？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "jialun",
+      "text": "可以在分組之前搞一個小小的個人問答，個別作答，個別送光碟。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "當然不成。個人問答怎麼讓一組的人彼此認識？你難道要讓懂天文的人壟斷，不懂的人插不進嘴嗎？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "jialun",
+      "text": "可是嘛。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "禮物我早讓大鼻買了糖果，你不用操心。場地你去跟進。別的瑣事別管，快快把那些螢光星星黏好。"
+    },
+    {
+      "kind": "narration",
+      "text": "芷君吃完了，向他示意要走。凌晨揮手。她已經走遠。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "jialun",
+      "text": "螢光星星貼得七七八八了。只是我一會介紹星空還是不太純熟，也許要再練習一下。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "還要練習？不到半個小時後就得開始了。也罷，我現在就趕過來。就這樣。"
+    },
+    {
+      "kind": "narration",
+      "text": "他掛線。"
+    },
+    {
+      "kind": "narration",
+      "text": "寶方：怎樣？是不是可以起程了？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "對哩。綺珊，你真的不來？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "qishan",
+      "text": "說不來，就不來。"
+    },
+    {
+      "kind": "narration",
+      "text": "她頭也不回地走了。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch08-room"
+    }
+  ]
+}

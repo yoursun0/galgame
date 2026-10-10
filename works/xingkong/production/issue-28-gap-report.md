@@ -1,63 +1,32 @@
-# Issue #28 gap report (early-align PR → 九把刀)
+# Issue #28 gap report（Ch05→結局已接）
 
-SoT: `works/xingkong/production/twine/xingkong.twee` @ revise-plot `6461f15` (+ main tip `#27`).
+SoT: `works/xingkong/production/twine/xingkong.twee`（含 `Ch04-Leave`→`Ch05-Road` 斷鏈修復）。
 
-## This PR (kickoff) did
+## 已完成
 
-- Aligned **existing** early playable JSON (`open1`…`midcard` chain) to revise-plot prose where those scenes already map to Ch01–Ch04.
-- Removed playable `star_poem` / 《在天邊》 path: `star_stay` and `star_leave` now jump straight to `midcard`. Deleted `story/star_poem.json`.
-- Expanded `star_leave` with Ch04-Leave 芷君星空對白 (twee kept this after Leave; Poem passage deleted).
-- Left `midcard` as temporary soft end (`ending: playtest-midcard`) with copy noting Ch05+ not wired yet. **Did not** jump to `branch` (old prototype three-route hub ≠ Ch05-Road).
+1. **twee**：`Ch04-Leave` 改跳 `Ch05-Road`（不再指已刪 `Ch04-Poem`）。
+2. **主線**：`star_stay`／`star_leave` → `ch05-road`（**不**經 `midcard` ending、**不**接 `branch` 原型線）。`midcard` 若進入亦續跳 Ch05。
+3. **Ch05–Ch24 + Su-* + End-***：由 twee 轉寫為 `works/xingkong/story/ch*.json` 等（kebab-case id）。
+4. **旗標**（`work.json`）：`qishanHonest`／`sutingWalk`／`zhijunName`／`courage`／`candor`／`ch4_faced`／`ch7_faced`／`ch21_ask`。
+5. **斷鏈／孤兒補線**（不發明情節，只接回既有 passage）：
+   - `Ch07-Late` → `Ch07-Frame` → Dodge/Plain → `Ch07-Ask`（接回 candor 閘）
+   - `Ch15-Snap` → `Ch16-Frame` → Coat（接回 candor 閘）
+   - `Ch21-Fake` → `Ch22-Corner`（原誤指 `Ch05-Ask`）
+6. **可達結局**（BFS）：`ch10-bad-secret`、`ch12-alone`、`end-no-look-back`、`end-suting-early`、`end-zhijun-hankie`、`end-qishan-pinch`、`end-canon-dawn`。`End-Canon-Rain` 為中段節點，續入 Ch24。
+7. **無** 《在天邊》／`star_poem`／`playtest-midcard` 主線收束。
 
-## Twee bug to fix
+## 刻意保留
 
-- `Ch04-Leave` still `(link-goto: "繼續", "Ch04-Poem")` but `Ch04-Poem` was deleted. Stay already goes to `Ch05-Road`. **Retarget Leave → `Ch05-Road`.**
+- 早期 Ch01–Ch04 仍用已合 main 的 `open*`／`st*`／`wall*`／`temple*`／`star_*`（#29），未整段重寫。
+- 原型 `branch`／`s_*`／`z_*`／`q_*` 檔案仍在 disk／manifest（測試仍宣告 ending ids），但主線 **不可達** `branch`。
 
-## JSON still missing (Ch05+ = full game)
+## 已知限制（非阻擋）
 
-Playable JSON today covers roughly **Ch01–Ch04 only** (playtest spine), then stops at `midcard`.
+- Ch05+ 台詞以 twee 為準直轉，立繪／BGM 為章節預設，未逐場精調演出。
+- twee 內 Ch05／Ch08 candor 閘在 revise-plot 後本就不在可玩 spine；現靠 Ch07-Frame／Ch16-Frame 補線累加 candor。
+- 轉換腳本：`tools/twee_to_xingkong_json.py`（可重跑；條件選項閘 `ch10-hand__*`／`ch22-table__*` 已手修）。
 
-| Twee chapter / block | JSON status | Notes |
-|---|---|---|
-| Ch01 Soc…End | Partial (`open*`/`st*`/`qi_*`/`zj*`) | Aligned this PR |
-| Ch02 Wall…End | Partial (`bus1`/`wall_*`) | Choice labels still playtest-simplified vs twee Beside/Behind |
-| Ch03 Stone…Dog | Partial (`temple_*`) | Hold/Name/Lie are playtest ladder variants |
-| Ch04 Night…Stay/Leave | Partial (`star_*`) | Poem removed; no Ch05 jump yet |
-| **Ch05 Road…End** | **None** | Bus Killer / stop — first full-game slice after midcard |
-| **Ch06 Work…Bye** | **None** | |
-| **Ch07 Late…Tea** | **None** | Frame coffee paths removed in revise-plot; keep ladder flags |
-| **Ch08 Term…Sky** | **None** | Ch08-Frame/Dodge/Plain removed in twee |
-| **Ch09 Hall…Turn** | **None** | Choice label polish in revise-plot |
-| **Ch10 Camp…BadEnd** | **None** | Includes `Ch10-BadEnd` 「守不住的秘密」 |
-| **Ch11 Tent…Walk** | **None** | Ch11-Frame removed |
-| **Ch12 Year…Alone** + Su-* + End-Suting-Early | **None** | |
-| **Ch13–Ch15** | **None** | |
-| **Ch16–Ch18** | **None** | Ch16-Frame remains in twee (not the deleted Ch05/Ch08 coffee frames) |
-| **Ch19–Ch24** + endings | **None** | Canon / route endings in twee |
+## 下一步（Puppy／Paddy）
 
-## Old JSON endings still on disk (unreachable from playtest spine)
-
-Prototype route hub `branch` → `s*` / `z*` / `q*` still listed in `work.json`, with endings:
-
-- 素婷: `suting-true`, `suting-good`, `suting-bad-leave`, `suting-bad-rip`
-- 芷君: `zhijun-true`, `zhijun-good`, `zhijun-bad-shield`, `zhijun-bad-bridge`
-- 綺珊: `qishan-true`, `qishan-good`, `qishan-bad-setup`, `qishan-bad-cool`
-- Soft: `playtest-midcard`
-
-These are **v0.3 prototype endings**, not revise-plot Ch10–Ch24 endings. Do not reconnect `midcard`→`branch` as “Ch05”.
-
-## Recommended order for 九把刀
-
-1. Fix twee `Ch04-Leave` → `Ch05-Road`.
-2. Port **Ch05** JSON; change `star_stay`/`star_leave` (or `midcard`) to enter Ch05; remove or repurpose `playtest-midcard`.
-3. Port Ch06 → Ch07 (flags: `courage` / `candor` / `ch4_faced` + method-丙 per `adaptation-plan.md`).
-4. Port Ch08–Ch10 including BadEnd; wire start→endings smoke test.
-5. Port Ch11–Ch15, then Ch16–Ch24 + Su-* / End-* canon endings.
-6. Retire or quarantine prototype `branch`/`s_*`/`z_*`/`q_*` once twee endings exist.
-7. Puppy: tests + asset id wiring; Paddy: merge + Pages deploy (`bun run build`, base `/`).
-
-## Out of scope here
-
-- No merge, no deploy.
-- No inventing Ch05+ plot in JSON.
-- mystery-fixture untouched.
+- 測＋ Pages deploy（`bun run build`，base `/`）。
+- 可選：退役原型 `branch`／`s_*`／`z_*`／`q_*`。

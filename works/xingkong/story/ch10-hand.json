@@ -1,0 +1,104 @@
+{
+  "id": "ch10-hand",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-firefly"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-01-starfield-romance"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "03-worry",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "風裡。凌晨扶著素婷的手，攀下高的大石。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "素婷，小心點。別像阿俊一樣常常不小心跌個四腳朝天。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "suting",
+      "text": "謝謝。"
+    },
+    {
+      "kind": "narration",
+      "text": "她站好，放開他的手。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "素婷。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "suting",
+      "text": "唔？"
+    },
+    {
+      "kind": "narration",
+      "text": "她轉過頭。"
+    },
+    {
+      "kind": "narration",
+      "text": "]"
+    },
+    {
+      "kind": "jump",
+      "to": "ch10-hand__choice_full",
+      "when": {
+        "all": [
+          {
+            "cmp": "eq",
+            "var": "ch4_faced",
+            "value": true
+          },
+          {
+            "cmp": "eq",
+            "var": "ch7_faced",
+            "value": true
+          }
+        ]
+      }
+    },
+    {
+      "kind": "jump",
+      "to": "ch10-hand__choice_plain"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ch05-bus",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-bus"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-12-village-2018"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-laugh",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "綺珊一把拉他。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "qishan",
+      "text": "喂，凌晨小子！別看著窗外發呆了，過來跟我們一道玩 Killer 吧！"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "小姐，難道看不見我在冥想中嗎？去去去！"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "qishan",
+      "text": "還有一個小時車子就到機場啦。"
+    },
+    {
+      "kind": "narration",
+      "text": "她把他扯進身後那個圈。車廂很窄。寶方坐在地上，指著一個三人位。"
+    },
+    {
+      "kind": "narration",
+      "text": "寶方：快進去！"
+    },
+    {
+      "kind": "narration",
+      "text": "最外面是芷君。她讓出半個位置。凌晨坐在她和寶方中間。"
+    },
+    {
+      "kind": "narration",
+      "text": "素婷不在這個圈裡。她坐在車頭，在睡。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch05-circle"
+    }
+  ]
+}

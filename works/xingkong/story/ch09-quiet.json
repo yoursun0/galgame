@@ -1,0 +1,93 @@
+{
+  "id": "ch09-quiet",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-soc"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-15-bird-in-hand-night"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-smile",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "甚麼？就是因為你媽媽發現了他寫給你的情信，堅決拒絕你們交往，那麼你們就這樣分開了？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "母命難違啊。那時大家都得應付會考。中學生的愛情是很脆弱的。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "那之後呢？會考之後怎麼了？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "我考得尚且可以，繼續在原校升讀。但他可慘了。成績一直一落千丈，升不回原校。現在已經很久沒聯絡了。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "那麼，你就這樣讓這段感情走了嗎？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "沒有辦法啊。是他自己不爭氣，不思振作。何況，他一直也沒有主動聯絡我。"
+    },
+    {
+      "kind": "narration",
+      "text": "她低頭看小明，飯也不吃了。"
+    },
+    {
+      "kind": "choice",
+      "options": [
+        {
+          "text": "沉默地一起看著麻雀",
+          "jump": "ch09-swallow"
+        },
+        {
+          "text": "喜歡人家的話，就要懂得體諒人家",
+          "jump": "ch09-said"
+        }
+      ]
+    }
+  ]
+}

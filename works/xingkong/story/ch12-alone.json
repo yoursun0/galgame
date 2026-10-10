@@ -1,0 +1,75 @@
+{
+  "id": "ch12-alone",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-grassland"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-02-first-light-particles"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "凌晨沒有問她哪一天有空。他回撥給會長。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "週末我也不去。這次不要預我。日子你們自己定。"
+    },
+    {
+      "kind": "narration",
+      "text": "電話那頭靜了一靜。他沒有再逼。"
+    },
+    {
+      "kind": "narration",
+      "text": "芷君看著他。咖啡涼了。"
+    },
+    {
+      "kind": "narration",
+      "text": "後來的貝澳，凌晨沒有去。"
+    },
+    {
+      "kind": "narration",
+      "text": "這是壞結局「一個人走」。故事停在第十二話。"
+    },
+    {
+      "kind": "ending",
+      "id": "ch12-alone"
+    }
+  ]
+}

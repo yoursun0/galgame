@@ -1,0 +1,105 @@
+{
+  "id": "ch22-bar",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-coffee"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-04-yoiyami-core-theme"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-grin",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "三天前。地址是芷君寫的。茶餐廳改成酒吧，名字叫「大宋江山」。門外對聯是秦觀的《鵲橋仙》。裡面只有一盞日光燈。天花板貼滿螢光星星。鐵吧枱上有一瓶幸運星。"
+    },
+    {
+      "kind": "narration",
+      "text": "玩撲克的那個店小二，是游牧。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "我是凌晨。六年前被惡犬追殺，是你救的。"
+    },
+    {
+      "kind": "narration",
+      "text": "游牧："
+    },
+    {
+      "kind": "narration",
+      "text": "你就是那被狗嚇到摳淚的，在醫院教我寫情詩的肉麻才子！"
+    },
+    {
+      "kind": "narration",
+      "text": "他還背得出那些句子。凌晨也背得出。"
+    },
+    {
+      "kind": "narration",
+      "text": "游牧："
+    },
+    {
+      "kind": "narration",
+      "text": "你怎麼會知道我在這裡？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "就是她告訴我的。你說過非她不娶的那個。黎芷君。"
+    },
+    {
+      "kind": "narration",
+      "text": "游牧："
+    },
+    {
+      "kind": "narration",
+      "text": "你居然認識芷君？你們是同學？"
+    },
+    {
+      "kind": "choice",
+      "options": [
+        {
+          "text": "說，我就是她男朋友",
+          "jump": "ch22-claim"
+        },
+        {
+          "text": "先問他有沒有女朋友",
+          "jump": "ch22-askfirst"
+        }
+      ]
+    }
+  ]
+}

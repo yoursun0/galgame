@@ -1,0 +1,154 @@
+{
+  "id": "ch12-coffee",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-coffee"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-07-emotional-piano-loop"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "02-sigh",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "喂，等了很久了嗎？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "沒有很久，三個小時罷了。"
+    },
+    {
+      "kind": "narration",
+      "text": "芷君坐下。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "結果怎樣？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "你猜對了，依然是那樣那樣。"
+    },
+    {
+      "kind": "narration",
+      "text": "這是今年第四次。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "似乎，我也是時候忘了他吧？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "講就容易。要是辦得到，你不會在一個月內跟我喝四杯特濃。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "他變了。整個人變得放蕩不羈，說話爽朗豪邁。不像從前，會花小心思哄人。"
+    },
+    {
+      "kind": "narration",
+      "text": "芷君看著還沒動過的杯子。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "都是小明不好，害人家浸泡在咖啡的泡沫中。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "你根本一口也還沒喝。別撒賴了。"
+    },
+    {
+      "kind": "narration",
+      "text": "風把咖啡吹涼。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "對了，你的情況如何？結果出來了嗎？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "出來了。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "怎樣？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "面試也通過了。今年暑假便可以飛到美國。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "嘩，棒極了。恭喜啊。"
+    },
+    {
+      "kind": "narration",
+      "text": "那個笑是牽強的。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "乾杯。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "乾杯。"
+    },
+    {
+      "kind": "narration",
+      "text": "電話響了。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch12-call"
+    }
+  ]
+}

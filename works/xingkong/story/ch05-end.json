@@ -1,0 +1,68 @@
+{
+  "id": "ch05-end",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-bus"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-12-village-2018"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-laugh",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "凌晨提著行李下车。"
+    },
+    {
+      "kind": "narration",
+      "text": "素婷在前面回頭。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "suting",
+      "text": "凌晨，走快點，飛機要開了。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "來了來了！"
+    },
+    {
+      "kind": "jump",
+      "to": "ch06-work"
+    }
+  ]
+}

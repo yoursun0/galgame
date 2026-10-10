@@ -1,0 +1,77 @@
+{
+  "id": "ch07-tea",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-coffee"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-13-peaceful-tune-2"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-laugh",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "芷君站起來，往收銀處走。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "好了，星星的事也就罷了。現在看你又怎麼無中生有地，給我變出個甚麼火辣辣鐵板燒下午茶餐？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "這個更容易辦了啦。不過可別後悔，這個火辣辣鐵板餐可會吃得你全身發燙呢！"
+    },
+    {
+      "kind": "narration",
+      "text": "沒有這種下午茶。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "難道我會怕你麼？"
+    },
+    {
+      "kind": "narration",
+      "text": "下午茶還是吃了。二十元，和那條沾了口水的手帕，這兩筆債算是還了。"
+    },
+    {
+      "kind": "jump",
+      "to": "ch08-term"
+    }
+  ]
+}

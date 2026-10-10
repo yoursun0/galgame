@@ -1,0 +1,113 @@
+{
+  "id": "ch13-sky",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-beach-day"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-05-sunset-plains"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-smile",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "唉，又投不中。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "huizhang",
+      "text": "早就跟你說過，不用心的話，目標即使再大再容易，還是不會讓你投中的。"
+    },
+    {
+      "kind": "narration",
+      "text": "他看著天上的雲。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "唏，又在看天空嗎？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "huizhang",
+      "text": "是啊。今天雖然有一點白雲，但陽光依然這麼刺眼。這晚如果放晴的話，星光一定很美。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "今晚有甚麼目標？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "huizhang",
+      "text": "還沒有甚麼目標。這兒又沒有我看得上眼的女孩子。"
+    },
+    {
+      "kind": "narration",
+      "text": "兩個人捧著肚子笑。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "我問你晚上有甚麼想看的深空天體！你跟我講甚麼女孩子！"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "huizhang",
+      "text": "我就是變低能了，還不是從你這個無聊鬼學的！"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "huizhang",
+      "text": "人最緊要是活得開開心心。有沒有看得上眼的女孩子，還是其次。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "你是不是有甚麼想說的？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "huizhang",
+      "text": "要是你自己沒有甚麼想說的，我說甚麼又有何用？"
+    },
+    {
+      "kind": "jump",
+      "to": "ch13-leave"
+    }
+  ]
+}
