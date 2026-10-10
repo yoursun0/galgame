@@ -44,27 +44,17 @@
     },
     {
       "kind": "narration",
-      "text": "他翻開內蒙團的宣傳單張。一點五十分。路線跟去年幾乎一樣。"
+      "text": "凌晨翻開內蒙團的宣傳單張。一點五十分。路線跟去年幾乎一樣。"
     },
     {
       "kind": "dialogue",
-      "speaker": "lingchen",
-      "text": "先到北京——故宮、長城、頤和園、王府井。"
+      "text": "首先到北京，故宮、長城、頤和園、王府井。然後大同，懸空寺、雲岡石窟，還有那個名字很長的草原、響沙灣。下莊這條旅遊路線，基本上照抄我們。",
+      "speaker": "lingchen"
     },
     {
       "kind": "dialogue",
-      "speaker": "lingchen",
-      "text": "然後大同，懸空寺、雲岡石窟，還有那個名字很長的草原，跟響沙灣。"
-    },
-    {
-      "kind": "dialogue",
-      "speaker": "lingchen",
-      "text": "下莊這條線，照抄我們。"
-    },
-    {
-      "kind": "dialogue",
-      "speaker": "lingchen",
-      "text": "二十多本團刊，出發前遺在這裡。莊員沒有團刊。有些人只好共用一本。"
+      "text": "二十多本團刊，出發前遺在這裡。莊員沒有團刊。有些人只好共用一本。",
+      "speaker": "lingchen"
     },
     {
       "kind": "jump",

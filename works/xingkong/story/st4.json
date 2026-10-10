@@ -45,12 +45,7 @@
     {
       "kind": "dialogue",
       "speaker": "jialun",
-      "text": "白天下雨的話，拖著行李箱就狼狽了。"
-    },
-    {
-      "kind": "dialogue",
-      "speaker": "jialun",
-      "text": "幸好天公造美。"
+      "text": "白天萬一下雨，拖著行李箱會很狼狽。幸好有太陽。"
     },
     {
       "kind": "jump",

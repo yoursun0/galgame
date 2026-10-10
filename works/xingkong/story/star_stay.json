@@ -49,7 +49,7 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "再浪漫、再美麗、再可歌可泣也好——畢竟是沒結果的愛情。"
+      "text": "再浪漫、再美麗、再可歌可泣也好，畢竟是沒結果的愛情。"
     },
     {
       "kind": "narration",
@@ -57,11 +57,11 @@
     },
     {
       "kind": "narration",
-      "text": "他閉上嘴，抬起頭。"
+      "text": "凌晨閉上嘴，抬起頭。"
     },
     {
       "kind": "jump",
-      "to": "star_poem"
+      "to": "midcard"
     }
   ]
 }
