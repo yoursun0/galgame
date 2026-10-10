@@ -786,6 +786,11 @@ async function renderTitle(): Promise<void> {
   overlay.replaceChildren();
   const wrap = document.createElement("div");
   wrap.className = "title-screen";
+  const coverUrl = urls.get("title-cover");
+  if (coverUrl) {
+    wrap.classList.add("has-cover");
+    wrap.style.backgroundImage = `url("${coverUrl}")`;
+  }
   const heading = document.createElement("h1");
   heading.textContent = work.manifest.title;
   const menu = document.createElement("div");
@@ -884,6 +889,24 @@ function shellCss(): string {
       gap: 28px;
       background: ${theme.pageBackground};
       font-family: ${theme.fontFamily};
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .title-screen.has-cover {
+      place-items: end start;
+      align-content: end;
+      justify-items: start;
+      padding: 0 0 8vh 6vw;
+      gap: 16px;
+    }
+    .title-screen.has-cover h1 {
+      text-shadow: 0 2px 18px rgba(0, 0, 0, 0.65);
+      color: #f5f0e8;
+    }
+    .title-screen.has-cover .note {
+      color: #f5f0e8;
+      text-shadow: 0 1px 10px rgba(0, 0, 0, 0.55);
     }
     .title-screen h1 { margin: 0; font-weight: 500; letter-spacing: 0.28em; font-size: 48px; }
     .title-menu { display: grid; gap: 10px; min-width: 220px; }

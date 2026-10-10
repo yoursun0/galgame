@@ -20,12 +20,10 @@ test("xingkong playtest sprite is a real image file", () => {
   expect(inspectAssetFile(file, repo)).toEqual({ kind: "file" });
 });
 
-test("xingkong leftover sprite pointer still resolves into characters", () => {
-  const link = join(repo, "works/xingkong/assets/sprites/qishan/04-loud.png");
-  const found = inspectAssetFile(link, repo);
-  expect(found.kind).toBe("link");
-  if (found.kind !== "link") return;
-  expect(found.target).toBe(realpathSync(join(repo, "characters/綺珊/04-loud.png")));
+test("xingkong unify sprite is a real image file", () => {
+  // PR #22 ships former leftover symlink sprites as real PNGs under assets/sprites.
+  const file = join(repo, "works/xingkong/assets/sprites/qishan/04-loud.png");
+  expect(inspectAssetFile(file, repo)).toEqual({ kind: "file" });
 });
 
 test("a real image is not treated as a link", () => {
