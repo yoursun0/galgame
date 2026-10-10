@@ -75,18 +75,10 @@ const wallRun = "追上去。總不能看起來跑輸給綺珊。";
 const templeLie = "胡扯下去。指腹為婚，緣訂七世。";
 const templeName = "問她的名字，也報上自己的。";
 const templeHold = "先別接話。看素婷還在不在下面。";
-const branchSu = "回頭。我希望站在那裡的是素婷。";
-const branchZhi = "先別作聲。如果她是叫我看星星的，我就抬頭。";
-const branchQi = "走回去，把激光筆奪回來。這場笑話還沒講完。";
-const suConfess = "在他開口之前去找素婷，把那句話說完。";
-const suLeave = "關掉電筒。讓那兩個影子靠在一起。";
-const suRip = "走過去把他們拉開，問這算甚麼兄弟。";
-const zhiAsk = "認真問：可不可以，當我的女朋友。";
-const zhiShield = "笑著借她的名義，好讓自己可以安心離開。";
-const zhiBridge = "要來游牧的聯絡，勸她回到那段沒有結果的愛情。";
-const qiTell = "告訴她：我約你，不是為了素婷，也不是為了家綸。";
-const qiSetup = "答應家綸。讓他去說。你去忙你的。";
-const qiCoolOff = "把杯子喝完，打個哈哈就走。";
+const starLeave = "說要去 set 望遠鏡，離開。";
+const starStay = "留下，把話講完。";
+/** Scenes rewritten for quality playtest (#8); no longer byte-match v0.3 prototype. */
+const playtestRewritten = new Set(["open1", "open2", "open3", "star5", "midcard"]);
 
 describe("xingkong work", () => {
   const work = loadXingkong();
@@ -100,6 +92,7 @@ describe("xingkong work", () => {
 
   test("copies prototype lines, choices, and ending copy", () => {
     for (const [id, scene] of Object.entries(proto)) {
+      if (playtestRewritten.has(id)) continue;
       const file = work.scenes.find((item) => item.id === id);
       expect(file, id).toBeDefined();
       if (!file) continue;
@@ -150,26 +143,97 @@ describe("xingkong work", () => {
     expect(state.background).toBe("bg-xuankong");
   });
 
-  test("twelve endings follow the prototype flags", () => {
-    const routes: [string[], string, Record<string, boolean>][] = [
-      [[qiHonest, wallSlow, templeName, branchSu, suConfess], "suting-true", { qishanHonest: true, sutingWalk: true, zhijunName: true }],
-      [[qiCool, wallRun, templeLie, branchSu, suConfess], "suting-good", { qishanHonest: false, sutingWalk: false, zhijunName: false }],
-      [[qiHonest, wallSlow, templeName, branchSu, suLeave], "suting-bad-leave", { qishanHonest: true, sutingWalk: true, zhijunName: true }],
-      [[qiHonest, wallSlow, templeName, branchSu, suRip], "suting-bad-rip", { qishanHonest: true, sutingWalk: true, zhijunName: true }],
-      [[qiHonest, wallSlow, templeName, branchZhi, zhiAsk], "zhijun-true", { qishanHonest: true, sutingWalk: true, zhijunName: true }],
-      [[qiHonest, wallSlow, templeHold, branchZhi, zhiAsk], "zhijun-good", { qishanHonest: true, sutingWalk: true, zhijunName: false }],
-      [[qiHonest, wallSlow, templeName, branchZhi, zhiShield], "zhijun-bad-shield", { qishanHonest: true, sutingWalk: true, zhijunName: true }],
-      [[qiHonest, wallSlow, templeName, branchZhi, zhiBridge], "zhijun-bad-bridge", { qishanHonest: true, sutingWalk: true, zhijunName: true }],
-      [[qiHonest, wallSlow, templeName, branchQi, qiTell], "qishan-true", { qishanHonest: true, sutingWalk: true, zhijunName: true }],
-      [[qiCool, wallSlow, templeName, branchQi, qiTell], "qishan-good", { qishanHonest: false, sutingWalk: true, zhijunName: true }],
-      [[qiHonest, wallSlow, templeName, branchQi, qiSetup], "qishan-bad-setup", { qishanHonest: true, sutingWalk: true, zhijunName: true }],
-      [[qiHonest, wallSlow, templeName, branchQi, qiCoolOff], "qishan-bad-cool", { qishanHonest: true, sutingWalk: true, zhijunName: true }],
+  test("quality playtest stops at midcard with route flags", () => {
+    const routes: [string[], Record<string, boolean | number>][] = [
+      [
+        [qiHonest, wallSlow, templeName, starStay],
+        { qishanHonest: true, sutingWalk: true, zhijunName: true, ch4_faced: true, courage: 1, candor: 0 },
+      ],
+      [
+        [qiCool, wallRun, templeLie, starLeave],
+        { qishanHonest: false, sutingWalk: false, zhijunName: false, ch4_faced: false, courage: 0, candor: 0 },
+      ],
+      [
+        [qiHonest, wallSlow, templeHold, starLeave],
+        { qishanHonest: true, sutingWalk: true, zhijunName: false, ch4_faced: false, courage: 0, candor: 0 },
+      ],
     ];
-    for (const [picks, endingId, flags] of routes) {
+    for (const [picks, flags] of routes) {
       const state = play(work, picks);
-      expect(state.ending?.id, endingId).toBe(endingId);
-      expect(state.cg, endingId).toBe(`ending-${endingId}`);
-      expect(state.vars, endingId).toMatchObject(flags);
+      expect(state.ending?.id, picks.join("|")).toBe("playtest-midcard");
+      expect(state.sceneId, picks.join("|")).toBe("midcard");
+      expect(state.vars, picks.join("|")).toMatchObject(flags);
+    }
+  });
+
+  test("playtest path never enters branch", () => {
+    const state = play(work, [qiHonest, wallSlow, templeName, starStay]);
+    expect(state.sceneId).toBe("midcard");
+    expect(state.ending?.id).toBe("playtest-midcard");
+    let probe = initialState(work);
+    const seen = new Set<string>();
+    for (let guard = 0; guard < 800 && !probe.ending; guard++) {
+      seen.add(probe.sceneId);
+      if (probe.choices) {
+        const text = probe.choices[0]?.text;
+        const pick =
+          text === qiCool || text === qiHonest
+            ? qiHonest
+            : text === wallSlow || text === wallRun
+              ? wallSlow
+              : text === templeLie || text === templeName || text === templeHold
+                ? templeName
+                : text === starLeave || text === starStay
+                  ? starStay
+                  : text;
+        const index = probe.choices.findIndex((option) => option.text === pick);
+        probe = reduce(work, probe, { type: "choose", index: Math.max(0, index) });
+      } else {
+        probe = reduce(work, probe, { type: "advance" });
+      }
+    }
+    expect(seen.has("branch")).toBe(false);
+    expect(seen.has("star_choice")).toBe(true);
+    expect(seen.has("midcard")).toBe(true);
+  });
+
+  test("P0 playtest CGs wire into wall scenes", () => {
+    let state = initialState(work);
+    for (let guard = 0; guard < 400 && state.sceneId !== "wall_choice"; guard++) {
+      if (state.choices) state = reduce(work, state, { type: "choose", index: 0 });
+      else state = reduce(work, state, { type: "advance" });
+    }
+    expect(state.sceneId).toBe("wall_choice");
+    expect(state.cg).toBe("cg-wall-wind");
+
+    for (let guard = 0; guard < 80 && state.sceneId !== "wall_mister"; guard++) {
+      if (state.choices) state = reduce(work, state, { type: "choose", index: 0 });
+      else state = reduce(work, state, { type: "advance" });
+    }
+    expect(state.sceneId).toBe("wall_mister");
+    expect(state.cg).toBe("cg-keyi-keshi");
+  });
+
+  test("prototype ending scene files still declare ending ids", () => {
+    const endingScenes = [
+      "s_true3",
+      "s_good2",
+      "s_bad_leave",
+      "s_bad_rip",
+      "z_true2",
+      "z_good1",
+      "z_bad_shield",
+      "z_bad_bridge",
+      "q_true2",
+      "q_good1",
+      "q_bad_setup",
+      "q_bad_cool",
+    ];
+    for (const id of endingScenes) {
+      const file = work.scenes.find((item) => item.id === id);
+      expect(file, id).toBeDefined();
+      const ending = file?.instructions.find((instruction) => instruction.kind === "ending");
+      expect(ending && ending.kind === "ending", id).toBeTruthy();
     }
   });
 });

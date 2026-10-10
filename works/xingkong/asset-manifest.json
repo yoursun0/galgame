@@ -440,5 +440,17 @@
     "approved": true,
     "character": "zhijun",
     "expr": "05-tearsmile"
+  },
+  {
+    "id": "cg-wall-wind",
+    "path": "assets/cg/cg-wall-wind.jpg",
+    "type": "cg",
+    "approved": true
+  },
+  {
+    "id": "cg-keyi-keshi",
+    "path": "assets/cg/cg-keyi-keshi.jpg",
+    "type": "cg",
+    "approved": true
   }
 ]

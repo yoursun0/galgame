@@ -49,7 +49,7 @@
     },
     {
       "kind": "jump",
-      "to": "star5"
+      "to": "star_choice"
     }
   ]
 }

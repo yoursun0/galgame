@@ -1,0 +1,70 @@
+{
+  "id": "wall_mister",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-badaling"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-05-sunset-plains"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "01-laugh",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "show",
+      "asset": "cg-keyi-keshi"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "請問……可不可以……告訴我你的名字？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "哈，當然可以啦！不過，你可不可以說話不要總是可不可以的？可不可以跟你朋友分享一本團刊？可不可以借個零錢給我？可不可以告訴我你的名字？你叫做可不可以先生嗎？"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "啊，原來如此！我知道了。原來你叫當然可以小姐。"
+    },
+    {
+      "kind": "narration",
+      "text": "兩個人都笑了。身後的陽光很刺眼。"
+    },
+    {
+      "kind": "jump",
+      "to": "temple1"
+    }
+  ]
+}

@@ -14,12 +14,18 @@ test("xingkong background pointer resolves inside the repo", () => {
   expect(found.target).toBe(realpathSync(join(repo, "bg/bg-beach-day.jpg")));
 });
 
-test("xingkong sprite pointer keeps the character directory", () => {
-  const link = join(repo, "works/xingkong/assets/sprites/qishan/01-grin.png");
+test("xingkong playtest sprite is a real image file", () => {
+  // Gate-8 art ships playtest expressions as real PNGs under assets/sprites.
+  const file = join(repo, "works/xingkong/assets/sprites/qishan/01-grin.png");
+  expect(inspectAssetFile(file, repo)).toEqual({ kind: "file" });
+});
+
+test("xingkong leftover sprite pointer still resolves into characters", () => {
+  const link = join(repo, "works/xingkong/assets/sprites/qishan/04-loud.png");
   const found = inspectAssetFile(link, repo);
   expect(found.kind).toBe("link");
   if (found.kind !== "link") return;
-  expect(found.target).toBe(realpathSync(join(repo, "characters/綺珊/01-grin.png")));
+  expect(found.target).toBe(realpathSync(join(repo, "characters/綺珊/04-loud.png")));
 });
 
 test("a real image is not treated as a link", () => {

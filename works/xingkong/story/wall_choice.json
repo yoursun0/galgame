@@ -40,7 +40,8 @@
     },
     {
       "kind": "cg",
-      "action": "hide"
+      "action": "show",
+      "asset": "cg-wall-wind"
     },
     {
       "kind": "narration",

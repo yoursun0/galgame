@@ -48,7 +48,7 @@
     },
     {
       "kind": "jump",
-      "to": "temple1"
+      "to": "wall_mister"
     }
   ]
 }

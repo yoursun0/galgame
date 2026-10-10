@@ -1,15 +1,15 @@
 {
-  "id": "open2",
+  "id": "star_poem",
   "instructions": [
     {
       "kind": "background",
-      "asset": "bg-soc"
+      "asset": "bg-grassland"
     },
     {
       "kind": "audio",
       "action": "play",
       "channel": "bgm",
-      "asset": "bgm-13-peaceful-tune-2"
+      "asset": "bgm-01-starfield-romance"
     },
     {
       "kind": "actor",
@@ -44,21 +44,15 @@
     },
     {
       "kind": "narration",
-      "text": "凌晨翻開內蒙團的宣傳單張。一點五十分。路線跟去年幾乎一樣。"
+      "text": "《在天邊》"
     },
     {
-      "kind": "dialogue",
-      "speaker": "lingchen",
-      "text": "首先到北京，故宮、長城、頤和園、王府井。然後大同，懸空寺、雲岡石窟，還有那個名字很長的草原、響沙灣。下莊這條路線，照抄我們。"
-    },
-    {
-      "kind": "dialogue",
-      "speaker": "lingchen",
-      "text": "二十多本團刊，出發前遺在這裡。莊員沒有團刊。有些人只好共用一本。"
+      "kind": "narration",
+      "text": "如果這一天得睹漫天星光縱將幻滅——在這時，就發現，原來我知。在天邊，茫茫星海深處隱藏著睿智。我欲尋見卻未見，唯獨我知，我願意。"
     },
     {
       "kind": "jump",
-      "to": "open3"
+      "to": "midcard"
     }
   ]
 }
