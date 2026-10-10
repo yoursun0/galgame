@@ -24,8 +24,22 @@
       "asset": "bgm-village"
     },
     {
-      "kind": "wait",
-      "ms": 400
+      "kind": "narration",
+      "text": "門邊還掛著備用鎖扣。你把它扣上，金屬聲在空走廊裡很清楚。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "admin",
+      "text": "沒鑰匙也能從外面上鎖。至少今晚沒人能推門進來。"
+    },
+    {
+      "kind": "narration",
+      "text": "鎖舌咬合。門縫裡的風停了。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "admin",
+      "text": "鑰匙的事，留給早班。我們先下班。"
     },
     {
       "kind": "jump",

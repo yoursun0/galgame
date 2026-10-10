@@ -7,6 +7,10 @@
       "asset": "ending-stop"
     },
     {
+      "kind": "narration",
+      "text": "今晚到此為止。滅掉的那盞燈沒有亮回來。"
+    },
+    {
       "kind": "ending",
       "id": "stop"
     }
