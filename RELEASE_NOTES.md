@@ -1,5 +1,9 @@
 # Release Notes
 
+## v1.30 2026-10-12 00:13:16
+
+- 美術：`works/xingkong/assets/cg` 全頁 CG（場景＋結局）統一二次元賽璐璐畫風，對齊立繪／`cg-temple`／`cg-stone`；補齊先前 LFS 空檔。Helic 覆核後重畫 `ending-qishan-bad-cool`（綺珊頭髮）同 `ending-suting-bad-leave`（寫實風）。
+
 ## v1.29 2026-10-11 23:35:06
 
 - Player：設定「文字速度」可選「即時」——對白一次出齊、無逐字動畫；一下滑鼠就去下一句。
