@@ -1,5 +1,6 @@
 import type { AssetRecord, PlayState, Work } from "./types.ts";
 import type { Theme } from "./theme.ts";
+import { slotsForActors, type ActorSlot } from "./stage.ts";
 
 /** Puppy #67: compact stage preview for save slots (16:9 JPEG data URL). */
 export const THUMB_WIDTH = 320;
@@ -76,9 +77,6 @@ async function renderThumb(
   ctx.fillStyle = theme.pageBackground || "#070b14";
   ctx.fillRect(0, 0, width, height);
 
-  const sx = width / theme.stageWidth;
-  const sy = height / theme.stageHeight;
-
   const bgUrl = urlOf(urls, state.background);
   if (bgUrl) {
     const img = await loadImage(bgUrl);
@@ -88,8 +86,10 @@ async function renderThumb(
   if (!state.cg && !state.ending) {
     const near = state.actors.filter((actor) => actor.position !== "far");
     const far = state.actors.filter((actor) => actor.position === "far");
-    await drawActors(ctx, far, work, urls, theme.actors.far, false, width, height, sx, sy);
-    await drawActors(ctx, near, work, urls, theme.actors.near, true, width, height, sx, sy);
+    // Puppy #93: same dual boxes as stage.place so save thumbs match the live layout.
+    const slots = slotsForActors(theme.actors, near.length, far.length);
+    await drawActors(ctx, far, work, urls, slots.far, false, width, height);
+    await drawActors(ctx, near, work, urls, slots.near, true, width, height);
   }
 
   const coverId = state.ending ? null : state.cg;
@@ -113,12 +113,10 @@ async function drawActors(
   group: PlayState["actors"],
   work: Work,
   urls: Map<string, string>,
-  box: { heightPercent: number; bottomPercent: number },
+  box: ActorSlot,
   fromLeft: boolean,
   width: number,
   height: number,
-  _sx: number,
-  _sy: number,
 ): Promise<void> {
   for (let index = 0; index < group.length; index++) {
     const actor = group[index]!;
@@ -128,15 +126,52 @@ async function drawActors(
     const img = await loadImage(src);
     if (!img) continue;
     const span = group.length <= 1 ? 0 : index * 16;
-    const h = (box.heightPercent / 100) * height;
-    const naturalW = img.naturalWidth || img.width || 1;
-    const naturalH = img.naturalHeight || img.height || 1;
-    const w = h * (naturalW / naturalH);
-    const bottom = (box.bottomPercent / 100) * height;
-    const y = height - bottom - h;
-    const x = fromLeft ? (6 + span) / 100 * width : width - w - (8 + span) / 100 * width;
-    ctx.drawImage(img, x, y, w, h);
+    drawFitted(ctx, img, box, fromLeft, span, width, height);
   }
+}
+
+/**
+ * Puppy #93: dual boxes use object-fit:cover and object-position:center bottom,
+ * matching `.actors-dual .actor`. Single-slot boxes keep the old aspect draw.
+ */
+function drawFitted(
+  ctx: CanvasRenderingContext2D,
+  img: CanvasImageSource & { width: number; height: number; naturalWidth?: number; naturalHeight?: number },
+  box: ActorSlot,
+  fromLeft: boolean,
+  span: number,
+  stageW: number,
+  stageH: number,
+): void {
+  const naturalW = ("naturalWidth" in img && img.naturalWidth) || img.width || 1;
+  const naturalH = ("naturalHeight" in img && img.naturalHeight) || img.height || 1;
+  const boxH = (box.heightPercent / 100) * stageH;
+  const bottom = (box.bottomPercent / 100) * stageH;
+  const edge = ((box.edgePercent + span) / 100) * stageW;
+  const y = stageH - bottom - boxH;
+
+  if (box.maxWidthPercent == null) {
+    const w = boxH * (naturalW / naturalH);
+    const x = fromLeft ? edge : stageW - w - edge;
+    ctx.drawImage(img, x, y, w, boxH);
+    return;
+  }
+
+  const boxW = (box.maxWidthPercent / 100) * stageW;
+  const scale = Math.max(boxW / naturalW, boxH / naturalH);
+  const renderedW = naturalW * scale;
+  const renderedH = naturalH * scale;
+  // center horizontally, pin to the bottom of the box (CSS object-position)
+  let sx = (renderedW - boxW) / 2 / scale;
+  let sy = (renderedH - boxH) / scale;
+  let sw = boxW / scale;
+  let sh = boxH / scale;
+  sx = Math.min(Math.max(0, sx), Math.max(0, naturalW - sw));
+  sy = Math.min(Math.max(0, sy), Math.max(0, naturalH - sh));
+  sw = Math.min(sw, naturalW - sx);
+  sh = Math.min(sh, naturalH - sy);
+  const x = fromLeft ? edge : stageW - boxW - edge;
+  ctx.drawImage(img, sx, sy, sw, sh, x, y, boxW, boxH);
 }
 
 function spriteId(
