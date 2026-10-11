@@ -217,6 +217,10 @@
       "id": "zhijun"
     },
     {
+      "kind": "narration",
+      "text": "第十一回合，阿俊問綺珊。"
+    },
+    {
       "kind": "actor",
       "action": "show",
       "id": "ajun",
