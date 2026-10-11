@@ -74,15 +74,102 @@
     },
     {
       "kind": "narration",
-      "text": "凌晨轉過頭。"
+      "text": "一個人走回營。手電筒握得太緊。"
     },
     {
       "kind": "narration",
-      "text": "星光底下兩個人影。其中一個是家綸。他沒有用電筒照他們。電筒關掉。"
+      "text": "沙沙。"
     },
     {
       "kind": "narration",
-      "text": "參宿四的紅光落下來。家綸眼睛下面有淚。女孩的臉也被淚洗過。"
+      "text": "左手邊。不遠。"
+    },
+    {
+      "kind": "narration",
+      "text": "沙沙。"
+    },
+    {
+      "kind": "narration",
+      "text": "風？還是別的什麼。"
+    },
+    {
+      "kind": "narration",
+      "text": "他想起游牧那句——不敢做的人，就做不到。"
+    },
+    {
+      "kind": "narration",
+      "text": "管了。轉過去。"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-10-i-swear-i-saw-it"
+    },
+    {
+      "kind": "narration",
+      "text": "星光底下，兩個人影。"
+    },
+    {
+      "kind": "narration",
+      "text": "一個是家綸。"
+    },
+    {
+      "kind": "narration",
+      "text": "手電筒沒有照過去。他把它關掉。"
+    },
+    {
+      "kind": "narration",
+      "text": "……"
+    },
+    {
+      "kind": "narration",
+      "text": "漫天星火下示愛。這小子真行。"
+    },
+    {
+      "kind": "narration",
+      "text": "他以為前面是綺珊。背光看不清臉，只覺得那影子忽然柔了，不像白天那個鐵娘子。"
+    },
+    {
+      "kind": "narration",
+      "text": "家綸眼下有淚。嘴在動。像在說一句要說很久的話。"
+    },
+    {
+      "kind": "narration",
+      "text": "女孩的身影，抖了一下。"
+    },
+    {
+      "kind": "narration",
+      "text": "……"
+    },
+    {
+      "kind": "narration",
+      "text": "獵戶座底下，兩人慢慢靠攏。"
+    },
+    {
+      "kind": "narration",
+      "text": "擁在一起。"
+    },
+    {
+      "kind": "narration",
+      "text": "……"
+    },
+    {
+      "kind": "narration",
+      "text": "參宿四的紅光落下來。星光、燈光、淚。臉一寸寸清楚。"
+    },
+    {
+      "kind": "narration",
+      "text": "男孩掛著傷痛的俊。女孩的臉被淚洗過，乾淨得刺眼。"
+    },
+    {
+      "kind": "narration",
+      "text": "……"
     },
     {
       "kind": "narration",
@@ -90,11 +177,15 @@
     },
     {
       "kind": "narration",
-      "text": "他們在獵戶座底下，慢慢靠攏，擁在一起。"
+      "text": "……"
     },
     {
       "kind": "narration",
-      "text": "凌晨沒有出聲。一顆淚掉下來。"
+      "text": "戀人背後，星光照不到的角落——"
+    },
+    {
+      "kind": "narration",
+      "text": "一顆淚，落進漆黑裡。"
     },
     {
       "kind": "jump",
