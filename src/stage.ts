@@ -19,7 +19,68 @@ export type Stage = {
   setInstant: (instant: boolean) => void;
 };
 
-type ActorBox = { heightPercent: number; bottomPercent: number };
+/** Placed sprite box. `edgePercent` is the left inset (near) or right inset (far). */
+export type ActorSlot = {
+  heightPercent: number;
+  bottomPercent: number;
+  edgePercent: number;
+  /** Dual only. Caps a 16:9 canvas so the body cannot cross the midline. */
+  maxWidthPercent?: number;
+};
+
+/**
+ * Puppy #93: dual near+far. Theme near is height 108% on a full-stage 16:9
+ * sprite, which paints across the far half and hides it. These boxes keep
+ * each body in its own half. Single-slot scenes keep the theme sizes.
+ */
+export const DUAL_ACTOR = {
+  nearHeightPercent: 90,
+  farHeightPercent: 84,
+  nearBottomPercent: 0,
+  farBottomPercent: 5,
+  edgePercent: 3,
+  maxWidthPercent: 47,
+  /** Far matches the old near layer; near stays one step above. */
+  nearZ: 3,
+  farZ: 2,
+} as const;
+
+const SINGLE_NEAR_EDGE = 6;
+const SINGLE_FAR_EDGE = 8;
+
+export function slotsForActors(
+  actors: {
+    near: { heightPercent: number; bottomPercent: number };
+    far: { heightPercent: number; bottomPercent: number };
+  },
+  nearCount: number,
+  farCount: number,
+): { dual: boolean; near: ActorSlot; far: ActorSlot } {
+  // Puppy #93: only when both groups are on stage. Two nears (no far) stay put.
+  const dual = nearCount > 0 && farCount > 0;
+  if (!dual) {
+    return {
+      dual: false,
+      near: { ...actors.near, edgePercent: SINGLE_NEAR_EDGE },
+      far: { ...actors.far, edgePercent: SINGLE_FAR_EDGE },
+    };
+  }
+  return {
+    dual: true,
+    near: {
+      heightPercent: DUAL_ACTOR.nearHeightPercent,
+      bottomPercent: DUAL_ACTOR.nearBottomPercent,
+      edgePercent: DUAL_ACTOR.edgePercent,
+      maxWidthPercent: DUAL_ACTOR.maxWidthPercent,
+    },
+    far: {
+      heightPercent: DUAL_ACTOR.farHeightPercent,
+      bottomPercent: DUAL_ACTOR.farBottomPercent,
+      edgePercent: DUAL_ACTOR.edgePercent,
+      maxWidthPercent: DUAL_ACTOR.maxWidthPercent,
+    },
+  };
+}
 
 /**
  * DOM and CSS only. Decisions stay in reduce.
@@ -273,7 +334,9 @@ export function mountStage(
     actors.replaceChildren();
     const near = state.actors.filter((actor) => actor.position !== "far");
     const far = state.actors.filter((actor) => actor.position === "far");
-    const place = (group: typeof state.actors, box: ActorBox, fromLeft: boolean) => {
+    const slots = slotsForActors(theme.actors, near.length, far.length);
+    actors.classList.toggle("actors-dual", slots.dual);
+    const place = (group: typeof state.actors, box: ActorSlot, fromLeft: boolean) => {
       group.forEach((actor, index) => {
         const id = spriteId(actor.id, actor.position, actor.expr);
         const src = urlOf(id);
@@ -285,13 +348,19 @@ export function mountStage(
         const span = group.length <= 1 ? 0 : index * 16;
         img.style.height = `${box.heightPercent}%`;
         img.style.bottom = `${box.bottomPercent}%`;
-        if (fromLeft) img.style.left = `${6 + span}%`;
-        else img.style.right = `${8 + span}%`;
+        const edge = box.edgePercent + span;
+        if (fromLeft) img.style.left = `${edge}%`;
+        else img.style.right = `${edge}%`;
+        if (box.maxWidthPercent != null) {
+          // Puppy #93: width cap is what stops the 16:9 canvas crossing the midline.
+          img.style.width = `${box.maxWidthPercent}%`;
+          img.style.maxWidth = `${box.maxWidthPercent}%`;
+        }
         actors.append(img);
       });
     };
-    place(near, theme.actors.near, true);
-    place(far, theme.actors.far, false);
+    place(near, slots.near, true);
+    place(far, slots.far, false);
 
     const showCg = Boolean(state.cg) && !state.ending;
     cg.hidden = !showCg;
@@ -439,6 +508,16 @@ function css(theme: Theme): string {
     }
     .actor.near { z-index: 2; }
     .actor.far { z-index: 1; }
+    /* Puppy #93: dual — crop each full-canvas sprite into its half and lift far. */
+    .actors.actors-dual .actor {
+      width: ${DUAL_ACTOR.maxWidthPercent}%;
+      max-width: ${DUAL_ACTOR.maxWidthPercent}%;
+      min-width: 0;
+      object-fit: cover;
+      object-position: center bottom;
+    }
+    .actors.actors-dual .actor.near { z-index: ${DUAL_ACTOR.nearZ}; }
+    .actors.actors-dual .actor.far { z-index: ${DUAL_ACTOR.farZ}; }
     .cg {
       position: absolute;
       inset: 0;
