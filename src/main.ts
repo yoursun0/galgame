@@ -968,6 +968,60 @@ function shellCss(): string {
     .settings { display: grid; gap: 12px; max-width: 520px; }
     .set-row { display: grid; grid-template-columns: 9em 1fr auto; gap: 8px; align-items: center; }
     .recall-list { display: grid; gap: 8px; }
+    @media (max-width: 720px) {
+      .hud {
+        gap: 6px;
+        justify-content: stretch;
+        padding: max(6px, env(safe-area-inset-top, 0px)) 8px 8px;
+        background: linear-gradient(180deg, rgba(7, 11, 20, 0.82), rgba(7, 11, 20, 0));
+      }
+      .hud-btn {
+        flex: 1 1 calc(20% - 6px);
+        min-width: 0;
+        min-height: 40px;
+        font-size: 12px;
+        padding: 6px 4px;
+        letter-spacing: 0.04em;
+      }
+      .title-screen h1 {
+        font-size: clamp(28px, 8vw, 40px);
+        letter-spacing: 0.18em;
+      }
+      .title-screen.has-cover {
+        padding: 0 0 max(4vh, env(safe-area-inset-bottom, 0px)) 5vw;
+        gap: 12px;
+      }
+      .title-menu { min-width: min(220px, 80vw); width: min(260px, 86vw); }
+      .title-btn { min-height: 46px; font-size: 16px; }
+      .panel {
+        inset: 12px;
+        padding: 14px 14px 20px;
+      }
+      .set-row {
+        grid-template-columns: 1fr;
+        gap: 4px;
+      }
+      .slot-grid, .gal-grid {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      }
+    }
+    @media (max-width: 720px) and (orientation: portrait) {
+      .hud {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: flex-start;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+      }
+      .hud::-webkit-scrollbar { display: none; }
+      .hud-btn {
+        flex: 0 0 auto;
+        min-width: 4.6em;
+        min-height: 42px;
+        font-size: 13px;
+        padding: 8px 10px;
+      }
+    }
   `;
 }
 

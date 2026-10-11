@@ -74,21 +74,68 @@ export function mountStage(
   ending.append(endingImg, card);
   stage.append(bg, actors, cg, credit, say, choices, ending);
   fit.append(stage);
+  const ui = el("div", "stage-ui");
   viewport.append(fit);
   parent.replaceChildren(viewport);
 
+  const mobilePortrait = () =>
+    window.matchMedia("(max-width: 720px) and (orientation: portrait)").matches;
+
+  const syncUiParent = (mobile: boolean) => {
+    if (mobile) {
+      if (choices.parentElement !== ui || say.parentElement !== ui) {
+        ui.append(choices, say);
+      }
+      if (ui.parentElement !== viewport) viewport.append(ui);
+      // fixed overlays must leave the transformed stage
+      if (cg.parentElement !== viewport) viewport.append(cg);
+      if (ending.parentElement !== viewport) viewport.append(ending);
+    } else {
+      if (say.parentElement !== stage || choices.parentElement !== stage) {
+        stage.append(bg, actors, cg, credit, say, choices, ending);
+        ui.remove();
+      } else if (cg.parentElement !== stage || ending.parentElement !== stage) {
+        stage.append(bg, actors, cg, credit, say, choices, ending);
+      }
+    }
+  };
+
   const fitStage = () => {
-    const scale = Math.min(
-      window.innerWidth / theme.stageWidth,
-      window.innerHeight / theme.stageHeight,
-    );
-    const safe = Number.isFinite(scale) && scale > 0 ? scale : 1;
-    fit.style.width = `${theme.stageWidth * safe}px`;
-    fit.style.height = `${theme.stageHeight * safe}px`;
-    stage.style.transform = `scale(${safe})`;
+    const mobile = mobilePortrait();
+    viewport.classList.toggle("mobile-portrait", mobile);
+    syncUiParent(mobile);
+
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+    let safe: number;
+    if (mobile) {
+      // Tall readable dialogue band; art cover-fills the remaining height (left-biased).
+      const uiH = Math.round(Math.min(320, Math.max(210, height * 0.36)));
+      ui.style.minHeight = `${uiH}px`;
+      const artH = Math.max(160, height - uiH);
+      const scale = Math.max(width / theme.stageWidth, artH / theme.stageHeight);
+      safe = Number.isFinite(scale) && scale > 0 ? scale : 1;
+      fit.style.width = `${width}px`;
+      fit.style.height = `${artH}px`;
+      stage.style.transformOrigin = "left center";
+      stage.style.transform = `scale(${safe})`;
+      stage.style.left = "0";
+      stage.style.top = `${Math.max(0, (artH - theme.stageHeight * safe) / 2)}px`;
+    } else {
+      ui.style.minHeight = "";
+      const scale = Math.min(width / theme.stageWidth, height / theme.stageHeight);
+      safe = Number.isFinite(scale) && scale > 0 ? scale : 1;
+      fit.style.width = `${theme.stageWidth * safe}px`;
+      fit.style.height = `${theme.stageHeight * safe}px`;
+      stage.style.transformOrigin = "top left";
+      stage.style.transform = `scale(${safe})`;
+      stage.style.left = "0";
+      stage.style.top = "0";
+    }
   };
   fitStage();
   window.addEventListener("resize", fitStage);
+  window.addEventListener("orientationchange", fitStage);
 
   let lineKey = "";
   let fullText = "";
@@ -168,11 +215,13 @@ export function mountStage(
     render(latest);
   });
 
-  stage.addEventListener("click", (event) => {
+  const advanceFrom = (event: MouseEvent) => {
     const target = event.target as Element | null;
     if (target?.closest(".choice, .cg")) return;
     handlers.onAdvance();
-  });
+  };
+  stage.addEventListener("click", advanceFrom);
+  ui.addEventListener("click", advanceFrom);
 
   const urlOf = (id: string | null | undefined) => (id ? urls.get(id) ?? "" : "");
 
@@ -329,7 +378,33 @@ function css(theme: Theme): string {
       background: ${theme.pageBackground};
       overflow: hidden;
     }
-    .fit { position: relative; }
+    .viewport.mobile-portrait {
+      min-height: 100dvh;
+      height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      place-items: stretch;
+      align-content: stretch;
+    }
+    .fit { position: relative; overflow: hidden; }
+    .viewport.mobile-portrait .fit {
+      width: 100%;
+      min-height: 0;
+    }
+    .stage-ui {
+      display: none;
+    }
+    .viewport.mobile-portrait .stage-ui {
+      display: block;
+      position: relative;
+      z-index: 5;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 10px 12px calc(12px + env(safe-area-inset-bottom, 0px));
+      background: linear-gradient(180deg, rgba(7, 11, 20, 0.2), rgba(7, 11, 20, 0.92) 28%);
+      font-family: ${theme.fontFamily};
+      color: ${theme.color};
+    }
     .stage {
       position: absolute;
       left: 0;
@@ -456,6 +531,71 @@ function css(theme: Theme): string {
       margin: 12px 0 0;
       font-size: 36px;
       letter-spacing: 0.14em;
+    }
+    .viewport.mobile-portrait .say[hidden],
+    .viewport.mobile-portrait .choices[hidden] {
+      display: none !important;
+    }
+    .viewport.mobile-portrait .say {
+      position: relative;
+      left: auto;
+      right: auto;
+      bottom: auto;
+      height: auto;
+      min-height: 148px;
+      background: url("${box.image}") center / 100% 100% no-repeat;
+    }
+    .viewport.mobile-portrait .name {
+      top: -26px;
+      left: 12px;
+      font-size: clamp(15px, 3.8vw, 18px);
+    }
+    .viewport.mobile-portrait .line {
+      padding: 36px 18px 18px;
+      font-size: clamp(17px, 4.6vw, 21px);
+      line-height: 1.65;
+    }
+    .viewport.mobile-portrait .choices {
+      position: relative;
+      left: auto;
+      right: auto;
+      bottom: auto;
+      margin: 0 0 12px;
+      gap: 8px;
+    }
+    .viewport.mobile-portrait .choice {
+      min-height: 48px;
+      font-size: clamp(15px, 4vw, 18px);
+    }
+    .viewport.mobile-portrait .credit {
+      left: 12px;
+      top: 10px;
+      font-size: 11px;
+      max-width: 90%;
+    }
+    .viewport.mobile-portrait .ending {
+      position: fixed;
+      inset: 0;
+      z-index: 25;
+      display: block;
+    }
+    .viewport.mobile-portrait .ending[hidden] {
+      display: none !important;
+    }
+    .viewport.mobile-portrait .ending-card {
+      width: min(440px, calc(100% - 32px));
+      padding: 22px 18px 24px;
+    }
+    .viewport.mobile-portrait .ending-id {
+      font-size: clamp(24px, 7vw, 36px);
+    }
+    .viewport.mobile-portrait .cg {
+      position: fixed;
+      inset: 0;
+      z-index: 24;
+    }
+    .viewport.mobile-portrait .cg[hidden] {
+      display: none !important;
     }
   `;
 }
