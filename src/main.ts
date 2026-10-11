@@ -1006,20 +1006,18 @@ function shellCss(): string {
       }
     }
     @media (max-width: 720px) and (orientation: portrait) {
+      /* #38: wrap instead of horizontal scroll so all HUD actions stay tappable */
       .hud {
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        justify-content: flex-start;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
+        flex-wrap: wrap;
+        overflow-x: hidden;
+        justify-content: stretch;
       }
-      .hud::-webkit-scrollbar { display: none; }
       .hud-btn {
-        flex: 0 0 auto;
-        min-width: 4.6em;
-        min-height: 42px;
-        font-size: 13px;
-        padding: 8px 10px;
+        flex: 1 1 calc(20% - 6px);
+        min-width: 0;
+        min-height: 40px;
+        font-size: 12px;
+        padding: 6px 4px;
       }
     }
   `;
