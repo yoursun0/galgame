@@ -109,7 +109,7 @@ export function mountStage(
     const height = window.innerHeight;
     let safe: number;
     if (mobile) {
-      // Tall readable dialogue band; art cover-fills the remaining height (left-biased).
+      // Tall readable dialogue band; art cover-fills remaining height, centered crop.
       const uiH = Math.round(Math.min(320, Math.max(210, height * 0.36)));
       ui.style.minHeight = `${uiH}px`;
       const artH = Math.max(160, height - uiH);
@@ -117,10 +117,12 @@ export function mountStage(
       safe = Number.isFinite(scale) && scale > 0 ? scale : 1;
       fit.style.width = `${width}px`;
       fit.style.height = `${artH}px`;
-      stage.style.transformOrigin = "left center";
+      // top-left origin + offset so mid-stage sprites stay in the phone crop
+      // (left-biased origin from #31 hid characters on narrow portrait).
+      stage.style.transformOrigin = "top left";
       stage.style.transform = `scale(${safe})`;
-      stage.style.left = "0";
-      stage.style.top = `${Math.max(0, (artH - theme.stageHeight * safe) / 2)}px`;
+      stage.style.left = `${(width - theme.stageWidth * safe) / 2}px`;
+      stage.style.top = `${(artH - theme.stageHeight * safe) / 2}px`;
     } else {
       ui.style.minHeight = "";
       const scale = Math.min(width / theme.stageWidth, height / theme.stageHeight);
