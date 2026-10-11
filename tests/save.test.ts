@@ -143,4 +143,32 @@ describe("indexedDB saves", () => {
     expect(await readSettings(db)).toEqual(settings);
     db.close();
   });
+
+  // Puppy #67
+  test("optional thumbnail round-trips; missing thumb still loads", async () => {
+    const state = reduce(work, initialState(work), { type: "advance" });
+    const db = await openSaveDb();
+    const bare = capture(work, state, 1_700_000_000_300);
+    expect(bare.thumbnail).toBeUndefined();
+    expect(await writeSlot(db, work.manifest.id, manualSlot(2), bare)).toEqual({ ok: true });
+    const loadedBare = acceptLoad(await readSlot(db, work.manifest.id, manualSlot(2)), work);
+    expect(loadedBare.ok).toBe(true);
+
+    const dataUrl =
+      "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAn/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAAGfAP/EABQQAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQEAAQUCf//EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQMBAT8Bf//EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAIAQIBAT8Bf//Z";
+    const withThumb = capture(work, state, 1_700_000_000_301, dataUrl);
+    expect(withThumb.thumbnail).toBe(dataUrl);
+    expect(await writeSlot(db, work.manifest.id, manualSlot(4), withThumb)).toEqual({ ok: true });
+    const loaded = acceptLoad(await readSlot(db, work.manifest.id, manualSlot(4)), work);
+    expect(loaded.ok).toBe(true);
+    if (!loaded.ok) return;
+    expect(loaded.record.thumbnail).toBe(dataUrl);
+
+    const badThumb = { ...bare, thumbnail: 123 };
+    expect(await writeSlot(db, work.manifest.id, manualSlot(5), badThumb)).toEqual({
+      ok: false,
+      reason: "corrupt",
+    });
+    db.close();
+  });
 });

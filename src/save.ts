@@ -39,6 +39,8 @@ export type SaveRecord = {
   contentVersion: number;
   timestamp: number;
   progress: SaveProgress;
+  /** Puppy #67: JPEG/WebP data URL of the stage at save time. Absent on older slots. */
+  thumbnail?: string | null;
 };
 
 export type Settings = {
@@ -85,14 +87,22 @@ export function defaultSettings(textSpeed = 28): Settings {
   };
 }
 
-export function capture(work: Work, state: PlayState, timestamp = Date.now()): SaveRecord {
-  return {
+export function capture(
+  work: Work,
+  state: PlayState,
+  timestamp = Date.now(),
+  thumbnail: string | null = null,
+): SaveRecord {
+  const record: SaveRecord = {
     workId: work.manifest.id,
     schemaVersion: work.manifest.schemaVersion,
     contentVersion: work.manifest.contentVersion,
     timestamp,
     progress: snapshot(state),
   };
+  // Puppy #67: only persist when we actually have a preview (keeps old-shaped records clean).
+  if (thumbnail) record.thumbnail = thumbnail;
+  return record;
 }
 
 /**
@@ -118,7 +128,14 @@ export function isSaveRecord(raw: unknown): raw is SaveRecord {
   if (typeof record.workId !== "string" || record.workId.length === 0) return false;
   if (!isInt(record.schemaVersion) || !isInt(record.contentVersion)) return false;
   if (typeof record.timestamp !== "number" || !Number.isFinite(record.timestamp)) return false;
-  return isProgress(record.progress);
+  if (!isProgress(record.progress)) return false;
+  // Puppy #67: thumbnail optional; if present must be null or a data-URL string.
+  if ("thumbnail" in record) {
+    const thumb = record.thumbnail;
+    if (!(thumb === null || thumb === undefined || typeof thumb === "string")) return false;
+    if (typeof thumb === "string" && thumb.length > 1_500_000) return false;
+  }
+  return true;
 }
 
 export function sanitizeSettings(raw: unknown): Settings | null {

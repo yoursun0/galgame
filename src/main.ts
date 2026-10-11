@@ -19,7 +19,6 @@ import { presentGallery, type GalleryCard, type RecallCard } from "./gallery.ts"
 import { initialState } from "./reduce.ts";
 import {
   acceptLoad,
-  allSlotIds,
   AUTO_SLOT,
   capture,
   defaultSettings,
@@ -38,6 +37,7 @@ import {
 } from "./save.ts";
 import { mountStage } from "./stage.ts";
 import { loadTheme } from "./theme.ts";
+import { captureStageThumbnail, isThumbnailDataUrl } from "./thumbnail.ts";
 import { isWorkOfflineReady, registerServiceWorker } from "./offline.ts";
 import type { AssetRecord, PlayState, Scene, Work, WorkManifest } from "./types.ts";
 
@@ -279,7 +279,14 @@ async function persistProgress(): Promise<void> {
 
 async function persistAuto(): Promise<void> {
   if (recall || screen !== "play") return;
-  await writeSlot(await db(), work.manifest.id, AUTO_SLOT, capture(work, state));
+  // Puppy #67: reuse cached thumb when the stage frame is unchanged.
+  const thumb = await captureStageThumbnail(state, work, urls, assets, theme, { useCache: true });
+  await writeSlot(
+    await db(),
+    work.manifest.id,
+    AUTO_SLOT,
+    capture(work, state, Date.now(), thumb),
+  );
 }
 
 function commitStep(): void {
@@ -397,7 +404,14 @@ function closePanel(): void {
 
 async function saveManual(slot: SlotId): Promise<void> {
   if (recall) return;
-  const wrote = await writeSlot(await db(), work.manifest.id, slot, capture(work, state));
+  // Puppy #67: capture stage thumb before write (panel may cover the live DOM).
+  const thumb = await captureStageThumbnail(state, work, urls, assets, theme);
+  const wrote = await writeSlot(
+    await db(),
+    work.manifest.id,
+    slot,
+    capture(work, state, Date.now(), thumb),
+  );
   if (!wrote.ok) {
     setOverlayNote("存檔被拒絕，原槽未改。");
     return;
@@ -587,32 +601,89 @@ function fillBacklog(body: HTMLElement): void {
 }
 
 async function fillSlots(body: HTMLElement, mode: "save" | "load"): Promise<void> {
+  // Puppy #67: load keeps AUTO/QUICK on their own first row so manual 1–12 stay 6+6.
   const database = await db();
+  const wrap = document.createElement("div");
+  wrap.className = "slot-panel";
+
+  if (mode === "load") {
+    const special = document.createElement("div");
+    special.className = "slot-special";
+    special.append(
+      await makeSlotButton(database, AUTO_SLOT, mode),
+      await makeSlotButton(database, QUICK_SLOT, mode),
+    );
+    wrap.append(special);
+  }
+
   const grid = document.createElement("div");
   grid.className = "slot-grid";
-  const ids: SlotId[] =
-    mode === "save"
-      ? Array.from({ length: 12 }, (_, index) => manualSlot(index))
-      : allSlotIds();
-  for (const slot of ids) {
-    const raw = await readSlot(database, work.manifest.id, slot);
-    const button = document.createElement("button");
-    button.type = "button";
-    button.className = "slot";
-    const name = document.createElement("span");
-    name.className = "slot-name";
-    name.textContent = slotName(slot);
-    const detail = document.createElement("span");
-    detail.className = "slot-detail";
-    detail.textContent = slotDetail(raw);
-    button.append(name, detail);
-    button.addEventListener("click", () => {
-      if (mode === "save") void saveManual(slot);
-      else void loadSlot(slot);
-    });
-    grid.append(button);
+  for (let index = 0; index < 12; index++) {
+    grid.append(await makeSlotButton(database, manualSlot(index), mode));
   }
-  body.replaceChildren(grid);
+  wrap.append(grid);
+  body.replaceChildren(wrap);
+}
+
+async function makeSlotButton(
+  database: IDBDatabase,
+  slot: SlotId,
+  mode: "save" | "load",
+): Promise<HTMLButtonElement> {
+  const raw = await readSlot(database, work.manifest.id, slot);
+  const button = document.createElement("button");
+  button.type = "button";
+  button.className = "slot";
+  button.append(slotThumbEl(raw), slotMetaEl(slot, raw));
+  button.addEventListener("click", () => {
+    if (mode === "save") void saveManual(slot);
+    else void loadSlot(slot);
+  });
+  return button;
+}
+
+function slotThumbEl(raw: unknown): HTMLElement {
+  const wrap = document.createElement("div");
+  wrap.className = "slot-thumb";
+  const accepted = acceptLoad(raw, work);
+  const dataUrl =
+    accepted.ok && isThumbnailDataUrl(accepted.record.thumbnail)
+      ? accepted.record.thumbnail
+      : null;
+  if (dataUrl) {
+    const img = document.createElement("img");
+    img.alt = "";
+    img.decoding = "async";
+    img.src = dataUrl;
+    img.addEventListener("error", () => {
+      img.remove();
+      wrap.append(slotThumbFallback(accepted.ok ? "無圖" : "空"));
+    });
+    wrap.append(img);
+    return wrap;
+  }
+  wrap.append(slotThumbFallback(accepted.ok ? "無圖" : "空"));
+  return wrap;
+}
+
+function slotThumbFallback(label: string): HTMLElement {
+  const mark = document.createElement("span");
+  mark.className = "slot-thumb-fallback";
+  mark.textContent = label;
+  return mark;
+}
+
+function slotMetaEl(slot: SlotId, raw: unknown): HTMLElement {
+  const meta = document.createElement("div");
+  meta.className = "slot-meta";
+  const name = document.createElement("span");
+  name.className = "slot-name";
+  name.textContent = slotName(slot);
+  const detail = document.createElement("span");
+  detail.className = "slot-detail";
+  detail.textContent = slotDetail(raw);
+  meta.append(name, detail);
+  return meta;
 }
 
 function slotName(slot: SlotId): string {
@@ -635,8 +706,8 @@ function slotDetail(raw: unknown): string {
     hour12: false,
   });
   const line = accepted.state.line?.text ?? accepted.state.sceneId;
-  const preview = line.length > 32 ? `${line.slice(0, 32)}…` : line;
-  return `${when} ${preview}`;
+  const preview = line.length > 28 ? `${line.slice(0, 28)}…` : line;
+  return `${when}\n${preview}`;
 }
 
 function fillSettings(body: HTMLElement): void {
@@ -1011,11 +1082,60 @@ function shellCss(): string {
     .note { min-height: 1.2em; opacity: 0.85; }
     .log-line { margin: 0 0 10px; line-height: 1.6; }
     .log-who { display: inline-block; min-width: 4em; margin-right: 8px; opacity: 0.8; }
-    .slot-grid, .gal-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 8px; }
+    .slot-panel { display: grid; gap: 10px; max-width: 100%; }
+    /* Puppy #67: fixed 6-col manual grid; AUTO/QUICK sit in .slot-special above it. */
+    .slot-special {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+      max-width: 100%;
+    }
+    .slot-grid {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      gap: 8px;
+      max-width: 100%;
+    }
+    .gal-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 8px; }
     .slot, .gal-card, .text-btn { text-align: left; padding: 8px 10px; }
-    .slot { display: grid; gap: 4px; min-height: 72px; }
-    .slot-name { letter-spacing: 0.12em; }
-    .slot-detail { font-size: 13px; opacity: 0.85; white-space: pre-wrap; }
+    .slot {
+      display: grid;
+      gap: 6px;
+      min-width: 0;
+      min-height: 0;
+      align-content: start;
+      overflow: hidden;
+    }
+    .slot-thumb {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: #0c1220;
+      border: 1px solid ${theme.nameplate.border};
+      overflow: hidden;
+      display: grid;
+      place-items: center;
+    }
+    .slot-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .slot-thumb-fallback {
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      opacity: 0.55;
+    }
+    .slot-meta { display: grid; gap: 2px; min-width: 0; }
+    .slot-name { letter-spacing: 0.12em; font-size: 13px; }
+    .slot-detail {
+      font-size: 12px;
+      opacity: 0.85;
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
     .gal-card { min-height: 72px; border: 1px solid ${theme.nameplate.border}; }
     .gal-card img { width: 100%; height: 96px; object-fit: cover; display: block; }
     .gal-card.locked { opacity: 0.55; }
@@ -1055,7 +1175,13 @@ function shellCss(): string {
         grid-template-columns: 1fr;
         gap: 4px;
       }
-      .slot-grid, .gal-grid {
+      .slot-special {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .slot-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .gal-grid {
         grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
       }
     }
