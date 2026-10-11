@@ -1,5 +1,10 @@
 # Release Notes
 
+## v1.11 2026-10-11 10:59:56
+
+- Docs：重寫 `AGENTS.md`（角色、RELEASE_NOTES **日期＋時間**、dialogue＋expr、分支衛生、UAT 慢睇、SoT＝story JSON）；更新過時 `README.md`。
+- RELEASE_NOTES：由本版起標題用 `YYYY-MM-DD HH:MM:SS`（HKT）。
+
 ## v1.10 2026-10-11
 
 - Engine：`dialogue` 必填 `expr`（角色立繪）；reduce 按 speaker＋expr 自動 show／update；空 sprites 為電話 VO／無立繪可省略（#60）。
