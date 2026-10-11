@@ -33,9 +33,39 @@
     },
     {
       "kind": "actor",
+      "action": "hide",
+      "id": "ajun"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "baofang"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "dabi"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "huizhang"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "jialun"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "youmu"
+    },
+    {
+      "kind": "actor",
       "action": "show",
       "id": "lingchen",
-      "expr": "02-hips",
+      "expr": "01-shrug",
       "position": "near"
     },
     {
@@ -56,9 +86,33 @@
       "text": "筷子掉在地上。"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "01-laugh",
+      "position": "near"
+    },
+    {
       "kind": "dialogue",
       "speaker": "zhijun",
       "text": "當然……不可以啦！反正你又不是認真的。你想借我來瞞過素婷和家綸，好讓自己可以安心去美國。這一招不成。"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
     },
     {
       "kind": "dialogue",
@@ -68,6 +122,18 @@
     {
       "kind": "narration",
       "text": "她用那條打狗的橡筋彈在他臉上。"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "01-laugh",
+      "position": "near"
     },
     {
       "kind": "dialogue",

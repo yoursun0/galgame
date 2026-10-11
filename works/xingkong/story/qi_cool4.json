@@ -33,6 +33,36 @@
     },
     {
       "kind": "actor",
+      "action": "hide",
+      "id": "ajun"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "baofang"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "dabi"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "huizhang"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "jialun"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "youmu"
+    },
+    {
+      "kind": "actor",
       "action": "show",
       "id": "qishan",
       "expr": "04-loud",
@@ -52,9 +82,33 @@
       "text": "凌晨把團刊往她手裡送。"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
+    },
+    {
       "kind": "dialogue",
       "speaker": "lingchen",
       "text": "來，拿著吧。頂多你自己跟身邊的朋友分享，犯不著一會跟其他人乞乞討討。"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "qishan",
+      "expr": "01-grin",
+      "position": "near"
     },
     {
       "kind": "dialogue",
@@ -66,9 +120,33 @@
       "text": "她掉頭走了。團刊還在凌晨手上。"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "jialun",
+      "expr": "01-murmur",
+      "position": "near"
+    },
+    {
       "kind": "dialogue",
       "speaker": "jialun",
       "text": "喂，凌晨，那個女孩子是誰？"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "jialun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
     },
     {
       "kind": "dialogue",

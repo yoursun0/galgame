@@ -33,9 +33,39 @@
     },
     {
       "kind": "actor",
+      "action": "hide",
+      "id": "ajun"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "baofang"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "dabi"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "huizhang"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "jialun"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "youmu"
+    },
+    {
+      "kind": "actor",
       "action": "show",
       "id": "lingchen",
-      "expr": "02-hips",
+      "expr": "01-shrug",
       "position": "near"
     },
     {
@@ -65,14 +95,50 @@
       "text": "他是我的恩人。那天要不是他，我也沒有勇氣保護你。我想謝謝他。"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "01-laugh",
+      "position": "near"
+    },
+    {
       "kind": "dialogue",
       "speaker": "zhijun",
       "text": "聯絡方法我寫給你。可是你別再說甚麼男子漢了。那個傢伙明明自身也是個膽小鬼。"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
+    },
+    {
       "kind": "dialogue",
       "speaker": "lingchen",
       "text": "他當初不想分手？"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "01-laugh",
+      "position": "near"
     },
     {
       "kind": "dialogue",

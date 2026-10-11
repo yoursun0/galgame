@@ -33,9 +33,39 @@
     },
     {
       "kind": "actor",
+      "action": "hide",
+      "id": "ajun"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "baofang"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "dabi"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "huizhang"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "jialun"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "youmu"
+    },
+    {
+      "kind": "actor",
       "action": "show",
       "id": "lingchen",
-      "expr": "01-grin",
+      "expr": "01-shrug",
       "position": "near"
     },
     {
@@ -48,8 +78,21 @@
       "text": "恩人現在有女朋友了沒有？"
     },
     {
-      "kind": "narration",
-      "text": "游牧："
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "youmu",
+      "expr": "01-shout",
+      "position": "near"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "youmu",
+      "text": ""
     },
     {
       "kind": "narration",
@@ -58,6 +101,18 @@
     {
       "kind": "narration",
       "text": "他說得很急。凌晨還是把那句說了。"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "youmu"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
     },
     {
       "kind": "dialogue",
@@ -69,8 +124,21 @@
       "text": "他這回連杯子都沒拿穩。"
     },
     {
-      "kind": "narration",
-      "text": "游牧："
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "youmu",
+      "expr": "01-shout",
+      "position": "near"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "youmu",
+      "text": ""
     },
     {
       "kind": "narration",

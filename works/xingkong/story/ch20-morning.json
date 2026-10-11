@@ -33,9 +33,39 @@
     },
     {
       "kind": "actor",
+      "action": "hide",
+      "id": "ajun"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "baofang"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "dabi"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "huizhang"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "jialun"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "youmu"
+    },
+    {
+      "kind": "actor",
       "action": "show",
       "id": "lingchen",
-      "expr": "01-laugh",
+      "expr": "01-shrug",
       "position": "near"
     },
     {
@@ -64,12 +94,37 @@
       "text": "大鼻把一塊碎石塞進他手心。"
     },
     {
-      "kind": "narration",
-      "text": "大鼻：你讀物理的，試試看能不能投中那浮標。"
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "dabi",
+      "expr": "01-hum",
+      "position": "near"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "dabi",
+      "text": "你讀物理的，試試看能不能投中那浮標。"
     },
     {
       "kind": "narration",
       "text": "凌晨丟了。偏了。會長過來，食指和拇指一鬆，石子擊中搖擺的浮標。"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "dabi"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "huizhang",
+      "expr": "01-calm",
+      "position": "near"
     },
     {
       "kind": "dialogue",

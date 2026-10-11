@@ -33,9 +33,39 @@
     },
     {
       "kind": "actor",
+      "action": "hide",
+      "id": "ajun"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "baofang"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "dabi"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "huizhang"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "jialun"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "youmu"
+    },
+    {
+      "kind": "actor",
       "action": "show",
       "id": "lingchen",
-      "expr": "01-grin",
+      "expr": "01-shrug",
       "position": "near"
     },
     {
@@ -55,9 +85,33 @@
       "text": "二零零六年三月二十一日。中天春季觀星營。素婷是 Chief PIC。"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "suting",
+      "expr": "01-smile",
+      "position": "near"
+    },
+    {
       "kind": "dialogue",
       "speaker": "suting",
       "text": "這裡可以的了，凌晨你過去那邊幫忙 set 鏡吧。"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
     },
     {
       "kind": "dialogue",
@@ -65,14 +119,50 @@
       "text": "望遠鏡我已經幫忙架好了，會長在指導參加者。我來準備食物。"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "suting",
+      "expr": "01-smile",
+      "position": "near"
+    },
+    {
       "kind": "dialogue",
       "speaker": "suting",
       "text": "營帳呢？你不是負責架營帳的嗎？"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
+    },
+    {
       "kind": "dialogue",
       "speaker": "lingchen",
       "text": "弄好了。你們去洗手間的時候，我跟大鼻架好了。"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "suting",
+      "expr": "01-smile",
+      "position": "near"
     },
     {
       "kind": "dialogue",
@@ -84,9 +174,33 @@
       "text": "凌晨把外套脫下來。"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
+    },
+    {
       "kind": "dialogue",
       "speaker": "lingchen",
       "text": "爐火我弄好了，等水滾就行。入黑了會涼。你還是衣衫單薄。Chief PIC 冷病了，今晚不好辦。這件你披上。"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "suting",
+      "expr": "01-smile",
+      "position": "near"
     },
     {
       "kind": "dialogue",
@@ -94,14 +208,50 @@
       "text": "不……不用了。那你自己呢？"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
+    },
+    {
       "kind": "dialogue",
       "speaker": "lingchen",
       "text": "我待會到營帳拿。莊員不用這麼客氣。"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "suting",
+      "expr": "01-smile",
+      "position": "near"
+    },
+    {
       "kind": "dialogue",
       "speaker": "suting",
       "text": "你呀，你真是好人得太過份了吔。"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
     },
     {
       "kind": "dialogue",

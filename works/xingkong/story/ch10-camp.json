@@ -33,6 +33,36 @@
     },
     {
       "kind": "actor",
+      "action": "hide",
+      "id": "ajun"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "baofang"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "dabi"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "huizhang"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "jialun"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "youmu"
+    },
+    {
+      "kind": "actor",
       "action": "show",
       "id": "suting",
       "expr": "03-worry",
@@ -51,8 +81,33 @@
       "text": "中天最後一個野外觀星。名字叫聖誕浪漫觀星夜。兩日一夜。"
     },
     {
-      "kind": "narration",
-      "text": "大鼻：終於把營紮起來了。這裡就是我們最後一役的藏身之所。"
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "dabi",
+      "expr": "01-hum",
+      "position": "near"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "dabi",
+      "text": "終於把營紮起來了。這裡就是我們最後一役的藏身之所。"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "dabi"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "suting",
+      "expr": "01-smile",
+      "position": "near"
     },
     {
       "kind": "dialogue",
@@ -60,20 +115,58 @@
       "text": "對呀，今日之後，不知還有沒有再度紮營的機會了。"
     },
     {
-      "kind": "narration",
-      "text": "阿俊：別想那麼多了，現在且一起去玩個不醉無歸吧！"
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "ajun",
+      "expr": "01-cold",
+      "position": "near"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "ajun",
+      "text": "別想那麼多了，現在且一起去玩個不醉無歸吧！"
     },
     {
       "kind": "narration",
       "text": "石灘盡頭。大鼻和阿俊丟石頭，丟不中浮波。"
     },
     {
-      "kind": "narration",
-      "text": "寶方：好差勁啊，讓我來，我啛！"
+      "kind": "actor",
+      "action": "hide",
+      "id": "ajun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "baofang",
+      "expr": "01-run",
+      "position": "near"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "baofang",
+      "text": "好差勁啊，讓我來，我啛！"
     },
     {
       "kind": "narration",
       "text": "還是偏了。"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "baofang"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "huizhang",
+      "expr": "01-calm",
+      "position": "near"
     },
     {
       "kind": "dialogue",
@@ -85,12 +178,37 @@
       "text": "寶方把一顆小石子遞過去。"
     },
     {
-      "kind": "narration",
-      "text": "大鼻：寶方你可沒見識過。我們的會長投石的功夫，可說是投石界的火雲邪神。"
+      "kind": "actor",
+      "action": "hide",
+      "id": "huizhang"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "dabi",
+      "expr": "01-hum",
+      "position": "near"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "dabi",
+      "text": "寶方你可沒見識過。我們的會長投石的功夫，可說是投石界的火雲邪神。"
     },
     {
       "kind": "narration",
       "text": "會長用食指和中指夾著石子。"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "dabi"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "huizhang",
+      "expr": "01-calm",
+      "position": "near"
     },
     {
       "kind": "dialogue",
@@ -102,8 +220,33 @@
       "text": "石子擊中那截浮波。"
     },
     {
-      "kind": "narration",
-      "text": "寶方：嘩，你好厲害啊會長大人！你是怎麼辦到的？"
+      "kind": "actor",
+      "action": "hide",
+      "id": "huizhang"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "baofang",
+      "expr": "01-run",
+      "position": "near"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "baofang",
+      "text": "嘩，你好厲害啊會長大人！你是怎麼辦到的？"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "baofang"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "huizhang",
+      "expr": "01-calm",
+      "position": "near"
     },
     {
       "kind": "dialogue",

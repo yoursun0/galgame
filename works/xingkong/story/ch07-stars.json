@@ -33,9 +33,39 @@
     },
     {
       "kind": "actor",
+      "action": "hide",
+      "id": "ajun"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "baofang"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "dabi"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "huizhang"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "jialun"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "youmu"
+    },
+    {
+      "kind": "actor",
       "action": "show",
       "id": "lingchen",
-      "expr": "01-laugh",
+      "expr": "01-shrug",
       "position": "near"
     },
     {
@@ -43,14 +73,50 @@
       "action": "hide"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "01-laugh",
+      "position": "near"
+    },
+    {
       "kind": "dialogue",
       "speaker": "zhijun",
       "text": "就算香港可以看到燦爛的星空，也得坐船到離島那麼遠。而且，現在大白天看甚麼星星！要是你可以現在立即給我看到星星，我就原諒你。"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
+    },
+    {
       "kind": "dialogue",
       "speaker": "lingchen",
       "text": "啊！你說了的呀，你說了可要算數啊。我現在就給你看星星！"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "01-laugh",
+      "position": "near"
     },
     {
       "kind": "dialogue",
@@ -67,6 +133,18 @@
       "text": "你又搞甚麼花樣了？"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
+    },
+    {
       "kind": "dialogue",
       "speaker": "lingchen",
       "text": "你看，星星啊！"
@@ -76,14 +154,50 @@
       "text": "一顆橡筋星。"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "01-laugh",
+      "position": "near"
+    },
+    {
       "kind": "dialogue",
       "speaker": "zhijun",
       "text": "車！才這樣一顆，你說要給我看滿天星空啊！"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
+    },
+    {
       "kind": "dialogue",
       "speaker": "lingchen",
       "text": "這個易辦。看，雙星。然後，三星。"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "01-laugh",
+      "position": "near"
     },
     {
       "kind": "dialogue",
@@ -95,14 +209,50 @@
       "text": "凌晨把膠筋拉緊。"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
+    },
+    {
       "kind": "dialogue",
       "speaker": "lingchen",
       "text": "最後，炫目的銀河。送給你。"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "01-laugh",
+      "position": "near"
+    },
+    {
       "kind": "dialogue",
       "speaker": "zhijun",
       "text": "不錯嘛。真是服了你這小子啦。"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
     },
     {
       "kind": "dialogue",

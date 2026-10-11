@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "contentVersion": 6,
+  "contentVersion": 7,
   "id": "xingkong",
   "title": "星空情緣",
   "language": "zh-Hant",
@@ -59,23 +59,68 @@
     },
     {
       "id": "jialun",
-      "name": "家綸"
+      "name": "家綸",
+      "sprites": {
+        "01-murmur": "sprite-jialun-01-murmur",
+        "02-happy": "sprite-jialun-02-happy",
+        "03-stammer": "sprite-jialun-03-stammer",
+        "04-sad": "sprite-jialun-04-sad",
+        "05-nod": "sprite-jialun-05-nod",
+        "near": "sprite-jialun-01-murmur",
+        "far": "sprite-jialun-01-murmur"
+      }
     },
     {
       "id": "huizhang",
-      "name": "會長"
+      "name": "會長",
+      "sprites": {
+        "01-calm": "sprite-huizhang-01-calm",
+        "02-awe": "sprite-huizhang-02-awe",
+        "03-sharp": "sprite-huizhang-03-sharp",
+        "04-laugh": "sprite-huizhang-04-laugh",
+        "05-thumb": "sprite-huizhang-05-thumb",
+        "near": "sprite-huizhang-01-calm",
+        "far": "sprite-huizhang-01-calm"
+      }
     },
     {
       "id": "baofang",
-      "name": "寶方"
+      "name": "寶方",
+      "sprites": {
+        "01-run": "sprite-baofang-01-run",
+        "02-sweat": "sprite-baofang-02-sweat",
+        "03-sauce": "sprite-baofang-03-sauce",
+        "04-compete": "sprite-baofang-04-compete",
+        "05-sorry": "sprite-baofang-05-sorry",
+        "near": "sprite-baofang-01-run",
+        "far": "sprite-baofang-01-run"
+      }
     },
     {
       "id": "ajun",
-      "name": "阿俊"
+      "name": "阿俊",
+      "sprites": {
+        "01-cold": "sprite-ajun-01-cold",
+        "02-laugh": "sprite-ajun-02-laugh",
+        "03-nosy": "sprite-ajun-03-nosy",
+        "04-gasp": "sprite-ajun-04-gasp",
+        "05-blank": "sprite-ajun-05-blank",
+        "near": "sprite-ajun-01-cold",
+        "far": "sprite-ajun-01-cold"
+      }
     },
     {
       "id": "dabi",
-      "name": "大鼻"
+      "name": "大鼻",
+      "sprites": {
+        "01-hum": "sprite-dabi-01-hum",
+        "02-quilt": "sprite-dabi-02-quilt",
+        "03-wink": "sprite-dabi-03-wink",
+        "04-snort": "sprite-dabi-04-snort",
+        "05-angry": "sprite-dabi-05-angry",
+        "near": "sprite-dabi-01-hum",
+        "far": "sprite-dabi-01-hum"
+      }
     },
     {
       "id": "student",
@@ -83,7 +128,16 @@
     },
     {
       "id": "youmu",
-      "name": "游牧"
+      "name": "游牧",
+      "sprites": {
+        "01-shout": "sprite-youmu-01-shout",
+        "02-crooked": "sprite-youmu-02-crooked",
+        "03-shy": "sprite-youmu-03-shy",
+        "04-jaw": "sprite-youmu-04-jaw",
+        "05-resolve": "sprite-youmu-05-resolve",
+        "near": "sprite-youmu-01-shout",
+        "far": "sprite-youmu-01-shout"
+      }
     },
     {
       "id": "xiaoming",

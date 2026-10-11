@@ -33,9 +33,39 @@
     },
     {
       "kind": "actor",
+      "action": "hide",
+      "id": "ajun"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "baofang"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "dabi"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "huizhang"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "jialun"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "youmu"
+    },
+    {
+      "kind": "actor",
       "action": "show",
       "id": "lingchen",
-      "expr": "01-grin",
+      "expr": "01-shrug",
       "position": "near"
     },
     {
@@ -56,8 +86,21 @@
       "text": "我是凌晨。六年前被惡犬追殺，是你救的。"
     },
     {
-      "kind": "narration",
-      "text": "游牧："
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "youmu",
+      "expr": "01-shout",
+      "position": "near"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "youmu",
+      "text": ""
     },
     {
       "kind": "narration",
@@ -68,12 +111,25 @@
       "text": "他還背得出那些句子。凌晨也背得出。"
     },
     {
-      "kind": "narration",
-      "text": "游牧："
+      "kind": "dialogue",
+      "speaker": "youmu",
+      "text": ""
     },
     {
       "kind": "narration",
       "text": "你怎麼會知道我在這裡？"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "youmu"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
     },
     {
       "kind": "dialogue",
@@ -81,8 +137,21 @@
       "text": "就是她告訴我的。你說過非她不娶的那個。黎芷君。"
     },
     {
-      "kind": "narration",
-      "text": "游牧："
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "youmu",
+      "expr": "01-shout",
+      "position": "near"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "youmu",
+      "text": ""
     },
     {
       "kind": "narration",

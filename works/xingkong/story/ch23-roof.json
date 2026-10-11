@@ -33,9 +33,39 @@
     },
     {
       "kind": "actor",
+      "action": "hide",
+      "id": "ajun"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "baofang"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "dabi"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "huizhang"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "jialun"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "youmu"
+    },
+    {
+      "kind": "actor",
       "action": "show",
       "id": "lingchen",
-      "expr": "04-tears",
+      "expr": "01-shrug",
       "position": "near"
     },
     {
@@ -51,8 +81,33 @@
       "text": "阿俊把神劍遞過來。"
     },
     {
-      "kind": "narration",
-      "text": "阿俊：凌晨，這也許是你去美國之前最後一次觀星了。"
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "ajun",
+      "expr": "01-cold",
+      "position": "near"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "ajun",
+      "text": "凌晨，這也許是你去美國之前最後一次觀星了。"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "ajun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
     },
     {
       "kind": "dialogue",
@@ -64,8 +119,21 @@
       "text": "芷君把他們領到吐露港那一側。跟綺珊說話的那個西裝男子是游牧。情信的句子被他們背給彼此聽。他拉凌晨到面對水塔的欄杆。"
     },
     {
-      "kind": "narration",
-      "text": "游牧："
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "youmu",
+      "expr": "01-shout",
+      "position": "near"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "youmu",
+      "text": ""
     },
     {
       "kind": "narration",
@@ -84,20 +152,34 @@
       "text": "游牧看著北斗。"
     },
     {
-      "kind": "narration",
-      "text": "游牧："
+      "kind": "dialogue",
+      "speaker": "youmu",
+      "text": ""
     },
     {
       "kind": "narration",
       "text": "我可不要輸給你。我要自修重考中七高考。我要入讀這間大學的中文系。一日未上戰場，一日未知道勝負如何。"
     },
     {
-      "kind": "narration",
-      "text": "游牧："
+      "kind": "dialogue",
+      "speaker": "youmu",
+      "text": ""
     },
     {
       "kind": "narration",
       "text": "小鬼，你可不可以支持我？"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "youmu"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
     },
     {
       "kind": "dialogue",

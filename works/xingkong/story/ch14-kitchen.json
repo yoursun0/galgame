@@ -33,6 +33,36 @@
     },
     {
       "kind": "actor",
+      "action": "hide",
+      "id": "ajun"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "baofang"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "dabi"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "huizhang"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "jialun"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "youmu"
+    },
+    {
+      "kind": "actor",
       "action": "show",
       "id": "lingchen",
       "expr": "01-shrug",
@@ -43,14 +73,50 @@
       "action": "hide"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "qishan",
+      "expr": "01-grin",
+      "position": "near"
+    },
+    {
       "kind": "dialogue",
       "speaker": "qishan",
       "text": "喂，凌晨！你進來廚房幫我們一下！"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
+    },
+    {
       "kind": "dialogue",
       "speaker": "lingchen",
       "text": "不了，我還沒洗澡，免得弄髒你們的食物。"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "qishan",
+      "expr": "01-grin",
+      "position": "near"
     },
     {
       "kind": "dialogue",
@@ -66,9 +132,33 @@
       "text": "大廳裡，他坐在芷君旁邊剝蝦。"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "01-laugh",
+      "position": "near"
+    },
+    {
       "kind": "dialogue",
       "speaker": "zhijun",
       "text": "凌晨，你覺得今天晚上會不會有星星看？"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
     },
     {
       "kind": "dialogue",
@@ -76,9 +166,33 @@
       "text": "看天色。入黑前起了好幾片烏雲，不太樂觀。"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "01-laugh",
+      "position": "near"
+    },
+    {
       "kind": "dialogue",
       "speaker": "zhijun",
       "text": "難得到貝澳，望遠鏡也帶來了，沒有星星看，不是很可惜嗎？"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
     },
     {
       "kind": "dialogue",
@@ -86,14 +200,50 @@
       "text": "是很可惜。可以怎樣？"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "01-laugh",
+      "position": "near"
+    },
+    {
       "kind": "dialogue",
       "speaker": "zhijun",
       "text": "花了這麼多心機卻沒有星星，你會不開心嗎？"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
+    },
+    {
       "kind": "dialogue",
       "speaker": "lingchen",
       "text": "難不成要感到好開心？"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "01-laugh",
+      "position": "near"
     },
     {
       "kind": "dialogue",
@@ -114,9 +264,33 @@
       "text": "拉開來，是一團說不出名字的形狀。"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
+    },
+    {
       "kind": "dialogue",
       "speaker": "lingchen",
       "text": "哈，你這個叫做銀河嗎？看起來更像乾炒牛河。"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "01-laugh",
+      "position": "near"
     },
     {
       "kind": "dialogue",
@@ -137,13 +311,50 @@
       "text": "阿俊在他肩上拍了一下。"
     },
     {
-      "kind": "narration",
-      "text": "阿俊：喂，凌晨，該你洗澡了！"
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "ajun",
+      "expr": "01-cold",
+      "position": "near"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "ajun",
+      "text": "喂，凌晨，該你洗澡了！"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "ajun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "01-laugh",
+      "position": "near"
     },
     {
       "kind": "dialogue",
       "speaker": "zhijun",
       "text": "你先去洗吧，剩下的蝦殼我來。還有，謝謝。"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
     },
     {
       "kind": "dialogue",
@@ -155,6 +366,18 @@
       "text": "芷君用橡筋彈他的肩。"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "01-laugh",
+      "position": "near"
+    },
+    {
       "kind": "dialogue",
       "speaker": "zhijun",
       "text": "去把身子沖乾淨。一餐晚飯在等你。飯後，我有事情想跟你單獨聊一聊。"
@@ -162,6 +385,18 @@
     {
       "kind": "narration",
       "text": "又彈一下，這次在胸口。"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
     },
     {
       "kind": "dialogue",

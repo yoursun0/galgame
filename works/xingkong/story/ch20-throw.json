@@ -33,9 +33,39 @@
     },
     {
       "kind": "actor",
+      "action": "hide",
+      "id": "ajun"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "baofang"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "dabi"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "huizhang"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "jialun"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "youmu"
+    },
+    {
+      "kind": "actor",
       "action": "show",
       "id": "lingchen",
-      "expr": "01-laugh",
+      "expr": "01-shrug",
       "position": "near"
     },
     {
@@ -60,6 +90,18 @@
       "text": "石子打中了。牠停了一停。他又連丟三塊。家綸折返回來，也在撿石子。芷君才脫得開，跑到他身旁。素婷已經往度假屋去。"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "jialun",
+      "expr": "01-murmur",
+      "position": "near"
+    },
+    {
       "kind": "dialogue",
       "speaker": "jialun",
       "text": "凌晨，讓我們來掩護你，你衝過來吧！"
@@ -75,6 +117,18 @@
     {
       "kind": "narration",
       "text": "會長兩手各一塊石頭。大鼻在噴氣。寶方拿著廚房的菜刀。綺珊拿手電筒照過來。"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "jialun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "suting",
+      "expr": "01-smile",
+      "position": "near"
     },
     {
       "kind": "dialogue",

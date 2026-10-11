@@ -466,5 +466,245 @@
     "path": "assets/ui/title-cover.jpg",
     "type": "title",
     "approved": true
+  },
+  {
+    "id": "sprite-jialun-01-murmur",
+    "path": "assets/sprites/jialun/01-murmur.png",
+    "type": "actor",
+    "approved": true,
+    "character": "jialun",
+    "expr": "01-murmur"
+  },
+  {
+    "id": "sprite-jialun-02-happy",
+    "path": "assets/sprites/jialun/02-happy.png",
+    "type": "actor",
+    "approved": true,
+    "character": "jialun",
+    "expr": "02-happy"
+  },
+  {
+    "id": "sprite-jialun-03-stammer",
+    "path": "assets/sprites/jialun/03-stammer.png",
+    "type": "actor",
+    "approved": true,
+    "character": "jialun",
+    "expr": "03-stammer"
+  },
+  {
+    "id": "sprite-jialun-04-sad",
+    "path": "assets/sprites/jialun/04-sad.png",
+    "type": "actor",
+    "approved": true,
+    "character": "jialun",
+    "expr": "04-sad"
+  },
+  {
+    "id": "sprite-jialun-05-nod",
+    "path": "assets/sprites/jialun/05-nod.png",
+    "type": "actor",
+    "approved": true,
+    "character": "jialun",
+    "expr": "05-nod"
+  },
+  {
+    "id": "sprite-baofang-01-run",
+    "path": "assets/sprites/baofang/01-run.png",
+    "type": "actor",
+    "approved": true,
+    "character": "baofang",
+    "expr": "01-run"
+  },
+  {
+    "id": "sprite-baofang-02-sweat",
+    "path": "assets/sprites/baofang/02-sweat.png",
+    "type": "actor",
+    "approved": true,
+    "character": "baofang",
+    "expr": "02-sweat"
+  },
+  {
+    "id": "sprite-baofang-03-sauce",
+    "path": "assets/sprites/baofang/03-sauce.png",
+    "type": "actor",
+    "approved": true,
+    "character": "baofang",
+    "expr": "03-sauce"
+  },
+  {
+    "id": "sprite-baofang-04-compete",
+    "path": "assets/sprites/baofang/04-compete.png",
+    "type": "actor",
+    "approved": true,
+    "character": "baofang",
+    "expr": "04-compete"
+  },
+  {
+    "id": "sprite-baofang-05-sorry",
+    "path": "assets/sprites/baofang/05-sorry.png",
+    "type": "actor",
+    "approved": true,
+    "character": "baofang",
+    "expr": "05-sorry"
+  },
+  {
+    "id": "sprite-huizhang-01-calm",
+    "path": "assets/sprites/huizhang/01-calm.png",
+    "type": "actor",
+    "approved": true,
+    "character": "huizhang",
+    "expr": "01-calm"
+  },
+  {
+    "id": "sprite-huizhang-02-awe",
+    "path": "assets/sprites/huizhang/02-awe.png",
+    "type": "actor",
+    "approved": true,
+    "character": "huizhang",
+    "expr": "02-awe"
+  },
+  {
+    "id": "sprite-huizhang-03-sharp",
+    "path": "assets/sprites/huizhang/03-sharp.png",
+    "type": "actor",
+    "approved": true,
+    "character": "huizhang",
+    "expr": "03-sharp"
+  },
+  {
+    "id": "sprite-huizhang-04-laugh",
+    "path": "assets/sprites/huizhang/04-laugh.png",
+    "type": "actor",
+    "approved": true,
+    "character": "huizhang",
+    "expr": "04-laugh"
+  },
+  {
+    "id": "sprite-huizhang-05-thumb",
+    "path": "assets/sprites/huizhang/05-thumb.png",
+    "type": "actor",
+    "approved": true,
+    "character": "huizhang",
+    "expr": "05-thumb"
+  },
+  {
+    "id": "sprite-ajun-01-cold",
+    "path": "assets/sprites/ajun/01-cold.png",
+    "type": "actor",
+    "approved": true,
+    "character": "ajun",
+    "expr": "01-cold"
+  },
+  {
+    "id": "sprite-ajun-02-laugh",
+    "path": "assets/sprites/ajun/02-laugh.png",
+    "type": "actor",
+    "approved": true,
+    "character": "ajun",
+    "expr": "02-laugh"
+  },
+  {
+    "id": "sprite-ajun-03-nosy",
+    "path": "assets/sprites/ajun/03-nosy.png",
+    "type": "actor",
+    "approved": true,
+    "character": "ajun",
+    "expr": "03-nosy"
+  },
+  {
+    "id": "sprite-ajun-04-gasp",
+    "path": "assets/sprites/ajun/04-gasp.png",
+    "type": "actor",
+    "approved": true,
+    "character": "ajun",
+    "expr": "04-gasp"
+  },
+  {
+    "id": "sprite-ajun-05-blank",
+    "path": "assets/sprites/ajun/05-blank.png",
+    "type": "actor",
+    "approved": true,
+    "character": "ajun",
+    "expr": "05-blank"
+  },
+  {
+    "id": "sprite-dabi-01-hum",
+    "path": "assets/sprites/dabi/01-hum.png",
+    "type": "actor",
+    "approved": true,
+    "character": "dabi",
+    "expr": "01-hum"
+  },
+  {
+    "id": "sprite-dabi-02-quilt",
+    "path": "assets/sprites/dabi/02-quilt.png",
+    "type": "actor",
+    "approved": true,
+    "character": "dabi",
+    "expr": "02-quilt"
+  },
+  {
+    "id": "sprite-dabi-03-wink",
+    "path": "assets/sprites/dabi/03-wink.png",
+    "type": "actor",
+    "approved": true,
+    "character": "dabi",
+    "expr": "03-wink"
+  },
+  {
+    "id": "sprite-dabi-04-snort",
+    "path": "assets/sprites/dabi/04-snort.png",
+    "type": "actor",
+    "approved": true,
+    "character": "dabi",
+    "expr": "04-snort"
+  },
+  {
+    "id": "sprite-dabi-05-angry",
+    "path": "assets/sprites/dabi/05-angry.png",
+    "type": "actor",
+    "approved": true,
+    "character": "dabi",
+    "expr": "05-angry"
+  },
+  {
+    "id": "sprite-youmu-01-shout",
+    "path": "assets/sprites/youmu/01-shout.png",
+    "type": "actor",
+    "approved": true,
+    "character": "youmu",
+    "expr": "01-shout"
+  },
+  {
+    "id": "sprite-youmu-02-crooked",
+    "path": "assets/sprites/youmu/02-crooked.png",
+    "type": "actor",
+    "approved": true,
+    "character": "youmu",
+    "expr": "02-crooked"
+  },
+  {
+    "id": "sprite-youmu-03-shy",
+    "path": "assets/sprites/youmu/03-shy.png",
+    "type": "actor",
+    "approved": true,
+    "character": "youmu",
+    "expr": "03-shy"
+  },
+  {
+    "id": "sprite-youmu-04-jaw",
+    "path": "assets/sprites/youmu/04-jaw.png",
+    "type": "actor",
+    "approved": true,
+    "character": "youmu",
+    "expr": "04-jaw"
+  },
+  {
+    "id": "sprite-youmu-05-resolve",
+    "path": "assets/sprites/youmu/05-resolve.png",
+    "type": "actor",
+    "approved": true,
+    "character": "youmu",
+    "expr": "05-resolve"
   }
 ]

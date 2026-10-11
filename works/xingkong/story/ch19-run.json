@@ -33,6 +33,36 @@
     },
     {
       "kind": "actor",
+      "action": "hide",
+      "id": "ajun"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "baofang"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "dabi"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "huizhang"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "jialun"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "youmu"
+    },
+    {
+      "kind": "actor",
       "action": "show",
       "id": "zhijun",
       "expr": "03-glare",
@@ -63,8 +93,21 @@
       "text": "她看著他。沒有應。之後也沒有再跟他說話。"
     },
     {
-      "kind": "narration",
-      "text": "游牧："
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "youmu",
+      "expr": "01-shout",
+      "position": "near"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "youmu",
+      "text": ""
     },
     {
       "kind": "narration",

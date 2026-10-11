@@ -33,9 +33,39 @@
     },
     {
       "kind": "actor",
+      "action": "hide",
+      "id": "ajun"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "baofang"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "dabi"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "huizhang"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "jialun"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "youmu"
+    },
+    {
+      "kind": "actor",
       "action": "show",
       "id": "lingchen",
-      "expr": "01-smile",
+      "expr": "01-shrug",
       "position": "near"
     },
     {
@@ -48,6 +78,18 @@
       "text": "唉，又投不中。"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "huizhang",
+      "expr": "01-calm",
+      "position": "near"
+    },
+    {
       "kind": "dialogue",
       "speaker": "huizhang",
       "text": "早就跟你說過，不用心的話，目標即使再大再容易，還是不會讓你投中的。"
@@ -57,9 +99,33 @@
       "text": "他看著天上的雲。"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "huizhang"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
+    },
+    {
       "kind": "dialogue",
       "speaker": "lingchen",
       "text": "唏，又在看天空嗎？"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "huizhang",
+      "expr": "01-calm",
+      "position": "near"
     },
     {
       "kind": "dialogue",
@@ -67,9 +133,33 @@
       "text": "是啊。今天雖然有一點白雲，但陽光依然這麼刺眼。這晚如果放晴的話，星光一定很美。"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "huizhang"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
+    },
+    {
       "kind": "dialogue",
       "speaker": "lingchen",
       "text": "今晚有甚麼目標？"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "huizhang",
+      "expr": "01-calm",
+      "position": "near"
     },
     {
       "kind": "dialogue",
@@ -81,9 +171,33 @@
       "text": "兩個人捧著肚子笑。"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "huizhang"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
+    },
+    {
       "kind": "dialogue",
       "speaker": "lingchen",
       "text": "我問你晚上有甚麼想看的深空天體！你跟我講甚麼女孩子！"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "huizhang",
+      "expr": "01-calm",
+      "position": "near"
     },
     {
       "kind": "dialogue",
@@ -96,9 +210,33 @@
       "text": "人最緊要是活得開開心心。有沒有看得上眼的女孩子，還是其次。"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "huizhang"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
+    },
+    {
       "kind": "dialogue",
       "speaker": "lingchen",
       "text": "你是不是有甚麼想說的？"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "huizhang",
+      "expr": "01-calm",
+      "position": "near"
     },
     {
       "kind": "dialogue",

@@ -33,9 +33,39 @@
     },
     {
       "kind": "actor",
+      "action": "hide",
+      "id": "ajun"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "baofang"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "dabi"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "huizhang"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "jialun"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "youmu"
+    },
+    {
+      "kind": "actor",
       "action": "show",
       "id": "lingchen",
-      "expr": "05-spring",
+      "expr": "01-shrug",
       "position": "near"
     },
     {
@@ -47,13 +77,50 @@
       "text": "MMW 天台。人很多。望遠鏡在中間。夏季大三角在上面。"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "jialun",
+      "expr": "01-murmur",
+      "position": "near"
+    },
+    {
       "kind": "dialogue",
       "speaker": "jialun",
       "text": "今天晚上是下莊舉辦的春季天文工作坊最後一天。"
     },
     {
-      "kind": "narration",
-      "text": "阿俊：凌晨，這也許是你去美國之前最後一次觀星了。要不要在臨別之前來一次大顯身手，為參加者們來一遍星空解說？來，神劍拿去。"
+      "kind": "actor",
+      "action": "hide",
+      "id": "jialun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "ajun",
+      "expr": "01-cold",
+      "position": "near"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "ajun",
+      "text": "凌晨，這也許是你去美國之前最後一次觀星了。要不要在臨別之前來一次大顯身手，為參加者們來一遍星空解說？來，神劍拿去。"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "ajun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
     },
     {
       "kind": "dialogue",

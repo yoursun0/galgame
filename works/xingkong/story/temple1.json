@@ -33,6 +33,36 @@
     },
     {
       "kind": "actor",
+      "action": "hide",
+      "id": "ajun"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "baofang"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "dabi"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "huizhang"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "jialun"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "youmu"
+    },
+    {
+      "kind": "actor",
       "action": "show",
       "id": "qishan",
       "expr": "01-grin",
@@ -61,6 +91,11 @@
     {
       "kind": "narration",
       "text": "拍完，凌晨在寺下轉了一圈。看不到素婷的身影。綺珊又把他按在石上。"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
     },
     {
       "kind": "dialogue",

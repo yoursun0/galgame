@@ -33,6 +33,36 @@
     },
     {
       "kind": "actor",
+      "action": "hide",
+      "id": "ajun"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "baofang"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "dabi"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "huizhang"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "jialun"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "youmu"
+    },
+    {
+      "kind": "actor",
       "action": "show",
       "id": "lingchen",
       "expr": "01-shrug",
@@ -51,8 +81,21 @@
       "text": "內蒙團之後半個月。傍晚。凌晨夾著電話吃飯。電話那頭是補習學生。"
     },
     {
-      "kind": "narration",
-      "text": "學生：喂，老哥，兩日內要做這麼多 past paper，取了我的狗命麼？"
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "student",
+      "text": "喂，老哥，兩日內要做這麼多 past paper，取了我的狗命麼？"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
     },
     {
       "kind": "dialogue",
@@ -60,8 +103,21 @@
       "text": "小鬼，你明天後天都不用考試。每天做個四個小時就夠了。"
     },
     {
-      "kind": "narration",
-      "text": "學生：每天做四個小時啊！我哪有時間拍拖啊！"
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "student",
+      "text": "每天做四個小時啊！我哪有時間拍拖啊！"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
     },
     {
       "kind": "dialogue",
