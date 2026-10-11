@@ -1405,6 +1405,48 @@ function shellCss(): string {
     .settings { display: grid; gap: 12px; max-width: 520px; }
     .set-row { display: grid; grid-template-columns: 9em 1fr auto; gap: 8px; align-items: center; }
     .recall-list { display: grid; gap: 8px; }
+    /* Puppy #74: DEBUG branch tree panel */
+    .debug-tree { display: grid; gap: 10px; max-width: 100%; }
+    .debug-tree-tools { display: grid; gap: 8px; }
+    .debug-tree-search {
+      width: 100%;
+      max-width: 520px;
+      padding: 8px 10px;
+      border: 1px solid rgba(232, 240, 255, 0.28);
+      border-radius: 6px;
+      background: rgba(7, 11, 20, 0.75);
+      color: inherit;
+      font: inherit;
+    }
+    .debug-tree-list {
+      display: grid;
+      gap: 6px;
+      max-height: min(60vh, 640px);
+      overflow: auto;
+      padding-right: 4px;
+    }
+    .debug-tree-node {
+      display: grid;
+      gap: 2px;
+      text-align: left;
+      margin-left: calc(var(--depth, 0) * 14px);
+      padding: 8px 10px;
+      border: 1px solid rgba(232, 240, 255, 0.22);
+      border-radius: 6px;
+      background: rgba(7, 11, 20, 0.55);
+      color: inherit;
+      font: inherit;
+      cursor: pointer;
+    }
+    .debug-tree-node.current { border-color: rgba(120, 200, 255, 0.65); }
+    .debug-tree-id { letter-spacing: 0.04em; }
+    .debug-tree-via, .debug-tree-skip, .debug-tree-sets {
+      font-size: 12px;
+      opacity: 0.8;
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+    }
+
     @media (max-width: 720px) {
       .hud {
         gap: 6px;
