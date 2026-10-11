@@ -237,4 +237,24 @@ describe("gallery redaction", () => {
       expect(dumpedLocked.includes(title)).toBe(false);
     }
   });
+
+  // Puppy #86: DEBUG MODE unlocks all CG + BGM; endings stay progress-gated.
+  test("debugUnlock exposes all cg and music but not endings", () => {
+    const view = presentGallery(work, assets, emptyProgress(work.manifest.id), {
+      debugUnlock: true,
+    });
+    expect(view.cg.length).toBeGreaterThan(0);
+    expect(view.music.length).toBeGreaterThan(0);
+    expect(view.cg.every((card) => card.unlocked && card.assetId !== null)).toBe(true);
+    expect(view.music.every((card) => card.unlocked && card.assetId !== null)).toBe(true);
+    expect(view.endings.every((card) => !card.unlocked && card.assetId === null && card.label === "未解鎖")).toBe(true);
+    const endingIds = new Set<string>();
+    for (const scene of work.scenes) {
+      for (const instruction of scene.instructions) {
+        if (instruction.kind === "ending") endingIds.add(instruction.id);
+      }
+    }
+    const dumpedEndings = JSON.stringify(view.endings);
+    for (const id of endingIds) expect(dumpedEndings.includes(id)).toBe(false);
+  });
 });

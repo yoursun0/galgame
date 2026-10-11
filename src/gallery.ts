@@ -29,12 +29,19 @@ export type GalleryView = {
   recalls: RecallCard[];
 };
 
+export type PresentGalleryOptions = {
+  /** Puppy #86: DEBUG MODE ON → unlock all CG + BGM (not endings). */
+  debugUnlock?: boolean;
+};
+
 /** Locked cards expose neither the asset id nor the ending / recall title. */
 export function presentGallery(
   work: Work,
   assets: AssetRecord[],
   progress: WorkProgress,
+  options?: PresentGalleryOptions,
 ): GalleryView {
+  const debugUnlock = options?.debugUnlock === true;
   const cgUnlocked = new Set(progress.cg);
   const musicUnlocked = new Set(progress.music);
   const endingUnlocked = new Set(progress.endings);
@@ -42,11 +49,11 @@ export function presentGallery(
 
   const cg = assets
     .filter((asset) => asset.type === "cg")
-    .map((asset) => card(cgUnlocked.has(asset.id), asset.id));
+    .map((asset) => card(debugUnlock || cgUnlocked.has(asset.id), asset.id));
 
   const music = assets
     .filter((asset) => asset.type === "bgm")
-    .map((asset) => card(musicUnlocked.has(asset.id), asset.id));
+    .map((asset) => card(debugUnlock || musicUnlocked.has(asset.id), asset.id));
 
   const endings = listEndings(work).map(({ id, sceneId }) => {
     const unlocked = endingUnlocked.has(id);
