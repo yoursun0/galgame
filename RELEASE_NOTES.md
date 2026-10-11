@@ -1,5 +1,9 @@
 # Release Notes
 
+## v1.8 2026-10-11
+
+- 美術：`cg-baofang-bus` 換「牌＋團刊」對題圖（#53）；綺珊 `05-wink`／芷君 `01-laugh`／凌晨 `05-fire` 重畫統一畫風（#54）。
+
 ## v1.7 2026-10-11
 
 - PWA：每次 build bump shell cache 名；navigate／`index.html` network-first；新 SW `SKIP_WAITING`＋`controllerchange` 自動 reload（#50）。
