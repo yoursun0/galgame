@@ -75,7 +75,8 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "畢竟人都要走了，還有甚麼好留戀？"
+      "text": "畢竟人都要走了，還有甚麼好留戀？",
+      "expr": "01-shrug"
     },
     {
       "kind": "narration",
@@ -87,16 +88,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "huizhang",
-      "expr": "02-awe",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "huizhang",
-      "text": "說謊。"
+      "text": "說謊。",
+      "expr": "02-awe"
     },
     {
       "kind": "actor",
@@ -104,16 +99,10 @@
       "id": "huizhang"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "別人回答你的問題，你卻要說人家說謊。那你要我說甚麼？"
+      "text": "別人回答你的問題，你卻要說人家說謊。那你要我說甚麼？",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -121,16 +110,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "huizhang",
-      "expr": "03-sharp",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "huizhang",
-      "text": "說實話。"
+      "text": "說實話。",
+      "expr": "03-sharp"
     },
     {
       "kind": "actor",
@@ -138,16 +121,10 @@
       "id": "huizhang"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "02-blush",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "家綸他，是個好人。所以……"
+      "text": "家綸他，是個好人。所以……",
+      "expr": "02-blush"
     },
     {
       "kind": "actor",
@@ -155,16 +132,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "huizhang",
-      "expr": "04-laugh",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "huizhang",
-      "text": "所以？"
+      "text": "所以？",
+      "expr": "04-laugh"
     },
     {
       "kind": "actor",
@@ -172,16 +143,10 @@
       "id": "huizhang"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "04-cold",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "所以，就是這樣。"
+      "text": "所以，就是這樣。",
+      "expr": "04-cold"
     },
     {
       "kind": "actor",
@@ -189,16 +154,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "huizhang",
-      "expr": "01-calm",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "huizhang",
-      "text": "很好。"
+      "text": "很好。",
+      "expr": "01-calm"
     },
     {
       "kind": "narration",

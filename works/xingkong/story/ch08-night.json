@@ -82,16 +82,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "jialun",
-      "expr": "02-happy",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "jialun",
-      "text": "不好意思啊，凌晨。到底還是沒有依你的話，硬要加入了個人問答。"
+      "text": "不好意思啊，凌晨。到底還是沒有依你的話，硬要加入了個人問答。",
+      "expr": "02-happy"
     },
     {
       "kind": "actor",
@@ -99,21 +93,16 @@
       "id": "jialun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "哈哈，不要緊呀，效果還挺不錯的嘛。你找的時機也很對，跟我後來的問答沒有抵觸，那些偷偷燒的光碟也送出去了。",
+      "expr": "01-shrug"
     },
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "哈哈，不要緊呀，效果還挺不錯的嘛。你找的時機也很對，跟我後來的問答沒有抵觸，那些偷偷燒的光碟也送出去了。"
-    },
-    {
-      "kind": "dialogue",
-      "speaker": "lingchen",
-      "text": "只是我想不到你這個聽聽話話的老實頭，也會先斬後奏。"
+      "text": "只是我想不到你這個聽聽話話的老實頭，也會先斬後奏。",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -121,16 +110,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "jialun",
-      "expr": "03-stammer",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "jialun",
-      "text": "究竟是誇我還是貶我啊？"
+      "text": "究竟是誇我還是貶我啊？",
+      "expr": "03-stammer"
     },
     {
       "kind": "actor",
@@ -138,16 +121,10 @@
       "id": "jialun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "曉變通的才夠醒目嘛。甚麼都依我的話去做，哪裡好玩。你遇著我這種甚麼都要說了算的人，不反抗就只會一直被我欺負。"
+      "text": "曉變通的才夠醒目嘛。甚麼都依我的話去做，哪裡好玩。你遇著我這種甚麼都要說了算的人，不反抗就只會一直被我欺負。",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -155,16 +132,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "jialun",
-      "expr": "04-sad",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "jialun",
-      "text": "也不是哩。你辦事效率蠻高的，做事又勤快，我得跟你學。"
+      "text": "也不是哩。你辦事效率蠻高的，做事又勤快，我得跟你學。",
+      "expr": "04-sad"
     },
     {
       "kind": "narration",
@@ -176,16 +147,10 @@
       "id": "jialun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "02-blush",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "我哪有你說的那麼能幹。"
+      "text": "我哪有你說的那麼能幹。",
+      "expr": "02-blush"
     },
     {
       "kind": "actor",
@@ -193,16 +158,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "jialun",
-      "expr": "05-nod",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "jialun",
-      "text": "至少你在台上比我成熟，對著一大班人抖也不抖。"
+      "text": "至少你在台上比我成熟，對著一大班人抖也不抖。",
+      "expr": "05-nod"
     },
     {
       "kind": "actor",
@@ -210,16 +169,10 @@
       "id": "jialun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "04-cold",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "台下的觀眾又不是狗，我哪裡需要害怕。"
+      "text": "台下的觀眾又不是狗，我哪裡需要害怕。",
+      "expr": "04-cold"
     },
     {
       "kind": "actor",
@@ -227,16 +180,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "jialun",
-      "expr": "01-murmur",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "jialun",
-      "text": "那你為甚麼怕狗怕得要死？"
+      "text": "那你為甚麼怕狗怕得要死？",
+      "expr": "01-murmur"
     },
     {
       "kind": "jump",

@@ -1,5 +1,11 @@
 # Release Notes
 
+## v1.10 2026-10-11
+
+- Engine：`dialogue` 必填 `expr`（角色立繪）；reduce 按 speaker＋expr 自動 show／update；空 sprites 為電話 VO／無立繪可省略（#60）。
+- Settings：DEBUG MODE ON/OFF（預設 OFF）；ON 時右上角顯示目前 `sceneId`（#62）。
+- 結局頁加「回標題」按鈕，行為同標題／重新開始（#63）。
+
 ## v1.9 2026-10-11
 
 - 文案：#56 麻雀線背景 `bg-soc`→`bg-canteen`；#57 `ch09-swallow` 錯出素婷→芷君；#58 立繪表情一 round 減少長時間卡在 01。

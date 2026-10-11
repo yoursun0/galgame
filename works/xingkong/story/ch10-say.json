@@ -75,7 +75,8 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "我喜歡你。"
+      "text": "我喜歡你。",
+      "expr": "04-cold"
     },
     {
       "kind": "actor",
@@ -83,16 +84,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "suting",
-      "expr": "01-smile",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "suting",
-      "text": "你說甚麼？風太大我聽不清楚。"
+      "text": "你說甚麼？風太大我聽不清楚。",
+      "expr": "01-smile"
     },
     {
       "kind": "actor",
@@ -100,16 +95,10 @@
       "id": "suting"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "05-fire",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "我剛才說呢……"
+      "text": "我剛才說呢……",
+      "expr": "05-fire"
     },
     {
       "kind": "jump",

@@ -75,7 +75,8 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "喂，找誰？"
+      "text": "喂，找誰？",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -83,16 +84,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "huizhang",
-      "expr": "04-laugh",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "huizhang",
-      "text": "凌晨，你最近怎麼了？沒甚麼事吧？"
+      "text": "凌晨，你最近怎麼了？沒甚麼事吧？",
+      "expr": "04-laugh"
     },
     {
       "kind": "actor",
@@ -100,16 +95,10 @@
       "id": "huizhang"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "02-blush",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "沒甚麼事啊。"
+      "text": "沒甚麼事啊。",
+      "expr": "02-blush"
     },
     {
       "kind": "actor",
@@ -117,16 +106,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "huizhang",
-      "expr": "01-calm",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "huizhang",
-      "text": "怎麼這麼久的莊聚都不見你？物理系真的這麼忙嗎？"
+      "text": "怎麼這麼久的莊聚都不見你？物理系真的這麼忙嗎？",
+      "expr": "01-calm"
     },
     {
       "kind": "actor",
@@ -134,16 +117,10 @@
       "id": "huizhang"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "04-cold",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "你知道的，物理嘛，不是人讀的科目。"
+      "text": "你知道的，物理嘛，不是人讀的科目。",
+      "expr": "04-cold"
     },
     {
       "kind": "actor",
@@ -151,16 +128,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "huizhang",
-      "expr": "02-awe",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "huizhang",
-      "text": "實在很久沒見了。你到底甚麼時候才有空？"
+      "text": "實在很久沒見了。你到底甚麼時候才有空？",
+      "expr": "02-awe"
     },
     {
       "kind": "narration",
@@ -172,16 +143,10 @@
       "id": "huizhang"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "05-fire",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "沒有特別甚麼時候啦。"
+      "text": "沒有特別甚麼時候啦。",
+      "expr": "05-fire"
     },
     {
       "kind": "actor",
@@ -189,16 +154,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "huizhang",
-      "expr": "03-sharp",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "huizhang",
-      "text": "我們打算下星期搞內蒙團 re-union。時間地點還沒決定。大家都說要預你一份。你給我一個日子。這次不要再推。"
+      "text": "我們打算下星期搞內蒙團 re-union。時間地點還沒決定。大家都說要預你一份。你給我一個日子。這次不要再推。",
+      "expr": "03-sharp"
     },
     {
       "kind": "actor",
@@ -206,16 +165,10 @@
       "id": "huizhang"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "沒需要特別為我設想。哪一天最多人有空就成了。"
+      "text": "沒需要特別為我設想。哪一天最多人有空就成了。",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -223,16 +176,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "huizhang",
-      "expr": "04-laugh",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "huizhang",
-      "text": "大伙兒都沒有你這麼忙。你快快決定好了。"
+      "text": "大伙兒都沒有你這麼忙。你快快決定好了。",
+      "expr": "04-laugh"
     },
     {
       "kind": "actor",
@@ -240,16 +187,10 @@
       "id": "huizhang"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "那好吧。你且稍等，我過一會再覆你。"
+      "text": "那好吧。你且稍等，我過一會再覆你。",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -257,16 +198,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "huizhang",
-      "expr": "01-calm",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "huizhang",
-      "text": "好，我們等你。"
+      "text": "好，我們等你。",
+      "expr": "01-calm"
     },
     {
       "kind": "narration",
@@ -278,16 +213,10 @@
       "id": "huizhang"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "02-hips",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "誰啊？莊員？"
+      "text": "誰啊？莊員？",
+      "expr": "02-hips"
     },
     {
       "kind": "actor",
@@ -295,16 +224,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "02-blush",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "會長。內蒙團 re-union。"
+      "text": "會長。內蒙團 re-union。",
+      "expr": "02-blush"
     },
     {
       "kind": "actor",
@@ -312,16 +235,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "03-glare",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "是嘛。那一天？時間？地點？"
+      "text": "是嘛。那一天？時間？地點？",
+      "expr": "03-glare"
     },
     {
       "kind": "actor",
@@ -329,16 +246,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "04-cold",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "時間地點還沒決定。去不去，也還沒決定。"
+      "text": "時間地點還沒決定。去不去，也還沒決定。",
+      "expr": "04-cold"
     },
     {
       "kind": "actor",
@@ -346,16 +257,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "05-tearsmile",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "去嘛。"
+      "text": "去嘛。",
+      "expr": "05-tearsmile"
     },
     {
       "kind": "actor",
@@ -363,16 +268,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "05-fire",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "你想我去？你自己呢？"
+      "text": "你想我去？你自己呢？",
+      "expr": "05-fire"
     },
     {
       "kind": "actor",
@@ -380,16 +279,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "04-puff",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "去，怎麼不去。有空的話我每次都捧場。"
+      "text": "去，怎麼不去。有空的話我每次都捧場。",
+      "expr": "04-puff"
     },
     {
       "kind": "actor",
@@ -397,16 +290,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "那你下星期哪一天有空？他們叫我決定日期。"
+      "text": "那你下星期哪一天有空？他們叫我決定日期。",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -414,16 +301,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "01-laugh",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "讓你決定日期，一定是怕你又撇下他們。那麼這一次，你想逃也逃不掉了。"
+      "text": "讓你決定日期，一定是怕你又撇下他們。那麼這一次，你想逃也逃不掉了。",
+      "expr": "01-laugh"
     },
     {
       "kind": "actor",
@@ -431,16 +312,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "要是真的想逃，斷不會逃不掉。我可以推說一整個星期都忙，或者臨時有事爽約。我的話，總有法子。"
+      "text": "要是真的想逃，斷不會逃不掉。我可以推說一整個星期都忙，或者臨時有事爽約。我的話，總有法子。",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -448,16 +323,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "02-hips",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "面對著他倆，真的那麼痛苦嗎？"
+      "text": "面對著他倆，真的那麼痛苦嗎？",
+      "expr": "02-hips"
     },
     {
       "kind": "narration",
@@ -466,7 +335,8 @@
     {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "不好意思。"
+      "text": "不好意思。",
+      "expr": "02-hips"
     },
     {
       "kind": "narration",
@@ -475,7 +345,8 @@
     {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "但是你總不能因此一直缺席。依你的話，你點的咖啡，可還沒有喝完哩。"
+      "text": "但是你總不能因此一直缺席。依你的話，你點的咖啡，可還沒有喝完哩。",
+      "expr": "02-hips"
     },
     {
       "kind": "actor",
@@ -483,16 +354,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "02-blush",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "這也沒甚麼。任何事也有離開的一天。畢竟人都快要走了，還有甚麼好留戀？"
+      "text": "這也沒甚麼。任何事也有離開的一天。畢竟人都快要走了，還有甚麼好留戀？",
+      "expr": "02-blush"
     },
     {
       "kind": "actor",
@@ -500,16 +365,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "03-glare",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "不，你錯了。你告訴過我的，沒有做不到的事，只有不敢做的人。無論如何，事情總要有個了斷。"
+      "text": "不，你錯了。你告訴過我的，沒有做不到的事，只有不敢做的人。無論如何，事情總要有個了斷。",
+      "expr": "03-glare"
     },
     {
       "kind": "actor",
@@ -517,16 +376,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "04-cold",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "對，我是告訴過你。就是因為這樣，才害你再一次去勾那些往事，現在跟我坐在這裡看咖啡涼。"
+      "text": "對，我是告訴過你。就是因為這樣，才害你再一次去勾那些往事，現在跟我坐在這裡看咖啡涼。",
+      "expr": "04-cold"
     },
     {
       "kind": "actor",
@@ -534,16 +387,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "05-tearsmile",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "我沒後悔。"
+      "text": "我沒後悔。",
+      "expr": "05-tearsmile"
     },
     {
       "kind": "actor",
@@ -551,16 +398,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "05-fire",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "真的？"
+      "text": "真的？",
+      "expr": "05-fire"
     },
     {
       "kind": "actor",
@@ -568,16 +409,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "04-puff",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "真的。"
+      "text": "真的。",
+      "expr": "04-puff"
     },
     {
       "kind": "actor",
@@ -585,16 +420,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "很好。"
+      "text": "很好。",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -602,16 +431,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "01-laugh",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "那麼，你下定了決心沒有？"
+      "text": "那麼，你下定了決心沒有？",
+      "expr": "01-laugh"
     },
     {
       "kind": "choice",

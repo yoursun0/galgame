@@ -78,16 +78,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "01-laugh",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "就算香港可以看到燦爛的星空，也得坐船到離島那麼遠。而且，現在大白天看甚麼星星！要是你可以現在立即給我看到星星，我就原諒你。"
+      "text": "就算香港可以看到燦爛的星空，也得坐船到離島那麼遠。而且，現在大白天看甚麼星星！要是你可以現在立即給我看到星星，我就原諒你。",
+      "expr": "01-laugh"
     },
     {
       "kind": "actor",
@@ -95,16 +89,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "02-blush",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "啊！你說了的呀，你說了可要算數啊。我現在就給你看星星！"
+      "text": "啊！你說了的呀，你說了可要算數啊。我現在就給你看星星！",
+      "expr": "02-blush"
     },
     {
       "kind": "actor",
@@ -112,16 +100,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "02-hips",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "別裝高興了，你哪會拿到星星給我看。"
+      "text": "別裝高興了，你哪會拿到星星給我看。",
+      "expr": "02-hips"
     },
     {
       "kind": "narration",
@@ -130,7 +112,8 @@
     {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "你又搞甚麼花樣了？"
+      "text": "你又搞甚麼花樣了？",
+      "expr": "02-hips"
     },
     {
       "kind": "actor",
@@ -138,16 +121,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "04-cold",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "你看，星星啊！"
+      "text": "你看，星星啊！",
+      "expr": "04-cold"
     },
     {
       "kind": "narration",
@@ -159,16 +136,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "03-glare",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "車！才這樣一顆，你說要給我看滿天星空啊！"
+      "text": "車！才這樣一顆，你說要給我看滿天星空啊！",
+      "expr": "03-glare"
     },
     {
       "kind": "actor",
@@ -176,16 +147,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "05-fire",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "這個易辦。看，雙星。然後，三星。"
+      "text": "這個易辦。看，雙星。然後，三星。",
+      "expr": "05-fire"
     },
     {
       "kind": "actor",
@@ -193,16 +158,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "05-tearsmile",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "果然有點本事哩。"
+      "text": "果然有點本事哩。",
+      "expr": "05-tearsmile"
     },
     {
       "kind": "narration",
@@ -214,16 +173,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "最後，炫目的銀河。送給你。"
+      "text": "最後，炫目的銀河。送給你。",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -231,16 +184,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "04-puff",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "不錯嘛。真是服了你這小子啦。"
+      "text": "不錯嘛。真是服了你這小子啦。",
+      "expr": "04-puff"
     },
     {
       "kind": "actor",
@@ -248,16 +195,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "我是星夜之凌晨嘛，漫天星宿當然任我驅使了。"
+      "text": "我是星夜之凌晨嘛，漫天星宿當然任我驅使了。",
+      "expr": "01-shrug"
     },
     {
       "kind": "jump",

@@ -78,26 +78,22 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "02-blush",
-      "position": "near"
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "紅娘免了。我還沒請教。",
+      "expr": "02-blush"
     },
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "紅娘免了。我還沒請教。"
+      "text": "我叫凌晨，中天的。那天團刊的事，多謝你。",
+      "expr": "02-blush"
     },
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "我叫凌晨，中天的。那天團刊的事，多謝你。"
-    },
-    {
-      "kind": "dialogue",
-      "speaker": "lingchen",
-      "text": "名字比較不容易弄丟。"
+      "text": "名字比較不容易弄丟。",
+      "expr": "02-blush"
     },
     {
       "kind": "jump",

@@ -79,7 +79,8 @@
     {
       "kind": "dialogue",
       "speaker": "qishan",
-      "text": "我還是會看的。少在心裡編排我。"
+      "text": "我還是會看的。少在心裡編排我。",
+      "expr": "05-wink"
     },
     {
       "kind": "actor",
@@ -87,16 +88,10 @@
       "id": "qishan"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "jialun",
-      "expr": "02-happy",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "jialun",
-      "text": "喂，凌晨，那個女孩子是誰？"
+      "text": "喂，凌晨，那個女孩子是誰？",
+      "expr": "02-happy"
     },
     {
       "kind": "actor",
@@ -104,16 +99,10 @@
       "id": "jialun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "04-cold",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "綺珊？沒甚麼啦，就我的中學同學啦。"
+      "text": "綺珊？沒甚麼啦，就我的中學同學啦。",
+      "expr": "04-cold"
     },
     {
       "kind": "narration",

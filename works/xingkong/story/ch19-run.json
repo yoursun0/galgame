@@ -98,16 +98,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "youmu",
-      "expr": "04-jaw",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "youmu",
-      "text": "你要是老是這個又膽小又婆媽的樣子，怎麼保護自己喜歡的女孩子啊。"
+      "text": "你要是老是這個又膽小又婆媽的樣子，怎麼保護自己喜歡的女孩子啊。",
+      "expr": "04-jaw"
     },
     {
       "kind": "jump",

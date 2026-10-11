@@ -75,7 +75,8 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "要是他那天給你堅持，繼續給你說好聽的話，你還會不會單單因為媽媽的話就放下？"
+      "text": "要是他那天給你堅持，繼續給你說好聽的話，你還會不會單單因為媽媽的話就放下？",
+      "expr": "01-shrug"
     },
     {
       "kind": "narration",
@@ -87,16 +88,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "03-glare",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "我說呀，他根本就不重視這段感情。"
+      "text": "我說呀，他根本就不重視這段感情。",
+      "expr": "03-glare"
     },
     {
       "kind": "narration",
@@ -105,7 +100,8 @@
     {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "不過自己心底還是依戀著游牧。這是事實。"
+      "text": "不過自己心底還是依戀著游牧。這是事實。",
+      "expr": "03-glare"
     },
     {
       "kind": "narration",

@@ -70,16 +70,10 @@
       "text": "凌晨沒有立刻走。他們的聲音低下去。"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "jialun",
-      "expr": "03-stammer",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "jialun",
-      "text": "晚上的星，被雲蓋住了。"
+      "text": "晚上的星，被雲蓋住了。",
+      "expr": "03-stammer"
     },
     {
       "kind": "narration",

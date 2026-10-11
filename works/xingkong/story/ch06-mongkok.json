@@ -78,16 +78,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "suting",
-      "expr": "04-tears",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "suting",
-      "text": "不是啊，明天打算出去吃，十二點旺角地鐵站恒生銀行。"
+      "text": "不是啊，明天打算出去吃，十二點旺角地鐵站恒生銀行。",
+      "expr": "04-tears"
     },
     {
       "kind": "actor",
@@ -95,16 +89,10 @@
       "id": "suting"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "02-blush",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "呀，芷君你開會開到三點嗎？"
+      "text": "呀，芷君你開會開到三點嗎？",
+      "expr": "02-blush"
     },
     {
       "kind": "actor",
@@ -112,16 +100,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "03-glare",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "是呀。你不行嗎？也要開會？"
+      "text": "是呀。你不行嗎？也要開會？",
+      "expr": "03-glare"
     },
     {
       "kind": "narration",
@@ -133,16 +115,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "04-cold",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "改做晚飯可不可以一餐一次過請？"
+      "text": "改做晚飯可不可以一餐一次過請？",
+      "expr": "04-cold"
     },
     {
       "kind": "actor",
@@ -150,16 +126,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "05-tearsmile",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "你還真是好吝嗇啊！鬼才等你的晚飯，我可是要回家跟家人吃的啦。"
+      "text": "你還真是好吝嗇啊！鬼才等你的晚飯，我可是要回家跟家人吃的啦。",
+      "expr": "05-tearsmile"
     },
     {
       "kind": "actor",
@@ -167,16 +137,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "05-fire",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "那麼，至少給我一點時間趕過來……"
+      "text": "那麼，至少給我一點時間趕過來……",
+      "expr": "05-fire"
     },
     {
       "kind": "actor",
@@ -184,16 +148,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "suting",
-      "expr": "01-smile",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "suting",
-      "text": "跟家綸慶祝，吃得豪氣一點不好嗎？"
+      "text": "跟家綸慶祝，吃得豪氣一點不好嗎？",
+      "expr": "01-smile"
     },
     {
       "kind": "actor",
@@ -201,16 +159,10 @@
       "id": "suting"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "04-puff",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "你也要開會甚麼的吧？何時開完會？"
+      "text": "你也要開會甚麼的吧？何時開完會？",
+      "expr": "04-puff"
     },
     {
       "kind": "actor",
@@ -218,16 +170,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "我也不知道。"
+      "text": "我也不知道。",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -235,16 +181,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "01-laugh",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "我不管你喔。總之明天三時給我到 coffee corner 來，別忘了你還欠我錢啊。"
+      "text": "我不管你喔。總之明天三時給我到 coffee corner 來，別忘了你還欠我錢啊。",
+      "expr": "01-laugh"
     },
     {
       "kind": "actor",
@@ -252,33 +192,21 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "這樣嘛……我想想看……"
+      "text": "這樣嘛……我想想看……",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
       "action": "hide",
       "id": "lingchen"
-    },
-    {
-      "kind": "actor",
-      "action": "show",
-      "id": "suting",
-      "expr": "02-sigh",
-      "position": "near"
     },
     {
       "kind": "dialogue",
       "speaker": "suting",
-      "text": "等等，會長剛剛發訊息來。"
+      "text": "等等，會長剛剛發訊息來。",
+      "expr": "02-sigh"
     },
     {
       "kind": "actor",
@@ -286,16 +214,10 @@
       "id": "suting"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "02-blush",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "他說甚麼？"
+      "text": "他說甚麼？",
+      "expr": "02-blush"
     },
     {
       "kind": "actor",
@@ -303,16 +225,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "02-hips",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "想完了沒有？我不等了，我要掛線了啦。"
+      "text": "想完了沒有？我不等了，我要掛線了啦。",
+      "expr": "02-hips"
     },
     {
       "kind": "actor",
@@ -320,16 +236,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "04-cold",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "等多一會。一會兒就好。"
+      "text": "等多一會。一會兒就好。",
+      "expr": "04-cold"
     },
     {
       "kind": "jump",

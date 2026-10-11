@@ -86,16 +86,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "同學，請問你們是不是一起來的？"
+      "text": "同學，請問你們是不是一起來的？",
+      "expr": "01-shrug"
     },
     {
       "kind": "jump",

@@ -79,7 +79,8 @@
     {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "恆星不會走，怎會不等人——哎呀，被殺了，醫生快救我。"
+      "text": "恆星不會走，怎會不等人——哎呀，被殺了，醫生快救我。",
+      "expr": "02-hips"
     },
     {
       "kind": "narration",
@@ -91,16 +92,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "qishan",
-      "expr": "01-grin",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "qishan",
-      "text": "喂，出去吧，沒多餘地方給你們呆站。"
+      "text": "喂，出去吧，沒多餘地方給你們呆站。",
+      "expr": "01-grin"
     },
     {
       "kind": "jump",

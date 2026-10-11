@@ -30,7 +30,8 @@
     {
       "kind": "dialogue",
       "speaker": "admin",
-      "text": "沒鑰匙也能從外面上鎖。至少今晚沒人能推門進來。"
+      "text": "沒鑰匙也能從外面上鎖。至少今晚沒人能推門進來。",
+      "expr": "default"
     },
     {
       "kind": "narration",
@@ -39,7 +40,8 @@
     {
       "kind": "dialogue",
       "speaker": "admin",
-      "text": "鑰匙的事，留給早班。我們先下班。"
+      "text": "鑰匙的事，留給早班。我們先下班。",
+      "expr": "default"
     },
     {
       "kind": "jump",

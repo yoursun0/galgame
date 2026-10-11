@@ -1,0 +1,11 @@
+{
+  "id": "room",
+  "instructions": [
+    {
+      "kind": "dialogue",
+      "speaker": "hero",
+      "expr": "99-nope",
+      "text": "錯表情"
+    }
+  ]
+}

@@ -82,16 +82,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "qishan",
-      "expr": "05-wink",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "qishan",
-      "text": "加多了人，這回合兩個殺手，兩個醫生，開始！"
+      "text": "加多了人，這回合兩個殺手，兩個醫生，開始！",
+      "expr": "05-wink"
     },
     {
       "kind": "narration",
@@ -103,16 +97,10 @@
       "id": "qishan"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "ajun",
-      "expr": "01-cold",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "ajun",
-      "text": "啊！我死了！誰殺我呀！"
+      "text": "啊！我死了！誰殺我呀！",
+      "expr": "01-cold"
     },
     {
       "kind": "narration",
@@ -124,16 +112,10 @@
       "id": "ajun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "01-laugh",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "看甚麼？"
+      "text": "看甚麼？",
+      "expr": "01-laugh"
     },
     {
       "kind": "actor",
@@ -141,16 +123,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "看你。"
+      "text": "看你。",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -158,16 +134,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "02-hips",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "看我幹甚麼？"
+      "text": "看我幹甚麼？",
+      "expr": "02-hips"
     },
     {
       "kind": "actor",
@@ -175,16 +145,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "看你該不該死。"
+      "text": "看你該不該死。",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -192,16 +156,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "03-glare",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "你才該死！"
+      "text": "你才該死！",
+      "expr": "03-glare"
     },
     {
       "kind": "jump",

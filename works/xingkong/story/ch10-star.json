@@ -86,16 +86,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "suting",
-      "expr": "05-spring",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "suting",
-      "text": "喂，凌晨，怎麼不見了家綸呢？知不知道他在哪裡？"
+      "text": "喂，凌晨，怎麼不見了家綸呢？知不知道他在哪裡？",
+      "expr": "05-spring"
     },
     {
       "kind": "actor",
@@ -103,16 +97,10 @@
       "id": "suting"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "04-cold",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "哈，不用管那小子。也許他正在幹他的人生大事呢！"
+      "text": "哈，不用管那小子。也許他正在幹他的人生大事呢！",
+      "expr": "04-cold"
     },
     {
       "kind": "actor",
@@ -120,16 +108,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "ajun",
-      "expr": "03-nosy",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "ajun",
-      "text": "人生大事？你是指上洗手間嗎？"
+      "text": "人生大事？你是指上洗手間嗎？",
+      "expr": "03-nosy"
     },
     {
       "kind": "narration",
@@ -141,16 +123,10 @@
       "id": "ajun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "suting",
-      "expr": "04-tears",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "suting",
-      "text": "我們用不用去找一找家綸了？"
+      "text": "我們用不用去找一找家綸了？",
+      "expr": "04-tears"
     },
     {
       "kind": "actor",
@@ -158,16 +134,10 @@
       "id": "suting"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "05-fire",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "不用了。他只不過行開一會兒，很快便會回來。"
+      "text": "不用了。他只不過行開一會兒，很快便會回來。",
+      "expr": "05-fire"
     },
     {
       "kind": "actor",
@@ -175,16 +145,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "suting",
-      "expr": "01-smile",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "suting",
-      "text": "但是，萬一他發生了甚麼意外呢？"
+      "text": "但是，萬一他發生了甚麼意外呢？",
+      "expr": "01-smile"
     },
     {
       "kind": "actor",
@@ -192,16 +156,10 @@
       "id": "suting"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "他可以打電話。那小子硬漢一條，死不了的。"
+      "text": "他可以打電話。那小子硬漢一條，死不了的。",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -209,16 +167,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "suting",
-      "expr": "02-sigh",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "suting",
-      "text": "不過，凌晨啊，這兒晚上漆黑一片，他迷了路怎麼回來。不如去找一找他吧。"
+      "text": "不過，凌晨啊，這兒晚上漆黑一片，他迷了路怎麼回來。不如去找一找他吧。",
+      "expr": "02-sigh"
     },
     {
       "kind": "actor",
@@ -226,16 +178,10 @@
       "id": "suting"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "不用了呀，他有手電筒。"
+      "text": "不用了呀，他有手電筒。",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -243,16 +189,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "suting",
-      "expr": "03-worry",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "suting",
-      "text": "但是……"
+      "text": "但是……",
+      "expr": "03-worry"
     },
     {
       "kind": "actor",
@@ -260,16 +200,10 @@
       "id": "suting"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "02-blush",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "我說不用擔心就不用擔心了。是他自己叫我們不用找他的。"
+      "text": "我說不用擔心就不用擔心了。是他自己叫我們不用找他的。",
+      "expr": "02-blush"
     },
     {
       "kind": "actor",
@@ -277,16 +211,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "suting",
-      "expr": "05-spring",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "suting",
-      "text": "是嗎？真的叫我們不用找他？為甚麼呢？"
+      "text": "是嗎？真的叫我們不用找他？為甚麼呢？",
+      "expr": "05-spring"
     },
     {
       "kind": "choice",

@@ -78,16 +78,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "02-hips",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "喂，等了很久了嗎？"
+      "text": "喂，等了很久了嗎？",
+      "expr": "02-hips"
     },
     {
       "kind": "actor",
@@ -95,16 +89,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "02-blush",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "沒有很久，三個小時罷了。"
+      "text": "沒有很久，三個小時罷了。",
+      "expr": "02-blush"
     },
     {
       "kind": "narration",
@@ -113,7 +101,8 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "結果怎樣？"
+      "text": "結果怎樣？",
+      "expr": "02-blush"
     },
     {
       "kind": "actor",
@@ -121,16 +110,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "03-glare",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "你猜對了，依然是那樣那樣。"
+      "text": "你猜對了，依然是那樣那樣。",
+      "expr": "03-glare"
     },
     {
       "kind": "narration",
@@ -139,7 +122,8 @@
     {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "似乎，我也是時候忘了他吧？"
+      "text": "似乎，我也是時候忘了他吧？",
+      "expr": "03-glare"
     },
     {
       "kind": "actor",
@@ -147,16 +131,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "04-cold",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "講就容易。要是辦得到，你不會在一個月內跟我喝四杯特濃。"
+      "text": "講就容易。要是辦得到，你不會在一個月內跟我喝四杯特濃。",
+      "expr": "04-cold"
     },
     {
       "kind": "actor",
@@ -164,16 +142,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "05-tearsmile",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "他變了。整個人變得放蕩不羈，說話爽朗豪邁。不像從前，會花小心思哄人。"
+      "text": "他變了。整個人變得放蕩不羈，說話爽朗豪邁。不像從前，會花小心思哄人。",
+      "expr": "05-tearsmile"
     },
     {
       "kind": "narration",
@@ -182,7 +154,8 @@
     {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "都是小明不好，害人家浸泡在咖啡的泡沫中。"
+      "text": "都是小明不好，害人家浸泡在咖啡的泡沫中。",
+      "expr": "05-tearsmile"
     },
     {
       "kind": "actor",
@@ -190,16 +163,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "05-fire",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "你根本一口也還沒喝。別撒賴了。"
+      "text": "你根本一口也還沒喝。別撒賴了。",
+      "expr": "05-fire"
     },
     {
       "kind": "narration",
@@ -211,16 +178,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "04-puff",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "對了，你的情況如何？結果出來了嗎？"
+      "text": "對了，你的情況如何？結果出來了嗎？",
+      "expr": "04-puff"
     },
     {
       "kind": "actor",
@@ -228,16 +189,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "出來了。"
+      "text": "出來了。",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -245,16 +200,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "01-laugh",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "怎樣？"
+      "text": "怎樣？",
+      "expr": "01-laugh"
     },
     {
       "kind": "actor",
@@ -262,16 +211,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "面試也通過了。今年暑假便可以飛到美國。"
+      "text": "面試也通過了。今年暑假便可以飛到美國。",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -279,16 +222,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "02-hips",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "嘩，棒極了。恭喜啊。"
+      "text": "嘩，棒極了。恭喜啊。",
+      "expr": "02-hips"
     },
     {
       "kind": "narration",
@@ -300,16 +237,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "02-blush",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "乾杯。"
+      "text": "乾杯。",
+      "expr": "02-blush"
     },
     {
       "kind": "actor",
@@ -317,16 +248,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "03-glare",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "乾杯。"
+      "text": "乾杯。",
+      "expr": "03-glare"
     },
     {
       "kind": "narration",

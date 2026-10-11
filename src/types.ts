@@ -19,7 +19,7 @@ export type ChoiceOption = {
 
 export type Instruction =
   | { kind: "narration"; text: string }
-  | { kind: "dialogue"; speaker: string; text: string }
+  | { kind: "dialogue"; speaker: string; text: string; /** Required for sprite characters; omit for voice-only (empty sprites). */ expr?: string }
   | { kind: "background"; asset: string }
   | {
       kind: "actor";

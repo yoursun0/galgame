@@ -74,16 +74,10 @@
       "text": "會長點齊人數。"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "huizhang",
-      "expr": "04-laugh",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "text": "大家起程了！",
-      "speaker": "huizhang"
+      "speaker": "huizhang",
+      "expr": "04-laugh"
     },
     {
       "kind": "jump",

@@ -79,12 +79,14 @@
     {
       "kind": "dialogue",
       "text": "首先到北京，故宮、長城、頤和園、王府井。然後大同，懸空寺、雲岡石窟，還有那個名字很長的草原、響沙灣。下莊這條旅遊路線，基本上照抄我們。",
-      "speaker": "lingchen"
+      "speaker": "lingchen",
+      "expr": "04-cold"
     },
     {
       "kind": "dialogue",
       "text": "二十多本團刊，出發前遺在這裡。莊員沒有團刊。有些人只好共用一本。",
-      "speaker": "lingchen"
+      "speaker": "lingchen",
+      "expr": "04-cold"
     },
     {
       "kind": "jump",

@@ -78,16 +78,10 @@
       "id": "qishan"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "02-blush",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "唏，同學，團刊。"
+      "text": "唏，同學，團刊。",
+      "expr": "02-blush"
     },
     {
       "kind": "jump",

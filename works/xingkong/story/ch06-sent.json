@@ -79,7 +79,8 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "怎麼了？想約我去街嗎？"
+      "text": "怎麼了？想約我去街嗎？",
+      "expr": "01-shrug"
     },
     {
       "kind": "narration",

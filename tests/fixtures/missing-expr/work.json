@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": 1,
+  "id": "missing-expr",
+  "title": "missing-expr",
+  "language": "zh-Hant",
+  "start": "room",
+  "characters": [
+    {
+      "id": "hero",
+      "name": "Hero",
+      "sprites": {
+        "01-smile": "spr-1"
+      }
+    }
+  ],
+  "variables": [],
+  "scenes": [
+    "story/room.json"
+  ]
+}

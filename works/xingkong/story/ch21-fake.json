@@ -79,7 +79,8 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "我很掛念素婷。芷君，可不可以，當我的女朋友？"
+      "text": "我很掛念素婷。芷君，可不可以，當我的女朋友？",
+      "expr": "01-shrug"
     },
     {
       "kind": "narration",
@@ -91,16 +92,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "05-tearsmile",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "當然……不可以啦！反正你又不是認真的。你想借我來瞞過素婷和家綸，好讓自己可以安心去美國。這一招不成。"
+      "text": "當然……不可以啦！反正你又不是認真的。你想借我來瞞過素婷和家綸，好讓自己可以安心去美國。這一招不成。",
+      "expr": "05-tearsmile"
     },
     {
       "kind": "actor",
@@ -108,16 +103,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "02-blush",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "你不肯幫忙，我就去找綺珊。"
+      "text": "你不肯幫忙，我就去找綺珊。",
+      "expr": "02-blush"
     },
     {
       "kind": "narration",
@@ -129,16 +118,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "04-puff",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "你這樣可不成。還讓人家幫你騙別的女孩子。"
+      "text": "你這樣可不成。還讓人家幫你騙別的女孩子。",
+      "expr": "04-puff"
     },
     {
       "kind": "jump",

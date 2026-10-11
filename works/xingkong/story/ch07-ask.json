@@ -75,7 +75,8 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "要不你來告訴我，你要怎樣才肯原諒我吧。"
+      "text": "要不你來告訴我，你要怎樣才肯原諒我吧。",
+      "expr": "01-shrug"
     },
     {
       "kind": "narration",
@@ -84,7 +85,8 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "一餐飯？兩餐飯？外加一條全新的手帕？要不外加一場電影，午夜場也沒問題。"
+      "text": "一餐飯？兩餐飯？外加一條全新的手帕？要不外加一場電影，午夜場也沒問題。",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -92,16 +94,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "02-hips",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "跟你看電影？你想的美！"
+      "text": "跟你看電影？你想的美！",
+      "expr": "02-hips"
     },
     {
       "kind": "actor",
@@ -109,16 +105,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "02-blush",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "不喜歡看電影，不要緊。要不我帶你去看星星吧？你還記得我們一起看過的星空多美嗎？"
+      "text": "不喜歡看電影，不要緊。要不我帶你去看星星吧？你還記得我們一起看過的星空多美嗎？",
+      "expr": "02-blush"
     },
     {
       "kind": "actor",
@@ -126,16 +116,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "03-glare",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "你就只會說！在香港這兒燈火通明，那有甚麼星星看？"
+      "text": "你就只會說！在香港這兒燈火通明，那有甚麼星星看？",
+      "expr": "03-glare"
     },
     {
       "kind": "actor",
@@ -143,16 +127,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "04-cold",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "甚麼香港沒有星星看！西貢東壩的夜空都不知多麼清晰，蒲台島的星光都不知多麼燦爛，我甚至在長洲看過銀河呢！"
+      "text": "甚麼香港沒有星星看！西貢東壩的夜空都不知多麼清晰，蒲台島的星光都不知多麼燦爛，我甚至在長洲看過銀河呢！",
+      "expr": "04-cold"
     },
     {
       "kind": "narration",

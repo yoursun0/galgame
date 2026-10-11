@@ -79,7 +79,8 @@
     {
       "kind": "dialogue",
       "speaker": "suting",
-      "text": "啊，好刺眼啊！"
+      "text": "啊，好刺眼啊！",
+      "expr": "02-sigh"
     },
     {
       "kind": "jump",

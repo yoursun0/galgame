@@ -164,10 +164,17 @@ let persistChain: Promise<void> = Promise.resolve();
 
 const audio = new AudioMixer();
 
+const debugHud = document.createElement("div");
+debugHud.className = "debug-hud";
+debugHud.hidden = true;
+shell.append(debugHud);
+
 const stage = mountStage(stageHost, theme, work, assets, urls, {
   onAdvance: () => requestAdvance(),
   onChoose: (index) => requestChoose(index),
   onTypingComplete: () => scheduleAuto(),
+  // Puppy #63
+  onReturnToTitle: () => showTitle(),
 });
 
 function db(): Promise<IDBDatabase> {
@@ -229,9 +236,18 @@ function applySettings(): void {
 
 function paint(): void {
   stage.render(state);
+  syncDebugHud();
   if (audio.unlocked && screen === "play") {
     audio.sync(resolveAudio(state.audio, (id) => urls.get(id) ?? null));
   }
+}
+
+/** Puppy #62: top-right scene id; pointer-events none so it never blocks clicks. */
+function syncDebugHud(): void {
+  const on = settings.debugMode === true && screen === "play";
+  debugHud.hidden = !on;
+  if (!on) return;
+  debugHud.textContent = `scene: ${state.sceneId}  #${state.index}`;
 }
 
 function silence(): void {
@@ -673,6 +689,31 @@ function fillSettings(body: HTMLElement): void {
   });
   anim.append(animName, select);
   form.append(anim);
+
+  // Puppy #62
+  const debugRow = document.createElement("label");
+  debugRow.className = "set-row";
+  const debugName = document.createElement("span");
+  debugName.textContent = "DEBUG MODE";
+  const debugSelect = document.createElement("select");
+  for (const option of [
+    { value: "off", label: "OFF" },
+    { value: "on", label: "ON" },
+  ]) {
+    const node = document.createElement("option");
+    node.value = option.value;
+    node.textContent = option.label;
+    if ((settings.debugMode ? "on" : "off") === option.value) node.selected = true;
+    debugSelect.append(node);
+  }
+  debugSelect.addEventListener("change", () => {
+    settings = { ...settings, debugMode: debugSelect.value === "on" };
+    void storeSettings();
+    syncDebugHud();
+  });
+  debugRow.append(debugName, debugSelect);
+  form.append(debugRow);
+
   body.append(form);
 }
 
@@ -899,6 +940,22 @@ function shellCss(): string {
     .hud-btn { font-size: 14px; padding: 6px 10px; }
     .hud-btn:disabled { opacity: 0.4; }
     .overlay { position: fixed; inset: 0; z-index: 30; pointer-events: none; }
+    .debug-hud {
+      position: fixed;
+      top: 8px;
+      right: 10px;
+      z-index: 40;
+      margin: 0;
+      padding: 4px 8px;
+      border-radius: 6px;
+      background: rgba(0, 0, 0, 0.55);
+      color: #9fe870;
+      font: 12px/1.3 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      letter-spacing: 0.02em;
+      pointer-events: none;
+      user-select: none;
+    }
+    .debug-hud[hidden] { display: none !important; }
     .overlay:empty { display: none; }
     .title-screen, .panel { pointer-events: auto; }
     .title-screen {

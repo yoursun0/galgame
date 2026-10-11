@@ -82,16 +82,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "baofang",
-      "expr": "02-sweat",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "baofang",
-      "text": "啐，凌晨，慴慴，過一會兒你們中天是不是搞甚麼的，慴慴，天文工作坊？"
+      "text": "啐，凌晨，慴慴，過一會兒你們中天是不是搞甚麼的，慴慴，天文工作坊？",
+      "expr": "02-sweat"
     },
     {
       "kind": "actor",
@@ -99,16 +93,10 @@
       "id": "baofang"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "04-cold",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "對啊，本季最後一次。莊員親自指導觀星，絕不容錯過。"
+      "text": "對啊，本季最後一次。莊員親自指導觀星，絕不容錯過。",
+      "expr": "04-cold"
     },
     {
       "kind": "actor",
@@ -116,16 +104,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "01-laugh",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "你不是說天文工作坊都是在 MMW 的講室裡舉行的嗎？在室內怎麼指導觀星？"
+      "text": "你不是說天文工作坊都是在 MMW 的講室裡舉行的嗎？在室內怎麼指導觀星？",
+      "expr": "01-laugh"
     },
     {
       "kind": "actor",
@@ -133,16 +115,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "05-fire",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "總之，我們保證即使在室內，依然可以給各位有如親臨星空下的享受。"
+      "text": "總之，我們保證即使在室內，依然可以給各位有如親臨星空下的享受。",
+      "expr": "05-fire"
     },
     {
       "kind": "actor",
@@ -150,16 +126,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "qishan",
-      "expr": "01-grin",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "qishan",
-      "text": "就老愛替自己搞的活動賣廣告。"
+      "text": "就老愛替自己搞的活動賣廣告。",
+      "expr": "01-grin"
     },
     {
       "kind": "actor",
@@ -167,16 +137,10 @@
       "id": "qishan"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "晚飯後就一起來吧。這個月天氣不穩，很久沒星星看了。今夜天朗氣清，工作坊完了或者還可以到 MMW 天台。"
+      "text": "晚飯後就一起來吧。這個月天氣不穩，很久沒星星看了。今夜天朗氣清，工作坊完了或者還可以到 MMW 天台。",
+      "expr": "01-shrug"
     },
     {
       "kind": "narration",
@@ -188,16 +152,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "02-hips",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "不好意思哩，我過一會兒還得開中文系系莊的會。能上來吃頓晚飯已經很給面子了。"
+      "text": "不好意思哩，我過一會兒還得開中文系系莊的會。能上來吃頓晚飯已經很給面子了。",
+      "expr": "02-hips"
     },
     {
       "kind": "actor",
@@ -205,16 +163,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "qishan",
-      "expr": "04-loud",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "qishan",
-      "text": "我也不來了。去了也只是聽你胡說八道，省得沾污我的耳朵。"
+      "text": "我也不來了。去了也只是聽你胡說八道，省得沾污我的耳朵。",
+      "expr": "04-loud"
     },
     {
       "kind": "actor",
@@ -222,16 +174,10 @@
       "id": "qishan"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "baofang",
-      "expr": "03-sauce",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "baofang",
-      "text": "不用慌，凌晨，他們不理睬你，還有我這個老友捧你的場。"
+      "text": "不用慌，凌晨，他們不理睬你，還有我這個老友捧你的場。",
+      "expr": "03-sauce"
     },
     {
       "kind": "actor",
@@ -239,16 +185,10 @@
       "id": "baofang"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "寶方兄！我太感動了！"
+      "text": "寶方兄！我太感動了！",
+      "expr": "01-shrug"
     },
     {
       "kind": "narration",

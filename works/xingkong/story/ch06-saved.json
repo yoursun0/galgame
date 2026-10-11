@@ -78,16 +78,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "suting",
-      "expr": "03-worry",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "suting",
-      "text": "他說他早上有事要在中大辦，所以還是改在中大開會好了。十二點，中天 soc 房。"
+      "text": "他說他早上有事要在中大辦，所以還是改在中大開會好了。十二點，中天 soc 房。",
+      "expr": "03-worry"
     },
     {
       "kind": "actor",
@@ -95,16 +89,10 @@
       "id": "suting"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "想好了！哈哈！明天三點 coffee corner 吧？就依你的！"
+      "text": "想好了！哈哈！明天三點 coffee corner 吧？就依你的！",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -112,16 +100,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "03-glare",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "約定了哦！別說了算數啊！"
+      "text": "約定了哦！別說了算數啊！",
+      "expr": "03-glare"
     },
     {
       "kind": "actor",
@@ -129,16 +111,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "02-blush",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "當然啦！就是推掉一切約會我也會準時趕來！"
+      "text": "當然啦！就是推掉一切約會我也會準時趕來！",
+      "expr": "02-blush"
     },
     {
       "kind": "narration",
@@ -150,16 +126,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "05-tearsmile",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "好了好了，我要看電視啦，不跟你談了。"
+      "text": "好了好了，我要看電視啦，不跟你談了。",
+      "expr": "05-tearsmile"
     },
     {
       "kind": "actor",
@@ -167,16 +137,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "04-cold",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "電視比我還吸引嗎？"
+      "text": "電視比我還吸引嗎？",
+      "expr": "04-cold"
     },
     {
       "kind": "actor",
@@ -184,16 +148,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "04-puff",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "當然啦！總之我要掛了啦，明天見啦！"
+      "text": "當然啦！總之我要掛了啦，明天見啦！",
+      "expr": "04-puff"
     },
     {
       "kind": "actor",
@@ -201,16 +159,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "suting",
-      "expr": "05-spring",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "suting",
-      "text": "我要下線了啦，明天見。"
+      "text": "我要下線了啦，明天見。",
+      "expr": "05-spring"
     },
     {
       "kind": "actor",
@@ -218,16 +170,10 @@
       "id": "suting"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "05-fire",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "啊，要走了嗎？明天見。"
+      "text": "啊，要走了嗎？明天見。",
+      "expr": "05-fire"
     },
     {
       "kind": "narration",

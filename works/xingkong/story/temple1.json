@@ -100,7 +100,8 @@
     {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "喂！綺珊！怎麼又在欺負男孩子啦！"
+      "text": "喂！綺珊！怎麼又在欺負男孩子啦！",
+      "expr": "05-tearsmile"
     },
     {
       "kind": "jump",

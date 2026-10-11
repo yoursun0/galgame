@@ -86,16 +86,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "ajun",
-      "expr": "01-cold",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "ajun",
-      "text": "凌晨，這也許是你去美國之前最後一次觀星了。"
+      "text": "凌晨，這也許是你去美國之前最後一次觀星了。",
+      "expr": "01-cold"
     },
     {
       "kind": "actor",
@@ -103,16 +97,10 @@
       "id": "ajun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "04-cold",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "落莊了還僭越別人的工作？還給現莊的人吧。"
+      "text": "落莊了還僭越別人的工作？還給現莊的人吧。",
+      "expr": "04-cold"
     },
     {
       "kind": "narration",
@@ -124,16 +112,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "youmu",
-      "expr": "03-shy",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "youmu",
-      "text": ""
+      "text": "",
+      "expr": "03-shy"
     },
     {
       "kind": "narration",
@@ -154,7 +136,8 @@
     {
       "kind": "dialogue",
       "speaker": "youmu",
-      "text": ""
+      "text": "",
+      "expr": "03-shy"
     },
     {
       "kind": "narration",
@@ -163,7 +146,8 @@
     {
       "kind": "dialogue",
       "speaker": "youmu",
-      "text": ""
+      "text": "",
+      "expr": "03-shy"
     },
     {
       "kind": "narration",
@@ -175,16 +159,10 @@
       "id": "youmu"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "05-fire",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "當然可以了。"
+      "text": "當然可以了。",
+      "expr": "05-fire"
     },
     {
       "kind": "narration",

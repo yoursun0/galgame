@@ -78,16 +78,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "04-cold",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "呀……且別管冒失不冒失。總之就是團刊不夠派……"
+      "text": "呀……且別管冒失不冒失。總之就是團刊不夠派……",
+      "expr": "04-cold"
     },
     {
       "kind": "actor",
@@ -95,16 +89,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "01-laugh",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "所以呢？"
+      "text": "所以呢？",
+      "expr": "01-laugh"
     },
     {
       "kind": "actor",
@@ -112,16 +100,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "05-fire",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "所以……請問你可不可以跟朋友們一起分享一本？"
+      "text": "所以……請問你可不可以跟朋友們一起分享一本？",
+      "expr": "05-fire"
     },
     {
       "kind": "actor",
@@ -129,16 +111,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "02-hips",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "當然可以啦。"
+      "text": "當然可以啦。",
+      "expr": "02-hips"
     },
     {
       "kind": "narration",

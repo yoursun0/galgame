@@ -79,7 +79,8 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "該我了。"
+      "text": "該我了。",
+      "expr": "02-blush"
     },
     {
       "kind": "narration",

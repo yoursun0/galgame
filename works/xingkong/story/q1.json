@@ -78,16 +78,10 @@
       "id": "qishan"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "我走回去，把激光筆拿回來。碼頭那件事是真的。小狗一貼過來，我花了五十塊，請船家把我載到二十步外。你們笑吧。"
+      "text": "我走回去，把激光筆拿回來。碼頭那件事是真的。小狗一貼過來，我花了五十塊，請船家把我載到二十步外。你們笑吧。",
+      "expr": "01-shrug"
     },
     {
       "kind": "jump",

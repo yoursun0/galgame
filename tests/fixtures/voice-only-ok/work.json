@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": 1,
+  "id": "voice-only-ok",
+  "title": "voice-only-ok",
+  "language": "zh-Hant",
+  "start": "room",
+  "characters": [
+    {
+      "id": "student",
+      "name": "學生",
+      "sprites": {}
+    }
+  ],
+  "variables": [],
+  "scenes": [
+    "story/room.json"
+  ]
+}

@@ -79,7 +79,8 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "素婷，家綸。無論如何，我們都會是好朋友，永遠也是好朋友。"
+      "text": "素婷，家綸。無論如何，我們都會是好朋友，永遠也是好朋友。",
+      "expr": "02-blush"
     },
     {
       "kind": "actor",
@@ -87,16 +88,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "jialun",
-      "expr": "05-nod",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "jialun",
-      "text": "對，我們是好朋友，一直也是，永遠也是。"
+      "text": "對，我們是好朋友，一直也是，永遠也是。",
+      "expr": "05-nod"
     },
     {
       "kind": "actor",
@@ -104,16 +99,10 @@
       "id": "jialun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "suting",
-      "expr": "01-smile",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "suting",
-      "text": "嗯，好朋友。"
+      "text": "嗯，好朋友。",
+      "expr": "01-smile"
     },
     {
       "kind": "narration",

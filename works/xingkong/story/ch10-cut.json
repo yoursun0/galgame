@@ -78,16 +78,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "qishan",
-      "expr": "04-loud",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "qishan",
-      "text": "喂！凌晨小子！聽說石灘出了名很多野狗出沒，凌晨小子你可要小心一點，免得又大出洋相了啊。"
+      "text": "喂！凌晨小子！聽說石灘出了名很多野狗出沒，凌晨小子你可要小心一點，免得又大出洋相了啊。",
+      "expr": "04-loud"
     },
     {
       "kind": "actor",
@@ -95,16 +89,10 @@
       "id": "qishan"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "要你管。"
+      "text": "要你管。",
+      "expr": "01-shrug"
     },
     {
       "kind": "jump",

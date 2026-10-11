@@ -78,16 +78,10 @@
       "id": "qishan"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "02-blush",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "沒傻。這次不想先講笑話。"
+      "text": "沒傻。這次不想先講笑話。",
+      "expr": "02-blush"
     },
     {
       "kind": "jump",

@@ -87,7 +87,8 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "我還是不懂怎麼挑。赴美前，親手還你。"
+      "text": "我還是不懂怎麼挑。赴美前，親手還你。",
+      "expr": "04-cold"
     },
     {
       "kind": "narration",
@@ -99,16 +100,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "01-laugh",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "努力做好自己，長大一點再說吧。"
+      "text": "努力做好自己，長大一點再說吧。",
+      "expr": "01-laugh"
     },
     {
       "kind": "narration",

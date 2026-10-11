@@ -79,7 +79,8 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "素婷，小心點。別像阿俊一樣常常不小心跌個四腳朝天。"
+      "text": "素婷，小心點。別像阿俊一樣常常不小心跌個四腳朝天。",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -87,16 +88,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "suting",
-      "expr": "02-sigh",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "suting",
-      "text": "謝謝。"
+      "text": "謝謝。",
+      "expr": "02-sigh"
     },
     {
       "kind": "narration",
@@ -108,16 +103,10 @@
       "id": "suting"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "02-blush",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "素婷。"
+      "text": "素婷。",
+      "expr": "02-blush"
     },
     {
       "kind": "actor",
@@ -125,16 +114,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "suting",
-      "expr": "03-worry",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "suting",
-      "text": "唔？"
+      "text": "唔？",
+      "expr": "03-worry"
     },
     {
       "kind": "narration",

@@ -1,0 +1,10 @@
+{
+  "id": "room",
+  "instructions": [
+    {
+      "kind": "dialogue",
+      "speaker": "student",
+      "text": "電話VO"
+    }
+  ]
+}

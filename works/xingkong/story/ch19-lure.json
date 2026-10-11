@@ -75,7 +75,8 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "芷君，我走到右邊引開牠們。你從左邊上岸，回度假屋求援。"
+      "text": "芷君，我走到右邊引開牠們。你從左邊上岸，回度假屋求援。",
+      "expr": "04-cold"
     },
     {
       "kind": "actor",
@@ -83,16 +84,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "01-laugh",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "你瘋了嗎？這樣太危險了。"
+      "text": "你瘋了嗎？這樣太危險了。",
+      "expr": "01-laugh"
     },
     {
       "kind": "actor",
@@ -100,16 +95,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "05-fire",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "就這麼決定。"
+      "text": "就這麼決定。",
+      "expr": "05-fire"
     },
     {
       "kind": "narration",

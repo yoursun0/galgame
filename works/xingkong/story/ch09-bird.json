@@ -78,16 +78,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "03-glare",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "對了，你剛才考的是甚麼大通？"
+      "text": "對了，你剛才考的是甚麼大通？",
+      "expr": "03-glare"
     },
     {
       "kind": "actor",
@@ -95,16 +89,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "02-blush",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "UGD，愛情哲學。卷不太難。我是大通之鬼，這一科應該過得去。"
+      "text": "UGD，愛情哲學。卷不太難。我是大通之鬼，這一科應該過得去。",
+      "expr": "02-blush"
     },
     {
       "kind": "actor",
@@ -112,16 +100,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "05-tearsmile",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "男人老狗修甚麼愛情哲學啊？難怪沒有朋友跟你一起修。"
+      "text": "男人老狗修甚麼愛情哲學啊？難怪沒有朋友跟你一起修。",
+      "expr": "05-tearsmile"
     },
     {
       "kind": "actor",
@@ -129,16 +111,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "04-cold",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "男人老狗就不可以修嗎？小姐你有性別歧視呀？"
+      "text": "男人老狗就不可以修嗎？小姐你有性別歧視呀？",
+      "expr": "04-cold"
     },
     {
       "kind": "actor",
@@ -146,16 +122,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "04-puff",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "很少男孩子肯花精神去研究這個。追的時候一股勁追，追到手才發覺不知道喜歡人家甚麼，過不久就說性格不合，分了。"
+      "text": "很少男孩子肯花精神去研究這個。追的時候一股勁追，追到手才發覺不知道喜歡人家甚麼，過不久就說性格不合，分了。",
+      "expr": "04-puff"
     },
     {
       "kind": "actor",
@@ -163,16 +133,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "05-fire",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "怎麼了？芷君姐姐。是不是你自己給不負責任的男孩子傷害過，所以才這麼說？"
+      "text": "怎麼了？芷君姐姐。是不是你自己給不負責任的男孩子傷害過，所以才這麼說？",
+      "expr": "05-fire"
     },
     {
       "kind": "actor",
@@ -180,16 +144,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "01-laugh",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "我才沒有這麼沒眼光！我看是你自己陷入了甚麼感情煩惱，所以才去修。"
+      "text": "我才沒有這麼沒眼光！我看是你自己陷入了甚麼感情煩惱，所以才去修。",
+      "expr": "01-laugh"
     },
     {
       "kind": "actor",
@@ -197,16 +155,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "唉！要是感情煩惱可以單靠修一個課就解決得了的話，這個煩惱似乎也不見得嚴重得那裡去。"
+      "text": "唉！要是感情煩惱可以單靠修一個課就解決得了的話，這個煩惱似乎也不見得嚴重得那裡去。",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -214,16 +166,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "02-hips",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "怎麼了？真的有？修個課解決不了。告訴姐姐，讓姐姐賜你幾道板斧。"
+      "text": "怎麼了？真的有？修個課解決不了。告訴姐姐，讓姐姐賜你幾道板斧。",
+      "expr": "02-hips"
     },
     {
       "kind": "actor",
@@ -231,16 +177,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "好啊。不過你先告訴我，我才告訴你。"
+      "text": "好啊。不過你先告訴我，我才告訴你。",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -248,16 +188,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "03-glare",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "告訴你甚麼？"
+      "text": "告訴你甚麼？",
+      "expr": "03-glare"
     },
     {
       "kind": "actor",
@@ -265,16 +199,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "02-blush",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "你自身的愛情故事。"
+      "text": "你自身的愛情故事。",
+      "expr": "02-blush"
     },
     {
       "kind": "narration",
@@ -283,7 +211,8 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "小明！怎麼了？你何時變得這麼八卦？竟然偷聽！"
+      "text": "小明！怎麼了？你何時變得這麼八卦？竟然偷聽！",
+      "expr": "02-blush"
     },
     {
       "kind": "actor",
@@ -291,16 +220,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "05-tearsmile",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "甚麼小明了？"
+      "text": "甚麼小明了？",
+      "expr": "05-tearsmile"
     },
     {
       "kind": "actor",
@@ -308,16 +231,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "04-cold",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "這隻麻雀是眾志堂的老主顧。我叫牠小明。全名是「明明隔離枱面沒有人多的是冷飯剩菜偏偏不去吃硬是要到我們枱面偷飯吃的衰雀」，簡稱小明。"
+      "text": "這隻麻雀是眾志堂的老主顧。我叫牠小明。全名是「明明隔離枱面沒有人多的是冷飯剩菜偏偏不去吃硬是要到我們枱面偷飯吃的衰雀」，簡稱小明。",
+      "expr": "04-cold"
     },
     {
       "kind": "actor",
@@ -325,16 +242,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "04-puff",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "嘻嘻，真是古靈精怪。"
+      "text": "嘻嘻，真是古靈精怪。",
+      "expr": "04-puff"
     },
     {
       "kind": "actor",
@@ -342,16 +253,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "05-fire",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "怎麼了？小明，你也想聽芷君姐姐說她的情史對不對？"
+      "text": "怎麼了？小明，你也想聽芷君姐姐說她的情史對不對？",
+      "expr": "05-fire"
     },
     {
       "kind": "actor",
@@ -359,16 +264,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "01-laugh",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "你別以為利用一隻麻雀便可以哄我說出來。"
+      "text": "你別以為利用一隻麻雀便可以哄我說出來。",
+      "expr": "01-laugh"
     },
     {
       "kind": "actor",
@@ -376,16 +275,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "那姐姐要怎麼才肯說？"
+      "text": "那姐姐要怎麼才肯說？",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -393,16 +286,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "02-hips",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "三餐飯。"
+      "text": "三餐飯。",
+      "expr": "02-hips"
     },
     {
       "kind": "actor",
@@ -410,16 +297,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "一餐好了。小明很窮的，窮到要討飯吃。"
+      "text": "一餐好了。小明很窮的，窮到要討飯吃。",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -427,16 +308,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "03-glare",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "兩餐。"
+      "text": "兩餐。",
+      "expr": "03-glare"
     },
     {
       "kind": "actor",
@@ -444,16 +319,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "02-blush",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "好，小明請。"
+      "text": "好，小明請。",
+      "expr": "02-blush"
     },
     {
       "kind": "jump",

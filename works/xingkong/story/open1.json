@@ -87,7 +87,8 @@
     {
       "kind": "dialogue",
       "text": "回想起一年前，一切就從準備這個內蒙團團刊開始出發吧。",
-      "speaker": "lingchen"
+      "speaker": "lingchen",
+      "expr": "02-blush"
     },
     {
       "kind": "jump",

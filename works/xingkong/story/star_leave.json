@@ -75,7 +75,8 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "哼，我要去 set 望遠鏡，失陪了。"
+      "text": "哼，我要去 set 望遠鏡，失陪了。",
+      "expr": "02-blush"
     },
     {
       "kind": "narration",
@@ -87,16 +88,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "qishan",
-      "expr": "03-angry",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "qishan",
-      "text": "哈哈哈，怎麼走了啦？不繼續說你的故事了嗎？"
+      "text": "哈哈哈，怎麼走了啦？不繼續說你的故事了嗎？",
+      "expr": "03-angry"
     },
     {
       "kind": "narration",
@@ -122,7 +117,8 @@
     {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "喂，可不可以先生。"
+      "text": "喂，可不可以先生。",
+      "expr": "01-laugh"
     },
     {
       "kind": "actor",
@@ -130,16 +126,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "04-cold",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "怎麼了？還要來挖苦我嗎？"
+      "text": "怎麼了？還要來挖苦我嗎？",
+      "expr": "04-cold"
     },
     {
       "kind": "actor",
@@ -147,16 +137,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "02-hips",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "才沒你這麼無聊。難得身處這麼美妙的星空下，可不可以靜靜別作聲，抬起頭，欣賞一下？"
+      "text": "才沒你這麼無聊。難得身處這麼美妙的星空下，可不可以靜靜別作聲，抬起頭，欣賞一下？",
+      "expr": "02-hips"
     },
     {
       "kind": "actor",
@@ -164,16 +148,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "05-fire",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "欣賞大自然自是不錯。不過，跟你一起嘛？"
+      "text": "欣賞大自然自是不錯。不過，跟你一起嘛？",
+      "expr": "05-fire"
     },
     {
       "kind": "actor",
@@ -181,16 +159,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "03-glare",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "怎麼了？不可以嗎？"
+      "text": "怎麼了？不可以嗎？",
+      "expr": "03-glare"
     },
     {
       "kind": "actor",
@@ -198,16 +170,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "當然可以啦！"
+      "text": "當然可以啦！",
+      "expr": "01-shrug"
     },
     {
       "kind": "narration",

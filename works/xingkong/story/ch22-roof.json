@@ -83,7 +83,8 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "第十六話那天，阿俊問你是不是喜歡我。你後來說，我有沒有喜歡你，難道我自己看不出來。我還是看不出來。"
+      "text": "第十六話那天，阿俊問你是不是喜歡我。你後來說，我有沒有喜歡你，難道我自己看不出來。我還是看不出來。",
+      "expr": "01-shrug"
     },
     {
       "kind": "narration",
@@ -99,16 +100,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "qishan",
-      "expr": "05-wink",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "qishan",
-      "text": "回港再說。"
+      "text": "回港再說。",
+      "expr": "05-wink"
     },
     {
       "kind": "narration",

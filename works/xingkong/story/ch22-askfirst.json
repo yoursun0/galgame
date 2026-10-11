@@ -75,7 +75,8 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "恩人現在有女朋友了沒有？"
+      "text": "恩人現在有女朋友了沒有？",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -83,16 +84,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "youmu",
-      "expr": "01-shout",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "youmu",
-      "text": ""
+      "text": "",
+      "expr": "01-shout"
     },
     {
       "kind": "narration",
@@ -108,16 +103,10 @@
       "id": "youmu"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "實不相瞞，我就是芷君她現時的男朋友。"
+      "text": "實不相瞞，我就是芷君她現時的男朋友。",
+      "expr": "01-shrug"
     },
     {
       "kind": "narration",
@@ -129,16 +118,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "youmu",
-      "expr": "02-crooked",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "youmu",
-      "text": ""
+      "text": "",
+      "expr": "02-crooked"
     },
     {
       "kind": "narration",

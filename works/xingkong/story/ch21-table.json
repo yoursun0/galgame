@@ -83,7 +83,8 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "你真的這麼想再見他嗎？"
+      "text": "你真的這麼想再見他嗎？",
+      "expr": "04-cold"
     },
     {
       "kind": "narration",
@@ -92,7 +93,8 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "他是我的恩人。那天要不是他，我也沒有勇氣保護你。我想謝謝他。"
+      "text": "他是我的恩人。那天要不是他，我也沒有勇氣保護你。我想謝謝他。",
+      "expr": "04-cold"
     },
     {
       "kind": "actor",
@@ -100,16 +102,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "03-glare",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "聯絡方法我寫給你。可是你別再說甚麼男子漢了。那個傢伙明明自身也是個膽小鬼。"
+      "text": "聯絡方法我寫給你。可是你別再說甚麼男子漢了。那個傢伙明明自身也是個膽小鬼。",
+      "expr": "03-glare"
     },
     {
       "kind": "actor",
@@ -117,16 +113,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "05-fire",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "他當初不想分手？"
+      "text": "他當初不想分手？",
+      "expr": "05-fire"
     },
     {
       "kind": "actor",
@@ -134,16 +124,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "05-tearsmile",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "我覺得是。他聽到我媽媽反對，就一聲不作，也不加以挽留。"
+      "text": "我覺得是。他聽到我媽媽反對，就一聲不作，也不加以挽留。",
+      "expr": "05-tearsmile"
     },
     {
       "kind": "choice",

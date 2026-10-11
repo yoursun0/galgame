@@ -38,9 +38,9 @@
 
 以下任何一項即 **fail**（記：場景 ID、speaker／台詞、畫面實際立繪）：
 
-1. **說話人 = 立繪：** 具名對白時，立繪須係該句說話人（或劇本明確同時在場者）。唔可以「對白冇綺珊但畫面有綺珊」。
+1. **對白自帶 expr：** 具名角色對白須帶 `expr`（`characters[].sprites` 有嘅 key）；引擎按 speaker＋expr 自動換立繪。唔可以「對白冇綺珊但畫面有綺珊」。電話 VO／無立繪 speaker（空 sprites，如 `student`）可省略 expr、唔出立繪。
 2. **離場要清：** 換人／離場後唔應殘留無關立繪。
-3. **旁白：** narration 唔應掛錯角色立繪當說話人；空白／錯位 speaker 名記 fail。
+3. **旁白：** narration 唔自動立繪；唔應掛錯角色立繪當說話人；空白／錯位 speaker 名記 fail。
 4. **壞圖：** 破圖、明顯錯表情、404 導致不可玩 → fail。
 
 美術風格好不好睇：群聊 @梵高；唔用本條自動當 engine bug。
@@ -76,6 +76,16 @@ SoT：gap report 可達結局（場景 id 以 `works/xingkong/story/` 為準）�
 - 結局可到達、可辨識、唔卡死；結局 CG／立繪錯配同樣 fail。
 - 遊戲內**唔**要求顯示 TRUE／GOOD／BAD 字樣（僅驗收／企劃用）。
 - 條件細節見 `production/routes.md` §4；驗收以「能到達＋畫面正確」為主，旗標公式錯誤另開 issue。
+
+
+### 設定 · DEBUG MODE
+
+- 設定有 **DEBUG MODE ON/OFF**（預設 OFF）；ON 時遊戲中右上角見 `scene: <sceneId>`，唔擋點擊。
+- OFF 時唔顯示。
+
+### 結局 · 回標題
+
+- 任一結局畫面有明顯 **「回標題」**；撳完返標題（設定／存檔／gallery 保留）。手機直向可點、唔被遮死。
 
 ### 4. 存／讀／繼續
 

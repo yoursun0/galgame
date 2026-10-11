@@ -83,7 +83,8 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "不知道為甚麼，有點想哭。"
+      "text": "不知道為甚麼，有點想哭。",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -91,21 +92,16 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "03-glare",
-      "position": "near"
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "對喔，我也有點想哭呢。",
+      "expr": "03-glare"
     },
     {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "對喔，我也有點想哭呢。"
-    },
-    {
-      "kind": "dialogue",
-      "speaker": "zhijun",
-      "text": "凌晨，我有件事想告訴你，你不要介意。"
+      "text": "凌晨，我有件事想告訴你，你不要介意。",
+      "expr": "03-glare"
     },
     {
       "kind": "actor",
@@ -113,16 +109,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "02-blush",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "你講吧。"
+      "text": "你講吧。",
+      "expr": "02-blush"
     },
     {
       "kind": "actor",
@@ -130,16 +120,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "05-tearsmile",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "看到這麼美的景色，我又想起他了。想起以前跟他在一起的日子。之前還勸你放手，現在自己這個樣子。很笨吧？"
+      "text": "看到這麼美的景色，我又想起他了。想起以前跟他在一起的日子。之前還勸你放手，現在自己這個樣子。很笨吧？",
+      "expr": "05-tearsmile"
     },
     {
       "kind": "actor",
@@ -147,16 +131,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "04-cold",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "你想起了甚麼？"
+      "text": "你想起了甚麼？",
+      "expr": "04-cold"
     },
     {
       "kind": "actor",
@@ -164,21 +142,16 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "04-puff",
-      "position": "near"
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "以前他很疼我。帶我去玩，唱歌，寫詩。有危險的時候會保護我。可是現在這一切都過去了，是吧？",
+      "expr": "04-puff"
     },
     {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "以前他很疼我。帶我去玩，唱歌，寫詩。有危險的時候會保護我。可是現在這一切都過去了，是吧？"
-    },
-    {
-      "kind": "dialogue",
-      "speaker": "zhijun",
-      "text": "我曾經想過，有可能跟他復合。對上一次約會，他告訴我了……"
+      "text": "我曾經想過，有可能跟他復合。對上一次約會，他告訴我了……",
+      "expr": "04-puff"
     },
     {
       "kind": "actor",
@@ -186,16 +159,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "05-fire",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "告訴你了？"
+      "text": "告訴你了？",
+      "expr": "05-fire"
     },
     {
       "kind": "actor",
@@ -203,16 +170,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "01-laugh",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "他告訴我他有女朋友了。他已經有女朋友了。"
+      "text": "他告訴我他有女朋友了。他已經有女朋友了。",
+      "expr": "01-laugh"
     },
     {
       "kind": "narration",

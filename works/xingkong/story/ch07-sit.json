@@ -79,7 +79,8 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "生日快樂。"
+      "text": "生日快樂。",
+      "expr": "01-shrug"
     },
     {
       "kind": "narration",

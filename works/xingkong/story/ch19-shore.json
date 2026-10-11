@@ -87,7 +87,8 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "不用害怕。我們一定會平安無事的。"
+      "text": "不用害怕。我們一定會平安無事的。",
+      "expr": "04-cold"
     },
     {
       "kind": "actor",
@@ -95,16 +96,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "03-glare",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "嗯嗯，我不害怕。"
+      "text": "嗯嗯，我不害怕。",
+      "expr": "03-glare"
     },
     {
       "kind": "narration",

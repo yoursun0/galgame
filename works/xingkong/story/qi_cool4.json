@@ -75,7 +75,8 @@
     {
       "kind": "dialogue",
       "speaker": "qishan",
-      "text": "啊，這麼偉大嘛。那麼貴重的東西我還是不要了，反正我拿了也不會看。"
+      "text": "啊，這麼偉大嘛。那麼貴重的東西我還是不要了，反正我拿了也不會看。",
+      "expr": "04-loud"
     },
     {
       "kind": "narration",
@@ -87,16 +88,10 @@
       "id": "qishan"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "05-fire",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "來，拿著吧。頂多你自己跟身邊的朋友分享，犯不著一會跟其他人乞乞討討。"
+      "text": "來，拿著吧。頂多你自己跟身邊的朋友分享，犯不著一會跟其他人乞乞討討。",
+      "expr": "05-fire"
     },
     {
       "kind": "actor",
@@ -104,16 +99,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "qishan",
-      "expr": "02-laugh",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "qishan",
-      "text": "我說過不拿就不拿，別這麼婆婆媽媽。"
+      "text": "我說過不拿就不拿，別這麼婆婆媽媽。",
+      "expr": "02-laugh"
     },
     {
       "kind": "narration",
@@ -125,16 +114,10 @@
       "id": "qishan"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "jialun",
-      "expr": "01-murmur",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "jialun",
-      "text": "喂，凌晨，那個女孩子是誰？"
+      "text": "喂，凌晨，那個女孩子是誰？",
+      "expr": "01-murmur"
     },
     {
       "kind": "actor",
@@ -142,16 +125,10 @@
       "id": "jialun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "綺珊？沒甚麼啦，就我的中學同學啦。"
+      "text": "綺珊？沒甚麼啦，就我的中學同學啦。",
+      "expr": "01-shrug"
     },
     {
       "kind": "jump",

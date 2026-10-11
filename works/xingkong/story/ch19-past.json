@@ -83,7 +83,8 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "救命啊！"
+      "text": "救命啊！",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -91,16 +92,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "youmu",
-      "expr": "01-shout",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "youmu",
-      "text": ""
+      "text": "",
+      "expr": "01-shout"
     },
     {
       "kind": "narration",
@@ -116,16 +111,10 @@
       "id": "youmu"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "大哥哥！快來救我啊！"
+      "text": "大哥哥！快來救我啊！",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -133,16 +122,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "youmu",
-      "expr": "02-crooked",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "youmu",
-      "text": ""
+      "text": "",
+      "expr": "02-crooked"
     },
     {
       "kind": "narration",
@@ -155,7 +138,8 @@
     {
       "kind": "dialogue",
       "speaker": "youmu",
-      "text": ""
+      "text": "",
+      "expr": "02-crooked"
     },
     {
       "kind": "narration",
@@ -171,16 +155,10 @@
       "id": "youmu"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "02-blush",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "你的腳沒事吧？"
+      "text": "你的腳沒事吧？",
+      "expr": "02-blush"
     },
     {
       "kind": "actor",
@@ -188,16 +166,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "youmu",
-      "expr": "03-shy",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "youmu",
-      "text": ""
+      "text": "",
+      "expr": "03-shy"
     },
     {
       "kind": "narration",

@@ -79,7 +79,8 @@
     {
       "kind": "dialogue",
       "speaker": "suting",
-      "text": "嗯。前面那個關口坐坐，吹吹風吧。"
+      "text": "嗯。前面那個關口坐坐，吹吹風吧。",
+      "expr": "02-sigh"
     },
     {
       "kind": "jump",

@@ -87,12 +87,14 @@
     {
       "kind": "dialogue",
       "speaker": "qishan",
-      "text": "她是黎芷君，聯宿認識的。"
+      "text": "她是黎芷君，聯宿認識的。",
+      "expr": "04-loud"
     },
     {
       "kind": "dialogue",
       "speaker": "qishan",
-      "text": "想認識嗎？我當紅娘的經驗，多如天上繁星！"
+      "text": "想認識嗎？我當紅娘的經驗，多如天上繁星！",
+      "expr": "04-loud"
     },
     {
       "kind": "jump",

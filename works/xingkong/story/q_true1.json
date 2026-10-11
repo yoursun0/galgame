@@ -78,16 +78,10 @@
       "id": "qishan"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "車站那天我沒有裝酷。所以今天這句你也不准當成表演。聽我說故事的那個人，我一直當成觀眾。今天我不講了。我問你。可不可以不要再當紅娘。留下來的人是你。"
+      "text": "車站那天我沒有裝酷。所以今天這句你也不准當成表演。聽我說故事的那個人，我一直當成觀眾。今天我不講了。我問你。可不可以不要再當紅娘。留下來的人是你。",
+      "expr": "01-shrug"
     },
     {
       "kind": "jump",

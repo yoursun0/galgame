@@ -83,7 +83,8 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "難道他們不應該在一起嗎？素婷現在不是相當幸福嗎？"
+      "text": "難道他們不應該在一起嗎？素婷現在不是相當幸福嗎？",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -91,16 +92,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "01-laugh",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "要是她真的那麼幸福，你幹嘛現在又這麼擔心？"
+      "text": "要是她真的那麼幸福，你幹嘛現在又這麼擔心？",
+      "expr": "01-laugh"
     },
     {
       "kind": "narration",
@@ -124,16 +119,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "huizhang",
-      "expr": "04-laugh",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "huizhang",
-      "text": "你跟家綸是怎麼在一起的？"
+      "text": "你跟家綸是怎麼在一起的？",
+      "expr": "04-laugh"
     },
     {
       "kind": "actor",
@@ -141,16 +130,10 @@
       "id": "huizhang"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "suting",
-      "expr": "03-worry",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "suting",
-      "text": "不就是大家都是莊員，認識多了，相熟了……就在一起了嘛。"
+      "text": "不就是大家都是莊員，認識多了，相熟了……就在一起了嘛。",
+      "expr": "03-worry"
     },
     {
       "kind": "actor",
@@ -158,16 +141,10 @@
       "id": "suting"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "huizhang",
-      "expr": "01-calm",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "huizhang",
-      "text": "第一天是怎樣開始的？是家綸向你求愛嗎？"
+      "text": "第一天是怎樣開始的？是家綸向你求愛嗎？",
+      "expr": "01-calm"
     },
     {
       "kind": "actor",
@@ -175,16 +152,10 @@
       "id": "huizhang"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "suting",
-      "expr": "05-spring",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "suting",
-      "text": "沒有甚麼第一天啦。大家喜歡大家，順其自然的……就在一起了啦。"
+      "text": "沒有甚麼第一天啦。大家喜歡大家，順其自然的……就在一起了啦。",
+      "expr": "05-spring"
     },
     {
       "kind": "narration",
@@ -200,16 +171,10 @@
       "id": "suting"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "02-hips",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "分手了。"
+      "text": "分手了。",
+      "expr": "02-hips"
     },
     {
       "kind": "actor",
@@ -221,16 +186,10 @@
       "text": "第十一回合，阿俊問綺珊。"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "ajun",
-      "expr": "01-cold",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "ajun",
-      "text": "你是不是喜歡凌晨？"
+      "text": "你是不是喜歡凌晨？",
+      "expr": "01-cold"
     },
     {
       "kind": "actor",
@@ -238,16 +197,10 @@
       "id": "ajun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "qishan",
-      "expr": "05-wink",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "qishan",
-      "text": "痴線！"
+      "text": "痴線！",
+      "expr": "05-wink"
     },
     {
       "kind": "narration",
@@ -256,7 +209,8 @@
     {
       "kind": "dialogue",
       "speaker": "qishan",
-      "text": "沒有啊！沒有喜歡呀！真是神經病！"
+      "text": "沒有啊！沒有喜歡呀！真是神經病！",
+      "expr": "05-wink"
     },
     {
       "kind": "narration",

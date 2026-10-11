@@ -75,7 +75,8 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "算了吧，往者已矣，別要再提了。"
+      "text": "算了吧，往者已矣，別要再提了。",
+      "expr": "05-fire"
     },
     {
       "kind": "actor",
@@ -83,21 +84,16 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "huizhang",
-      "expr": "03-sharp",
-      "position": "near"
+      "kind": "dialogue",
+      "speaker": "huizhang",
+      "text": "不。只有從自己的回憶裡，才能夠找到自己的影子。一個動人的故事，不會沒有意義的。",
+      "expr": "03-sharp"
     },
     {
       "kind": "dialogue",
       "speaker": "huizhang",
-      "text": "不。只有從自己的回憶裡，才能夠找到自己的影子。一個動人的故事，不會沒有意義的。"
-    },
-    {
-      "kind": "dialogue",
-      "speaker": "huizhang",
-      "text": "怎樣了？凌晨小子！自己說完故事，要不要來聽聽會長大人，漫話當年我自己星空下的情緣？"
+      "text": "怎樣了？凌晨小子！自己說完故事，要不要來聽聽會長大人，漫話當年我自己星空下的情緣？",
+      "expr": "03-sharp"
     },
     {
       "kind": "actor",
@@ -105,16 +101,10 @@
       "id": "huizhang"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "當然想聽了！"
+      "text": "當然想聽了！",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -122,16 +112,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "huizhang",
-      "expr": "04-laugh",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "huizhang",
-      "text": "真的想聽？"
+      "text": "真的想聽？",
+      "expr": "04-laugh"
     },
     {
       "kind": "actor",
@@ -139,16 +123,10 @@
       "id": "huizhang"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "想！"
+      "text": "想！",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -156,16 +134,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "huizhang",
-      "expr": "01-calm",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "huizhang",
-      "text": "不告訴你。"
+      "text": "不告訴你。",
+      "expr": "01-calm"
     },
     {
       "kind": "narration",

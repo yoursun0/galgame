@@ -90,16 +90,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "dabi",
-      "expr": "02-quilt",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "dabi",
-      "text": "慢慢等囉。"
+      "text": "慢慢等囉。",
+      "expr": "02-quilt"
     },
     {
       "kind": "narration",
@@ -111,16 +105,10 @@
       "id": "dabi"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "ajun",
-      "expr": "02-laugh",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "ajun",
-      "text": "可惡呀！怎麼老是煽不起火頭來？"
+      "text": "可惡呀！怎麼老是煽不起火頭來？",
+      "expr": "02-laugh"
     },
     {
       "kind": "actor",
@@ -128,16 +116,10 @@
       "id": "ajun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "04-cold",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "大鼻空有一身好武功，自己跑去洗澡了。"
+      "text": "大鼻空有一身好武功，自己跑去洗澡了。",
+      "expr": "04-cold"
     },
     {
       "kind": "narration",
@@ -149,16 +131,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "jialun",
-      "expr": "03-stammer",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "jialun",
-      "text": "透爐不是用蠻力就可以。要掌握火起的節奏，像跳舞一樣按拍子。"
+      "text": "透爐不是用蠻力就可以。要掌握火起的節奏，像跳舞一樣按拍子。",
+      "expr": "03-stammer"
     },
     {
       "kind": "actor",
@@ -166,16 +142,10 @@
       "id": "jialun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "ajun",
-      "expr": "03-nosy",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "ajun",
-      "text": "嘩！好厲害，真的越煽越旺了！"
+      "text": "嘩！好厲害，真的越煽越旺了！",
+      "expr": "03-nosy"
     },
     {
       "kind": "narration",
@@ -187,16 +157,10 @@
       "id": "ajun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "jialun",
-      "expr": "04-sad",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "jialun",
-      "text": "你來試一試。"
+      "text": "你來試一試。",
+      "expr": "04-sad"
     },
     {
       "kind": "choice",

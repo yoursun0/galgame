@@ -83,7 +83,8 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "一字記之曰，心！"
+      "text": "一字記之曰，心！",
+      "expr": "05-fire"
     },
     {
       "kind": "narration",
@@ -95,16 +96,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "jialun",
-      "expr": "01-murmur",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "jialun",
-      "text": "凌晨，讓我們來掩護你，你衝過來吧！"
+      "text": "凌晨，讓我們來掩護你，你衝過來吧！",
+      "expr": "01-murmur"
     },
     {
       "kind": "narration",
@@ -124,16 +119,10 @@
       "id": "jialun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "suting",
-      "expr": "01-smile",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "suting",
-      "text": "凌晨，振作啊！"
+      "text": "凌晨，振作啊！",
+      "expr": "01-smile"
     },
     {
       "kind": "narration",

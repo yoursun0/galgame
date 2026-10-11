@@ -75,7 +75,8 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "不用了。你掌握到奧義，自己慢慢煽。要接力的話，你教阿俊。"
+      "text": "不用了。你掌握到奧義，自己慢慢煽。要接力的話，你教阿俊。",
+      "expr": "02-blush"
     },
     {
       "kind": "narration",

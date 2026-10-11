@@ -78,16 +78,10 @@
       "id": "suting"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "04-cold",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "怎麼樣了？你累了嗎？"
+      "text": "怎麼樣了？你累了嗎？",
+      "expr": "04-cold"
     },
     {
       "kind": "jump",

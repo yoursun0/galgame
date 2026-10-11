@@ -78,16 +78,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "05-tearsmile",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "要是我是殺手，我第一個殺了你。"
+      "text": "要是我是殺手，我第一個殺了你。",
+      "expr": "05-tearsmile"
     },
     {
       "kind": "narration",
@@ -99,16 +93,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "可惜。我知道你不是殺手。因為我是殺手。"
+      "text": "可惜。我知道你不是殺手。因為我是殺手。",
+      "expr": "01-shrug"
     },
     {
       "kind": "narration",
@@ -120,16 +108,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "qishan",
-      "expr": "03-angry",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "qishan",
-      "text": "啊！又有人死了！我舉報，凌晨小子是殺手！"
+      "text": "啊！又有人死了！我舉報，凌晨小子是殺手！",
+      "expr": "03-angry"
     },
     {
       "kind": "narration",
@@ -141,16 +123,10 @@
       "id": "qishan"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "04-puff",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "你這傢伙好笨，害我死了，還得給舉了出來。"
+      "text": "你這傢伙好笨，害我死了，還得給舉了出來。",
+      "expr": "04-puff"
     },
     {
       "kind": "actor",
@@ -158,16 +134,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "對不起啊，讓你枉死，是小弟保護不周呢！"
+      "text": "對不起啊，讓你枉死，是小弟保護不周呢！",
+      "expr": "01-shrug"
     },
     {
       "kind": "narration",
@@ -179,16 +149,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "qishan",
-      "expr": "02-laugh",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "qishan",
-      "text": "七個人和議，凌晨，你要拜拜了！"
+      "text": "七個人和議，凌晨，你要拜拜了！",
+      "expr": "02-laugh"
     },
     {
       "kind": "narration",
@@ -200,16 +164,10 @@
       "id": "qishan"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "02-blush",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "小姐，已經為了保護你而枉死了，還不滿意嗎？"
+      "text": "小姐，已經為了保護你而枉死了，還不滿意嗎？",
+      "expr": "02-blush"
     },
     {
       "kind": "actor",
@@ -217,16 +175,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "01-laugh",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "哼，不理你。"
+      "text": "哼，不理你。",
+      "expr": "01-laugh"
     },
     {
       "kind": "actor",
@@ -234,16 +186,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "04-cold",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "念在我拚了命也要保護你的份上，這就原諒我這個死人頭啦，好不好？"
+      "text": "念在我拚了命也要保護你的份上，這就原諒我這個死人頭啦，好不好？",
+      "expr": "04-cold"
     },
     {
       "kind": "narration",
@@ -255,16 +201,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "02-hips",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "你這傢伙，好～討～厭～啊！"
+      "text": "你這傢伙，好～討～厭～啊！",
+      "expr": "02-hips"
     },
     {
       "kind": "actor",
@@ -272,16 +212,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "05-fire",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "你還不是一樣討厭。"
+      "text": "你還不是一樣討厭。",
+      "expr": "05-fire"
     },
     {
       "kind": "narration",

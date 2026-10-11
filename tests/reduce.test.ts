@@ -79,7 +79,7 @@ describe("mystery-fixture reduce", () => {
     expect(state.waiting).toBe(true);
     expect(state.ending).toBeNull();
     expect(state.actors).toEqual([
-      { id: "admin", expr: null, position: "far" },
+      { id: "admin", expr: "default", position: "far" },
     ]);
     expect(state.audio.bgm).toBe("bgm-village");
     expect(state.line?.kind).toBe("narration");
@@ -156,4 +156,127 @@ test("a jump with a false condition is skipped", () => {
   const state = reduce(work, initialState(work), { type: "advance" });
   expect(state.sceneId).toBe("hall");
   expect(state.ending).toEqual({ id: "plain" });
+});
+
+describe("auto-expr dialogue", () => {
+  test("dialogue auto-shows speaker at near when off-stage", () => {
+    const work: Work = {
+      manifest: {
+        schemaVersion: 1,
+        contentVersion: 1,
+        id: "auto-expr",
+        title: "auto-expr",
+        language: "zh-Hant",
+        start: "room",
+        characters: [
+          {
+            id: "hero",
+            name: "Hero",
+            sprites: { "01-smile": "spr-hero-01", near: "spr-hero-near" },
+          },
+        ],
+        variables: [],
+        scenes: [],
+      },
+      scenes: [
+        {
+          id: "room",
+          instructions: [
+            {
+              kind: "dialogue",
+              speaker: "hero",
+              expr: "01-smile",
+              text: "你好。",
+            },
+          ],
+        },
+      ],
+    };
+    const state = reduce(work, initialState(work), { type: "advance" });
+    expect(state.line).toEqual({
+      kind: "dialogue",
+      speaker: "hero",
+      text: "你好。",
+    });
+    expect(state.actors).toEqual([
+      { id: "hero", expr: "01-smile", position: "near" },
+    ]);
+  });
+
+  test("dialogue updates expr but keeps far position", () => {
+    const work: Work = {
+      manifest: {
+        schemaVersion: 1,
+        contentVersion: 1,
+        id: "auto-expr-far",
+        title: "auto-expr-far",
+        language: "zh-Hant",
+        start: "room",
+        characters: [
+          {
+            id: "hero",
+            name: "Hero",
+            sprites: { "02-sad": "spr-hero-02", far: "spr-hero-far" },
+          },
+        ],
+        variables: [],
+        scenes: [],
+      },
+      scenes: [
+        {
+          id: "room",
+          instructions: [
+            {
+              kind: "actor",
+              action: "show",
+              id: "hero",
+              position: "far",
+              expr: "02-sad",
+            },
+            {
+              kind: "dialogue",
+              speaker: "hero",
+              expr: "02-sad",
+              text: "遠一點。",
+            },
+          ],
+        },
+      ],
+    };
+    const state = reduce(work, initialState(work), { type: "advance" });
+    expect(state.actors).toEqual([
+      { id: "hero", expr: "02-sad", position: "far" },
+    ]);
+  });
+
+  test("voice-only speaker does not auto-show", () => {
+    const work: Work = {
+      manifest: {
+        schemaVersion: 1,
+        contentVersion: 1,
+        id: "vo-only",
+        title: "vo-only",
+        language: "zh-Hant",
+        start: "phone",
+        characters: [{ id: "student", name: "學生", sprites: {} }],
+        variables: [],
+        scenes: [],
+      },
+      scenes: [
+        {
+          id: "phone",
+          instructions: [
+            { kind: "dialogue", speaker: "student", text: "喂？" },
+          ],
+        },
+      ],
+    };
+    const state = reduce(work, initialState(work), { type: "advance" });
+    expect(state.actors).toEqual([]);
+    expect(state.line).toEqual({
+      kind: "dialogue",
+      speaker: "student",
+      text: "喂？",
+    });
+  });
 });
