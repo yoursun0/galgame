@@ -416,6 +416,11 @@ async function saveManual(slot: SlotId): Promise<void> {
     setOverlayNote("存檔被拒絕，原槽未改。");
     return;
   }
+  // Puppy #69: HUD 快存寫入 QUICK_SLOT 後唔開存檔 modal。
+  if (slot === QUICK_SLOT) {
+    setOverlayNote("快速存檔成功");
+    return;
+  }
   openPanel("save");
 }
 
@@ -574,7 +579,31 @@ function panelTitle(kind: typeof panel): string {
 
 function setOverlayNote(text: string): void {
   const note = overlay.querySelector<HTMLElement>("[data-note]");
-  if (note) note.textContent = text;
+  if (note) {
+    note.textContent = text;
+    return;
+  }
+  // Puppy #69: no panel open (e.g. HUD 快存) — transient toast on shell.
+  showFlashNote(text);
+}
+
+let flashNoteTimer = 0;
+function showFlashNote(text: string): void {
+  let toast = shell.querySelector<HTMLElement>("[data-flash-note]");
+  if (!toast) {
+    toast = document.createElement("p");
+    toast.className = "flash-note";
+    toast.dataset.flashNote = "1";
+    shell.append(toast);
+  }
+  toast.textContent = text;
+  toast.hidden = false;
+  if (flashNoteTimer) window.clearTimeout(flashNoteTimer);
+  flashNoteTimer = window.setTimeout(() => {
+    toast.hidden = true;
+    toast.textContent = "";
+    flashNoteTimer = 0;
+  }, 2200);
 }
 
 function fillBacklog(body: HTMLElement): void {
@@ -1080,13 +1109,31 @@ function shellCss(): string {
     .panel-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
     .panel h2, .panel h3 { font-weight: 500; letter-spacing: 0.14em; }
     .note { min-height: 1.2em; opacity: 0.85; }
+    .flash-note {
+      position: fixed;
+      left: 50%;
+      bottom: max(18vh, env(safe-area-inset-bottom, 0px) + 72px);
+      transform: translateX(-50%);
+      z-index: 50;
+      margin: 0;
+      padding: 10px 16px;
+      max-width: min(90vw, 420px);
+      text-align: center;
+      letter-spacing: 0.08em;
+      background: rgba(7, 11, 20, 0.88);
+      border: 1px solid rgba(232, 240, 255, 0.28);
+      border-radius: 8px;
+      pointer-events: none;
+    }
+    .flash-note[hidden] { display: none; }
     .log-line { margin: 0 0 10px; line-height: 1.6; }
     .log-who { display: inline-block; min-width: 4em; margin-right: 8px; opacity: 0.8; }
     .slot-panel { display: grid; gap: 10px; max-width: 100%; }
     /* Puppy #67: fixed 6-col manual grid; AUTO/QUICK sit in .slot-special above it. */
+    /* Puppy #70: same 6-col as .slot-grid so 自動｜快速 match slot1／slot2 width. */
     .slot-special {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-columns: repeat(6, minmax(0, 1fr));
       gap: 8px;
       max-width: 100%;
     }
@@ -1175,6 +1222,7 @@ function shellCss(): string {
         grid-template-columns: 1fr;
         gap: 4px;
       }
+      /* Puppy #70: mobile 2-col — special matches manual cell width, no overflow. */
       .slot-special {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
