@@ -231,10 +231,11 @@ function syncAutoLabel(): void {
 }
 
 function applySettings(): void {
-  const instant = settings.animation === "reduced";
-  stage.setInstant(instant);
-  stage.setTextSpeed(instant ? 10_000 : settings.textSpeed);
-  audio.setReducedMotion(instant);
+  const motionReduced = settings.animation === "reduced";
+  const instantText = settings.textInstant || motionReduced;
+  stage.setInstant(instantText);
+  stage.setTextSpeed(instantText ? 10_000 : settings.textSpeed);
+  audio.setReducedMotion(motionReduced);
   audio.setVolume("bgm", settings.volumes.bgm);
   audio.setVolume("se", settings.volumes.se);
   audio.setVolume("ambience", settings.volumes.ambience);
@@ -755,10 +756,7 @@ function fillSettings(body: HTMLElement): void {
   const form = document.createElement("div");
   form.className = "settings";
   form.append(
-    slider("文字速度", settings.textSpeed, 8, 80, 1, (value) => {
-      settings = { ...settings, textSpeed: value };
-      void storeSettings();
-    }),
+    textSpeedRow(),
     slider("自動停留（毫秒）", settings.autoDelayMs, 400, 5000, 100, (value) => {
       settings = { ...settings, autoDelayMs: value };
       void storeSettings();
@@ -829,6 +827,56 @@ function fillSettings(body: HTMLElement): void {
   form.append(debugRow);
 
   body.append(form);
+}
+
+function textSpeedRow(): HTMLElement {
+  const row = document.createElement("div");
+  row.className = "set-row";
+  const name = document.createElement("span");
+  name.textContent = "文字速度";
+  const controls = document.createElement("div");
+  controls.className = "set-speed";
+  const select = document.createElement("select");
+  select.setAttribute("aria-label", "文字速度");
+  for (const option of [
+    { value: "typed", label: "逐字" },
+    { value: "instant", label: "即時" },
+  ]) {
+    const node = document.createElement("option");
+    node.value = option.value;
+    node.textContent = option.label;
+    select.append(node);
+  }
+  const input = document.createElement("input");
+  input.type = "range";
+  input.min = "8";
+  input.max = "80";
+  input.step = "1";
+  input.value = String(settings.textSpeed);
+  input.setAttribute("aria-label", "逐字速度");
+  const out = document.createElement("span");
+  const paint = () => {
+    const instant = settings.textInstant;
+    select.value = instant ? "instant" : "typed";
+    input.hidden = instant;
+    input.disabled = instant;
+    out.textContent = instant ? "即時" : String(settings.textSpeed);
+  };
+  select.addEventListener("change", () => {
+    settings = { ...settings, textInstant: select.value === "instant" };
+    paint();
+    void storeSettings();
+  });
+  input.addEventListener("input", () => {
+    const value = Number(input.value);
+    settings = { ...settings, textSpeed: value, textInstant: false };
+    paint();
+    void storeSettings();
+  });
+  paint();
+  controls.append(select, input);
+  row.append(name, controls, out);
+  return row;
 }
 
 function roundVol(value: number): number {
@@ -1405,6 +1453,9 @@ function shellCss(): string {
     }
     .settings { display: grid; gap: 12px; max-width: 520px; }
     .set-row { display: grid; grid-template-columns: 9em 1fr auto; gap: 8px; align-items: center; }
+    .set-speed { display: flex; gap: 8px; align-items: center; min-width: 0; }
+    .set-speed select { font: inherit; color: inherit; background: rgba(7, 11, 20, 0.75); border: 1px solid rgba(232, 240, 255, 0.28); border-radius: 6px; padding: 4px 8px; }
+    .set-speed input[type=range] { flex: 1 1 auto; min-width: 0; }
     .recall-list { display: grid; gap: 8px; }
     /* Puppy #74: DEBUG branch tree panel */
     .debug-tree { display: grid; gap: 10px; max-width: 100%; }

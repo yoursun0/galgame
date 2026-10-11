@@ -45,6 +45,8 @@ export type SaveRecord = {
 
 export type Settings = {
   textSpeed: number;
+  /** When true, the line is fully shown at once. One click advances. Old saves omit this. */
+  textInstant: boolean;
   autoDelayMs: number;
   volumes: { bgm: number; se: number; ambience: number };
   animation: "full" | "reduced";
@@ -80,6 +82,7 @@ export function isSlotId(value: string): value is SlotId {
 export function defaultSettings(textSpeed = 28): Settings {
   return {
     textSpeed,
+    textInstant: false,
     autoDelayMs: 1600,
     volumes: { bgm: 0.35, se: 0.55, ambience: 0.22 },
     animation: "full",
@@ -161,8 +164,11 @@ export function sanitizeSettings(raw: unknown): Settings | null {
   if (value.animation !== "full" && value.animation !== "reduced") return null;
   // Puppy #62: missing debugMode (old saves) defaults to false.
   const debugMode = value.debugMode === true;
+  // Missing textInstant (old saves) defaults to false. Non-boolean is not instant.
+  const textInstant = value.textInstant === true;
   return {
     textSpeed,
+    textInstant,
     autoDelayMs,
     volumes: { bgm, se, ambience },
     animation: value.animation,
