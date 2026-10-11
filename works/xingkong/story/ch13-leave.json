@@ -65,7 +65,7 @@
       "kind": "actor",
       "action": "show",
       "id": "lingchen",
-      "expr": "01-shrug",
+      "expr": "05-fire",
       "position": "near"
     },
     {
@@ -86,7 +86,7 @@
       "kind": "actor",
       "action": "show",
       "id": "huizhang",
-      "expr": "01-calm",
+      "expr": "02-awe",
       "position": "near"
     },
     {
@@ -120,7 +120,7 @@
       "kind": "actor",
       "action": "show",
       "id": "huizhang",
-      "expr": "01-calm",
+      "expr": "03-sharp",
       "position": "near"
     },
     {
@@ -154,7 +154,7 @@
       "kind": "actor",
       "action": "show",
       "id": "huizhang",
-      "expr": "01-calm",
+      "expr": "04-laugh",
       "position": "near"
     },
     {
@@ -171,7 +171,7 @@
       "kind": "actor",
       "action": "show",
       "id": "lingchen",
-      "expr": "01-shrug",
+      "expr": "02-blush",
       "position": "near"
     },
     {

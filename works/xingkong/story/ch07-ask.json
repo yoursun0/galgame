@@ -95,7 +95,7 @@
       "kind": "actor",
       "action": "show",
       "id": "zhijun",
-      "expr": "01-laugh",
+      "expr": "02-hips",
       "position": "near"
     },
     {
@@ -112,7 +112,7 @@
       "kind": "actor",
       "action": "show",
       "id": "lingchen",
-      "expr": "01-shrug",
+      "expr": "02-blush",
       "position": "near"
     },
     {
@@ -129,7 +129,7 @@
       "kind": "actor",
       "action": "show",
       "id": "zhijun",
-      "expr": "01-laugh",
+      "expr": "03-glare",
       "position": "near"
     },
     {
@@ -146,7 +146,7 @@
       "kind": "actor",
       "action": "show",
       "id": "lingchen",
-      "expr": "01-shrug",
+      "expr": "04-cold",
       "position": "near"
     },
     {

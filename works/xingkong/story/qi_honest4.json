@@ -90,7 +90,7 @@
       "kind": "actor",
       "action": "show",
       "id": "jialun",
-      "expr": "01-murmur",
+      "expr": "02-happy",
       "position": "near"
     },
     {
@@ -107,7 +107,7 @@
       "kind": "actor",
       "action": "show",
       "id": "lingchen",
-      "expr": "01-shrug",
+      "expr": "04-cold",
       "position": "near"
     },
     {

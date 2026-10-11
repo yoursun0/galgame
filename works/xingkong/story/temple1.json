@@ -65,14 +65,14 @@
       "kind": "actor",
       "action": "show",
       "id": "qishan",
-      "expr": "01-grin",
+      "expr": "02-laugh",
       "position": "near"
     },
     {
       "kind": "actor",
       "action": "show",
       "id": "zhijun",
-      "expr": "01-laugh",
+      "expr": "05-tearsmile",
       "position": "far"
     },
     {

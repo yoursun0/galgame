@@ -132,7 +132,7 @@
       "kind": "actor",
       "action": "show",
       "id": "youmu",
-      "expr": "01-shout",
+      "expr": "02-crooked",
       "position": "near"
     },
     {

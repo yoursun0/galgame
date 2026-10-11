@@ -3,7 +3,7 @@
   "instructions": [
     {
       "kind": "background",
-      "asset": "bg-soc"
+      "asset": "bg-canteen"
     },
     {
       "kind": "audio",
@@ -64,8 +64,8 @@
     {
       "kind": "actor",
       "action": "show",
-      "id": "suting",
-      "expr": "01-smile",
+      "id": "zhijun",
+      "expr": "02-hips",
       "position": "near"
     },
     {

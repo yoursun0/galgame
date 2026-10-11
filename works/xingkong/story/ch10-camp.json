@@ -89,7 +89,7 @@
       "kind": "actor",
       "action": "show",
       "id": "dabi",
-      "expr": "01-hum",
+      "expr": "02-quilt",
       "position": "near"
     },
     {
@@ -123,7 +123,7 @@
       "kind": "actor",
       "action": "show",
       "id": "ajun",
-      "expr": "01-cold",
+      "expr": "02-laugh",
       "position": "near"
     },
     {
@@ -144,7 +144,7 @@
       "kind": "actor",
       "action": "show",
       "id": "baofang",
-      "expr": "01-run",
+      "expr": "05-sorry",
       "position": "near"
     },
     {
@@ -186,7 +186,7 @@
       "kind": "actor",
       "action": "show",
       "id": "dabi",
-      "expr": "01-hum",
+      "expr": "03-wink",
       "position": "near"
     },
     {
@@ -207,7 +207,7 @@
       "kind": "actor",
       "action": "show",
       "id": "huizhang",
-      "expr": "01-calm",
+      "expr": "02-awe",
       "position": "near"
     },
     {
@@ -245,7 +245,7 @@
       "kind": "actor",
       "action": "show",
       "id": "huizhang",
-      "expr": "01-calm",
+      "expr": "03-sharp",
       "position": "near"
     },
     {
