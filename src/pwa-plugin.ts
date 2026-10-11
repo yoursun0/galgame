@@ -1,7 +1,30 @@
+import { execSync } from "node:child_process";
 import { mkdirSync, readdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
 import { join, relative, sep } from "node:path";
 import type { Plugin } from "vite";
 import { buildPrecacheList, normalizeBase } from "./offline.ts";
+
+/** Short git SHA, or a timestamp if git is unavailable. */
+export function resolveBuildId(): string {
+  try {
+    const sha = execSync("git rev-parse --short HEAD", {
+      encoding: "utf8",
+      stdio: ["ignore", "pipe", "ignore"],
+    }).trim();
+    if (sha) return sha;
+  } catch {
+    /* not a git checkout, or git missing */
+  }
+  return String(Date.now());
+}
+
+export function defaultShellCacheName(buildId = resolveBuildId()): string {
+  return `galgame-shell-${buildId}`;
+}
+
+export function resolveCacheName(override?: string): string {
+  return override ?? defaultShellCacheName();
+}
 
 function listFiles(dir: string, root = dir): string[] {
   const out: string[] = [];
@@ -13,7 +36,7 @@ function listFiles(dir: string, root = dir): string[] {
   return out;
 }
 
-function swSource(cacheName: string, precache: string[], base: string): string {
+export function swSource(cacheName: string, precache: string[], base: string): string {
   const b = normalizeBase(base);
   const fallback = b === "/" ? "/index.html" : `${b}index.html`;
   return `/* galgame service worker — generated at build; do not edit */
@@ -36,23 +59,37 @@ self.addEventListener("activate", (event) => {
   );
 });
 
+self.addEventListener("message", (event) => {
+  if (event.data && event.data.type === "SKIP_WAITING") self.skipWaiting();
+});
+
 self.addEventListener("fetch", (event) => {
   const req = event.request;
   if (req.method !== "GET") return;
   const url = new URL(req.url);
   if (url.origin !== self.location.origin) return;
+  const path = url.pathname;
+  const underScope = path.startsWith(SCOPE);
+  const isDocument =
+    req.mode === "navigate" ||
+    (underScope && (path.endsWith("/") || path.endsWith("index.html")));
+  const put = (resp) => {
+    if (resp.ok && (req.mode === "navigate" || underScope)) {
+      const copy = resp.clone();
+      caches.open(CACHE).then((cache) => cache.put(req, copy)).catch(() => undefined);
+    }
+    return resp;
+  };
+  const fromCache = () =>
+    caches.match(req).then((hit) => hit || caches.match(FALLBACK).then((page) => page || Response.error()));
+  if (isDocument) {
+    event.respondWith(fetch(req).then(put).catch(fromCache));
+    return;
+  }
   event.respondWith(
     caches.match(req).then((hit) => {
       if (hit) return hit;
-      return fetch(req)
-        .then((resp) => {
-          if (resp.ok && (req.mode === "navigate" || url.pathname.startsWith(SCOPE))) {
-            const copy = resp.clone();
-            caches.open(CACHE).then((cache) => cache.put(req, copy)).catch(() => undefined);
-          }
-          return resp;
-        })
-        .catch(() => caches.match(FALLBACK).then((page) => page || Response.error()));
+      return fetch(req).then(put).catch(() => caches.match(FALLBACK).then((page) => page || Response.error()));
     }),
   );
 });
@@ -61,7 +98,6 @@ self.addEventListener("fetch", (event) => {
 
 export function galgamePwa(options: { base: string; cacheName?: string }): Plugin {
   const base = normalizeBase(options.base);
-  const cacheName = options.cacheName ?? "galgame-shell-v1";
   let outDir = "dist";
 
   return {
@@ -90,6 +126,7 @@ export function galgamePwa(options: { base: string; cacheName?: string }): Plugi
       }
       const files = listFiles(dist);
       const precache = buildPrecacheList(files, base);
+      const cacheName = resolveCacheName(options.cacheName);
       writeFileSync(join(dist, "sw.js"), swSource(cacheName, precache, base));
       const iconBase = base === "/" ? "/" : base;
       const manifest = {

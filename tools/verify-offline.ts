@@ -37,15 +37,25 @@ for (const name of ["index.html", "sw.js", "manifest.webmanifest", "precache.jso
 
 const precache = JSON.parse(readFileSync(join(dist, "precache.json"), "utf8")) as {
   base: string;
+  cacheName?: string;
   urls: string[];
   count: number;
 };
 if (precache.base !== want) fail(`precache base ${precache.base} != ${want}`);
 if (precache.count < 10) fail(`precache too small: ${precache.count}`);
 if (!precache.urls.some((u) => u.endsWith("index.html"))) fail("precache missing index.html");
+if (!precache.cacheName?.startsWith("galgame-shell-") || precache.cacheName === "galgame-shell-v1") {
+  fail(`precache cacheName not bumped: ${precache.cacheName ?? "(missing)"}`);
+}
 
 const sw = readFileSync(join(dist, "sw.js"), "utf8");
+const cacheMatch = sw.match(/const CACHE = "([^"]+)"/);
 if (!sw.includes("PRECACHE") || !sw.includes("galgame-shell")) fail("sw.js missing precache");
+if (!cacheMatch || cacheMatch[1] === "galgame-shell-v1" || !cacheMatch[1].startsWith("galgame-shell-")) {
+  fail(`sw.js CACHE name is not bumped: ${cacheMatch?.[1] ?? "(missing)"}`);
+}
+if (!sw.includes('req.mode === "navigate"')) fail("sw.js missing network-first navigate");
+if (!sw.includes("SKIP_WAITING")) fail("sw.js missing SKIP_WAITING message handler");
 
 const manifest = JSON.parse(readFileSync(join(dist, "manifest.webmanifest"), "utf8")) as {
   scope: string;

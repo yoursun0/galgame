@@ -35,11 +35,39 @@ export function isWorkOfflineReady(manifest: { offlineReady?: boolean }): boolea
   return manifest.offlineReady === true;
 }
 
+const SW_RELOAD_FLAG = "galgame-sw-reloaded";
+
+function postSkipWaiting(worker: ServiceWorker | null | undefined): void {
+  worker?.postMessage({ type: "SKIP_WAITING" });
+}
+
 export async function registerServiceWorker(base = "/"): Promise<boolean> {
   if (typeof navigator === "undefined" || !("serviceWorker" in navigator)) return false;
   const b = normalizeBase(base);
   try {
-    await navigator.serviceWorker.register(withBase(b, "sw.js"), { scope: b });
+    const reg = await navigator.serviceWorker.register(withBase(b, "sw.js"), { scope: b });
+    if (reg.waiting) postSkipWaiting(reg.waiting);
+    reg.addEventListener("updatefound", () => {
+      const next = reg.installing;
+      if (!next) return;
+      next.addEventListener("statechange", () => {
+        if (next.state === "installed" && navigator.serviceWorker.controller) {
+          postSkipWaiting(next);
+        }
+      });
+    });
+    navigator.serviceWorker.addEventListener("controllerchange", () => {
+      try {
+        if (sessionStorage.getItem(SW_RELOAD_FLAG)) {
+          sessionStorage.removeItem(SW_RELOAD_FLAG);
+          return;
+        }
+        sessionStorage.setItem(SW_RELOAD_FLAG, "1");
+      } catch {
+        /* private mode or blocked storage */
+      }
+      location.reload();
+    });
     return true;
   } catch {
     return false;
