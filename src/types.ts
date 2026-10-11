@@ -88,6 +88,8 @@ export type WorkManifest = {
   titleBgm?: string;
   /** Optional title-screen credit/note; omitted works show no title note. */
   titleNote?: string;
+  /** Optional Chinese (or localized) titles for ending ids shown in gallery. Locked cards must not use these. */
+  endingTitles?: Record<string, string>;
 };
 
 export type Scene = {

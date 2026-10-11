@@ -30,5 +30,8 @@
     "story/ask.json",
     "story/done.json"
   ],
-  "offlineReady": true
+  "offlineReady": true,
+  "endingTitles": {
+    "stop": "今晚到此為止"
+  }
 }
