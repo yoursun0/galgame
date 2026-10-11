@@ -1,5 +1,9 @@
 # Release Notes
 
+## v1.23 2026-10-11 11:52:40
+
+- 文案／演出：`ch12-alone` 結局前清芷君笑臉——短暫 `05-tearsmile` 後 hide；凌晨 `04-cold` 再 hide 留空舞台（孤獨摺埋）；結局 CG 仍缺，等梵高 `ending-ch12-alone`（#88）。
+
 ## v1.22 2026-10-11 11:51:32
 
 - 文案：`ch11-saw` 重寫目擊張力／心痛節拍（沙沙→關燈→誤認→擁抱→「是素婷」）；BGM 換 `bgm-10-i-swear-i-saw-it`；**草原獵戶座目擊 CG 仍缺**——`cg-suting-orion` 係沙灘擁抱（s4b 用），唔接錯場；等梵高補檔後再 `cg show`（#83）。
