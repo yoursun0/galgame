@@ -1,5 +1,9 @@
 # Release Notes
 
+## v1.27 2026-10-11 12:22:33
+
+- Player：DEBUG MODE ON 時鑑賞解鎖全部 CG + BGM（可點睇／播）；結局卡仍跟進度，唔洩密（#86）。
+
 ## v1.26 2026-10-11 12:00:54
 
 - 文案／演出：掛全頁 CG——`ch11-saw` 擁抱高潮 `cg show cg-witness-orion`；`ch12-alone` 結局前 `cg show ending-ch12-alone`（#83／#88；資產來自 #91）。

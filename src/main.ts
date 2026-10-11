@@ -871,7 +871,8 @@ function slider(
 }
 
 function fillGallery(body: HTMLElement): void {
-  const view = presentGallery(work, assets, progress);
+  // Puppy #86: DEBUG MODE ON → presentGallery unlocks all CG + BGM.
+  const view = presentGallery(work, assets, progress, { debugUnlock: settings.debugMode });
   body.append(
     galleryGroup("CG", view.cg),
     galleryGroup("音樂", view.music),
