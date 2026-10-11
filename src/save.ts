@@ -46,6 +46,8 @@ export type Settings = {
   autoDelayMs: number;
   volumes: { bgm: number; se: number; ambience: number };
   animation: "full" | "reduced";
+  /** Puppy #62: show scene id overlay when true. Default false. */
+  debugMode: boolean;
 };
 
 export type LoadResult =
@@ -79,6 +81,7 @@ export function defaultSettings(textSpeed = 28): Settings {
     autoDelayMs: 1600,
     volumes: { bgm: 0.35, se: 0.55, ambience: 0.22 },
     animation: "full",
+    debugMode: false,
   };
 }
 
@@ -139,11 +142,14 @@ export function sanitizeSettings(raw: unknown): Settings | null {
     return null;
   }
   if (value.animation !== "full" && value.animation !== "reduced") return null;
+  // Puppy #62: missing debugMode (old saves) defaults to false.
+  const debugMode = value.debugMode === true;
   return {
     textSpeed,
     autoDelayMs,
     volumes: { bgm, se, ambience },
     animation: value.animation,
+    debugMode,
   };
 }
 

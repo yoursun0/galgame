@@ -5,6 +5,8 @@ export type StageHandlers = {
   onAdvance: () => void;
   onChoose: (index: number) => void;
   onTypingComplete?: () => void;
+  /** Puppy #63: ending card 「回標題」. */
+  onReturnToTitle?: () => void;
 };
 
 export type Stage = {
@@ -70,7 +72,15 @@ export function mountStage(
   const kicker = el("p", "ending-kicker");
   kicker.textContent = "結局";
   const endingId = el("p", "ending-id");
-  card.append(kicker, endingId);
+  const endingHome = document.createElement("button");
+  endingHome.type = "button";
+  endingHome.className = "ending-home";
+  endingHome.textContent = "回標題";
+  endingHome.addEventListener("click", (event) => {
+    event.stopPropagation();
+    handlers.onReturnToTitle?.();
+  });
+  card.append(kicker, endingId, endingHome);
   ending.append(endingImg, card);
   stage.append(bg, actors, cg, credit, say, choices, ending);
   fit.append(stage);
@@ -526,6 +536,26 @@ function css(theme: Theme): string {
       font-size: 36px;
       letter-spacing: 0.14em;
     }
+    .ending-home {
+      display: block;
+      margin: 22px auto 0;
+      min-width: 160px;
+      min-height: 48px;
+      padding: 10px 28px;
+      border: 1px solid rgba(255, 255, 255, 0.55);
+      border-radius: 999px;
+      background: rgba(20, 20, 28, 0.78);
+      color: #fff;
+      font: inherit;
+      font-size: 18px;
+      letter-spacing: 0.12em;
+      cursor: pointer;
+      pointer-events: auto;
+    }
+    .ending-home:focus-visible {
+      outline: 2px solid #fff;
+      outline-offset: 3px;
+    }
     .viewport.mobile-portrait .say[hidden],
     .viewport.mobile-portrait .choices[hidden] {
       display: none !important;
@@ -582,6 +612,11 @@ function css(theme: Theme): string {
     }
     .viewport.mobile-portrait .ending-id {
       font-size: clamp(24px, 7vw, 36px);
+    }
+    .viewport.mobile-portrait .ending-home {
+      min-height: 52px;
+      font-size: clamp(16px, 4.5vw, 20px);
+      margin-top: 18px;
     }
     .viewport.mobile-portrait .cg {
       position: fixed;
