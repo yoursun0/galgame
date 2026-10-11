@@ -1,5 +1,9 @@
 # Release Notes
 
+## v1.25 2026-10-11 11:57:24
+
+- 美術：新增全頁 CG `cg-witness-orion`（草原獵戶座目擊，#83）＋結局 CG `ending-ch12-alone`（凌晨孤獨摺埋，#88）；已入 manifest。story `cg show` 仍交九把刀掛。
+
 ## v1.23 2026-10-11 11:52:40
 
 - 文案／演出：`ch12-alone` 結局前清芷君笑臉——短暫 `05-tearsmile` 後 hide；凌晨 `04-cold` 再 hide 留空舞台（孤獨摺埋）；結局 CG 仍缺，等梵高 `ending-ch12-alone`（#88）。
