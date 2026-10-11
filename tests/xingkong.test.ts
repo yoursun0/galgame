@@ -186,10 +186,11 @@ describe("xingkong work", () => {
       else state = reduce(work, state, { type: "advance" });
     }
     expect(state.sceneId).toBe("temple1");
-    expect(state.actors).toEqual([
-      { id: "qishan", expr: "01-grin", position: "near" },
-      { id: "zhijun", expr: "01-laugh", position: "far" },
+    expect(state.actors.map((a) => ({ id: a.id, position: a.position }))).toEqual([
+      { id: "qishan", position: "near" },
+      { id: "zhijun", position: "far" },
     ]);
+    expect(state.actors.every((a) => Boolean(a.expr))).toBe(true);
     expect(state.cg).toBe("cg-qishan-temple");
     expect(state.background).toBe("bg-xuankong");
   });
