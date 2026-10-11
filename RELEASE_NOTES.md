@@ -1,5 +1,9 @@
 # Release Notes
 
+## v1.18 2026-10-11 11:41:19
+
+- Player：DEBUG MODE ON 時「回想」改為全劇分支樹（choice／set／ending）＋一鍵跳轉套用路徑變數；OFF 維持舊回想、唔洩全圖（#74）。
+
 ## v1.17 2026-10-11 11:36:53
 
 - 文案：#78 第七話——去除全部綺珊↔凌晨對白（ch07-frame／dodge／plain 改順敘旁白＋candor 選擇保留）；coffee 雙人場 lingchen near／zhijun far（late／ask／stars／tea）。
