@@ -1,5 +1,10 @@
 # Release Notes
 
+## v1.7 2026-10-11
+
+- PWA：每次 build bump shell cache 名；navigate／`index.html` network-first；新 SW `SKIP_WAITING`＋`controllerchange` 自動 reload（#50）。
+- 叙事全頁 CG：點畫面繼續對白並保持 CG，直到 script `cg hide`／換圖——唔再一撳露出空背景（#51）。
+
 ## v1.6 2026-10-11
 
 - 退役過時 Twine／Tweego 製作路徑：刪除 `works/xingkong/production/twine/`（含 `xingkong.twee`）與轉換腳本 `tools/twee_to_xingkong_json.py`。可玩 SoT 維持 `works/xingkong/story/*.json`（＋ `work.json`）；播放器 `src/` 不變。
