@@ -101,6 +101,16 @@ function isVoiceOnly(work: Work, speaker: string): boolean {
   return !sprites || Object.keys(sprites).length === 0;
 }
 
+/**
+ * Puppy: #77 free left/right slot for a new auto-expr speaker.
+ * stage.ts treats position !== "far" (near or null) as the near slot.
+ * If any other actor already holds that slot, stand far; otherwise near.
+ */
+function pickAutoPosition(actors: ActorSlot[]): "near" | "far" {
+  const nearSlotTaken = actors.some((actor) => actor.position !== "far");
+  return nearSlotTaken ? "far" : "near";
+}
+
 function applyBlocking(
   work: Work,
   state: PlayState,
@@ -120,7 +130,8 @@ function applyBlocking(
         line: { kind: "narration", text: instruction.text },
       };
     case "dialogue": {
-      // Puppy: auto show/update speaker standee from dialogue.expr
+      // Puppy: auto show/update speaker standee from dialogue.expr.
+      // Puppy: #77 new speakers take the free near/far slot; on-stage speakers keep position.
       let actors = state.actors;
       const expr = instruction.expr;
       if (expr && !isVoiceOnly(work, instruction.speaker)) {
@@ -130,7 +141,8 @@ function applyBlocking(
           action: existing ? "update" : "show",
           id: instruction.speaker,
           expr,
-          position: existing ? undefined : "near",
+          // Puppy: update leaves position undefined so only expr changes.
+          position: existing ? undefined : pickAutoPosition(actors),
         });
       }
       return {
