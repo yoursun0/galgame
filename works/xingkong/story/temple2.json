@@ -65,7 +65,7 @@
       "kind": "actor",
       "action": "show",
       "id": "qishan",
-      "expr": "04-loud",
+      "expr": "05-wink",
       "position": "near"
     },
     {
@@ -80,6 +80,14 @@
       "action": "hide"
     },
     {
+      "kind": "narration",
+      "text": "懸空寺上。木板在腳下輕響，像隨時會掉下去。"
+    },
+    {
+      "kind": "narration",
+      "text": "身後一對情侶在说笑。他替綺珊拿相機拍二人合照，本該跟素婷談笑的時間，全耗在這裡。"
+    },
+    {
       "kind": "actor",
       "action": "hide",
       "id": "zhijun"
@@ -87,14 +95,57 @@
     {
       "kind": "dialogue",
       "speaker": "qishan",
-      "text": "她是黎芷君，聯宿認識的。",
+      "text": "謝謝你啊，真是乖孩子。",
+      "expr": "05-wink"
+    },
+    {
+      "kind": "narration",
+      "text": "他低聲問走過來的綺珊，眼神往當然可以小姐那邊一瞄。"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "喂，她是？",
+      "expr": "04-cold"
+    },
+    {
+      "kind": "narration",
+      "text": "上次只換過「可不可以先生」和「當然可以小姐」——還不知道真名。"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "qishan",
+      "expr": "04-loud",
+      "position": "near"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "02-hips",
+      "position": "far"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "qishan",
+      "text": "她嘛？黎芷君，聯宿認識的。",
       "expr": "04-loud"
     },
     {
       "kind": "dialogue",
       "speaker": "qishan",
-      "text": "想認識嗎？我當紅娘的經驗，多如天上繁星！",
+      "text": "想認識嗎？讓我幫你穿針引線——我當紅娘的成功經驗多如天上繁星呢！",
       "expr": "04-loud"
+    },
+    {
+      "kind": "narration",
+      "text": "綺珊嚷得生怕全世界聽不見。芷君在旁邊偷笑。"
     },
     {
       "kind": "jump",

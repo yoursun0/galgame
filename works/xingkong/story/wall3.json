@@ -74,13 +74,22 @@
     },
     {
       "kind": "narration",
-      "text": "素婷用手帕印了印額上的汗。"
+      "text": "素婷用手帕印了印額上的汗，向他微笑。樣子甜美極了。"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
     },
     {
       "kind": "dialogue",
-      "speaker": "suting",
-      "text": "嗯。前面那個關口坐坐，吹吹風吧。",
-      "expr": "02-sigh"
+      "speaker": "lingchen",
+      "text": "好啊，就在那裡停一停吧。",
+      "expr": "02-blush"
+    },
+    {
+      "kind": "narration",
+      "text": "秦始皇啊，你真是太偉大了。"
     },
     {
       "kind": "jump",

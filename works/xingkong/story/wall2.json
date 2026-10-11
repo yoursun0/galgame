@@ -73,6 +73,10 @@
       "action": "hide"
     },
     {
+      "kind": "narration",
+      "text": "對於何謂歷史意義，每個人看法不同。他的定義很簡單——就走在身後。"
+    },
+    {
       "kind": "actor",
       "action": "hide",
       "id": "suting"
@@ -80,8 +84,23 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "怎麼樣了？你累了嗎？",
+      "text": "怎麼樣了？你累了嗎？用不用休息一下？",
       "expr": "04-cold"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "suting",
+      "text": "嗯。前面那個關口坐坐，吹吹風吧。",
+      "expr": "02-sigh"
+    },
+    {
+      "kind": "narration",
+      "text": "家綸和會長正在關口拍照。走了近一個小時，能坐下來，真是爽。"
     },
     {
       "kind": "jump",

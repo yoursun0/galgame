@@ -82,15 +82,22 @@
     },
     {
       "kind": "narration",
-      "text": "境外觀星團第五天。大同，恒山。懸空寺下，刻著「壯觀」的大石旁。"
+      "text": "境外觀星團第五天。大同，恒山。懸空寺下，刻著「壯觀」二字的大石旁。"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "qishan",
+      "text": "嗨！凌晨小子！幫我拿個相機，我要跟大鼻阿俊寶方他們壯觀地拍個照。",
+      "expr": "02-laugh"
     },
     {
       "kind": "narration",
-      "text": "綺珊把相機塞過來，要在大石下跟大鼻他們壯觀地拍照。"
-    },
-    {
-      "kind": "narration",
-      "text": "拍完，凌晨在寺下轉了一圈。看不到素婷的身影。綺珊又把他按在石上。"
+      "text": "綺珊說話從不帶勞駕或謝謝。他把相機接過來，看他們擺出超人變身般的姿勢，心裡暗暗好笑。"
     },
     {
       "kind": "actor",
@@ -99,9 +106,110 @@
     },
     {
       "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "準備，三，二，一——",
+      "expr": "01-shrug"
+    },
+    {
+      "kind": "narration",
+      "text": "咔唰。他把相機遞回去，卻發覺剛才在身邊的素婷早已不知去向。"
+    },
+    {
+      "kind": "narration",
+      "text": "整天吊在人家背後，人家也會煩。他樂得自己四處走走。"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "qishan",
+      "expr": "04-loud",
+      "position": "near"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "qishan",
+      "text": "喂，凌晨小子，要不要跟我一起壯觀一下？",
+      "expr": "04-loud"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "啊，那可真要瞧瞧小姐你究竟有多壯觀了。",
+      "expr": "05-fire"
+    },
+    {
+      "kind": "narration",
+      "text": "咔唰一聲——他在大石下被綺珊按住的狼狽相，被阿俊他們拍了下來。"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "05-tearsmile",
+      "position": "far"
+    },
+    {
+      "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "喂！綺珊！怎麼又在欺負男孩子啦！",
+      "text": "喂！綺珊！怎麼又在欺負男孩子啦！有這麼好玩啊？",
       "expr": "05-tearsmile"
+    },
+    {
+      "kind": "narration",
+      "text": "聲音從通往懸空寺的階梯上傳來。當然可以小姐挨著欄杆，俯身笑看他們。"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "qishan",
+      "text": "是挺好玩的啦！要不要借你欺負看看？",
+      "expr": "01-grin"
+    },
+    {
+      "kind": "narration",
+      "text": "她手上仍按著他的頭。他只想找個石窟鑽進去。"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "01-laugh",
+      "position": "far"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "別顧住玩啊！上來和我拍個照吧！",
+      "expr": "01-laugh"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "qishan",
+      "text": "又好！",
+      "expr": "02-laugh"
+    },
+    {
+      "kind": "narration",
+      "text": "綺珊彈起來往階梯跑。他拍掉身上的塵，抬頭——當然可以小姐仍在上面偷笑。"
     },
     {
       "kind": "jump",
