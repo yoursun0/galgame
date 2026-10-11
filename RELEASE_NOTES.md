@@ -1,5 +1,9 @@
 # Release Notes
 
+## v1.26 2026-10-11 12:00:54
+
+- 文案／演出：掛全頁 CG——`ch11-saw` 擁抱高潮 `cg show cg-witness-orion`；`ch12-alone` 結局前 `cg show ending-ch12-alone`（#83／#88；資產來自 #91）。
+
 ## v1.25 2026-10-11 11:57:24
 
 - 美術：新增全頁 CG `cg-witness-orion`（草原獵戶座目擊，#83）＋結局 CG `ending-ch12-alone`（凌晨孤獨摺埋，#88）；已入 manifest。story `cg show` 仍交九把刀掛。

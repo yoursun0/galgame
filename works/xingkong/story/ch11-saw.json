@@ -156,6 +156,11 @@
       "text": "擁在一起。"
     },
     {
+      "kind": "cg",
+      "action": "show",
+      "asset": "cg-witness-orion"
+    },
+    {
       "kind": "narration",
       "text": "……"
     },
