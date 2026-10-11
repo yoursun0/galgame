@@ -76,6 +76,10 @@ bunx vite preview --base /galgame/
 # DevTools → Offline → 重載，應仍可玩「晚班鑰匙」
 ```
 
+## 驗收（UAT）
+
+瀏覽器手動驗收計劃見 [`docs/UAT.md`](docs/UAT.md)。跟 **Ship then UAT**：確認目標 commit／本機 preview 先測。
+
 ## v1 完成／未完成
 
 **已完成**
