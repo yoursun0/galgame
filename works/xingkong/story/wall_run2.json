@@ -87,8 +87,12 @@
       "text": "他走得太前。她沒有說不行。"
     },
     {
+      "kind": "narration",
+      "text": "關口下方有人聲——飲料攤的旗布在風裡響。"
+    },
+    {
       "kind": "jump",
-      "to": "wall_mister"
+      "to": "wall_coin"
     }
   ]
 }

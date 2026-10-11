@@ -109,6 +109,7 @@ const playtestRewritten = new Set([
   "wall_slow2",
   "wall_slow3",
   "wall_slow4",
+  "wall_coin",
   "wall_run1",
   "wall_run2",
   "wall_mister",
@@ -298,7 +299,7 @@ describe("xingkong work", () => {
     expect(state.sceneId).toBe("wall_choice");
     expect(state.cg).toBe("cg-wall-wind");
 
-    for (let guard = 0; guard < 80 && state.sceneId !== "wall_mister"; guard++) {
+    for (let guard = 0; guard < 160 && state.sceneId !== "wall_mister"; guard++) {
       if (state.choices) state = reduce(work, state, { type: "choose", index: 0 });
       else state = reduce(work, state, { type: "advance" });
     }

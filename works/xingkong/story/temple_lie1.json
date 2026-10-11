@@ -80,14 +80,44 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "我們老早就認識了！",
+      "text": "我們才犯不著你來介紹！我們老早就認識了！認識了好久好久！",
       "expr": "01-shrug"
+    },
+    {
+      "kind": "narration",
+      "text": "他走向芷君，用手肘撞了撞她示意。"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "你說是不是？你都不知我倆是多麼要好的老朋友！",
+      "expr": "01-shrug"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "是呀，才用不著你介紹呢！",
+      "expr": "01-laugh"
+    },
+    {
+      "kind": "narration",
+      "text": "那時她連他的名字也不知道，卻肯跟他一塊鬧。"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
     },
     {
       "kind": "dialogue",
       "speaker": "lingchen",
       "text": "我早在母腹裡就認識她。凌晨這個名字，還是她媽媽起的。",
-      "expr": "01-shrug"
+      "expr": "05-fire"
     },
     {
       "kind": "jump",

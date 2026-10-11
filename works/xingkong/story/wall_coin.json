@@ -1,0 +1,215 @@
+{
+  "id": "wall_coin",
+  "instructions": [
+    {
+      "kind": "background",
+      "asset": "bg-badaling"
+    },
+    {
+      "kind": "audio",
+      "action": "play",
+      "channel": "bgm",
+      "asset": "bgm-05-sunset-plains"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "ajun"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "baofang"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "dabi"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "huizhang"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "jialun"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "youmu"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "suting",
+      "expr": "01-smile",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
+    },
+    {
+      "kind": "narration",
+      "text": "關口下方有個飲料攤。風把旗布吹得啪啪響。"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "suting",
+      "text": "凌晨，我渴了。到那邊買個菊花茶好嗎？",
+      "expr": "01-smile"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "好。你在這兒等。菊花茶。",
+      "expr": "02-blush"
+    },
+    {
+      "kind": "narration",
+      "text": "素婷轉頭向走在前頭的家綸喊了一聲——要不要黑加侖子。那黑加侖子遙呼好，錢稍後再給。"
+    },
+    {
+      "kind": "narration",
+      "text": "他邊答應邊往攤檔走，身子不提防撞上別人。"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "04-puff",
+      "position": "near"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "怎麼走路不長眼睛的？",
+      "expr": "04-puff"
+    },
+    {
+      "kind": "narration",
+      "text": "編馬尾的團友。第三天了，他仍不知道她的名字。"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "對不起哩。",
+      "expr": "04-cold"
+    },
+    {
+      "kind": "narration",
+      "text": "攤檔前翻開錢包——才七元八角。菊花茶買得了，六元的黑加侖子買不了。"
+    },
+    {
+      "kind": "narration",
+      "text": "回頭找素婷討錢一定失威。他寧願硬著頭皮，問身邊這位團友。"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "01-laugh",
+      "position": "near"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "喂，怎麼了？",
+      "expr": "01-laugh"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "呀，是這樣的……我本想幫朋友買汽水，卻不夠零錢在身。",
+      "expr": "05-fire"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "請問你可不可以借個零錢給我？",
+      "expr": "05-fire"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "當然可以呀。",
+      "expr": "02-hips"
+    },
+    {
+      "kind": "narration",
+      "text": "她低頭翻出一張二十元，笑了笑，說遲些再還。然後轉身要走。"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "等等！",
+      "expr": "01-shrug"
+    },
+    {
+      "kind": "narration",
+      "text": "問人家借了二十元，卻連名字也不知道——好歹是債主。她早已回過頭來，微笑著等他發言。"
+    },
+    {
+      "kind": "jump",
+      "to": "wall_mister"
+    }
+  ]
+}

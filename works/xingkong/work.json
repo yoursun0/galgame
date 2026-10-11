@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "contentVersion": 7,
+  "contentVersion": 8,
   "id": "xingkong",
   "title": "星空情緣",
   "language": "zh-Hant",
@@ -441,6 +441,7 @@
     "story/wall_choice.json",
     "story/wall_choice__0.json",
     "story/wall_choice__1.json",
+    "story/wall_coin.json",
     "story/wall_mister.json",
     "story/wall_run1.json",
     "story/wall_run2.json",

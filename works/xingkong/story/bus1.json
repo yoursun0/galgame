@@ -62,9 +62,15 @@
       "id": "youmu"
     },
     {
-      "kind": "cg",
+      "kind": "actor",
       "action": "show",
-      "asset": "cg-baofang-bus"
+      "id": "baofang",
+      "expr": "01-run",
+      "position": "near"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
     },
     {
       "kind": "narration",
@@ -73,6 +79,14 @@
     {
       "kind": "narration",
       "text": "寶方佔了窗，把牌攤在膝上給人看。凌晨抱著剩下的團刊，一下也不敢放。"
+    },
+    {
+      "kind": "narration",
+      "text": "編馬尾的女孩坐在後排，跟中文系同學说笑。他仍不知道她的名字。"
+    },
+    {
+      "kind": "narration",
+      "text": "窗外的山脊越來越近。八達嶺到了。"
     },
     {
       "kind": "jump",

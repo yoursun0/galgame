@@ -85,8 +85,12 @@
       "text": "他以為一直這樣拾級而上，已經非常美好。"
     },
     {
+      "kind": "narration",
+      "text": "關口下方有人聲——飲料攤的旗布在風裡響。"
+    },
+    {
       "kind": "jump",
-      "to": "wall_mister"
+      "to": "wall_coin"
     }
   ]
 }
