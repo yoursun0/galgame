@@ -79,6 +79,18 @@
       "expr": "01-shrug"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "suting",
+      "expr": "03-worry",
+      "position": "near"
+    },
+    {
       "kind": "narration",
       "text": "素婷咬著的下唇鬆開。她沒有再問第二次。"
     },

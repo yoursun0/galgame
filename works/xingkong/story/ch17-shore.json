@@ -77,6 +77,18 @@
       "text": "貝澳，石灘。子夜。烏雲比傍晚更密。月亮只露一角。"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "suting",
+      "expr": "02-sigh",
+      "position": "near"
+    },
+    {
       "kind": "narration",
       "text": "素婷沒有追出來。家綸也不在。"
     },

@@ -112,6 +112,18 @@
       "expr": "04-puff"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "05-fire",
+      "position": "near"
+    },
+    {
       "kind": "narration",
       "text": "凌晨拿起電話，鍵入那個他其實一直沒有忘記的號碼。"
     },

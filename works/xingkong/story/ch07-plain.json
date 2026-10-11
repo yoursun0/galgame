@@ -79,6 +79,18 @@
       "expr": "05-fire"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "qishan",
+      "expr": "02-laugh",
+      "position": "near"
+    },
+    {
       "kind": "narration",
       "text": "綺珊沒有再笑他「黑加侖子」。"
     },

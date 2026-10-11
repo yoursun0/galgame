@@ -79,6 +79,18 @@
       "expr": "01-shrug"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "03-glare",
+      "position": "near"
+    },
+    {
       "kind": "narration",
       "text": "芷君眉頭深鎖。頭仍低著。桌面上只有啄飯的聲音。"
     },

@@ -83,6 +83,25 @@
       "expr": "05-fire"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "qishan",
+      "expr": "02-laugh",
+      "position": "near"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "suting",
+      "expr": "01-smile",
+      "position": "far"
+    },
+    {
       "kind": "narration",
       "text": "綺珊仍笑著。激光筆還指著天上的兩隻犬。素婷在人群裡，沒有走過來。"
     },

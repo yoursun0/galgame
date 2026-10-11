@@ -64,9 +64,16 @@
     {
       "kind": "actor",
       "action": "show",
-      "id": "zhijun",
-      "expr": "05-tearsmile",
+      "id": "suting",
+      "expr": "05-spring",
       "position": "near"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "jialun",
+      "expr": "02-happy",
+      "position": "far"
     },
     {
       "kind": "cg",

@@ -64,9 +64,16 @@
     {
       "kind": "actor",
       "action": "show",
-      "id": "zhijun",
-      "expr": "04-puff",
+      "id": "suting",
+      "expr": "02-sigh",
       "position": "near"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "far"
     },
     {
       "kind": "cg",

@@ -64,9 +64,16 @@
     {
       "kind": "actor",
       "action": "show",
-      "id": "qishan",
-      "expr": "03-angry",
+      "id": "suting",
+      "expr": "01-smile",
       "position": "near"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "far"
     },
     {
       "kind": "cg",

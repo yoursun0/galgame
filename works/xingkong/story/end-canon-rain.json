@@ -77,6 +77,25 @@
       "text": "雨還在下。天台上的人把望遠鏡收了。"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "suting",
+      "expr": "02-sigh",
+      "position": "near"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "01-laugh",
+      "position": "far"
+    },
+    {
       "kind": "narration",
       "text": "素婷沒有改口。芷君沒有放下游牧。綺珊沒有把那句問話答完。家綸仍是那個會撲上來的人。"
     },

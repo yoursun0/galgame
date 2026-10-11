@@ -85,6 +85,25 @@
       "text": "獵戶座主星參宿四放出紅光，落在他們臉上。兩個人慢慢靠在一起。"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "04-cold",
+      "position": "near"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "suting",
+      "expr": "05-spring",
+      "position": "far"
+    },
+    {
       "kind": "narration",
       "text": "凌晨沒有出聲。她沒有回頭。"
     },

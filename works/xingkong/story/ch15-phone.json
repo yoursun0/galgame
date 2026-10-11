@@ -138,6 +138,18 @@
       "expr": "04-puff"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
+    },
+    {
       "kind": "narration",
       "text": "凌晨走回燒烤場。家綸在跟會長小聲說話。"
     },

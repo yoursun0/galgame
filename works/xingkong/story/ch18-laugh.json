@@ -132,6 +132,18 @@
       "expr": "05-tearsmile"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "02-blush",
+      "position": "near"
+    },
+    {
       "kind": "narration",
       "text": "凌晨沒有答。"
     },

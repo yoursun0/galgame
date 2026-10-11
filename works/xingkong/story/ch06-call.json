@@ -136,6 +136,25 @@
       "expr": "01-shrug"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "suting",
+      "expr": "02-sigh",
+      "position": "near"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "02-hips",
+      "position": "far"
+    },
+    {
       "kind": "narration",
       "text": "他打的是給素婷的。電話那邊芷君還在等。"
     },

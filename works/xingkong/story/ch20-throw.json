@@ -87,6 +87,25 @@
       "expr": "05-fire"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "05-tearsmile",
+      "position": "near"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "jialun",
+      "expr": "01-murmur",
+      "position": "far"
+    },
+    {
       "kind": "narration",
       "text": "石子打中了。牠停了一停。他又連丟三塊。家綸折返回來，也在撿石子。芷君才脫得開，跑到他身旁。素婷已經往度假屋去。"
     },

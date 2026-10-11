@@ -73,6 +73,18 @@
       "action": "hide"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "05-fire",
+      "position": "near"
+    },
+    {
       "kind": "narration",
       "text": "凌晨沒有往右邊走。"
     },

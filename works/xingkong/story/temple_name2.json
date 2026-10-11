@@ -65,7 +65,7 @@
       "kind": "actor",
       "action": "show",
       "id": "zhijun",
-      "expr": "05-tearsmile",
+      "expr": "02-hips",
       "position": "near"
     },
     {
@@ -76,17 +76,41 @@
       "kind": "dialogue",
       "speaker": "zhijun",
       "text": "黎芷君。中文系。",
-      "expr": "05-tearsmile"
+      "expr": "02-hips"
     },
     {
       "kind": "dialogue",
       "speaker": "zhijun",
       "text": "合看一本團刊而已，倒不必記到畢業。",
-      "expr": "05-tearsmile"
+      "expr": "02-hips"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "qishan",
+      "expr": "03-angry",
+      "position": "near"
     },
     {
       "kind": "narration",
       "text": "綺珊嘖了一聲，居然沒有再加碼。"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "suting",
+      "expr": "03-worry",
+      "position": "near"
     },
     {
       "kind": "narration",

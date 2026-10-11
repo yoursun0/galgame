@@ -87,6 +87,18 @@
       "text": "電話那頭靜了一靜。他沒有再逼。"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "01-laugh",
+      "position": "near"
+    },
+    {
       "kind": "narration",
       "text": "芷君看著他。咖啡涼了。"
     },
