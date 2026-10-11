@@ -4,7 +4,6 @@ import type { Theme } from "./theme.ts";
 export type StageHandlers = {
   onAdvance: () => void;
   onChoose: (index: number) => void;
-  onDismissCg: () => void;
   onTypingComplete?: () => void;
 };
 
@@ -22,7 +21,8 @@ type ActorBox = { heightPercent: number; bottomPercent: number };
 
 /**
  * DOM and CSS only. Decisions stay in reduce.
- * Full-page CG is a view overlay: a click hides it without advancing.
+ * Narrative CG stays until the script hides it or the CG asset changes;
+ * a click advances the line the same way the rest of the stage does.
  */
 export function mountStage(
   parent: HTMLElement,
@@ -144,8 +144,6 @@ export function mountStage(
   let shown = 0;
   let timer = 0;
   let epoch = 0;
-  let dismissedCg: string | null = null;
-  let latest: PlayState | null = null;
 
   const typing = () => shown < fullText.length;
 
@@ -211,10 +209,7 @@ export function mountStage(
 
   cg.addEventListener("click", (event) => {
     event.stopPropagation();
-    if (!latest?.cg) return;
-    dismissedCg = latest.cg;
-    handlers.onDismissCg();
-    render(latest);
+    handlers.onAdvance();
   });
 
   const advanceFrom = (event: MouseEvent) => {
@@ -256,9 +251,6 @@ export function mountStage(
   };
 
   const render = (state: PlayState) => {
-    latest = state;
-    if (dismissedCg && state.cg !== dismissedCg) dismissedCg = null;
-
     const bgUrl = urlOf(state.background);
     if (bgUrl) {
       bg.src = bgUrl;
@@ -291,7 +283,7 @@ export function mountStage(
     place(near, theme.actors.near, true);
     place(far, theme.actors.far, false);
 
-    const showCg = Boolean(state.cg) && !state.ending && dismissedCg !== state.cg;
+    const showCg = Boolean(state.cg) && !state.ending;
     cg.hidden = !showCg;
     if (showCg && state.cg) {
       cgImg.src = urlOf(state.cg);

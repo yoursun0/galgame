@@ -5,6 +5,12 @@ import {
   normalizeBase,
   withBase,
 } from "../src/offline.ts";
+import {
+  defaultShellCacheName,
+  resolveBuildId,
+  resolveCacheName,
+  swSource,
+} from "../src/pwa-plugin.ts";
 
 describe("offline helpers", () => {
   test("normalizeBase keeps root and adds trailing slash", () => {
@@ -35,5 +41,29 @@ describe("offline helpers", () => {
   test("offlineReady flag", () => {
     expect(isWorkOfflineReady({ offlineReady: true })).toBe(true);
     expect(isWorkOfflineReady({})).toBe(false);
+  });
+});
+
+describe("PWA cache name and generated SW", () => {
+  test("default cache name is galgame-shell-${buildId}", () => {
+    expect(defaultShellCacheName("abc1234")).toBe("galgame-shell-abc1234");
+    const id = resolveBuildId();
+    expect(id.length).toBeGreaterThan(0);
+    expect(resolveCacheName()).toBe(`galgame-shell-${id}`);
+    expect(resolveCacheName()).not.toBe("galgame-shell-v1");
+  });
+
+  test("optional cacheName override is kept", () => {
+    expect(resolveCacheName("galgame-shell-test")).toBe("galgame-shell-test");
+  });
+
+  test("generated SW is network-first for navigate and handles SKIP_WAITING", () => {
+    const src = swSource("galgame-shell-deadbee", ["/index.html"], "/");
+    expect(src).toContain('const CACHE = "galgame-shell-deadbee"');
+    expect(src).toContain('req.mode === "navigate"');
+    expect(src).toContain('path.endsWith("index.html")');
+    expect(src).toContain('event.data.type === "SKIP_WAITING"');
+    expect(src).toContain("self.skipWaiting()");
+    expect(src).toContain("self.clients.claim()");
   });
 });

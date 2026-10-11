@@ -167,9 +167,6 @@ const audio = new AudioMixer();
 const stage = mountStage(stageHost, theme, work, assets, urls, {
   onAdvance: () => requestAdvance(),
   onChoose: (index) => requestChoose(index),
-  onDismissCg: () => {
-    /* stage hides the overlay; the line underneath stays */
-  },
   onTypingComplete: () => scheduleAuto(),
 });
 
