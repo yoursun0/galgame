@@ -140,6 +140,18 @@
       "expr": "04-tears"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "04-cold",
+      "position": "near"
+    },
+    {
       "kind": "narration",
       "text": "凌晨把外套脫下來。"
     },

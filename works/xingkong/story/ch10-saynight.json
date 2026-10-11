@@ -73,6 +73,18 @@
       "action": "hide"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "qishan",
+      "expr": "01-grin",
+      "position": "near"
+    },
+    {
       "kind": "narration",
       "text": "綺珊的聲音從海上那頭過來。"
     },

@@ -1,5 +1,9 @@
 # Release Notes
 
+## v1.12 2026-10-11 11:00:39
+
+- 文案／演出：#61 圖文不符——HIGH 12 場旁白多人錯立繪、MED 39 條主語與立繪錯位；`temple_name2` 芷君 `05-tearsmile`→`02-hips`（Helic）。
+
 ## v1.11 2026-10-11 10:59:56
 
 - Docs：重寫 `AGENTS.md`（角色、RELEASE_NOTES **日期＋時間**、dialogue＋expr、分支衛生、UAT 慢睇、SoT＝story JSON）；更新過時 `README.md`。

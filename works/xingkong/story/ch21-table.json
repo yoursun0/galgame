@@ -87,6 +87,18 @@
       "expr": "04-cold"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "02-hips",
+      "position": "near"
+    },
+    {
       "kind": "narration",
       "text": "芷君手裡玩著橡筋星。"
     },

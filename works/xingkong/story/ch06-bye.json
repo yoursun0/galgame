@@ -73,6 +73,18 @@
       "action": "hide"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "suting",
+      "expr": "02-sigh",
+      "position": "near"
+    },
+    {
       "kind": "narration",
       "text": "素婷的名字變成離線。那句「明天見」送不出去。"
     },

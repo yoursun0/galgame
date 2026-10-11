@@ -73,6 +73,18 @@
       "action": "hide"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "02-hips",
+      "position": "near"
+    },
+    {
       "kind": "narration",
       "text": "芷君站起來，往收銀處走。"
     },

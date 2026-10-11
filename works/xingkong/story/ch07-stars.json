@@ -106,6 +106,18 @@
       "expr": "02-hips"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
+    },
+    {
       "kind": "narration",
       "text": "凌晨在桌子底下掏。"
     },

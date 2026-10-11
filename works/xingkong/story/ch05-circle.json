@@ -73,6 +73,18 @@
       "action": "hide"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "qishan",
+      "expr": "05-wink",
+      "position": "near"
+    },
+    {
       "kind": "narration",
       "text": "綺珊派牌。"
     },
@@ -88,6 +100,25 @@
       "expr": "05-wink"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "05-fire",
+      "position": "near"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "01-laugh",
+      "position": "far"
+    },
+    {
       "kind": "narration",
       "text": "凌晨握住寶方的手，又牽起芷君的手。後面有人慘叫。"
     },
@@ -101,6 +132,18 @@
       "speaker": "ajun",
       "text": "啊！我死了！誰殺我呀！",
       "expr": "01-cold"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "ajun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "01-laugh",
+      "position": "near"
     },
     {
       "kind": "narration",

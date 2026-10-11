@@ -84,6 +84,18 @@
       "expr": "04-tears"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
+    },
+    {
       "kind": "narration",
       "text": "凌晨對著電話應了一聲。"
     },

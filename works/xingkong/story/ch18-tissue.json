@@ -73,6 +73,25 @@
       "action": "hide"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "05-tearsmile",
+      "position": "far"
+    },
+    {
       "kind": "narration",
       "text": "凌晨從口袋裡掏出紙巾遞過去。"
     },

@@ -79,6 +79,18 @@
       "expr": "04-loud"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "05-fire",
+      "position": "near"
+    },
+    {
       "kind": "narration",
       "text": "凌晨把團刊往她手裡送。"
     },

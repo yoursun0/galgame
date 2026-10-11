@@ -73,6 +73,18 @@
       "action": "hide"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "suting"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "04-cold",
+      "position": "near"
+    },
+    {
       "kind": "narration",
       "text": "凌晨沒有回答為甚麼。"
     },

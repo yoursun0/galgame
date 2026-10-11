@@ -90,6 +90,25 @@
       "expr": "04-puff"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "suting",
+      "expr": "03-worry",
+      "position": "far"
+    },
+    {
       "kind": "narration",
       "text": "凌晨向素婷他們揮電筒，叫他們先回營。"
     },

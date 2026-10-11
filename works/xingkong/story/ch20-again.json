@@ -73,6 +73,18 @@
       "action": "hide"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "05-fire",
+      "position": "near"
+    },
+    {
       "kind": "narration",
       "text": "凌晨按他那個姿勢又丟了一次。浮標動了一下。沒有發出那一聲「噹」。"
     },

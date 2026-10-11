@@ -106,6 +106,25 @@
       "expr": "03-glare"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "04-cold",
+      "position": "near"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "suting",
+      "expr": "03-worry",
+      "position": "far"
+    },
+    {
       "kind": "narration",
       "text": "凌晨打給素婷：怎麼不在中大？"
     },

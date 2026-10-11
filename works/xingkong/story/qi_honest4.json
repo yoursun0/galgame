@@ -105,6 +105,18 @@
       "expr": "04-cold"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "qishan",
+      "expr": "05-wink",
+      "position": "near"
+    },
+    {
       "kind": "narration",
       "text": "綺珊回頭看了他一眼。"
     },
