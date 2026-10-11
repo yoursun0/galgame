@@ -75,7 +75,7 @@ function run(work: Work, state: PlayState): PlayState {
     if (!instruction) return current;
 
     if (isBlocking(instruction)) {
-      return applyBlocking(current, instruction);
+      return applyBlocking(work, current, instruction);
     }
     current = applyImmediate(current, instruction);
   }
@@ -93,7 +93,19 @@ function isBlocking(instruction: Instruction): boolean {
   );
 }
 
-function applyBlocking(state: PlayState, instruction: Instruction): PlayState {
+/** Puppy: speakers with empty/missing sprites are voice-only (phone VO); no auto standee. */
+function isVoiceOnly(work: Work, speaker: string): boolean {
+  const character = work.manifest.characters.find((item) => item.id === speaker);
+  if (!character) return true;
+  const sprites = character.sprites;
+  return !sprites || Object.keys(sprites).length === 0;
+}
+
+function applyBlocking(
+  work: Work,
+  state: PlayState,
+  instruction: Instruction,
+): PlayState {
   const cleared: PlayState = {
     ...state,
     line: null,
@@ -107,15 +119,30 @@ function applyBlocking(state: PlayState, instruction: Instruction): PlayState {
         ...cleared,
         line: { kind: "narration", text: instruction.text },
       };
-    case "dialogue":
+    case "dialogue": {
+      // Puppy: auto show/update speaker standee from dialogue.expr
+      let actors = state.actors;
+      const expr = instruction.expr;
+      if (expr && !isVoiceOnly(work, instruction.speaker)) {
+        const existing = actors.find((actor) => actor.id === instruction.speaker);
+        actors = applyActor(actors, {
+          kind: "actor",
+          action: existing ? "update" : "show",
+          id: instruction.speaker,
+          expr,
+          position: existing ? undefined : "near",
+        });
+      }
       return {
         ...cleared,
+        actors,
         line: {
           kind: "dialogue",
           speaker: instruction.speaker,
           text: instruction.text,
         },
       };
+    }
     case "choice":
       return {
         ...cleared,

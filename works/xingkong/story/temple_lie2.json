@@ -78,16 +78,10 @@
       "id": "suting"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "qishan",
-      "expr": "03-angry",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "qishan",
-      "text": "車！你不如說你們指腹為婚，緣訂七世吧！"
+      "text": "車！你不如說你們指腹為婚，緣訂七世吧！",
+      "expr": "03-angry"
     },
     {
       "kind": "narration",
@@ -99,16 +93,10 @@
       "id": "qishan"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "jialun",
-      "expr": "02-happy",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "jialun",
-      "text": "喂，在說甚麼緣訂七世了？"
+      "text": "喂，在說甚麼緣訂七世了？",
+      "expr": "02-happy"
     },
     {
       "kind": "narration",

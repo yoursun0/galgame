@@ -78,16 +78,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "03-glare",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "喂，該你了。"
+      "text": "喂，該你了。",
+      "expr": "03-glare"
     },
     {
       "kind": "actor",
@@ -95,16 +89,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "04-cold",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "該我了？"
+      "text": "該我了？",
+      "expr": "04-cold"
     },
     {
       "kind": "actor",
@@ -112,16 +100,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "05-tearsmile",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "你跟你的素婷現在怎麼了？你快快一五一十道來，不然小明也不會放過你。"
+      "text": "你跟你的素婷現在怎麼了？你快快一五一十道來，不然小明也不會放過你。",
+      "expr": "05-tearsmile"
     },
     {
       "kind": "narration",

@@ -86,16 +86,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "ajun",
-      "expr": "02-laugh",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "ajun",
-      "text": "凌晨，這次稍微有點超支。"
+      "text": "凌晨，這次稍微有點超支。",
+      "expr": "02-laugh"
     },
     {
       "kind": "actor",
@@ -103,16 +97,10 @@
       "id": "ajun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "04-cold",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "不好意思。食物、螢光星星和天文光碟，花多了。"
+      "text": "不好意思。食物、螢光星星和天文光碟，花多了。",
+      "expr": "04-cold"
     },
     {
       "kind": "actor",
@@ -120,16 +108,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "ajun",
-      "expr": "03-nosy",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "ajun",
-      "text": "你的預算沒有列天文光碟。"
+      "text": "你的預算沒有列天文光碟。",
+      "expr": "03-nosy"
     },
     {
       "kind": "narration",
@@ -141,16 +123,10 @@
       "id": "ajun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "05-fire",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "這是我們先前安排失誤，忘記了個人問答的獎品。家綸臨時提議燒光碟。學會在這件事上賠了錢，不好意思。"
+      "text": "這是我們先前安排失誤，忘記了個人問答的獎品。家綸臨時提議燒光碟。學會在這件事上賠了錢，不好意思。",
+      "expr": "05-fire"
     },
     {
       "kind": "actor",
@@ -158,16 +134,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "ajun",
-      "expr": "04-gasp",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "ajun",
-      "text": "幾張光碟也花不了多少。財政沒問題了。散會吧。"
+      "text": "幾張光碟也花不了多少。財政沒問題了。散會吧。",
+      "expr": "04-gasp"
     },
     {
       "kind": "narration",
@@ -179,16 +149,10 @@
       "id": "ajun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "jialun",
-      "expr": "03-stammer",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "jialun",
-      "text": "那些光碟的錢我自己付就可以，怎麼你又去跟學會報？"
+      "text": "那些光碟的錢我自己付就可以，怎麼你又去跟學會報？",
+      "expr": "03-stammer"
     },
     {
       "kind": "actor",
@@ -196,16 +160,10 @@
       "id": "jialun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "以學會名義派的禮物，用學會的錢。中天的錢還夠，多一點零錢不用不好意思。"
+      "text": "以學會名義派的禮物，用學會的錢。中天的錢還夠，多一點零錢不用不好意思。",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -213,16 +171,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "jialun",
-      "expr": "04-sad",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "jialun",
-      "text": "可是那些光碟是我自把自為弄的。"
+      "text": "可是那些光碟是我自把自為弄的。",
+      "expr": "04-sad"
     },
     {
       "kind": "actor",
@@ -230,16 +182,10 @@
       "id": "jialun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "你知道自己自把自為也就好了。下次要堅持，先跟我們商量。一場拍檔，犯不著你瞞我、我瞞你。"
+      "text": "你知道自己自把自為也就好了。下次要堅持，先跟我們商量。一場拍檔，犯不著你瞞我、我瞞你。",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -247,16 +193,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "jialun",
-      "expr": "05-nod",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "jialun",
-      "text": "對不起。請你原諒。"
+      "text": "對不起。請你原諒。",
+      "expr": "05-nod"
     },
     {
       "kind": "actor",
@@ -264,16 +204,10 @@
       "id": "jialun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "02-blush",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "哈哈，幹嘛說對不起？一場兄弟，有甚麼原諒不原諒的？我之前不是誇過你嗎？這種當機立斷，才像個大丈夫。黑加侖子長大了。"
+      "text": "哈哈，幹嘛說對不起？一場兄弟，有甚麼原諒不原諒的？我之前不是誇過你嗎？這種當機立斷，才像個大丈夫。黑加侖子長大了。",
+      "expr": "02-blush"
     },
     {
       "kind": "narration",

@@ -86,16 +86,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "jialun",
-      "expr": "02-happy",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "jialun",
-      "text": "好了，我的介紹到此為止，請問大家有沒有問題？"
+      "text": "好了，我的介紹到此為止，請問大家有沒有問題？",
+      "expr": "02-happy"
     },
     {
       "kind": "narration",
@@ -111,16 +105,10 @@
       "id": "jialun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "dabi",
-      "expr": "01-hum",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "dabi",
-      "text": "怎麼了？一會兒不是還有你主打的問答嗎？"
+      "text": "怎麼了？一會兒不是還有你主打的問答嗎？",
+      "expr": "01-hum"
     },
     {
       "kind": "actor",
@@ -128,16 +116,10 @@
       "id": "dabi"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "04-cold",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "沒法了。將在外，君命有所不受。站在台上的人有著最高的決策權。"
+      "text": "沒法了。將在外，君命有所不受。站在台上的人有著最高的決策權。",
+      "expr": "04-cold"
     },
     {
       "kind": "actor",
@@ -145,16 +127,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "jialun",
-      "expr": "03-stammer",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "jialun",
-      "text": "答對了！這位同學真厲害！連怎麼找到北極星都記得清清楚楚！"
+      "text": "答對了！這位同學真厲害！連怎麼找到北極星都記得清清楚楚！",
+      "expr": "03-stammer"
     },
     {
       "kind": "narration",

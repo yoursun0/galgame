@@ -86,16 +86,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "05-tearsmile",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "嗨！凌晨，這麼巧啊！"
+      "text": "嗨！凌晨，這麼巧啊！",
+      "expr": "05-tearsmile"
     },
     {
       "kind": "actor",
@@ -103,16 +97,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "05-fire",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "黎芷君！我們還真有緣呀，吃下午茶嗎？"
+      "text": "黎芷君！我們還真有緣呀，吃下午茶嗎？",
+      "expr": "05-fire"
     },
     {
       "kind": "actor",
@@ -120,16 +108,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "04-puff",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "好呀，你一個人嗎？"
+      "text": "好呀，你一個人嗎？",
+      "expr": "04-puff"
     },
     {
       "kind": "actor",
@@ -137,16 +119,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "是呀。剛剛才考完大通，沒有熟朋友跟我一起修，所以一個人來。"
+      "text": "是呀。剛剛才考完大通，沒有熟朋友跟我一起修，所以一個人來。",
+      "expr": "01-shrug"
     },
     {
       "kind": "narration",
@@ -158,16 +134,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "01-laugh",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "還是坐外面吧，外面空氣比較通爽。"
+      "text": "還是坐外面吧，外面空氣比較通爽。",
+      "expr": "01-laugh"
     },
     {
       "kind": "narration",
@@ -179,16 +149,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "你看，旁邊枱面上就有一隻在吃剩飯。"
+      "text": "你看，旁邊枱面上就有一隻在吃剩飯。",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -196,21 +160,16 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "02-hips",
-      "position": "near"
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "哈哈！好得意啊！",
+      "expr": "02-hips"
     },
     {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "哈哈！好得意啊！"
-    },
-    {
-      "kind": "dialogue",
-      "speaker": "zhijun",
-      "text": "小強又不會咬人，又沒過來跟我們搶飯。你這個怕狗怕得要死的人都不怕蟑螂，難道我會被一隻小強嚇到？"
+      "text": "小強又不會咬人，又沒過來跟我們搶飯。你這個怕狗怕得要死的人都不怕蟑螂，難道我會被一隻小強嚇到？",
+      "expr": "02-hips"
     },
     {
       "kind": "actor",
@@ -218,16 +177,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "02-blush",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "真衰，老是翻舊帳。算了，傷心事就別提了。"
+      "text": "真衰，老是翻舊帳。算了，傷心事就別提了。",
+      "expr": "02-blush"
     },
     {
       "kind": "jump",

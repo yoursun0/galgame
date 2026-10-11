@@ -86,16 +86,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "01-laugh",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "喂，你遲到了。"
+      "text": "喂，你遲到了。",
+      "expr": "01-laugh"
     },
     {
       "kind": "actor",
@@ -103,16 +97,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "嗄，嗄，我知道。"
+      "text": "嗄，嗄，我知道。",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -120,16 +108,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "02-hips",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "知道的話，那應該怎辦？"
+      "text": "知道的話，那應該怎辦？",
+      "expr": "02-hips"
     },
     {
       "kind": "actor",
@@ -137,16 +119,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "02-blush",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "嗄，對不起。可不可以，原諒我？"
+      "text": "嗄，對不起。可不可以，原諒我？",
+      "expr": "02-blush"
     },
     {
       "kind": "actor",
@@ -154,16 +130,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "03-glare",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "不，可，以。"
+      "text": "不，可，以。",
+      "expr": "03-glare"
     },
     {
       "kind": "actor",
@@ -171,16 +141,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "04-cold",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "不對啊不對啊。你應該說「當然可以啦！」，那是你的經典對白啊！"
+      "text": "不對啊不對啊。你應該說「當然可以啦！」，那是你的經典對白啊！",
+      "expr": "04-cold"
     },
     {
       "kind": "actor",
@@ -188,16 +152,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "05-tearsmile",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "說不可以，就不可以。"
+      "text": "說不可以，就不可以。",
+      "expr": "05-tearsmile"
     },
     {
       "kind": "narration",

@@ -82,16 +82,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "03-glare",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "甚麼！那傢伙明明已經有女朋友了，難道仍然未能放手嗎？"
+      "text": "甚麼！那傢伙明明已經有女朋友了，難道仍然未能放手嗎？",
+      "expr": "03-glare"
     },
     {
       "kind": "actor",
@@ -99,16 +93,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "05-fire",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "我沒有證據，不敢說死。可是那個眼神不是裝的。綺珊性子衝動。我沒有告訴她，也沒有告訴素婷。"
+      "text": "我沒有證據，不敢說死。可是那個眼神不是裝的。綺珊性子衝動。我沒有告訴她，也沒有告訴素婷。",
+      "expr": "05-fire"
     },
     {
       "kind": "actor",
@@ -116,16 +104,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "05-tearsmile",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "要是素婷並不知道你喜歡她，你有甚麼必要抵毀家綸？"
+      "text": "要是素婷並不知道你喜歡她，你有甚麼必要抵毀家綸？",
+      "expr": "05-tearsmile"
     },
     {
       "kind": "actor",
@@ -133,16 +115,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "將來如果有機會……那就不好辦了。"
+      "text": "將來如果有機會……那就不好辦了。",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -150,21 +126,16 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "04-puff",
-      "position": "near"
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "別做夢了。現在不是說這種事的時候。",
+      "expr": "04-puff"
     },
     {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "別做夢了。現在不是說這種事的時候。"
-    },
-    {
-      "kind": "dialogue",
-      "speaker": "zhijun",
-      "text": "要是他不是真心喜歡素婷，是一心喜歡綺珊，卻跟素婷在一起，兩個人都可憐。我替你留意一下。現在他在對面那個爐，開始跟莊員聊了。你可以出來看看。"
+      "text": "要是他不是真心喜歡素婷，是一心喜歡綺珊，卻跟素婷在一起，兩個人都可憐。我替你留意一下。現在他在對面那個爐，開始跟莊員聊了。你可以出來看看。",
+      "expr": "04-puff"
     },
     {
       "kind": "narration",
@@ -176,16 +147,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "喂！家綸，會長大人，在聊甚麼？"
+      "text": "喂！家綸，會長大人，在聊甚麼？",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -193,16 +158,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "jialun",
-      "expr": "05-nod",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "jialun",
-      "text": "沒有在聊甚麼。只是在討論今天晚上可以看到哪些星座。"
+      "text": "沒有在聊甚麼。只是在討論今天晚上可以看到哪些星座。",
+      "expr": "05-nod"
     },
     {
       "kind": "actor",
@@ -210,16 +169,10 @@
       "id": "jialun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "02-blush",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "今晚烏雲密佈，還討論看得到哪些星座？"
+      "text": "今晚烏雲密佈，還討論看得到哪些星座？",
+      "expr": "02-blush"
     },
     {
       "kind": "actor",
@@ -227,33 +180,21 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "jialun",
-      "expr": "01-murmur",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "jialun",
-      "text": "所以嘛，我們在討論本來可以看到甚麼。被雲蓋住，可惜。"
+      "text": "所以嘛，我們在討論本來可以看到甚麼。被雲蓋住，可惜。",
+      "expr": "01-murmur"
     },
     {
       "kind": "actor",
       "action": "hide",
       "id": "jialun"
-    },
-    {
-      "kind": "actor",
-      "action": "show",
-      "id": "huizhang",
-      "expr": "03-sharp",
-      "position": "near"
     },
     {
       "kind": "dialogue",
       "speaker": "huizhang",
-      "text": "今天晚上觀不成星了。吃完飯，你跟我和大鼻到石灘，把望遠鏡收回來，可好？"
+      "text": "今天晚上觀不成星了。吃完飯，你跟我和大鼻到石灘，把望遠鏡收回來，可好？",
+      "expr": "03-sharp"
     },
     {
       "kind": "actor",
@@ -261,16 +202,10 @@
       "id": "huizhang"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "04-cold",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "家綸，我們一起去吧？"
+      "text": "家綸，我們一起去吧？",
+      "expr": "04-cold"
     },
     {
       "kind": "actor",
@@ -278,16 +213,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "jialun",
-      "expr": "02-happy",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "jialun",
-      "text": "我答應了素婷，一會兒陪她洗碗，不能幫你們。不好意思。"
+      "text": "我答應了素婷，一會兒陪她洗碗，不能幫你們。不好意思。",
+      "expr": "02-happy"
     },
     {
       "kind": "actor",
@@ -295,16 +224,10 @@
       "id": "jialun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "05-fire",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "那麼會長大人，你吃飽再叫我。末將隨時效勞。"
+      "text": "那麼會長大人，你吃飽再叫我。末將隨時效勞。",
+      "expr": "05-fire"
     },
     {
       "kind": "choice",

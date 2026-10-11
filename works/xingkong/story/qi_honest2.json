@@ -75,12 +75,14 @@
     {
       "kind": "dialogue",
       "speaker": "qishan",
-      "text": "……你今天居然沒有裝酷。"
+      "text": "……你今天居然沒有裝酷。",
+      "expr": "05-wink"
     },
     {
       "kind": "dialogue",
       "speaker": "qishan",
-      "text": "太陽這麼大，把你曬傻了？"
+      "text": "太陽這麼大，把你曬傻了？",
+      "expr": "05-wink"
     },
     {
       "kind": "jump",

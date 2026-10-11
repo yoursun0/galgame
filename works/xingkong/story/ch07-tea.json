@@ -82,16 +82,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "01-laugh",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "好了，星星的事也就罷了。現在看你又怎麼無中生有地，給我變出個甚麼火辣辣鐵板燒下午茶餐？"
+      "text": "好了，星星的事也就罷了。現在看你又怎麼無中生有地，給我變出個甚麼火辣辣鐵板燒下午茶餐？",
+      "expr": "01-laugh"
     },
     {
       "kind": "actor",
@@ -99,16 +93,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "04-cold",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "這個更容易辦了啦。不過可別後悔，這個火辣辣鐵板餐可會吃得你全身發燙呢！"
+      "text": "這個更容易辦了啦。不過可別後悔，這個火辣辣鐵板餐可會吃得你全身發燙呢！",
+      "expr": "04-cold"
     },
     {
       "kind": "narration",
@@ -120,16 +108,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "02-hips",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "難道我會怕你麼？"
+      "text": "難道我會怕你麼？",
+      "expr": "02-hips"
     },
     {
       "kind": "narration",

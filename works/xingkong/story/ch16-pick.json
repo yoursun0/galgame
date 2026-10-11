@@ -75,7 +75,8 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "Dare。"
+      "text": "Dare。",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -83,33 +84,21 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "qishan",
-      "expr": "04-loud",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "qishan",
-      "text": "為甚麼不是 Truth？有甚麼不能說的秘密嗎？"
+      "text": "為甚麼不是 Truth？有甚麼不能說的秘密嗎？",
+      "expr": "04-loud"
     },
     {
       "kind": "actor",
       "action": "hide",
       "id": "qishan"
-    },
-    {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
     },
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "沒甚麼。大家都在玩 Truth，沒人玩 Dare，會沒新意。"
+      "text": "沒甚麼。大家都在玩 Truth，沒人玩 Dare，會沒新意。",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -117,16 +106,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "qishan",
-      "expr": "05-wink",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "qishan",
-      "text": "真是有夠爛的藉口。"
+      "text": "真是有夠爛的藉口。",
+      "expr": "05-wink"
     },
     {
       "kind": "actor",
@@ -134,16 +117,10 @@
       "id": "qishan"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "suting",
-      "expr": "04-tears",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "suting",
-      "text": "大家都一起玩，不用管新意不新意。你選 Truth 也可以。"
+      "text": "大家都一起玩，不用管新意不新意。你選 Truth 也可以。",
+      "expr": "04-tears"
     },
     {
       "kind": "actor",
@@ -151,16 +128,10 @@
       "id": "suting"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "jialun",
-      "expr": "01-murmur",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "jialun",
-      "text": "凌晨，你真的不想回答嗎？我有一條問題，很想很想問你。"
+      "text": "凌晨，你真的不想回答嗎？我有一條問題，很想很想問你。",
+      "expr": "01-murmur"
     },
     {
       "kind": "actor",
@@ -168,16 +139,10 @@
       "id": "jialun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "02-blush",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "甚麼問題？"
+      "text": "甚麼問題？",
+      "expr": "02-blush"
     },
     {
       "kind": "narration",
@@ -186,7 +151,8 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "有多想問？"
+      "text": "有多想問？",
+      "expr": "02-blush"
     },
     {
       "kind": "actor",
@@ -194,16 +160,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "jialun",
-      "expr": "02-happy",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "jialun",
-      "text": "很想。"
+      "text": "很想。",
+      "expr": "02-happy"
     },
     {
       "kind": "actor",
@@ -211,16 +171,10 @@
       "id": "jialun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "04-cold",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "你問吧。"
+      "text": "你問吧。",
+      "expr": "04-cold"
     },
     {
       "kind": "jump",

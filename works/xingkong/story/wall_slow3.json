@@ -78,21 +78,16 @@
       "id": "suting"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "04-cold",
-      "position": "near"
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "是呀。她喜歡認識新朋友。",
+      "expr": "04-cold"
     },
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "是呀。她喜歡認識新朋友。"
-    },
-    {
-      "kind": "dialogue",
-      "speaker": "lingchen",
-      "text": "都老同學了，跟我這悶蛋一起有甚麼好玩的。"
+      "text": "都老同學了，跟我這悶蛋一起有甚麼好玩的。",
+      "expr": "04-cold"
     },
     {
       "kind": "actor",
@@ -100,16 +95,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "suting",
-      "expr": "05-spring",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "suting",
-      "text": "那你也應該去認識一下新朋友啊。"
+      "text": "那你也應該去認識一下新朋友啊。",
+      "expr": "05-spring"
     },
     {
       "kind": "actor",
@@ -117,16 +106,10 @@
       "id": "suting"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "05-fire",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "你曉得話別人，不曉得話自己。"
+      "text": "你曉得話別人，不曉得話自己。",
+      "expr": "05-fire"
     },
     {
       "kind": "jump",

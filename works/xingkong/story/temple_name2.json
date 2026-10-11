@@ -75,12 +75,14 @@
     {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "黎芷君。中文系。"
+      "text": "黎芷君。中文系。",
+      "expr": "05-tearsmile"
     },
     {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "合看一本團刊而已，倒不必記到畢業。"
+      "text": "合看一本團刊而已，倒不必記到畢業。",
+      "expr": "05-tearsmile"
     },
     {
       "kind": "narration",

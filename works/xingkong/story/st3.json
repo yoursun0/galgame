@@ -78,16 +78,10 @@
       "id": "suting"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "素婷，陽光刺眼代表天氣好。我們靠天氣吃飯的，晴天好過陰天。"
+      "text": "素婷，陽光刺眼代表天氣好。我們靠天氣吃飯的，晴天好過陰天。",
+      "expr": "01-shrug"
     },
     {
       "kind": "jump",

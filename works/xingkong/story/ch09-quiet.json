@@ -75,7 +75,8 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "甚麼？就是因為你媽媽發現了他寫給你的情信，堅決拒絕你們交往，那麼你們就這樣分開了？"
+      "text": "甚麼？就是因為你媽媽發現了他寫給你的情信，堅決拒絕你們交往，那麼你們就這樣分開了？",
+      "expr": "04-cold"
     },
     {
       "kind": "actor",
@@ -83,16 +84,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "03-glare",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "母命難違啊。那時大家都得應付會考。中學生的愛情是很脆弱的。"
+      "text": "母命難違啊。那時大家都得應付會考。中學生的愛情是很脆弱的。",
+      "expr": "03-glare"
     },
     {
       "kind": "actor",
@@ -100,16 +95,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "05-fire",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "那之後呢？會考之後怎麼了？"
+      "text": "那之後呢？會考之後怎麼了？",
+      "expr": "05-fire"
     },
     {
       "kind": "actor",
@@ -117,16 +106,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "05-tearsmile",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "我考得尚且可以，繼續在原校升讀。但他可慘了。成績一直一落千丈，升不回原校。現在已經很久沒聯絡了。"
+      "text": "我考得尚且可以，繼續在原校升讀。但他可慘了。成績一直一落千丈，升不回原校。現在已經很久沒聯絡了。",
+      "expr": "05-tearsmile"
     },
     {
       "kind": "actor",
@@ -134,16 +117,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "那麼，你就這樣讓這段感情走了嗎？"
+      "text": "那麼，你就這樣讓這段感情走了嗎？",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -151,16 +128,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "04-puff",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "沒有辦法啊。是他自己不爭氣，不思振作。何況，他一直也沒有主動聯絡我。"
+      "text": "沒有辦法啊。是他自己不爭氣，不思振作。何況，他一直也沒有主動聯絡我。",
+      "expr": "04-puff"
     },
     {
       "kind": "narration",

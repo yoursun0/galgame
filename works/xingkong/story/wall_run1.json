@@ -78,16 +78,10 @@
       "id": "suting"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "我去看看那段有多陡。"
+      "text": "我去看看那段有多陡。",
+      "expr": "01-shrug"
     },
     {
       "kind": "narration",

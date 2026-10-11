@@ -75,7 +75,8 @@
     {
       "kind": "dialogue",
       "speaker": "suting",
-      "text": "他們笑夠了就會來找你。兩件外套都給我，你自己在發抖。"
+      "text": "他們笑夠了就會來找你。兩件外套都給我，你自己在發抖。",
+      "expr": "03-worry"
     },
     {
       "kind": "jump",

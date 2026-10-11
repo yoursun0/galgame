@@ -78,16 +78,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "05-tearsmile",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "雖然我很欣賞你的心意，但是這樣，是不行的。"
+      "text": "雖然我很欣賞你的心意，但是這樣，是不行的。",
+      "expr": "05-tearsmile"
     },
     {
       "kind": "actor",
@@ -95,16 +89,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "04-cold",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "追不到女孩子又怎麼樣？我一心為她好，難道有錯嗎？"
+      "text": "追不到女孩子又怎麼樣？我一心為她好，難道有錯嗎？",
+      "expr": "04-cold"
     },
     {
       "kind": "actor",
@@ -112,16 +100,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "04-puff",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "沒有錯。只是你這樣得不到好結果。"
+      "text": "沒有錯。只是你這樣得不到好結果。",
+      "expr": "04-puff"
     },
     {
       "kind": "actor",
@@ -129,16 +111,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "05-fire",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "她好，她找到屬於她的幸福，我還有甚麼要在乎？"
+      "text": "她好，她找到屬於她的幸福，我還有甚麼要在乎？",
+      "expr": "05-fire"
     },
     {
       "kind": "actor",
@@ -146,16 +122,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "01-laugh",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "你真的不在乎？"
+      "text": "你真的不在乎？",
+      "expr": "01-laugh"
     },
     {
       "kind": "actor",
@@ -163,16 +133,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "不在乎。"
+      "text": "不在乎。",
+      "expr": "01-shrug"
     },
     {
       "kind": "narration",
@@ -184,16 +148,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "02-hips",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "你真傻。人家已經有自己喜歡的人。家綸跟素婷在一起，即使他心裡想著別人，你作為外人管得了嗎？凌晨，放手吧。"
+      "text": "你真傻。人家已經有自己喜歡的人。家綸跟素婷在一起，即使他心裡想著別人，你作為外人管得了嗎？凌晨，放手吧。",
+      "expr": "02-hips"
     },
     {
       "kind": "narration",
@@ -205,16 +163,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "可惜今天晚上一顆星星也沒有。"
+      "text": "可惜今天晚上一顆星星也沒有。",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -222,16 +174,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "03-glare",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "不是沒有。星座還在，只是被雲遮住。換個天氣，換個心境，就看得見。你看，統統都是你愛的星星。"
+      "text": "不是沒有。星座還在，只是被雲遮住。換個天氣，換個心境，就看得見。你看，統統都是你愛的星星。",
+      "expr": "03-glare"
     },
     {
       "kind": "narration",
@@ -243,16 +189,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "02-blush",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "是蜜蜂嗎？"
+      "text": "是蜜蜂嗎？",
+      "expr": "02-blush"
     },
     {
       "kind": "actor",
@@ -260,16 +200,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "05-tearsmile",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "你看那邊！"
+      "text": "你看那邊！",
+      "expr": "05-tearsmile"
     },
     {
       "kind": "narration",
@@ -281,16 +215,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "04-cold",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "螢火蟲！"
+      "text": "螢火蟲！",
+      "expr": "04-cold"
     },
     {
       "kind": "narration",
@@ -303,7 +231,8 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "對不起！"
+      "text": "對不起！",
+      "expr": "04-cold"
     },
     {
       "kind": "actor",
@@ -311,16 +240,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "04-puff",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "你沒事吧？"
+      "text": "你沒事吧？",
+      "expr": "04-puff"
     },
     {
       "kind": "narration",
@@ -332,16 +255,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "05-fire",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "哇！你看天空！螢火蟲都飛出來了！"
+      "text": "哇！你看天空！螢火蟲都飛出來了！",
+      "expr": "05-fire"
     },
     {
       "kind": "narration",
@@ -353,16 +270,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "01-laugh",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "希望凌晨早日忘記傷痛，努力振作，找到真正屬於他的幸福！"
+      "text": "希望凌晨早日忘記傷痛，努力振作，找到真正屬於他的幸福！",
+      "expr": "01-laugh"
     },
     {
       "kind": "actor",
@@ -370,16 +281,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "滿天的流星你還不趕緊許願？"
+      "text": "滿天的流星你還不趕緊許願？",
+      "expr": "01-shrug"
     },
     {
       "kind": "narration",
@@ -388,7 +293,8 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "芷君。"
+      "text": "芷君。",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -396,16 +302,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "02-hips",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "嗯？"
+      "text": "嗯？",
+      "expr": "02-hips"
     },
     {
       "kind": "actor",
@@ -413,16 +313,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "謝謝你。"
+      "text": "謝謝你。",
+      "expr": "01-shrug"
     },
     {
       "kind": "jump",

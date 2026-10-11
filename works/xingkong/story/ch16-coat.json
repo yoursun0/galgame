@@ -90,16 +90,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "suting",
-      "expr": "03-worry",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "suting",
-      "text": "這裡可以的了，凌晨你過去那邊幫忙 set 鏡吧。"
+      "text": "這裡可以的了，凌晨你過去那邊幫忙 set 鏡吧。",
+      "expr": "03-worry"
     },
     {
       "kind": "actor",
@@ -107,16 +101,10 @@
       "id": "suting"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "望遠鏡我已經幫忙架好了，會長在指導參加者。我來準備食物。"
+      "text": "望遠鏡我已經幫忙架好了，會長在指導參加者。我來準備食物。",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -124,16 +112,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "suting",
-      "expr": "05-spring",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "suting",
-      "text": "營帳呢？你不是負責架營帳的嗎？"
+      "text": "營帳呢？你不是負責架營帳的嗎？",
+      "expr": "05-spring"
     },
     {
       "kind": "actor",
@@ -141,16 +123,10 @@
       "id": "suting"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "02-blush",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "弄好了。你們去洗手間的時候，我跟大鼻架好了。"
+      "text": "弄好了。你們去洗手間的時候，我跟大鼻架好了。",
+      "expr": "02-blush"
     },
     {
       "kind": "actor",
@@ -158,16 +134,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "suting",
-      "expr": "04-tears",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "suting",
-      "text": "那麼參加者那些爐頭呢……乞嚏！"
+      "text": "那麼參加者那些爐頭呢……乞嚏！",
+      "expr": "04-tears"
     },
     {
       "kind": "narration",
@@ -179,16 +149,10 @@
       "id": "suting"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "04-cold",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "爐火我弄好了，等水滾就行。入黑了會涼。你還是衣衫單薄。Chief PIC 冷病了，今晚不好辦。這件你披上。"
+      "text": "爐火我弄好了，等水滾就行。入黑了會涼。你還是衣衫單薄。Chief PIC 冷病了，今晚不好辦。這件你披上。",
+      "expr": "04-cold"
     },
     {
       "kind": "actor",
@@ -196,16 +160,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "suting",
-      "expr": "01-smile",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "suting",
-      "text": "不……不用了。那你自己呢？"
+      "text": "不……不用了。那你自己呢？",
+      "expr": "01-smile"
     },
     {
       "kind": "actor",
@@ -213,16 +171,10 @@
       "id": "suting"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "05-fire",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "我待會到營帳拿。莊員不用這麼客氣。"
+      "text": "我待會到營帳拿。莊員不用這麼客氣。",
+      "expr": "05-fire"
     },
     {
       "kind": "actor",
@@ -230,16 +182,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "suting",
-      "expr": "02-sigh",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "suting",
-      "text": "你呀，你真是好人得太過份了吔。"
+      "text": "你呀，你真是好人得太過份了吔。",
+      "expr": "02-sigh"
     },
     {
       "kind": "actor",
@@ -247,16 +193,10 @@
       "id": "suting"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "哈哈，我自己也覺得自己很好人。"
+      "text": "哈哈，我自己也覺得自己很好人。",
+      "expr": "01-shrug"
     },
     {
       "kind": "narration",

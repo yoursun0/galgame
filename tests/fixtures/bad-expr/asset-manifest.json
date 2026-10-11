@@ -1,0 +1,10 @@
+[
+  {
+    "id": "spr-1",
+    "path": "assets/spr-1.png",
+    "type": "actor",
+    "approved": true,
+    "character": "hero",
+    "expr": "01-smile"
+  }
+]

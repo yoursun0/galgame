@@ -86,16 +86,10 @@
       "id": "suting"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "dabi",
-      "expr": "02-quilt",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "dabi",
-      "text": "終於把營紮起來了。這裡就是我們最後一役的藏身之所。"
+      "text": "終於把營紮起來了。這裡就是我們最後一役的藏身之所。",
+      "expr": "02-quilt"
     },
     {
       "kind": "actor",
@@ -103,16 +97,10 @@
       "id": "dabi"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "suting",
-      "expr": "01-smile",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "suting",
-      "text": "對呀，今日之後，不知還有沒有再度紮營的機會了。"
+      "text": "對呀，今日之後，不知還有沒有再度紮營的機會了。",
+      "expr": "01-smile"
     },
     {
       "kind": "actor",
@@ -120,16 +108,10 @@
       "id": "suting"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "ajun",
-      "expr": "02-laugh",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "ajun",
-      "text": "別想那麼多了，現在且一起去玩個不醉無歸吧！"
+      "text": "別想那麼多了，現在且一起去玩個不醉無歸吧！",
+      "expr": "02-laugh"
     },
     {
       "kind": "narration",
@@ -141,16 +123,10 @@
       "id": "ajun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "baofang",
-      "expr": "05-sorry",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "baofang",
-      "text": "好差勁啊，讓我來，我啛！"
+      "text": "好差勁啊，讓我來，我啛！",
+      "expr": "05-sorry"
     },
     {
       "kind": "narration",
@@ -162,16 +138,10 @@
       "id": "baofang"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "huizhang",
-      "expr": "01-calm",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "huizhang",
-      "text": "真的有這麼難嗎？"
+      "text": "真的有這麼難嗎？",
+      "expr": "01-calm"
     },
     {
       "kind": "narration",
@@ -183,16 +153,10 @@
       "id": "huizhang"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "dabi",
-      "expr": "03-wink",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "dabi",
-      "text": "寶方你可沒見識過。我們的會長投石的功夫，可說是投石界的火雲邪神。"
+      "text": "寶方你可沒見識過。我們的會長投石的功夫，可說是投石界的火雲邪神。",
+      "expr": "03-wink"
     },
     {
       "kind": "narration",
@@ -204,16 +168,10 @@
       "id": "dabi"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "huizhang",
-      "expr": "02-awe",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "huizhang",
-      "text": "天下武功，無堅不破，唯快不破！"
+      "text": "天下武功，無堅不破，唯快不破！",
+      "expr": "02-awe"
     },
     {
       "kind": "narration",
@@ -225,16 +183,10 @@
       "id": "huizhang"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "baofang",
-      "expr": "01-run",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "baofang",
-      "text": "嘩，你好厲害啊會長大人！你是怎麼辦到的？"
+      "text": "嘩，你好厲害啊會長大人！你是怎麼辦到的？",
+      "expr": "01-run"
     },
     {
       "kind": "actor",
@@ -242,16 +194,10 @@
       "id": "baofang"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "huizhang",
-      "expr": "03-sharp",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "huizhang",
-      "text": "一字記之曰心。只要用心，任何人都能投得到！"
+      "text": "一字記之曰心。只要用心，任何人都能投得到！",
+      "expr": "03-sharp"
     },
     {
       "kind": "narration",

@@ -82,16 +82,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "qishan",
-      "expr": "04-loud",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "qishan",
-      "text": "怎麼了？怎麼一臉火大，好像全世界都欠了你？"
+      "text": "怎麼了？怎麼一臉火大，好像全世界都欠了你？",
+      "expr": "04-loud"
     },
     {
       "kind": "actor",
@@ -99,16 +93,10 @@
       "id": "qishan"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "還不是因為你！"
+      "text": "還不是因為你！",
+      "expr": "01-shrug"
     },
     {
       "kind": "narration",

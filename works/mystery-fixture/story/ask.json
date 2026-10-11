@@ -14,7 +14,8 @@
     {
       "kind": "dialogue",
       "speaker": "admin",
-      "text": "問過了。他們說末班離開時，鑰匙不在任何人手上。"
+      "text": "問過了。他們說末班離開時，鑰匙不在任何人手上。",
+      "expr": "default"
     },
     {
       "kind": "narration",
@@ -23,7 +24,8 @@
     {
       "kind": "dialogue",
       "speaker": "admin",
-      "text": "交接沒簽完。走廊那扇門，他們也記得是開著的。"
+      "text": "交接沒簽完。走廊那扇門，他們也記得是開著的。",
+      "expr": "default"
     },
     {
       "kind": "narration",

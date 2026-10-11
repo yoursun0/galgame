@@ -78,16 +78,10 @@
       "id": "qishan"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "04-cold",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "對，其實我私吞了一半，所以是不會夠派的，有些同學只好兩個人看一本了啊。至於偉大的莊員，只能犠牲一下了。"
+      "text": "對，其實我私吞了一半，所以是不會夠派的，有些同學只好兩個人看一本了啊。至於偉大的莊員，只能犠牲一下了。",
+      "expr": "04-cold"
     },
     {
       "kind": "jump",

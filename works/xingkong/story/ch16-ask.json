@@ -78,21 +78,16 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "jialun",
-      "expr": "04-sad",
-      "position": "near"
+      "kind": "dialogue",
+      "speaker": "jialun",
+      "text": "凌晨，請問你，可不可以原諒我？",
+      "expr": "04-sad"
     },
     {
       "kind": "dialogue",
       "speaker": "jialun",
-      "text": "凌晨，請問你，可不可以原諒我？"
-    },
-    {
-      "kind": "dialogue",
-      "speaker": "jialun",
-      "text": "請你回答我，可以原諒我嗎？"
+      "text": "請你回答我，可以原諒我嗎？",
+      "expr": "04-sad"
     },
     {
       "kind": "narration",
@@ -104,16 +99,10 @@
       "id": "jialun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "04-cold",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "不。我不知道你在說甚麼。"
+      "text": "不。我不知道你在說甚麼。",
+      "expr": "04-cold"
     },
     {
       "kind": "actor",
@@ -121,16 +110,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "jialun",
-      "expr": "05-nod",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "jialun",
-      "text": "凌晨……"
+      "text": "凌晨……",
+      "expr": "05-nod"
     },
     {
       "kind": "actor",
@@ -138,16 +121,10 @@
       "id": "jialun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "05-fire",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "不用說了。你自己做了甚麼你自己知。我想出去一下。"
+      "text": "不用說了。你自己做了甚麼你自己知。我想出去一下。",
+      "expr": "05-fire"
     },
     {
       "kind": "narration",

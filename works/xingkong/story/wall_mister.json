@@ -79,16 +79,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "05-fire",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "請問……可不可以……告訴我你的名字？"
+      "text": "請問……可不可以……告訴我你的名字？",
+      "expr": "05-fire"
     },
     {
       "kind": "actor",
@@ -96,31 +90,28 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "02-hips",
-      "position": "near"
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "哈，當然可以啦！",
+      "expr": "02-hips"
     },
     {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "哈，當然可以啦！"
+      "text": "不過，你可不可以說話不要總是可不可以的？",
+      "expr": "02-hips"
     },
     {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "不過，你可不可以說話不要總是可不可以的？"
+      "text": "可不可以跟你朋友分享一本團刊？可不可以借個零錢給我？可不可以告訴我你的名字？",
+      "expr": "02-hips"
     },
     {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "可不可以跟你朋友分享一本團刊？可不可以借個零錢給我？可不可以告訴我你的名字？"
-    },
-    {
-      "kind": "dialogue",
-      "speaker": "zhijun",
-      "text": "你叫做可不可以先生嗎？"
+      "text": "你叫做可不可以先生嗎？",
+      "expr": "02-hips"
     },
     {
       "kind": "actor",
@@ -128,16 +119,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "啊，原來如此！我知道了。原來你叫當然可以小姐。"
+      "text": "啊，原來如此！我知道了。原來你叫當然可以小姐。",
+      "expr": "01-shrug"
     },
     {
       "kind": "narration",

@@ -82,16 +82,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "03-glare",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "喂，凌晨嗎？"
+      "text": "喂，凌晨嗎？",
+      "expr": "03-glare"
     },
     {
       "kind": "actor",
@@ -99,16 +93,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "怎麼了，開完會了嗎？"
+      "text": "怎麼了，開完會了嗎？",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -116,16 +104,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "05-tearsmile",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "對啊，剛剛才開完，一連幾個小時。"
+      "text": "對啊，剛剛才開完，一連幾個小時。",
+      "expr": "05-tearsmile"
     },
     {
       "kind": "actor",
@@ -133,16 +115,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "我們這邊也是剛完了工作坊不久。"
+      "text": "我們這邊也是剛完了工作坊不久。",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -150,16 +126,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "04-puff",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "剛才不好意思，有約，不能到你的工作坊捧場。"
+      "text": "剛才不好意思，有約，不能到你的工作坊捧場。",
+      "expr": "04-puff"
     },
     {
       "kind": "actor",
@@ -167,16 +137,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "02-blush",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "也沒關係。下次中天搞活動你記得來。"
+      "text": "也沒關係。下次中天搞活動你記得來。",
+      "expr": "02-blush"
     },
     {
       "kind": "actor",
@@ -184,16 +148,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "01-laugh",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "可是你們幾乎每次搞活動，都碰巧是我不能抽空的時間。"
+      "text": "可是你們幾乎每次搞活動，都碰巧是我不能抽空的時間。",
+      "expr": "01-laugh"
     },
     {
       "kind": "actor",
@@ -201,16 +159,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "04-cold",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "那是你的問題了，你自己想想法子。"
+      "text": "那是你的問題了，你自己想想法子。",
+      "expr": "04-cold"
     },
     {
       "kind": "narration",
@@ -222,16 +174,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "02-hips",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "反正你現在完了，不如一起到女工合作社吃個宵夜。這次換我請你。"
+      "text": "反正你現在完了，不如一起到女工合作社吃個宵夜。這次換我請你。",
+      "expr": "02-hips"
     },
     {
       "kind": "actor",
@@ -239,16 +185,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "05-fire",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "可惜啊，這回換我有事要忙了。下次有機會你再請，記得要請火辣辣鐵板燒。"
+      "text": "可惜啊，這回換我有事要忙了。下次有機會你再請，記得要請火辣辣鐵板燒。",
+      "expr": "05-fire"
     },
     {
       "kind": "actor",
@@ -256,16 +196,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "03-glare",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "你還好意思說火辣辣鐵板燒！就你這傢伙的無聊提議，硬要坐在室外的鐵枱上吃飯，差點晒得我皮膚都變黑！你不賞面便罷。"
+      "text": "你還好意思說火辣辣鐵板燒！就你這傢伙的無聊提議，硬要坐在室外的鐵枱上吃飯，差點晒得我皮膚都變黑！你不賞面便罷。",
+      "expr": "03-glare"
     },
     {
       "kind": "actor",
@@ -273,16 +207,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "換個日子吧。找個晚上天氣好一點的，邊吃宵夜邊看星星。只是我現在有約，分身不暇，就這樣好了。"
+      "text": "換個日子吧。找個晚上天氣好一點的，邊吃宵夜邊看星星。只是我現在有約，分身不暇，就這樣好了。",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -290,16 +218,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "05-tearsmile",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "哼，看來你又不知道約了哪個女孩子。重色輕友啊你！"
+      "text": "哼，看來你又不知道約了哪個女孩子。重色輕友啊你！",
+      "expr": "05-tearsmile"
     },
     {
       "kind": "actor",
@@ -307,16 +229,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "要你管！不跟你瞎鬧了，我身旁那位先生已經等得不耐煩了。"
+      "text": "要你管！不跟你瞎鬧了，我身旁那位先生已經等得不耐煩了。",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -324,16 +240,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "04-puff",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "女朋友就女朋友吧，還裝甚麼「身旁那位先生」！不管你了，好累，我回家睡懶覺去，再見！"
+      "text": "女朋友就女朋友吧，還裝甚麼「身旁那位先生」！不管你了，好累，我回家睡懶覺去，再見！",
+      "expr": "04-puff"
     },
     {
       "kind": "narration",

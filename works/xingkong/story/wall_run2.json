@@ -75,7 +75,8 @@
     {
       "kind": "dialogue",
       "speaker": "suting",
-      "text": "你們同一所中學，怎麼人家那麼有活力。"
+      "text": "你們同一所中學，怎麼人家那麼有活力。",
+      "expr": "02-sigh"
     },
     {
       "kind": "narration",

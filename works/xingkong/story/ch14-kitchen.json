@@ -78,16 +78,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "qishan",
-      "expr": "03-angry",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "qishan",
-      "text": "喂，凌晨！你進來廚房幫我們一下！"
+      "text": "喂，凌晨！你進來廚房幫我們一下！",
+      "expr": "03-angry"
     },
     {
       "kind": "actor",
@@ -95,16 +89,10 @@
       "id": "qishan"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "不了，我還沒洗澡，免得弄髒你們的食物。"
+      "text": "不了，我還沒洗澡，免得弄髒你們的食物。",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -112,16 +100,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "qishan",
-      "expr": "02-laugh",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "qishan",
-      "text": "那你洗了手，到大廳幫芷君去掉蝦殼。我們要煮蝦仁炒蛋。"
+      "text": "那你洗了手，到大廳幫芷君去掉蝦殼。我們要煮蝦仁炒蛋。",
+      "expr": "02-laugh"
     },
     {
       "kind": "narration",
@@ -137,16 +119,10 @@
       "id": "qishan"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "01-laugh",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "凌晨，你覺得今天晚上會不會有星星看？"
+      "text": "凌晨，你覺得今天晚上會不會有星星看？",
+      "expr": "01-laugh"
     },
     {
       "kind": "actor",
@@ -154,16 +130,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "看天色。入黑前起了好幾片烏雲，不太樂觀。"
+      "text": "看天色。入黑前起了好幾片烏雲，不太樂觀。",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -171,16 +141,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "02-hips",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "難得到貝澳，望遠鏡也帶來了，沒有星星看，不是很可惜嗎？"
+      "text": "難得到貝澳，望遠鏡也帶來了，沒有星星看，不是很可惜嗎？",
+      "expr": "02-hips"
     },
     {
       "kind": "actor",
@@ -188,16 +152,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "02-blush",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "是很可惜。可以怎樣？"
+      "text": "是很可惜。可以怎樣？",
+      "expr": "02-blush"
     },
     {
       "kind": "actor",
@@ -205,16 +163,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "03-glare",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "花了這麼多心機卻沒有星星，你會不開心嗎？"
+      "text": "花了這麼多心機卻沒有星星，你會不開心嗎？",
+      "expr": "03-glare"
     },
     {
       "kind": "actor",
@@ -222,16 +174,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "04-cold",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "難不成要感到好開心？"
+      "text": "難不成要感到好開心？",
+      "expr": "04-cold"
     },
     {
       "kind": "actor",
@@ -239,16 +185,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "05-tearsmile",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "不用怕。我這兒給你看星星。"
+      "text": "不用怕。我這兒給你看星星。",
+      "expr": "05-tearsmile"
     },
     {
       "kind": "narration",
@@ -257,7 +197,8 @@
     {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "單星。雙星。還有，炫目的銀河，送給你。"
+      "text": "單星。雙星。還有，炫目的銀河，送給你。",
+      "expr": "05-tearsmile"
     },
     {
       "kind": "narration",
@@ -269,16 +210,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "05-fire",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "哈，你這個叫做銀河嗎？看起來更像乾炒牛河。"
+      "text": "哈，你這個叫做銀河嗎？看起來更像乾炒牛河。",
+      "expr": "05-fire"
     },
     {
       "kind": "actor",
@@ -286,21 +221,16 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "04-puff",
-      "position": "near"
+      "kind": "dialogue",
+      "speaker": "zhijun",
+      "text": "乾炒牛河不是更好嗎？配上蝦仁炒蛋。",
+      "expr": "04-puff"
     },
     {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "乾炒牛河不是更好嗎？配上蝦仁炒蛋。"
-    },
-    {
-      "kind": "dialogue",
-      "speaker": "zhijun",
-      "text": "三星我忘了怎麼弄。來，教教我。"
+      "text": "三星我忘了怎麼弄。來，教教我。",
+      "expr": "04-puff"
     },
     {
       "kind": "narration",
@@ -316,16 +246,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "ajun",
-      "expr": "04-gasp",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "ajun",
-      "text": "喂，凌晨，該你洗澡了！"
+      "text": "喂，凌晨，該你洗澡了！",
+      "expr": "04-gasp"
     },
     {
       "kind": "actor",
@@ -333,16 +257,10 @@
       "id": "ajun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "01-laugh",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "你先去洗吧，剩下的蝦殼我來。還有，謝謝。"
+      "text": "你先去洗吧，剩下的蝦殼我來。還有，謝謝。",
+      "expr": "01-laugh"
     },
     {
       "kind": "actor",
@@ -350,16 +268,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "啊，太客氣了吧。"
+      "text": "啊，太客氣了吧。",
+      "expr": "01-shrug"
     },
     {
       "kind": "narration",
@@ -371,16 +283,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "02-hips",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "去把身子沖乾淨。一餐晚飯在等你。飯後，我有事情想跟你單獨聊一聊。"
+      "text": "去把身子沖乾淨。一餐晚飯在等你。飯後，我有事情想跟你單獨聊一聊。",
+      "expr": "02-hips"
     },
     {
       "kind": "narration",
@@ -392,16 +298,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "知道了，好痛啊！發甚麼神經啦？"
+      "text": "知道了，好痛啊！發甚麼神經啦？",
+      "expr": "01-shrug"
     },
     {
       "kind": "jump",

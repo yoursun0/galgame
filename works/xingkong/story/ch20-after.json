@@ -79,7 +79,8 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "傻瓜。那兩隻惡狗都走了。"
+      "text": "傻瓜。那兩隻惡狗都走了。",
+      "expr": "05-fire"
     },
     {
       "kind": "actor",
@@ -87,16 +88,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "05-tearsmile",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "你為甚麼要丟下我一個人去引開那兩隻狗？"
+      "text": "你為甚麼要丟下我一個人去引開那兩隻狗？",
+      "expr": "05-tearsmile"
     },
     {
       "kind": "actor",
@@ -104,16 +99,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "我要保護你。"
+      "text": "我要保護你。",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -121,16 +110,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "04-puff",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "我怕你會死掉。我怕你會像游牧一樣離我而去。"
+      "text": "我怕你會死掉。我怕你會像游牧一樣離我而去。",
+      "expr": "04-puff"
     },
     {
       "kind": "actor",
@@ -138,16 +121,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "甚麼游牧？"
+      "text": "甚麼游牧？",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -155,16 +132,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "01-laugh",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "我的男朋友啊！"
+      "text": "我的男朋友啊！",
+      "expr": "01-laugh"
     },
     {
       "kind": "jump",

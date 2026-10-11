@@ -75,7 +75,8 @@
     {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "當然啦。還不是跟你一樣，都是一起去內蒙古的。"
+      "text": "當然啦。還不是跟你一樣，都是一起去內蒙古的。",
+      "expr": "05-tearsmile"
     },
     {
       "kind": "jump",

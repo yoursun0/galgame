@@ -75,7 +75,8 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "會長大人，你知道嗎？"
+      "text": "會長大人，你知道嗎？",
+      "expr": "05-fire"
     },
     {
       "kind": "actor",
@@ -83,16 +84,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "huizhang",
-      "expr": "02-awe",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "huizhang",
-      "text": "嗯？"
+      "text": "嗯？",
+      "expr": "02-awe"
     },
     {
       "kind": "actor",
@@ -100,16 +95,10 @@
       "id": "huizhang"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "我要走了。"
+      "text": "我要走了。",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -117,16 +106,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "huizhang",
-      "expr": "03-sharp",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "huizhang",
-      "text": "要走了？"
+      "text": "要走了？",
+      "expr": "03-sharp"
     },
     {
       "kind": "actor",
@@ -134,16 +117,10 @@
       "id": "huizhang"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "這個暑期便要離開香港，到美國去，當交換生，翌年才回來。"
+      "text": "這個暑期便要離開香港，到美國去，當交換生，翌年才回來。",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -151,16 +128,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "huizhang",
-      "expr": "04-laugh",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "huizhang",
-      "text": "啊，那麼你回來的時候，我們不就幾乎要畢業了嗎？"
+      "text": "啊，那麼你回來的時候，我們不就幾乎要畢業了嗎？",
+      "expr": "04-laugh"
     },
     {
       "kind": "actor",
@@ -168,16 +139,10 @@
       "id": "huizhang"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "02-blush",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "對。"
+      "text": "對。",
+      "expr": "02-blush"
     },
     {
       "kind": "narration",
@@ -189,16 +154,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "huizhang",
-      "expr": "01-calm",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "huizhang",
-      "text": "那你有沒有甚麼捨不得的事物？"
+      "text": "那你有沒有甚麼捨不得的事物？",
+      "expr": "01-calm"
     },
     {
       "kind": "choice",

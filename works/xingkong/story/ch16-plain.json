@@ -75,7 +75,8 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "我沒有跑去跟他對質。"
+      "text": "我沒有跑去跟他對質。",
+      "expr": "05-fire"
     },
     {
       "kind": "narration",

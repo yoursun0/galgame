@@ -75,7 +75,8 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "家綸喜歡綺珊。他要我約她來。他今晚是去跟她表白。你千萬別告訴別人。"
+      "text": "家綸喜歡綺珊。他要我約她來。他今晚是去跟她表白。你千萬別告訴別人。",
+      "expr": "01-shrug"
     },
     {
       "kind": "narration",

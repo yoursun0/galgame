@@ -82,16 +82,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "05-tearsmile",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "喂。"
+      "text": "喂。",
+      "expr": "05-tearsmile"
     },
     {
       "kind": "narration",
@@ -100,7 +94,8 @@
     {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "你啊，怎搞的？怎可以玩到一半也可以睡著？看，還流口水！別用手抹！這個拿去！"
+      "text": "你啊，怎搞的？怎可以玩到一半也可以睡著？看，還流口水！別用手抹！這個拿去！",
+      "expr": "05-tearsmile"
     },
     {
       "kind": "narration",
@@ -109,7 +104,8 @@
     {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "髒死了！別打算還我！遲些買一條新的賠我好了，可以了嗎？"
+      "text": "髒死了！別打算還我！遲些買一條新的賠我好了，可以了嗎？",
+      "expr": "05-tearsmile"
     },
     {
       "kind": "actor",
@@ -117,16 +113,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "當，當然可以。"
+      "text": "當，當然可以。",
+      "expr": "01-shrug"
     },
     {
       "kind": "narration",

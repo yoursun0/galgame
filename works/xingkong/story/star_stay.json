@@ -79,7 +79,8 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "再浪漫、再美麗、再可歌可泣也好，畢竟是沒結果的愛情。"
+      "text": "再浪漫、再美麗、再可歌可泣也好，畢竟是沒結果的愛情。",
+      "expr": "05-fire"
     },
     {
       "kind": "narration",

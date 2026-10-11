@@ -86,16 +86,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "qishan",
-      "expr": "03-angry",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "qishan",
-      "text": "就僅僅因為這樣，你就要聯同我一起，撒謊騙家綸他們了嗎？"
+      "text": "就僅僅因為這樣，你就要聯同我一起，撒謊騙家綸他們了嗎？",
+      "expr": "03-angry"
     },
     {
       "kind": "actor",
@@ -103,16 +97,10 @@
       "id": "qishan"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "04-cold",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "對。只有這樣，才能令家綸和素婷放心。"
+      "text": "對。只有這樣，才能令家綸和素婷放心。",
+      "expr": "04-cold"
     },
     {
       "kind": "actor",
@@ -120,16 +108,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "qishan",
-      "expr": "02-laugh",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "qishan",
-      "text": "你這個想法真是有夠神經病的。"
+      "text": "你這個想法真是有夠神經病的。",
+      "expr": "02-laugh"
     },
     {
       "kind": "actor",
@@ -137,16 +119,10 @@
       "id": "qishan"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "05-fire",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "那你是會幫忙的囉？"
+      "text": "那你是會幫忙的囉？",
+      "expr": "05-fire"
     },
     {
       "kind": "actor",
@@ -154,16 +130,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "qishan",
-      "expr": "01-grin",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "qishan",
-      "text": "喂，你是認真的嗎？"
+      "text": "喂，你是認真的嗎？",
+      "expr": "01-grin"
     },
     {
       "kind": "actor",
@@ -171,16 +141,10 @@
       "id": "qishan"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "對。"
+      "text": "對。",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -188,21 +152,16 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "qishan",
-      "expr": "04-loud",
-      "position": "near"
+      "kind": "dialogue",
+      "speaker": "qishan",
+      "text": "唉。怕了你啦。多年同學，你要發神經，我怎不跟你奉陪到底？",
+      "expr": "04-loud"
     },
     {
       "kind": "dialogue",
       "speaker": "qishan",
-      "text": "唉。怕了你啦。多年同學，你要發神經，我怎不跟你奉陪到底？"
-    },
-    {
-      "kind": "dialogue",
-      "speaker": "qishan",
-      "text": "素婷這邊也就罷了。你的芷君姐姐那邊又怎麼辦？"
+      "text": "素婷這邊也就罷了。你的芷君姐姐那邊又怎麼辦？",
+      "expr": "04-loud"
     },
     {
       "kind": "actor",
@@ -210,16 +169,10 @@
       "id": "qishan"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "我到底還是親自走了一趟。"
+      "text": "我到底還是親自走了一趟。",
+      "expr": "01-shrug"
     },
     {
       "kind": "jump",

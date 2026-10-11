@@ -78,16 +78,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "可不可以，當我的女朋友。這次不是為了瞞素婷，也不是為了氣游牧。"
+      "text": "可不可以，當我的女朋友。這次不是為了瞞素婷，也不是為了氣游牧。",
+      "expr": "01-shrug"
     },
     {
       "kind": "jump",

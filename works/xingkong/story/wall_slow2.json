@@ -75,12 +75,14 @@
     {
       "kind": "dialogue",
       "speaker": "suting",
-      "text": "你在看甚麼？"
+      "text": "你在看甚麼？",
+      "expr": "02-sigh"
     },
     {
       "kind": "dialogue",
       "speaker": "suting",
-      "text": "聽說那個叫綺珊的，是你中學同學？"
+      "text": "聽說那個叫綺珊的，是你中學同學？",
+      "expr": "02-sigh"
     },
     {
       "kind": "jump",

@@ -78,16 +78,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "qishan",
-      "expr": "03-angry",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "qishan",
-      "text": "喂！那其實也不關我的事呀！"
+      "text": "喂！那其實也不關我的事呀！",
+      "expr": "03-angry"
     },
     {
       "kind": "actor",
@@ -95,16 +89,10 @@
       "id": "qishan"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "04-cold",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "你說得沒錯。那天晚上我向你發脾氣，是我不對。我道歉。"
+      "text": "你說得沒錯。那天晚上我向你發脾氣，是我不對。我道歉。",
+      "expr": "04-cold"
     },
     {
       "kind": "actor",
@@ -112,16 +100,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "qishan",
-      "expr": "02-laugh",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "qishan",
-      "text": "你可害我越來越討厭家綸。如此一來，連他的女朋友素婷也只會越來越討厭。"
+      "text": "你可害我越來越討厭家綸。如此一來，連他的女朋友素婷也只會越來越討厭。",
+      "expr": "02-laugh"
     },
     {
       "kind": "actor",
@@ -129,16 +111,10 @@
       "id": "qishan"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "05-fire",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "又關素婷甚麼事？"
+      "text": "又關素婷甚麼事？",
+      "expr": "05-fire"
     },
     {
       "kind": "actor",
@@ -146,16 +122,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "qishan",
-      "expr": "01-grin",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "qishan",
-      "text": "家綸搶走了你心愛的女孩，卻又不好好待她。你居然也不跑去跟他對質。凌晨呀凌晨，你真是好人得太過份了。"
+      "text": "家綸搶走了你心愛的女孩，卻又不好好待她。你居然也不跑去跟他對質。凌晨呀凌晨，你真是好人得太過份了。",
+      "expr": "01-grin"
     },
     {
       "kind": "choice",

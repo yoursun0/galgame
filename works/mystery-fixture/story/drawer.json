@@ -8,7 +8,8 @@
     {
       "kind": "dialogue",
       "speaker": "admin",
-      "text": "第二層也翻過了。沒有。"
+      "text": "第二層也翻過了。沒有。",
+      "expr": "default"
     },
     {
       "kind": "narration",
@@ -17,7 +18,8 @@
     {
       "kind": "dialogue",
       "speaker": "admin",
-      "text": "……便條在，鑰匙不在。門就這樣敞著，不對勁。"
+      "text": "……便條在，鑰匙不在。門就這樣敞著，不對勁。",
+      "expr": "default"
     },
     {
       "kind": "narration",

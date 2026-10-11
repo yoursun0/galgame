@@ -78,16 +78,10 @@
       "id": "qishan"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "02-blush",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "請問……我們太冒失，遺了一些團刊，所以不夠派……"
+      "text": "請問……我們太冒失，遺了一些團刊，所以不夠派……",
+      "expr": "02-blush"
     },
     {
       "kind": "actor",
@@ -95,16 +89,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "qishan",
-      "expr": "01-grin",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "qishan",
-      "text": "對，這小子是出名冒失的。"
+      "text": "對，這小子是出名冒失的。",
+      "expr": "01-grin"
     },
     {
       "kind": "jump",

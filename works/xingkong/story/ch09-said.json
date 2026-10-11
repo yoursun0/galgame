@@ -75,7 +75,8 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "喜歡人家的話，就要懂得體諒人家。"
+      "text": "喜歡人家的話，就要懂得體諒人家。",
+      "expr": "01-shrug"
     },
     {
       "kind": "narration",

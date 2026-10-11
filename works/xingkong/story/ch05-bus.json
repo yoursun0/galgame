@@ -82,16 +82,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "qishan",
-      "expr": "01-grin",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "qishan",
-      "text": "喂，凌晨小子！別看著窗外發呆了，過來跟我們一道玩 Killer 吧！"
+      "text": "喂，凌晨小子！別看著窗外發呆了，過來跟我們一道玩 Killer 吧！",
+      "expr": "01-grin"
     },
     {
       "kind": "actor",
@@ -99,16 +93,10 @@
       "id": "qishan"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "04-cold",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "小姐，難道看不見我在冥想中嗎？去去去！"
+      "text": "小姐，難道看不見我在冥想中嗎？去去去！",
+      "expr": "04-cold"
     },
     {
       "kind": "actor",
@@ -116,16 +104,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "qishan",
-      "expr": "04-loud",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "qishan",
-      "text": "還有一個小時車子就到機場啦。"
+      "text": "還有一個小時車子就到機場啦。",
+      "expr": "04-loud"
     },
     {
       "kind": "narration",
@@ -137,16 +119,10 @@
       "id": "qishan"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "baofang",
-      "expr": "01-run",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "baofang",
-      "text": "快進去！"
+      "text": "快進去！",
+      "expr": "01-run"
     },
     {
       "kind": "narration",

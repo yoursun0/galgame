@@ -75,7 +75,8 @@
     {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "你今晚約我，不會又是要我幫你演一場戲吧。"
+      "text": "你今晚約我，不會又是要我幫你演一場戲吧。",
+      "expr": "03-glare"
     },
     {
       "kind": "choice",

@@ -78,16 +78,10 @@
       "id": "suting"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "05-fire",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "素婷。我喜歡你。不是兄弟，不是莊員，不是走在你後面就算了的那種。"
+      "text": "素婷。我喜歡你。不是兄弟，不是莊員，不是走在你後面就算了的那種。",
+      "expr": "05-fire"
     },
     {
       "kind": "jump",

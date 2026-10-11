@@ -82,16 +82,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "huizhang",
-      "expr": "03-sharp",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "huizhang",
-      "text": "有沒有人想看黑洞呀？"
+      "text": "有沒有人想看黑洞呀？",
+      "expr": "03-sharp"
     },
     {
       "kind": "narration",
@@ -100,7 +94,8 @@
     {
       "kind": "dialogue",
       "speaker": "huizhang",
-      "text": "想看的話，就把望遠鏡、腳架、重錘、地墊拿回 soc 房，免得淋濕。"
+      "text": "想看的話，就把望遠鏡、腳架、重錘、地墊拿回 soc 房，免得淋濕。",
+      "expr": "03-sharp"
     },
     {
       "kind": "narration",
@@ -112,16 +107,10 @@
       "id": "huizhang"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "跟著我來。以後別再叫我小鬼。"
+      "text": "跟著我來。以後別再叫我小鬼。",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -129,16 +118,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "youmu",
-      "expr": "02-crooked",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "youmu",
-      "text": ""
+      "text": "",
+      "expr": "02-crooked"
     },
     {
       "kind": "narration",

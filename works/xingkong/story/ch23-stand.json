@@ -83,7 +83,8 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "跟著我來。這些都要回 soc 房。"
+      "text": "跟著我來。這些都要回 soc 房。",
+      "expr": "01-shrug"
     },
     {
       "kind": "jump",

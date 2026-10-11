@@ -29,7 +29,8 @@
     {
       "kind": "dialogue",
       "speaker": "admin",
-      "text": "鑰匙不在櫃上。"
+      "text": "鑰匙不在櫃上。",
+      "expr": "default"
     },
     {
       "kind": "cg",

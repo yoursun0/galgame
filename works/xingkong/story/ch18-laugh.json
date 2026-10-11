@@ -78,16 +78,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "02-hips",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "我好掛住他。"
+      "text": "我好掛住他。",
+      "expr": "02-hips"
     },
     {
       "kind": "actor",
@@ -95,16 +89,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "別想太多了。你再哭，星星都嚇跑了。"
+      "text": "別想太多了。你再哭，星星都嚇跑了。",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -112,16 +100,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "03-glare",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "那些星星見我哭得可憐，跑過來安慰我都來不及。"
+      "text": "那些星星見我哭得可憐，跑過來安慰我都來不及。",
+      "expr": "03-glare"
     },
     {
       "kind": "actor",
@@ -129,16 +111,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "02-blush",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "傻瓜！星星們看到有我這個英俊瀟灑玉樹臨風氣宇軒昂風度翩翩的俊男在這兒安慰你，那裡還有他們的份兒嘛！"
+      "text": "傻瓜！星星們看到有我這個英俊瀟灑玉樹臨風氣宇軒昂風度翩翩的俊男在這兒安慰你，那裡還有他們的份兒嘛！",
+      "expr": "02-blush"
     },
     {
       "kind": "narration",
@@ -150,16 +126,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "05-tearsmile",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "因為甚麼你剛才想哭？"
+      "text": "因為甚麼你剛才想哭？",
+      "expr": "05-tearsmile"
     },
     {
       "kind": "narration",

@@ -79,7 +79,8 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "那，那也是人之常情嘛。"
+      "text": "那，那也是人之常情嘛。",
+      "expr": "05-fire"
     },
     {
       "kind": "jump",

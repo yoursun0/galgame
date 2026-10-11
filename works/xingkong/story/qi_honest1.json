@@ -78,26 +78,22 @@
       "id": "qishan"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
+      "kind": "dialogue",
+      "speaker": "lingchen",
+      "text": "團刊不夠。",
+      "expr": "01-shrug"
     },
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "團刊不夠。"
+      "text": "我和家綸都以為是對方拿了，結果遺下一半在中大。",
+      "expr": "01-shrug"
     },
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "我和家綸都以為是對方拿了，結果遺下一半在中大。"
-    },
-    {
-      "kind": "dialogue",
-      "speaker": "lingchen",
-      "text": "你跟朋友合看一本，可以嗎？"
+      "text": "你跟朋友合看一本，可以嗎？",
+      "expr": "01-shrug"
     },
     {
       "kind": "jump",

@@ -75,7 +75,8 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "家綸他，是個好人。所以，就是這樣。"
+      "text": "家綸他，是個好人。所以，就是這樣。",
+      "expr": "04-cold"
     },
     {
       "kind": "actor",
@@ -83,16 +84,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "huizhang",
-      "expr": "02-awe",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "huizhang",
-      "text": "很好。"
+      "text": "很好。",
+      "expr": "02-awe"
     },
     {
       "kind": "narration",

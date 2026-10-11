@@ -75,7 +75,8 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "全盤采納，先行謝過。"
+      "text": "全盤采納，先行謝過。",
+      "expr": "02-blush"
     },
     {
       "kind": "narration",

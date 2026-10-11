@@ -87,7 +87,8 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "喂，你們玩夠了，就過來幫忙執拾啦。"
+      "text": "喂，你們玩夠了，就過來幫忙執拾啦。",
+      "expr": "04-cold"
     },
     {
       "kind": "narration",
@@ -99,16 +100,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "dabi",
-      "expr": "03-wink",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "dabi",
-      "text": "你讀物理的，試試看能不能投中那浮標。"
+      "text": "你讀物理的，試試看能不能投中那浮標。",
+      "expr": "03-wink"
     },
     {
       "kind": "narration",
@@ -120,16 +115,10 @@
       "id": "dabi"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "huizhang",
-      "expr": "02-awe",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "huizhang",
-      "text": "視綫集中一點。你的對象不是整個浮標，而是浮標上的某一點。最重要的一點，一字記之曰心。每一擊，都要有無論如何也不得不擊中目標的覺悟。"
+      "text": "視綫集中一點。你的對象不是整個浮標，而是浮標上的某一點。最重要的一點，一字記之曰心。每一擊，都要有無論如何也不得不擊中目標的覺悟。",
+      "expr": "02-awe"
     },
     {
       "kind": "narration",
@@ -138,7 +127,8 @@
     {
       "kind": "dialogue",
       "speaker": "huizhang",
-      "text": "來，試一個。這回該你了。"
+      "text": "來，試一個。這回該你了。",
+      "expr": "02-awe"
     },
     {
       "kind": "choice",

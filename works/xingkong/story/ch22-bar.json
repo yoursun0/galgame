@@ -83,7 +83,8 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "我是凌晨。六年前被惡犬追殺，是你救的。"
+      "text": "我是凌晨。六年前被惡犬追殺，是你救的。",
+      "expr": "02-blush"
     },
     {
       "kind": "actor",
@@ -91,16 +92,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "youmu",
-      "expr": "03-shy",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "youmu",
-      "text": ""
+      "text": "",
+      "expr": "03-shy"
     },
     {
       "kind": "narration",
@@ -113,7 +108,8 @@
     {
       "kind": "dialogue",
       "speaker": "youmu",
-      "text": ""
+      "text": "",
+      "expr": "03-shy"
     },
     {
       "kind": "narration",
@@ -125,16 +121,10 @@
       "id": "youmu"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "04-cold",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "就是她告訴我的。你說過非她不娶的那個。黎芷君。"
+      "text": "就是她告訴我的。你說過非她不娶的那個。黎芷君。",
+      "expr": "04-cold"
     },
     {
       "kind": "actor",
@@ -142,16 +132,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "youmu",
-      "expr": "04-jaw",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "youmu",
-      "text": ""
+      "text": "",
+      "expr": "04-jaw"
     },
     {
       "kind": "narration",

@@ -79,7 +79,8 @@
     {
       "kind": "dialogue",
       "speaker": "suting",
-      "text": "團刊不夠？那怎麼辦？"
+      "text": "團刊不夠？那怎麼辦？",
+      "expr": "03-worry"
     },
     {
       "kind": "actor",
@@ -87,16 +88,10 @@
       "id": "suting"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "huizhang",
-      "expr": "01-calm",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "huizhang",
-      "text": "不用怕，雖然只拿了一半，至少我們現在還有三十本。我們莊員自己先別拿，讓認識的朋友每兩個人一本，或三個人兩本。"
+      "text": "不用怕，雖然只拿了一半，至少我們現在還有三十本。我們莊員自己先別拿，讓認識的朋友每兩個人一本，或三個人兩本。",
+      "expr": "01-calm"
     },
     {
       "kind": "actor",
@@ -104,16 +99,10 @@
       "id": "huizhang"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "04-cold",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "對不起啊各位，一切都怪我和家綸安排不當。且讓我倆將功補過，負責去派給大家好了。"
+      "text": "對不起啊各位，一切都怪我和家綸安排不當。且讓我倆將功補過，負責去派給大家好了。",
+      "expr": "04-cold"
     },
     {
       "kind": "jump",

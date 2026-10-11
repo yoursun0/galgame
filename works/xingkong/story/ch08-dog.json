@@ -75,7 +75,8 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "我從來都是個膽小的人。初中一個夜裡，我在郊外被一頭惡犬追。我不會往安全的地方逃，被逼到絕處。"
+      "text": "我從來都是個膽小的人。初中一個夜裡，我在郊外被一頭惡犬追。我不會往安全的地方逃，被逼到絕處。",
+      "expr": "02-blush"
     },
     {
       "kind": "actor",
@@ -83,16 +84,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "jialun",
-      "expr": "01-murmur",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "jialun",
-      "text": "那後來怎麼了？"
+      "text": "那後來怎麼了？",
+      "expr": "01-murmur"
     },
     {
       "kind": "actor",
@@ -100,16 +95,10 @@
       "id": "jialun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "04-cold",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "最危急的時候走來一個大男孩，年紀也不比我大多少。他用掃帚替我趕那隻狗。狗不怕掃帚，撲上去，在他大腿咬了一口。我尖叫。他被咬了也不吭聲，揮拳往狗的臉上打。狗才鬆口跑了。"
+      "text": "最危急的時候走來一個大男孩，年紀也不比我大多少。他用掃帚替我趕那隻狗。狗不怕掃帚，撲上去，在他大腿咬了一口。我尖叫。他被咬了也不吭聲，揮拳往狗的臉上打。狗才鬆口跑了。",
+      "expr": "04-cold"
     },
     {
       "kind": "narration",
@@ -118,7 +107,8 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "我去看他的傷，傷口裂開，血不停地透出來。他淚也沒流，還笑著說沒大礙。我扶他，自己的手一直抖。"
+      "text": "我去看他的傷，傷口裂開，血不停地透出來。他淚也沒流，還笑著說沒大礙。我扶他，自己的手一直抖。",
+      "expr": "04-cold"
     },
     {
       "kind": "actor",
@@ -126,16 +116,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "jialun",
-      "expr": "02-happy",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "jialun",
-      "text": "難怪你以後看見狗就怕。"
+      "text": "難怪你以後看見狗就怕。",
+      "expr": "02-happy"
     },
     {
       "kind": "actor",
@@ -143,16 +127,10 @@
       "id": "jialun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "05-fire",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "我哪及得上他。他看見我的手在抖，還笑我：身為男子漢怎麼可以這樣膽小，將來怎麼保護喜歡的女孩子。他有個很酷的名字。"
+      "text": "我哪及得上他。他看見我的手在抖，還笑我：身為男子漢怎麼可以這樣膽小，將來怎麼保護喜歡的女孩子。他有個很酷的名字。",
+      "expr": "05-fire"
     },
     {
       "kind": "actor",
@@ -160,16 +138,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "jialun",
-      "expr": "03-stammer",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "jialun",
-      "text": "他叫甚麼名字？"
+      "text": "他叫甚麼名字？",
+      "expr": "03-stammer"
     },
     {
       "kind": "actor",
@@ -177,16 +149,10 @@
       "id": "jialun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "游牧。依我看，他就是牧夫座的化身。"
+      "text": "游牧。依我看，他就是牧夫座的化身。",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -194,16 +160,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "jialun",
-      "expr": "04-sad",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "jialun",
-      "text": "太厲害了。我想我拍馬也及不上他。"
+      "text": "太厲害了。我想我拍馬也及不上他。",
+      "expr": "04-sad"
     },
     {
       "kind": "actor",
@@ -211,16 +171,10 @@
       "id": "jialun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "我自小拿他當偶像。可是這麼多年，我看見狗還是怕。"
+      "text": "我自小拿他當偶像。可是這麼多年，我看見狗還是怕。",
+      "expr": "01-shrug"
     },
     {
       "kind": "narration",
@@ -229,7 +183,8 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "別奉承我了。我的缺點多得很。家綸你才是個百分百的好人，優點比我多。"
+      "text": "別奉承我了。我的缺點多得很。家綸你才是個百分百的好人，優點比我多。",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -237,16 +192,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "jialun",
-      "expr": "05-nod",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "jialun",
-      "text": "甚麼？我也有優點嗎？"
+      "text": "甚麼？我也有優點嗎？",
+      "expr": "05-nod"
     },
     {
       "kind": "actor",
@@ -254,16 +203,10 @@
       "id": "jialun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "02-blush",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "怎麼沒有？多似內蒙古的星空，不是這裡這片烏雲。"
+      "text": "怎麼沒有？多似內蒙古的星空，不是這裡這片烏雲。",
+      "expr": "02-blush"
     },
     {
       "kind": "actor",
@@ -271,16 +214,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "jialun",
-      "expr": "01-murmur",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "jialun",
-      "text": "我有甚麼優點？快告訴我！"
+      "text": "我有甚麼優點？快告訴我！",
+      "expr": "01-murmur"
     },
     {
       "kind": "actor",
@@ -288,16 +225,10 @@
       "id": "jialun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "04-cold",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "你嘛。"
+      "text": "你嘛。",
+      "expr": "04-cold"
     },
     {
       "kind": "narration",

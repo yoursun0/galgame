@@ -75,12 +75,14 @@
     {
       "kind": "dialogue",
       "speaker": "qishan",
-      "text": "辛苦你啊，偉大的莊員。"
+      "text": "辛苦你啊，偉大的莊員。",
+      "expr": "04-loud"
     },
     {
       "kind": "dialogue",
       "speaker": "qishan",
-      "text": "怎麼這麼少？偷工減料嗎？"
+      "text": "怎麼這麼少？偷工減料嗎？",
+      "expr": "04-loud"
     },
     {
       "kind": "jump",

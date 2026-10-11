@@ -78,16 +78,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "suting",
-      "expr": "04-tears",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "suting",
-      "text": "明天中天開會，內蒙團檢討，你知不知道？"
+      "text": "明天中天開會，內蒙團檢討，你知不知道？",
+      "expr": "04-tears"
     },
     {
       "kind": "narration",
@@ -99,16 +93,10 @@
       "id": "suting"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "02-blush",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "唔唔……廢話多人不怪。"
+      "text": "唔唔……廢話多人不怪。",
+      "expr": "02-blush"
     },
     {
       "kind": "actor",
@@ -116,16 +104,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "01-laugh",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "才不是哩！廢話多多，經常不正經的男生，最令人討厭的了。怎麼了小朋友？打給我有甚麼事了？"
+      "text": "才不是哩！廢話多多，經常不正經的男生，最令人討厭的了。怎麼了小朋友？打給我有甚麼事了？",
+      "expr": "01-laugh"
     },
     {
       "kind": "actor",
@@ -133,16 +115,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "04-cold",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "沒有甚麼特別的啦。我倆這麼久沒見，打算聊到天亮罷了。"
+      "text": "沒有甚麼特別的啦。我倆這麼久沒見，打算聊到天亮罷了。",
+      "expr": "04-cold"
     },
     {
       "kind": "narration",
@@ -154,16 +130,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "02-hips",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "又在胡說八道了。我才不跟你瘋啦，明天還要一大早回中大。系會有些莊務要辦。哪像你這麼空閒。"
+      "text": "又在胡說八道了。我才不跟你瘋啦，明天還要一大早回中大。系會有些莊務要辦。哪像你這麼空閒。",
+      "expr": "02-hips"
     },
     {
       "kind": "actor",
@@ -171,16 +141,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "suting",
-      "expr": "01-smile",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "suting",
-      "text": "明天家綸生日啊，所以打算開完會後跟他慶祝，你不知道？"
+      "text": "明天家綸生日啊，所以打算開完會後跟他慶祝，你不知道？",
+      "expr": "01-smile"
     },
     {
       "kind": "actor",
@@ -188,16 +152,10 @@
       "id": "suting"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "05-fire",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "是嗎？"
+      "text": "是嗎？",
+      "expr": "05-fire"
     },
     {
       "kind": "actor",
@@ -205,16 +163,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "03-glare",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "當然啦。全個內蒙團最愛說廢話的就是你了。"
+      "text": "當然啦。全個內蒙團最愛說廢話的就是你了。",
+      "expr": "03-glare"
     },
     {
       "kind": "actor",
@@ -222,16 +174,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "說兩三句廢話也不代表不務正業吧？一回到香港就是不停補習。"
+      "text": "說兩三句廢話也不代表不務正業吧？一回到香港就是不停補習。",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -239,33 +185,21 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "05-tearsmile",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "是嗎？你補習多少個學生？"
+      "text": "是嗎？你補習多少個學生？",
+      "expr": "05-tearsmile"
     },
     {
       "kind": "actor",
       "action": "hide",
       "id": "zhijun"
-    },
-    {
-      "kind": "actor",
-      "action": "show",
-      "id": "suting",
-      "expr": "02-sigh",
-      "position": "near"
     },
     {
       "kind": "dialogue",
       "speaker": "suting",
-      "text": "已經問過家綸了，他明天會來。"
+      "text": "已經問過家綸了，他明天會來。",
+      "expr": "02-sigh"
     },
     {
       "kind": "actor",
@@ -273,16 +207,10 @@
       "id": "suting"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "大約二、三十個左右啦。"
+      "text": "大約二、三十個左右啦。",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -290,16 +218,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "04-puff",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "你以為自己開補習班嗎？整天只會搜刮民財。"
+      "text": "你以為自己開補習班嗎？整天只會搜刮民財。",
+      "expr": "04-puff"
     },
     {
       "kind": "actor",
@@ -307,16 +229,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "02-blush",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "才不是。我可是很用心教的。還有很多有意義的事忙。例如跟你……"
+      "text": "才不是。我可是很用心教的。還有很多有意義的事忙。例如跟你……",
+      "expr": "02-blush"
     },
     {
       "kind": "actor",
@@ -324,16 +240,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "suting",
-      "expr": "03-worry",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "suting",
-      "text": "總之明天開會就是了。"
+      "text": "總之明天開會就是了。",
+      "expr": "03-worry"
     },
     {
       "kind": "narration",
@@ -345,16 +255,10 @@
       "id": "suting"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "01-laugh",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "例如跟我甚麼？例如跟我聊電話聊個通宵？"
+      "text": "例如跟我甚麼？例如跟我聊電話聊個通宵？",
+      "expr": "01-laugh"
     },
     {
       "kind": "jump",

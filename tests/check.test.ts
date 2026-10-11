@@ -56,4 +56,28 @@ describe("broken fixtures", () => {
     expect(issue?.message).toContain("locked");
     expect(issue?.message).toContain("boolean");
   });
+
+  test("dialogue missing expr for sprite character", () => {
+    const result = checkWork(join(root, "tests/fixtures/missing-expr"));
+    expect(result.ok).toBe(false);
+    const issue = result.errors.find((item) => item.message.includes("missing expr"));
+    expect(issue?.work).toBe("missing-expr");
+    expect(issue?.scene).toBe("room");
+  });
+
+  test("dialogue expr not in sprites map", () => {
+    const result = checkWork(join(root, "tests/fixtures/bad-expr"));
+    expect(result.ok).toBe(false);
+    const issue = result.errors.find((item) =>
+      item.message.includes("not in characters[].sprites"),
+    );
+    expect(issue?.work).toBe("bad-expr");
+    expect(issue?.message).toContain("99-nope");
+  });
+});
+
+test("voice-only speaker may omit expr", () => {
+  const result = checkWork(join(root, "tests/fixtures/voice-only-ok"));
+  expect(result.errors).toEqual([]);
+  expect(result.ok).toBe(true);
 });

@@ -86,16 +86,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "suting",
-      "expr": "01-smile",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "suting",
-      "text": "凌晨，走快點，飛機要開了。"
+      "text": "凌晨，走快點，飛機要開了。",
+      "expr": "01-smile"
     },
     {
       "kind": "actor",
@@ -103,16 +97,10 @@
       "id": "suting"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "04-cold",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "來了來了！"
+      "text": "來了來了！",
+      "expr": "04-cold"
     },
     {
       "kind": "jump",

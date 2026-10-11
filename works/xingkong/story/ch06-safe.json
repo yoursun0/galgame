@@ -79,7 +79,8 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "我有空啊，怎麼了？"
+      "text": "我有空啊，怎麼了？",
+      "expr": "05-fire"
     },
     {
       "kind": "jump",

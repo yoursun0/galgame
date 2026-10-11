@@ -82,16 +82,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "jialun",
-      "expr": "01-murmur",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "jialun",
-      "text": "今天晚上是下莊舉辦的春季天文工作坊最後一天。"
+      "text": "今天晚上是下莊舉辦的春季天文工作坊最後一天。",
+      "expr": "01-murmur"
     },
     {
       "kind": "actor",
@@ -99,16 +93,10 @@
       "id": "jialun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "ajun",
-      "expr": "02-laugh",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "ajun",
-      "text": "凌晨，這也許是你去美國之前最後一次觀星了。要不要在臨別之前來一次大顯身手，為參加者們來一遍星空解說？來，神劍拿去。"
+      "text": "凌晨，這也許是你去美國之前最後一次觀星了。要不要在臨別之前來一次大顯身手，為參加者們來一遍星空解說？來，神劍拿去。",
+      "expr": "02-laugh"
     },
     {
       "kind": "actor",
@@ -116,16 +104,10 @@
       "id": "ajun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "哈哈，落莊了還僭越別人的工作來做？還不快把激光神劍還給現莊莊員？"
+      "text": "哈哈，落莊了還僭越別人的工作來做？還不快把激光神劍還給現莊莊員？",
+      "expr": "01-shrug"
     },
     {
       "kind": "narration",

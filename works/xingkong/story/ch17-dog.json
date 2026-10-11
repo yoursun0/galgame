@@ -75,7 +75,8 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "我在想，半夜的沙灘要是有狗跑出來，該怎麼辦。"
+      "text": "我在想，半夜的沙灘要是有狗跑出來，該怎麼辦。",
+      "expr": "01-shrug"
     },
     {
       "kind": "actor",
@@ -83,16 +84,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "03-glare",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
-      "text": "唏！男子漢大丈夫，怎麼常常生人唔生膽的？"
+      "text": "唏！男子漢大丈夫，怎麼常常生人唔生膽的？",
+      "expr": "03-glare"
     },
     {
       "kind": "actor",
@@ -100,16 +95,10 @@
       "id": "zhijun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "童年陰影罷了。被狗追的經歷。算了，不提。"
+      "text": "童年陰影罷了。被狗追的經歷。算了，不提。",
+      "expr": "01-shrug"
     },
     {
       "kind": "jump",

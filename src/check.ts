@@ -78,10 +78,17 @@ export function checkWork(rootDir: string): {
   }
 
   const characters = new Set<string>();
+  /** Puppy: id -> sprites map (empty object means voice-only / no standee). */
+  const characterSprites = new Map<string, Record<string, string>>();
   if (Array.isArray(manifest.characters)) {
     for (const character of manifest.characters) {
       if (character && typeof character.id === "string") {
         characters.add(character.id);
+        const sprites =
+          character.sprites && typeof character.sprites === "object"
+            ? (character.sprites as Record<string, string>)
+            : {};
+        characterSprites.set(character.id, sprites);
       }
     }
   }
@@ -169,6 +176,7 @@ export function checkWork(rootDir: string): {
         workId,
         declaredVars,
         characters,
+        characterSprites,
         assetById,
         sceneIds,
         errors,
@@ -187,6 +195,7 @@ function checkInstruction(
   workId: string | undefined,
   declaredVars: Map<string, VarType>,
   characters: Set<string>,
+  characterSprites: Map<string, Record<string, string>>,
   assetById: Map<string, AssetRecord>,
   sceneIds: Set<string>,
   errors: CheckIssue[],
@@ -216,15 +225,42 @@ function checkInstruction(
     case "narration":
       checkText(instruction.text, base(), errors);
       break;
-    case "dialogue":
+    case "dialogue": {
       checkText(instruction.text, base(), errors);
       if (!characters.has(instruction.speaker)) {
         errors.push({
           ...base(),
           message: `speaker ${String(instruction.speaker)} is not a declared character`,
         });
+        break;
+      }
+      const sprites = characterSprites.get(instruction.speaker) ?? {};
+      const voiceOnly = Object.keys(sprites).length === 0;
+      // Puppy: voice-only (empty sprites, e.g. student phone VO) must omit expr; sprite chars require it.
+      if (voiceOnly) {
+        if (instruction.expr !== undefined) {
+          errors.push({
+            ...base(),
+            message: `voice-only speaker ${instruction.speaker} must omit expr`,
+          });
+        }
+        break;
+      }
+      if (typeof instruction.expr !== "string" || instruction.expr.length === 0) {
+        errors.push({
+          ...base(),
+          message: `dialogue by ${instruction.speaker} is missing expr`,
+        });
+        break;
+      }
+      if (!(instruction.expr in sprites)) {
+        errors.push({
+          ...base(),
+          message: `expr ${instruction.expr} is not in characters[].sprites for ${instruction.speaker}`,
+        });
       }
       break;
+    }
     case "background":
       requireApproved(instruction.asset, base(), assetById, errors);
       break;

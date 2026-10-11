@@ -99,7 +99,8 @@
     {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "還沒睡？"
+      "text": "還沒睡？",
+      "expr": "04-cold"
     },
     {
       "kind": "actor",
@@ -107,16 +108,10 @@
       "id": "lingchen"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "jialun",
-      "expr": "05-nod",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "jialun",
-      "text": "打風吹走哂 d 稿。太傷心。唔寫落去。就咁 la。"
+      "text": "打風吹走哂 d 稿。太傷心。唔寫落去。就咁 la。",
+      "expr": "05-nod"
     },
     {
       "kind": "actor",
@@ -124,16 +119,10 @@
       "id": "jialun"
     },
     {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "05-fire",
-      "position": "near"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
-      "text": "真是個悲劇結局啊。"
+      "text": "真是個悲劇結局啊。",
+      "expr": "05-fire"
     },
     {
       "kind": "choice",
