@@ -33,9 +33,39 @@
     },
     {
       "kind": "actor",
+      "action": "hide",
+      "id": "ajun"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "baofang"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "dabi"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "huizhang"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "jialun"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "youmu"
+    },
+    {
+      "kind": "actor",
       "action": "show",
       "id": "lingchen",
-      "expr": "01-smile",
+      "expr": "01-shrug",
       "position": "near"
     },
     {
@@ -48,6 +78,18 @@
       "text": "算了吧，往者已矣，別要再提了。"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "huizhang",
+      "expr": "01-calm",
+      "position": "near"
+    },
+    {
       "kind": "dialogue",
       "speaker": "huizhang",
       "text": "不。只有從自己的回憶裡，才能夠找到自己的影子。一個動人的故事，不會沒有意義的。"
@@ -58,9 +100,33 @@
       "text": "怎樣了？凌晨小子！自己說完故事，要不要來聽聽會長大人，漫話當年我自己星空下的情緣？"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "huizhang"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
+    },
+    {
       "kind": "dialogue",
       "speaker": "lingchen",
       "text": "當然想聽了！"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "huizhang",
+      "expr": "01-calm",
+      "position": "near"
     },
     {
       "kind": "dialogue",
@@ -68,9 +134,33 @@
       "text": "真的想聽？"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "huizhang"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
+    },
+    {
       "kind": "dialogue",
       "speaker": "lingchen",
       "text": "想！"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "huizhang",
+      "expr": "01-calm",
+      "position": "near"
     },
     {
       "kind": "dialogue",

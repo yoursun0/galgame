@@ -33,9 +33,39 @@
     },
     {
       "kind": "actor",
+      "action": "hide",
+      "id": "ajun"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "baofang"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "dabi"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "huizhang"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "jialun"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "youmu"
+    },
+    {
+      "kind": "actor",
       "action": "show",
       "id": "lingchen",
-      "expr": "01-grin",
+      "expr": "01-shrug",
       "position": "near"
     },
     {
@@ -52,12 +82,37 @@
       "text": "游牧下巴幾乎掉下來。"
     },
     {
-      "kind": "narration",
-      "text": "游牧："
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "youmu",
+      "expr": "01-shout",
+      "position": "near"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "youmu",
+      "text": ""
     },
     {
       "kind": "narration",
       "text": "你跟芷君在一起？甚麼時候的事？"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "youmu"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
     },
     {
       "kind": "dialogue",
@@ -65,12 +120,37 @@
       "text": "差不多半年了。"
     },
     {
-      "kind": "narration",
-      "text": "游牧："
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "youmu",
+      "expr": "01-shout",
+      "position": "near"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "youmu",
+      "text": ""
     },
     {
       "kind": "narration",
       "text": "不可能。芷君怎麼沒告訴我？"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "youmu"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
     },
     {
       "kind": "dialogue",
@@ -78,8 +158,21 @@
       "text": "芷君跟我說過，你也有一個很要好的女朋友。"
     },
     {
-      "kind": "narration",
-      "text": "游牧："
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "youmu",
+      "expr": "01-shout",
+      "position": "near"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "youmu",
+      "text": ""
     },
     {
       "kind": "narration",

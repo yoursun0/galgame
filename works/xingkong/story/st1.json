@@ -32,6 +32,36 @@
       "id": "zhijun"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "ajun"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "baofang"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "dabi"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "huizhang"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "jialun"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "youmu"
+    },
+    {
       "kind": "cg",
       "action": "hide"
     },
@@ -42,6 +72,13 @@
     {
       "kind": "narration",
       "text": "會長點齊人數。"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "huizhang",
+      "expr": "01-calm",
+      "position": "near"
     },
     {
       "kind": "dialogue",

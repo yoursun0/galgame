@@ -33,9 +33,39 @@
     },
     {
       "kind": "actor",
+      "action": "hide",
+      "id": "ajun"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "baofang"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "dabi"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "huizhang"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "jialun"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "youmu"
+    },
+    {
+      "kind": "actor",
       "action": "show",
       "id": "lingchen",
-      "expr": "01-grin",
+      "expr": "01-shrug",
       "position": "near"
     },
     {
@@ -47,8 +77,33 @@
       "text": "傍晚。又是 coffee corner。這頓是凌晨約內蒙團團友晚飯聚的。"
     },
     {
-      "kind": "narration",
-      "text": "寶方：啐，凌晨，慴慴，過一會兒你們中天是不是搞甚麼的，慴慴，天文工作坊？"
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "baofang",
+      "expr": "01-run",
+      "position": "near"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "baofang",
+      "text": "啐，凌晨，慴慴，過一會兒你們中天是不是搞甚麼的，慴慴，天文工作坊？"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "baofang"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
     },
     {
       "kind": "dialogue",
@@ -56,9 +111,33 @@
       "text": "對啊，本季最後一次。莊員親自指導觀星，絕不容錯過。"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "01-laugh",
+      "position": "near"
+    },
+    {
       "kind": "dialogue",
       "speaker": "zhijun",
       "text": "你不是說天文工作坊都是在 MMW 的講室裡舉行的嗎？在室內怎麼指導觀星？"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
     },
     {
       "kind": "dialogue",
@@ -66,9 +145,33 @@
       "text": "總之，我們保證即使在室內，依然可以給各位有如親臨星空下的享受。"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "qishan",
+      "expr": "01-grin",
+      "position": "near"
+    },
+    {
       "kind": "dialogue",
       "speaker": "qishan",
       "text": "就老愛替自己搞的活動賣廣告。"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
     },
     {
       "kind": "dialogue",
@@ -80,9 +183,33 @@
       "text": "他身後是一大片烏雲。"
     },
     {
+      "kind": "actor",
+      "action": "hide",
+      "id": "lingchen"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "01-laugh",
+      "position": "near"
+    },
+    {
       "kind": "dialogue",
       "speaker": "zhijun",
       "text": "不好意思哩，我過一會兒還得開中文系系莊的會。能上來吃頓晚飯已經很給面子了。"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "zhijun"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "qishan",
+      "expr": "01-grin",
+      "position": "near"
     },
     {
       "kind": "dialogue",
@@ -90,8 +217,33 @@
       "text": "我也不來了。去了也只是聽你胡說八道，省得沾污我的耳朵。"
     },
     {
-      "kind": "narration",
-      "text": "寶方：不用慌，凌晨，他們不理睬你，還有我這個老友捧你的場。"
+      "kind": "actor",
+      "action": "hide",
+      "id": "qishan"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "baofang",
+      "expr": "01-run",
+      "position": "near"
+    },
+    {
+      "kind": "dialogue",
+      "speaker": "baofang",
+      "text": "不用慌，凌晨，他們不理睬你，還有我這個老友捧你的場。"
+    },
+    {
+      "kind": "actor",
+      "action": "hide",
+      "id": "baofang"
+    },
+    {
+      "kind": "actor",
+      "action": "show",
+      "id": "lingchen",
+      "expr": "01-shrug",
+      "position": "near"
     },
     {
       "kind": "dialogue",
