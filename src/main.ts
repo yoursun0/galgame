@@ -16,6 +16,12 @@ import {
   type WorkProgress,
 } from "./flow.ts";
 import { presentGallery, sceneForEnding, type GalleryCard, type RecallCard } from "./gallery.ts";
+import {
+  buildDebugTree,
+  flattenDebugTree,
+  jumpToScene,
+  type DebugTree,
+} from "./debug-tree.ts";
 import { initialState } from "./reduce.ts";
 import {
   acceptLoad,
@@ -501,7 +507,12 @@ function renderHud(): void {
     { act: "load", label: "讀檔", on: () => openPanel("load") },
     { act: "qsave", label: "快存", disabled: Boolean(recall), on: () => void saveManual(QUICK_SLOT) },
     { act: "qload", label: "快讀", on: () => void loadSlot(QUICK_SLOT) },
-    { act: "recall", label: recall ? "結束回想" : "回想", on: () => (recall ? endRecall() : openPanel("recall")) },
+    {
+      act: "recall",
+      // Puppy #74: DEBUG ON → branch tree; OFF → normal recall list.
+      label: recall ? "結束回想" : settings.debugMode ? "DEBUG 樹" : "回想",
+      on: () => (recall ? endRecall() : openPanel("recall")),
+    },
     { act: "settings", label: "設定", on: () => openPanel("settings") },
     { act: "title", label: "標題", on: () => showTitle() },
   ];
@@ -571,7 +582,8 @@ function panelTitle(kind: typeof panel): string {
     case "gallery":
       return "鑑賞";
     case "recall":
-      return "回想";
+      // Puppy #74
+      return settings.debugMode ? "DEBUG 分支樹" : "回想";
     default:
       return "";
   }
@@ -810,6 +822,8 @@ function fillSettings(body: HTMLElement): void {
     settings = { ...settings, debugMode: debugSelect.value === "on" };
     void storeSettings();
     syncDebugHud();
+    // Puppy #74: HUD「回想」／「DEBUG 樹」label follows debugMode.
+    renderHud();
   });
   debugRow.append(debugName, debugSelect);
   form.append(debugRow);
@@ -991,12 +1005,97 @@ function startEndingReplay(_endingId: string, sceneId: string): void {
 }
 
 function fillRecall(body: HTMLElement): void {
+  // Puppy #74: DEBUG MODE ON → full branch tree; OFF → unlocked recall list only.
+  if (settings.debugMode) {
+    fillDebugTree(body);
+    return;
+  }
   const view = presentGallery(work, assets, progress);
   if (view.recalls.length === 0) {
     body.textContent = "這部作品沒有回想場景。";
     return;
   }
   body.append(recallList(view.recalls));
+}
+
+/** Puppy #74: scrollable VN branch tree; click hub → jumpToScene + beginPlay. */
+function fillDebugTree(body: HTMLElement): void {
+  const tree: DebugTree = buildDebugTree(work);
+  const wrap = document.createElement("div");
+  wrap.className = "debug-tree";
+
+  const tools = document.createElement("div");
+  tools.className = "debug-tree-tools";
+  const search = document.createElement("input");
+  search.type = "search";
+  search.className = "debug-tree-search";
+  search.placeholder = "搜尋 scene id／選項／變數";
+  search.setAttribute("aria-label", "搜尋分支樹");
+  tools.append(search);
+
+  const list = document.createElement("div");
+  list.className = "debug-tree-list";
+
+  const renderRows = (): void => {
+    list.replaceChildren();
+    const rows = flattenDebugTree(tree, search.value);
+    if (rows.length === 0) {
+      const empty = document.createElement("p");
+      empty.className = "note";
+      empty.textContent = "沒有符合的節點。";
+      list.append(empty);
+      return;
+    }
+    for (const row of rows) {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "debug-tree-node";
+      if (row.sceneId === state.sceneId) btn.classList.add("current");
+      btn.style.setProperty("--depth", String(row.depth));
+      const title = document.createElement("span");
+      title.className = "debug-tree-id";
+      let label = row.sceneId;
+      if (row.endingId) label += `  〔ending: ${row.endingId}〕`;
+      if (row.hasChoice) label += "  〔choice〕";
+      title.textContent = label;
+      btn.append(title);
+      if (row.via) {
+        const via = document.createElement("span");
+        via.className = "debug-tree-via";
+        via.textContent = row.via;
+        btn.append(via);
+      }
+      if (row.skipped > 0) {
+        const skip = document.createElement("span");
+        skip.className = "debug-tree-skip";
+        skip.textContent = `…${row.skipped} 場`;
+        btn.append(skip);
+      }
+      if (row.sets.length > 0) {
+        const effects = document.createElement("span");
+        effects.className = "debug-tree-sets";
+        effects.textContent = row.sets
+          .map((s) => `${s.var}=${JSON.stringify(s.value)}`)
+          .join(" · ");
+        btn.append(effects);
+      }
+      btn.addEventListener("click", () => {
+        const next = jumpToScene(work, row.sceneId);
+        if (!next) {
+          setOverlayNote(`無法跳到 ${row.sceneId}（不可達或缺場）。`);
+          return;
+        }
+        beginPlay(next);
+        setOverlayNote(`已跳到 ${row.sceneId}`);
+      });
+      list.append(btn);
+    }
+  };
+
+  search.addEventListener("input", () => renderRows());
+  wrap.append(tools, list);
+  body.append(wrap);
+  renderRows();
 }
 
 function recallList(cards: RecallCard[]): HTMLElement {
@@ -1349,6 +1448,8 @@ function shellCss(): string {
       .gal-grid {
         grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
       }
+      .debug-tree-node { margin-left: calc(var(--depth, 0) * 10px); }
+      .debug-tree-list { max-height: min(65vh, 560px); }
     }
     @media (max-width: 720px) and (orientation: portrait) {
       /* #38: wrap instead of horizontal scroll so all HUD actions stay tappable */
