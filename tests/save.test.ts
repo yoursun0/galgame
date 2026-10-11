@@ -9,6 +9,7 @@ import {
   acceptLoad,
   capture,
   defaultSettings,
+  sanitizeSettings,
   latestContinue,
   manualSlot,
   openSaveDb,
@@ -109,6 +110,18 @@ describe("indexedDB saves", () => {
     expect(after).toEqual(before);
     expect(await latestContinue(db, work)).toBeNull();
     db.close();
+  });
+
+  test("old settings without textInstant stay typed; true means instant", () => {
+    const old = {
+      textSpeed: 40,
+      autoDelayMs: 1600,
+      volumes: { bgm: 0.35, se: 0.55, ambience: 0.22 },
+      animation: "full" as const,
+    };
+    expect(sanitizeSettings(old)).toEqual({ ...old, textInstant: false, debugMode: false });
+    expect(sanitizeSettings({ ...old, textInstant: true })?.textInstant).toBe(true);
+    expect(sanitizeSettings({ ...old, textInstant: "instant" })?.textInstant).toBe(false);
   });
 
   test("settings, progress, and slots stay in separate stores", async () => {
