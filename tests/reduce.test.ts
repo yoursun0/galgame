@@ -249,6 +249,137 @@ describe("auto-expr dialogue", () => {
     ]);
   });
 
+  // Puppy: #77 new auto-expr speakers take the free near/far slot; on-stage speakers keep position.
+  function slotWork(
+    id: string,
+    instructions: Scene["instructions"],
+  ): Work {
+    return {
+      manifest: {
+        schemaVersion: 1,
+        contentVersion: 1,
+        id,
+        title: id,
+        language: "zh-Hant",
+        start: "room",
+        characters: [
+          {
+            id: "lingchen",
+            name: "凌晨",
+            sprites: { "01-shrug": "spr-lc-01", "02-blush": "spr-lc-02" },
+          },
+          {
+            id: "zhijun",
+            name: "芷君",
+            sprites: { "01-laugh": "spr-zj-01" },
+          },
+        ],
+        variables: [],
+        scenes: [],
+      },
+      scenes: [{ id: "room", instructions }],
+    };
+  }
+
+  test("new speaker auto-shows at far when another actor is already near", () => {
+    const work = slotWork("slots-near-taken", [
+      {
+        kind: "actor",
+        action: "show",
+        id: "lingchen",
+        position: "near",
+        expr: "01-shrug",
+      },
+      {
+        kind: "dialogue",
+        speaker: "zhijun",
+        expr: "01-laugh",
+        text: "你又搞甚麼花樣了？",
+      },
+    ]);
+    const state = reduce(work, initialState(work), { type: "advance" });
+    expect(state.actors).toEqual([
+      { id: "lingchen", expr: "01-shrug", position: "near" },
+      { id: "zhijun", expr: "01-laugh", position: "far" },
+    ]);
+  });
+
+  test("new speaker auto-shows at near when another actor is already far", () => {
+    const work = slotWork("slots-far-taken", [
+      {
+        kind: "actor",
+        action: "show",
+        id: "lingchen",
+        position: "far",
+        expr: "01-shrug",
+      },
+      {
+        kind: "dialogue",
+        speaker: "zhijun",
+        expr: "01-laugh",
+        text: "你又搞甚麼花樣了？",
+      },
+    ]);
+    const state = reduce(work, initialState(work), { type: "advance" });
+    expect(state.actors).toEqual([
+      { id: "lingchen", expr: "01-shrug", position: "far" },
+      { id: "zhijun", expr: "01-laugh", position: "near" },
+    ]);
+  });
+
+  test("existing speaker keeps position when dialogue updates expr", () => {
+    const work = slotWork("slots-keep", [
+      {
+        kind: "actor",
+        action: "show",
+        id: "lingchen",
+        position: "far",
+        expr: "01-shrug",
+      },
+      {
+        kind: "actor",
+        action: "show",
+        id: "zhijun",
+        position: "near",
+        expr: "01-laugh",
+      },
+      {
+        kind: "dialogue",
+        speaker: "lingchen",
+        expr: "02-blush",
+        text: "冇花樣。",
+      },
+    ]);
+    const state = reduce(work, initialState(work), { type: "advance" });
+    expect(state.actors).toEqual([
+      { id: "lingchen", expr: "02-blush", position: "far" },
+      { id: "zhijun", expr: "01-laugh", position: "near" },
+    ]);
+  });
+
+  // Puppy: null position shares the near slot (stage.ts: position !== "far").
+  test("new speaker auto-shows at far when another actor has a null position", () => {
+    const work = slotWork("slots-null-near", [
+      {
+        kind: "actor",
+        action: "show",
+        id: "lingchen",
+        expr: "01-shrug",
+      },
+      {
+        kind: "dialogue",
+        speaker: "zhijun",
+        expr: "01-laugh",
+        text: "你又搞甚麼花樣了？",
+      },
+    ]);
+    const state = reduce(work, initialState(work), { type: "advance" });
+    expect(state.actors).toEqual([
+      { id: "lingchen", expr: "01-shrug", position: null },
+      { id: "zhijun", expr: "01-laugh", position: "far" },
+    ]);
+  });
+
   test("voice-only speaker does not auto-show", () => {
     const work: Work = {
       manifest: {

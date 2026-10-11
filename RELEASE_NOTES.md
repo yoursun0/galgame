@@ -1,5 +1,9 @@
 # Release Notes
 
+## v1.20 2026-10-11 11:47:01
+
+- Player：dialogue auto-expr 新說話人改佔空的近／遠槽（左／右分開），唔再一律 near 疊圖；已在場只改表情（#77）。
+
 ## v1.19 2026-10-11 11:45:30
 
 - 文案：`ch05-circle` 芷君 `show near` 撞仍在場的凌晨 → 改 `far`（#77 UAT 清單 script 雙 near）。
