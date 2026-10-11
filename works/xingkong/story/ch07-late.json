@@ -69,6 +69,13 @@
       "position": "near"
     },
     {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "01-laugh",
+      "position": "far"
+    },
+    {
       "kind": "cg",
       "action": "hide"
     },
@@ -81,20 +88,10 @@
       "text": "凌晨一身汗，在芷君面前坐下。"
     },
     {
-      "kind": "actor",
-      "action": "hide",
-      "id": "lingchen"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
       "text": "喂，你遲到了。",
       "expr": "01-laugh"
-    },
-    {
-      "kind": "actor",
-      "action": "hide",
-      "id": "zhijun"
     },
     {
       "kind": "dialogue",
@@ -103,20 +100,10 @@
       "expr": "01-shrug"
     },
     {
-      "kind": "actor",
-      "action": "hide",
-      "id": "lingchen"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
       "text": "知道的話，那應該怎辦？",
       "expr": "02-hips"
-    },
-    {
-      "kind": "actor",
-      "action": "hide",
-      "id": "zhijun"
     },
     {
       "kind": "dialogue",
@@ -125,31 +112,16 @@
       "expr": "02-blush"
     },
     {
-      "kind": "actor",
-      "action": "hide",
-      "id": "lingchen"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
       "text": "不，可，以。",
       "expr": "03-glare"
     },
     {
-      "kind": "actor",
-      "action": "hide",
-      "id": "zhijun"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
       "text": "不對啊不對啊。你應該說「當然可以啦！」，那是你的經典對白啊！",
       "expr": "04-cold"
-    },
-    {
-      "kind": "actor",
-      "action": "hide",
-      "id": "lingchen"
     },
     {
       "kind": "dialogue",

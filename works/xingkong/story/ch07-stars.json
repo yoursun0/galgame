@@ -69,13 +69,15 @@
       "position": "near"
     },
     {
-      "kind": "cg",
-      "action": "hide"
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "01-laugh",
+      "position": "far"
     },
     {
-      "kind": "actor",
-      "action": "hide",
-      "id": "lingchen"
+      "kind": "cg",
+      "action": "hide"
     },
     {
       "kind": "dialogue",
@@ -84,38 +86,16 @@
       "expr": "01-laugh"
     },
     {
-      "kind": "actor",
-      "action": "hide",
-      "id": "zhijun"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
       "text": "啊！你說了的呀，你說了可要算數啊。我現在就給你看星星！",
       "expr": "02-blush"
     },
     {
-      "kind": "actor",
-      "action": "hide",
-      "id": "lingchen"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
       "text": "別裝高興了，你哪會拿到星星給我看。",
       "expr": "02-hips"
-    },
-    {
-      "kind": "actor",
-      "action": "hide",
-      "id": "zhijun"
-    },
-    {
-      "kind": "actor",
-      "action": "show",
-      "id": "lingchen",
-      "expr": "01-shrug",
-      "position": "near"
     },
     {
       "kind": "narration",
@@ -128,11 +108,6 @@
       "expr": "02-hips"
     },
     {
-      "kind": "actor",
-      "action": "hide",
-      "id": "zhijun"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
       "text": "你看，星星啊！",
@@ -143,31 +118,16 @@
       "text": "一顆橡筋星。"
     },
     {
-      "kind": "actor",
-      "action": "hide",
-      "id": "lingchen"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
       "text": "車！才這樣一顆，你說要給我看滿天星空啊！",
       "expr": "03-glare"
     },
     {
-      "kind": "actor",
-      "action": "hide",
-      "id": "zhijun"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
       "text": "這個易辦。看，雙星。然後，三星。",
       "expr": "05-fire"
-    },
-    {
-      "kind": "actor",
-      "action": "hide",
-      "id": "lingchen"
     },
     {
       "kind": "dialogue",
@@ -180,31 +140,16 @@
       "text": "凌晨把膠筋拉緊。"
     },
     {
-      "kind": "actor",
-      "action": "hide",
-      "id": "zhijun"
-    },
-    {
       "kind": "dialogue",
       "speaker": "lingchen",
       "text": "最後，炫目的銀河。送給你。",
       "expr": "01-shrug"
     },
     {
-      "kind": "actor",
-      "action": "hide",
-      "id": "lingchen"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
       "text": "不錯嘛。真是服了你這小子啦。",
       "expr": "04-puff"
-    },
-    {
-      "kind": "actor",
-      "action": "hide",
-      "id": "zhijun"
     },
     {
       "kind": "dialogue",

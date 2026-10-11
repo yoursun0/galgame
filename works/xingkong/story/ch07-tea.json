@@ -65,44 +65,29 @@
       "kind": "actor",
       "action": "show",
       "id": "lingchen",
-      "expr": "02-blush",
+      "expr": "01-shrug",
       "position": "near"
-    },
-    {
-      "kind": "cg",
-      "action": "hide"
-    },
-    {
-      "kind": "actor",
-      "action": "hide",
-      "id": "lingchen"
     },
     {
       "kind": "actor",
       "action": "show",
       "id": "zhijun",
       "expr": "02-hips",
-      "position": "near"
+      "position": "far"
+    },
+    {
+      "kind": "cg",
+      "action": "hide"
     },
     {
       "kind": "narration",
       "text": "芷君站起來，往收銀處走。"
     },
     {
-      "kind": "actor",
-      "action": "hide",
-      "id": "lingchen"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
       "text": "好了，星星的事也就罷了。現在看你又怎麼無中生有地，給我變出個甚麼火辣辣鐵板燒下午茶餐？",
       "expr": "01-laugh"
-    },
-    {
-      "kind": "actor",
-      "action": "hide",
-      "id": "zhijun"
     },
     {
       "kind": "dialogue",
@@ -113,11 +98,6 @@
     {
       "kind": "narration",
       "text": "沒有這種下午茶。"
-    },
-    {
-      "kind": "actor",
-      "action": "hide",
-      "id": "lingchen"
     },
     {
       "kind": "dialogue",

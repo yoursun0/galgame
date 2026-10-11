@@ -69,18 +69,23 @@
       "position": "near"
     },
     {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "03-glare",
+      "position": "far"
+    },
+    {
       "kind": "cg",
       "action": "hide"
     },
     {
       "kind": "narration",
-      "text": "凌晨低著頭。"
+      "text": "凌晨低著頭，只擠出一句「人之常情」。"
     },
     {
-      "kind": "dialogue",
-      "speaker": "lingchen",
-      "text": "那，那也是人之常情嘛。",
-      "expr": "05-fire"
+      "kind": "narration",
+      "text": "芷君沒有接。空氣還是緊的。"
     },
     {
       "kind": "jump",
