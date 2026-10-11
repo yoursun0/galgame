@@ -15,7 +15,7 @@ import {
   type RecallFrame,
   type WorkProgress,
 } from "./flow.ts";
-import { presentGallery, type GalleryCard, type RecallCard } from "./gallery.ts";
+import { presentGallery, sceneForEnding, type GalleryCard, type RecallCard } from "./gallery.ts";
 import { initialState } from "./reduce.ts";
 import {
   acceptLoad,
@@ -888,7 +888,9 @@ function galleryGroup(title: string, cards: GalleryCard[]): HTMLElement {
   const grid = document.createElement("div");
   grid.className = "gal-grid";
   for (const card of cards) {
-    const cell = document.createElement("div");
+    // Puppy #72: unlocked cards are buttons with click actions; locked stay inert.
+    const cell = document.createElement(card.unlocked ? "button" : "div");
+    if (card.unlocked) (cell as HTMLButtonElement).type = "button";
     cell.className = card.unlocked ? "gal-card" : "gal-card locked";
     const caption = document.createElement("p");
     caption.textContent = card.label;
@@ -902,10 +904,90 @@ function galleryGroup(title: string, cards: GalleryCard[]): HTMLElement {
         cell.prepend(img);
       }
     }
+    if (card.unlocked) {
+      cell.addEventListener("click", () => {
+        if (title === "CG" && card.assetId) {
+          openCgViewer(card.assetId);
+          return;
+        }
+        if (title === "音樂" && card.assetId) {
+          playGalleryBgm(card.assetId);
+          return;
+        }
+        if (title === "結局" && card.endingId && card.sceneId) {
+          startEndingReplay(card.endingId, card.sceneId);
+        }
+      });
+    }
     grid.append(cell);
   }
   group.append(grid);
   return group;
+}
+
+/** Puppy #72: fullscreen CG review on top of gallery; click / 關閉 returns to gallery. */
+function openCgViewer(assetId: string): void {
+  const src = urls.get(assetId);
+  if (!src) return;
+  const existing = overlay.querySelector(".cg-viewer");
+  existing?.remove();
+  const viewer = document.createElement("div");
+  viewer.className = "cg-viewer";
+  viewer.setAttribute("role", "dialog");
+  viewer.setAttribute("aria-label", "CG 重溫");
+  const img = document.createElement("img");
+  img.src = src;
+  img.alt = "";
+  const closeBtn = document.createElement("button");
+  closeBtn.type = "button";
+  closeBtn.className = "text-btn cg-viewer-close";
+  closeBtn.textContent = "關閉";
+  const close = () => viewer.remove();
+  closeBtn.addEventListener("click", (event) => {
+    event.stopPropagation();
+    close();
+  });
+  viewer.addEventListener("click", () => close());
+  viewer.append(img, closeBtn);
+  overlay.append(viewer);
+}
+
+/** Puppy #72: switch BGM immediately via AudioMixer (title／鑑賞 share mixer). */
+function playGalleryBgm(assetId: string): void {
+  unlockFromGesture();
+  if (!audio.unlocked) return;
+  const url = urls.get(assetId);
+  if (!url) {
+    setOverlayNote("找不到這首音樂。");
+    return;
+  }
+  audio.sync(
+    resolveAudio({ bgm: assetId, se: null, ambience: null }, (id) => urls.get(id) ?? null),
+  );
+  setOverlayNote("正在播放");
+}
+
+/** Puppy #72: jump to the ending scene and replay through to the ending card. */
+function startEndingReplay(_endingId: string, sceneId: string): void {
+  const resolved = sceneForEnding(work, _endingId);
+  if (!resolved || resolved !== sceneId) {
+    setOverlayNote("找不到這個結局場。");
+    return;
+  }
+  const base = initialState(work);
+  beginPlay({
+    ...base,
+    sceneId,
+    index: 0,
+    background: null,
+    actors: [],
+    cg: null,
+    audio: { bgm: null, se: null, ambience: null },
+    line: null,
+    choices: null,
+    ending: null,
+    waiting: false,
+  });
 }
 
 function fillRecall(body: HTMLElement): void {
@@ -1000,6 +1082,12 @@ window.addEventListener("pointerdown", unlockFromGesture);
 window.addEventListener("keydown", (event) => {
   unlockFromGesture();
   if (event.key === "Escape") {
+    // Puppy #72: close fullscreen CG review before dismissing gallery panel.
+    const viewer = overlay.querySelector(".cg-viewer");
+    if (viewer) {
+      viewer.remove();
+      return;
+    }
     if (panel !== "none") closePanel();
     else if (recall) endRecall();
     return;
@@ -1183,9 +1271,38 @@ function shellCss(): string {
       overflow-wrap: anywhere;
       word-break: break-word;
     }
-    .gal-card { min-height: 72px; border: 1px solid ${theme.nameplate.border}; }
-    .gal-card img { width: 100%; height: 96px; object-fit: cover; display: block; }
-    .gal-card.locked { opacity: 0.55; }
+    .gal-card { min-height: 72px; border: 1px solid ${theme.nameplate.border}; cursor: pointer; width: 100%; color: inherit; background: transparent; font: inherit; }
+    button.gal-card:hover, button.gal-card:focus-visible { border-color: ${plate.color}; }
+    .gal-card img { width: 100%; height: 96px; object-fit: cover; display: block; pointer-events: none; }
+    .gal-card.locked { opacity: 0.55; cursor: default; }
+    .gal-card p { margin: 6px 0 0; }
+    /* Puppy #72: fullscreen CG review above gallery panel */
+    .cg-viewer {
+      position: absolute;
+      inset: 0;
+      z-index: 5;
+      display: grid;
+      place-items: center;
+      background: rgba(0, 0, 0, 0.92);
+      pointer-events: auto;
+      padding: 12px;
+    }
+    .cg-viewer img {
+      max-width: min(100%, 1280px);
+      max-height: calc(100dvh - 96px);
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      pointer-events: none;
+    }
+    .cg-viewer-close {
+      position: absolute;
+      top: max(12px, env(safe-area-inset-top, 0px));
+      right: max(12px, env(safe-area-inset-right, 0px));
+      z-index: 1;
+      padding: 8px 14px;
+      background: rgba(7, 11, 20, 0.85);
+    }
     .settings { display: grid; gap: 12px; max-width: 520px; }
     .set-row { display: grid; grid-template-columns: 9em 1fr auto; gap: 8px; align-items: center; }
     .recall-list { display: grid; gap: 8px; }

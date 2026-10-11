@@ -467,5 +467,26 @@
     "story/zj4.json"
   ],
   "titleBgm": "bgm-xingkong-luoyin",
-  "titleNote": "改篇自凌晨《話當年之二》@ 2011"
+  "titleNote": "改篇自凌晨《話當年之二》@ 2011",
+  "endingTitles": {
+    "ch10-bad-secret": "守不住的秘密",
+    "ch12-alone": "一個人走",
+    "end-no-look-back": "沒有回頭",
+    "end-suting-early": "早一步",
+    "end-zhijun-hankie": "新手帕",
+    "end-qishan-pinch": "捏兩下",
+    "end-canon-dawn": "原著收束",
+    "suting-bad-leave": "素婷・離去",
+    "suting-bad-rip": "素婷・撕破",
+    "suting-good": "素婷・良緣",
+    "suting-true": "素婷・星夜",
+    "zhijun-bad-bridge": "芷君・斷橋",
+    "zhijun-bad-shield": "芷君・盾",
+    "zhijun-good": "芷君・良緣",
+    "zhijun-true": "芷君・真結局",
+    "qishan-bad-cool": "綺珊・冷淡",
+    "qishan-bad-setup": "綺珊・局",
+    "qishan-good": "綺珊・良緣",
+    "qishan-true": "綺珊・真結局"
+  }
 }

@@ -212,4 +212,29 @@ describe("gallery redaction", () => {
       }
     }
   });
+
+  // Puppy #72: endingTitles for unlocked; locked must not leak titles or ids.
+  test("unlocked endings show endingTitles and sceneId; locked leak nothing", () => {
+    const progress = emptyProgress(work.manifest.id);
+    const titles = work.manifest.endingTitles ?? {};
+    expect(Object.keys(titles).length).toBeGreaterThan(0);
+    const sampleId = "end-suting-early";
+    const sampleTitle = titles[sampleId];
+    expect(sampleTitle).toBeTruthy();
+    progress.endings = [sampleId];
+    const view = presentGallery(work, assets, progress);
+    const unlocked = view.endings.find((card) => card.unlocked);
+    expect(unlocked?.endingId).toBe(sampleId);
+    expect(unlocked?.label).toBe(sampleTitle);
+    expect(unlocked?.sceneId).toBeTruthy();
+    expect(unlocked?.assetId).toBeNull();
+    const dumpedLocked = JSON.stringify(view.endings.filter((card) => !card.unlocked));
+    expect(dumpedLocked.includes(sampleId)).toBe(false);
+    expect(dumpedLocked.includes(sampleTitle!)).toBe(false);
+    for (const [id, title] of Object.entries(titles)) {
+      if (id === sampleId) continue;
+      expect(dumpedLocked.includes(id)).toBe(false);
+      expect(dumpedLocked.includes(title)).toBe(false);
+    }
+  });
 });
