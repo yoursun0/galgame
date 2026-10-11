@@ -1,8 +1,10 @@
 # 《星空情緣》改編企劃（關卡一）
 
-狀態：**待 Helic／Paddy 審核**。本文件對應 [PLAN.md](../../../PLAN.md) §4.1 與 issue [#7](https://github.com/yoursun0/galgame/issues/7)。  
+狀態：關卡一歷史企劃（已落地）。**注意（v1.6）：** Twine／`.twee` 製作路徑已退役；可玩 SoT＝`../story/*.json`＋`../work.json`。下文「Twine passage」欄僅作歷史對照，唔再指向倉庫檔案。
+
+狀態（原文）：**待 Helic／Paddy 審核**。本文件對應 [PLAN.md](../../../PLAN.md) §4.1 與 issue [#7](https://github.com/yoursun0/galgame/issues/7)。  
 作者：九把刀（2026-10-10）。  
-對照來源：`fiction.md`（話當年之二）、`works/xingkong/production/twine/xingkong.twee`（已 merge）、`works/xingkong/story/*.json`（v0.3 遷入）、`works/xingkong/work.json`、`characters/_bible.md`（衝突時以 novel 為準）。
+對照來源：`fiction.md`（話當年之二）、`works/xingkong/story/*.json`（**可玩 SoT**）、`works/xingkong/work.json`、`characters/_bible.md`（衝突時以 novel 為準）。（歷史審稿地圖 `production/twine/xingkong.twee` 已於 v1.6 刪除。）
 
 ---
 
@@ -13,13 +15,12 @@
 | 路線結構 | **梯式**：原著路線直行；其他路線在閘口剝離；多數可合流。 |
 | 狀態模型 | **方法丙**：約十個 boolean 旗標＋`courage`（0–5）＋`candor`（0–4）；非純分支樹、非每女角好感條。 |
 | 時間線 | **倒敘只開場一次**：第一章 SOC 房「話當年」→ 切入一年前內蒙團；之後嚴格時序，不再插敘一年後 coffee corner。 |
-| 劇本載體 | Twine `.twee`＝審稿地圖；遊戲本體＝現有網頁播放器＋JSON 指令劇本。 |
+| 劇本載體 | **可玩 SoT**＝網頁播放器＋`story/*.json`；歷史 Twine `.twee` 審稿地圖已退役。 |
 | 玩家 | 固定為敘事者**凌晨**。 |
 | 結局（企劃層代號） | 見 §3；內容以已批准列表為準，**不發明新結局劇情**。 |
 
-Twine 旗標現況（`StoryInit`）：`$courage`、`$candor`、`$ch4_faced`、`$ch7_faced`、`$ch21_ask`。  
-現有 JSON 變數（`work.json`）：`qishanHonest`、`sutingWalk`、`zhijunName`（boolean）。  
-→ 命名對照與統一方案見 [`routes.md`](routes.md)。**本 PR 不改 player、不改 story JSON。**
+旗標（`work.json`）：`qishanHonest`、`sutingWalk`、`zhijunName`、`courage`、`candor`、`ch4_faced`、`ch7_faced`、`ch21_ask`。  
+→ 命名對照見 [`routes.md`](routes.md)。（歷史 Twine `StoryInit` 同名變數已併入 JSON。）
 
 ---
 
@@ -50,18 +51,18 @@ Twine 旗標現況（`StoryInit`）：`$courage`、`$candor`、`$ch4_faced`、`$
 | **迄（段落收束）** | `Ch04-Night`…`Ch04-Poem`（**停在詩／星空靜場，不進 Ch05**） | `star1`–`star5` → `midcard`（**不進 `branch`**） | 第四話：草原觀星 |
 
 **明確不做進試玩：** `branch` 及之後的 `s*`／`z*`／`q*` 線、任何 END 卡、赴美後章節。  
-現有 JSON 已含完整三線結局，僅作 **v0.3 原型藍本**；正式品質試玩劇本應以 twee 對應段落重寫／對齊後，再交 #8，**不是**把整本 JSON 當試玩範圍。
+現有 JSON 已含完整三線結局；V1.0 可玩主線以 `../story/*.json` 七結局為準（唔接返原型 `branch` 三線）。下文 Twine passage 欄只係歷史對照。
 
 ### 2.3 玩家會碰到的選擇（試玩段內）
 
 | 次序 | Twine | JSON | 選項（摘要） | 寫入旗標 | 來源 |
 |------|-------|------|--------------|----------|------|
-| A | `Ch01-Handout`：塞團刊／收回 | `qi_choice` | 裝酷塞過去／先說明遺留 | → `qishanHonest` false／true（JSON 名）；twee 此處尚無同名變數，見 routes **待對齊** | **原作**有裝酷遞團刊；「先說明」為 **合理分支新增** |
+| A | `Ch01-Handout`：塞團刊／收回 | `qi_choice` | 裝酷塞過去／先說明遺留 | → `qishanHonest` false／true | **原作**有裝酷遞團刊；「先說明」為 **合理分支新增** |
 | B | `Ch02-Go`：跟在後面／走到身旁 | `wall_choice` | 關口坐下再跟／追上去 | → `sutingWalk` true／false | **原作**凌晨多跟在素婷後；「追上去」為 **閘口剝離用新增** |
 | C | `Ch03-Names`／謊話／先不接 | `temple_choice` | 緣訂七世胡扯／問名／先不接等素婷 | → `zhijunName` true 僅「問名」 | **原作**有胡扯典故與後來知「黎芷君」；當下「問名」為 **可選加速／旗標閘**；「先不接」為 **新增** |
-| D | `Ch04` 留下講完／去 set 望遠鏡 | （v0.3 JSON 未拆此閘；正式試玩應對齊 twee） | 留下＋1 courage 且 `ch4_faced`／離開 | courage／ch4_faced | **原作**有找藉口去 set 望遠鏡；「留下講完」為 **方法丙勇氣閘新增** |
+| D | `Ch04` 留下講完／去 set 望遠鏡 | `star_choice` 等（已落 JSON） | 留下＋1 courage 且 `ch4_faced`／離開 | courage／ch4_faced | **原作**有找藉口去 set 望遠鏡；「留下講完」為 **方法丙勇氣閘新增** |
 
-試玩驗收時至少走完 A–C；D 建議納入正式試玩劇本（對齊 twee），使「段落收束」帶一個 courage 示範。
+試玩驗收時至少走完 A–C；D（courage／`ch4_faced`）已納入正式 `story/*.json`。
 
 ### 2.4 本段要驗的品質（對 PLAN §4.3）
 
@@ -75,7 +76,7 @@ Twine 旗標現況（`StoryInit`）：`$courage`、`$candor`、`$ch4_faced`、`$
 
 ### 2.5 預估遊玩時長
 
-twee Ch01–Ch04 正文約三千餘漢字＋4 個選擇點；含立繪／CG／點擊節奏，目標 **10–15 分鐘**（快讀約 8、細讀約 18——超出則再壓縮旁白，不砍三個旗標閘）。
+試玩段 Ch01–Ch04 正文約三千餘漢字＋4 個選擇點；含立繪／CG／點擊節奏，目標 **10–15 分鐘**（快讀約 8、細讀約 18——超出則再壓縮旁白，不砍三個旗標閘）。
 
 ---
 
@@ -92,10 +93,10 @@ twee Ch01–Ch04 正文約三千餘漢字＋4 個選擇點；含立繪／CG／�
 | `qishanHonest` | JSON＋對應 qi_choice | 團刊當下有沒有把責任說清楚 |
 | `sutingWalk` | JSON＋wall_choice | 長城陡坡有沒有陪著走完那一級 |
 | `zhijunName` | JSON＋temple_choice | 懸空寺有沒有把名字問清楚 |
-| `ch4_faced` | twee | 草原夜有沒有把話留在現場說完 |
-| `ch7_faced` | twee | 某次聚會有沒有自己走過去坐 |
-| `ch21_ask` | twee | 赴美前那次有沒有認真把問題問出口 |
-| （預留 3–4 個） | 待確認 | 例如：是否去 re-union、是否引開狗、coffee 誠實次數是否改為累加 candor 等——**實作前再對 twee 閘口定稿，不發明情節** |
+| `ch4_faced` | work.json | 草原夜有沒有把話留在現場說完 |
+| `ch7_faced` | work.json | 某次聚會有沒有自己走過去坐 |
+| `ch21_ask` | work.json | 赴美前那次有沒有認真把問題問出口 |
+| （預留 3–4 個） | 歷史備註 | 例如：是否去 re-union、是否引開狗、coffee 誠實次數是否改為累加 candor 等——**實作以 story JSON／原作為準，不發明情節** |
 
 **計量**
 
@@ -125,7 +126,7 @@ twee Ch01–Ch04 正文約三千餘漢字＋4 個選擇點；含立繪／CG／�
 
 ### 3.3 結局概述（只寫企劃層；中局不向玩家劇透）
 
-下列為 **Helic 已批准** 的結局代號（twee）。對 README「每線 GOOD／TRUE／兩 BAD」的對應是**企劃標籤**，給製作與檢查用；遊戲內只顯示結局卡標題／短文，不顯示 TRUE／GOOD／BAD 字樣。
+下列為 **Helic 已批准** 的結局代號（歷史審稿名；現行 id 見 `../story/`）。對 README「每線 GOOD／TRUE／兩 BAD」的對應是**企劃標籤**，給製作與檢查用；遊戲內只顯示結局卡標題／短文，不顯示 TRUE／GOOD／BAD 字樣。
 
 | 代號 | 標題（可給玩家看） | 企劃標籤 | 解鎖條件（內部） | 一句非劇透摘要 |
 |------|--------------------|----------|------------------|----------------|
@@ -138,7 +139,7 @@ twee Ch01–Ch04 正文約三千餘漢字＋4 個選擇點；含立繪／CG／�
 | `End-Qishan-Pinch` | 捏兩下 | TRUE／GOOD（綺珊向） | `candor≥2` ∧ 追屋頂 | 笑話收成認真 |
 
 **與 v0.3 JSON 結局的關係（待確認／對齊）**  
-現有 `ending-suting-*`／`ending-zhijun-*`／`ending-qishan-*` 十二張是原型分歧示範，**標題與條件不完全等於上表**。正式版應以 twee／本表為準重寫結局卡文案與條件；原型檔可留作美術佔位。**不在本關卡改 JSON。**
+現有 `ending-suting-*`／`ending-zhijun-*`／`ending-qishan-*` 十二張是原型分歧示範，**標題與條件不完全等於上表**。V1.0 可玩結局以七結局 story JSON 為準；原型檔可留作美術佔位。
 
 ---
 
@@ -185,7 +186,7 @@ twee Ch01–Ch04 正文約三千餘漢字＋4 個選擇點；含立繪／CG／�
 | 關卡一企劃（本文） | 已完成（agent 工時，無付費素材） |
 | 關卡二樣板（梵高，另 PR） | 人設母版 4 人＋2 背景樣張＋1 CG 構圖：約 **8–16 工時**；若付費生圖另計預算 |
 | 品質試玩正式素材補齊 | 在樣板批准後：約 **2–4 張新 CG**＋表情微調＋音效；粗估付費生圖 **HKD 0–800**（視工具；無工具則記阻塞）＋整合 **1–2 日** |
-| 劇本對齊（九把刀：twee→JSON 試玩段） | **0.5–1 日**（#8 前） |
+| 劇本對齊（九把刀：試玩段→JSON） | **0.5–1 日**（#8 前；已完成） |
 | 播放器 | **不在本關卡**；Puppy 不為未批准企劃改 player |
 
 ---
@@ -203,9 +204,9 @@ twee Ch01–Ch04 正文約三千餘漢字＋4 個選擇點；含立繪／CG／�
 ## 7. 待 Helic／Paddy 確認清單
 
 1. 品質試玩切到 `midcard` 前、不進 `branch`——是否同意。  
-2. 試玩是否必須含 Ch04 courage 閘（twee 有、v0.3 JSON 無）。  
-3. 結局表以 twee 七個代號為準、v0.3 十二結局改為佔位——是否同意。  
-4. 旗標正式命名：保留 JSON 三個英文名＋併入 twee 的 courage／candor／ch*_faced／ch21_ask。  
+2. 試玩是否必須含 Ch04 courage 閘（已落地 `star_choice`）。  
+3. 結局表以七結局為準、v0.3 十二結局改為佔位——已同意（UAT／#37）。  
+4. 旗標正式命名：JSON 三個英文名＋ courage／candor／ch*_faced／ch21_ask（已併入 `work.json`）。  
 5. 素材預算上限（港幣）與是否允許付費生圖。
 
 ---
@@ -217,5 +218,5 @@ twee Ch01–Ch04 正文約三千餘漢字＋4 個選擇點；含立繪／CG／�
 | 本檔 `adaptation-plan.md` | 關卡一主企劃 |
 | [`routes.md`](routes.md) | 路線、旗標、結局條件細表 |
 | [`asset-list.md`](asset-list.md) | 試玩素材清單與成本 |
-| [`twine/xingkong.twee`](twine/xingkong.twee) | 審稿用地圖劇本 |
-| `../story/*.json` | 現行播放器用指令（原型） |
+| `../story/*.json` | **可玩 SoT**（播放器指令劇本） |
+| `../work.json` | 作品清單、變數、開場 |

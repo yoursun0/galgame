@@ -1,5 +1,7 @@
 # 《星空情緣》路線與旗標細表
 
+> **v1.6：** Twine／`.twee` 已退役。可玩 SoT＝`../story/*.json`＋`../work.json`。下表「twee」欄為歷史命名對照。
+
 附屬於 [`adaptation-plan.md`](adaptation-plan.md)。給製作／檢查用；**不要**把 TRUE／GOOD／BAD 字樣做進對白。
 
 ---
@@ -11,15 +13,15 @@
 | `qishanHonest` | bool | false | `work.json`；`qi_choice__1`→true、`__0`→false | 車站團刊 |
 | `sutingWalk` | bool | false | `wall_choice__0`→true、`__1`→false | 長城陡坡 |
 | `zhijunName` | bool | false | `temple_choice__1`→true；其餘 false | 懸空寺 |
-| `courage` | number | 0 | twee `$courage`；**JSON 尚未有** | 見下表；cap 5 |
-| `candor` | number | 0 | twee `$candor`；**JSON 尚未有** | coffee 誠實閘；cap 4 |
-| `ch4_faced` | bool | false | twee | Ch04 留下講完 |
-| `ch7_faced` | bool | false | twee | Ch07 走過去坐 |
-| `ch21_ask` | bool | false | twee | Ch21 認真去問 |
+| `courage` | number | 0 | work.json（歷史名 `$courage`） | 見下表；cap 5 |
+| `candor` | number | 0 | work.json（歷史名 `$candor`） | coffee 誠實閘；cap 4 |
+| `ch4_faced` | bool | false | work.json | Ch04 留下講完 |
+| `ch7_faced` | bool | false | work.json | Ch07 走過去坐 |
+| `ch21_ask` | bool | false | work.json | Ch21 認真去問 |
 
-**命名衝突說明：** twee 團刊閘目前未 set `qishanHonest`；JSON 未實作 courage／candor。正式試玩劇本應對齊上表。**對齊工作屬 #8，本 PR 只記錄。**
+**命名說明（歷史）：** 團刊閘／courage／candor 已併入 `work.json` 與 story JSON（#8／#28 後）。本表只作對照。
 
-預留 boolean（實作前依 twee 閘口定名，不先發明情節）：
+預留 boolean（實作前依 story JSON／原作閘口定名，不先發明情節）：
 
 - 是否前往 re-union（與 Ch12 閘對應）  
 - 是否引開狗（與 Ch19 閘對應）  
@@ -80,7 +82,7 @@ open1–open3 / Ch01-Soc…Poster
 | `Ch10-BadEnd` | Ch10 守密閘失敗支 | BAD |
 | `Ch12-Alone` | Ch12 選「連她的話也不聽」 | BAD |
 | `End-No-Look-Back` | Ch19 選「自己跑回去求救」等已定失敗支 | BAD |
-| `End-Suting-Early` | `ch4_faced` ∧ `ch7_faced`（及 twee 既有到達條件） | GOOD |
+| `End-Suting-Early` | `ch4_faced` ∧ `ch7_faced`（及既有到達條件） | GOOD |
 | `End-Zhijun-Hankie` | `ch21_ask` ∧ `courage >= 3` | TRUE／GOOD |
 | `End-Qishan-Pinch` | `candor >= 2` ∧ 選追上 MMW 天台 | TRUE／GOOD |
 
@@ -92,7 +94,7 @@ v0.3 JSON 線末條件（原型，僅供對照）：
 | 芷君 | `zhijunName` | 無該旗 | shield／bridge |
 | 綺珊 | `qishanHonest` | 無該旗 | setup／cool |
 
-→ 正式版結局以 twee 表為準；原型條件可吸收為**早期旗標對後來解鎖的加權**，但不得與已批准結局條件衝突。**待確認。**
+→ V1.0 結局以七結局 story JSON 為準；原型條件可吸收為**早期旗標對後來解鎖的加權**，但不得與已批准結局條件衝突。
 
 ---
 

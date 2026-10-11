@@ -1,5 +1,9 @@
 # Release Notes
 
+## v1.6 2026-10-11
+
+- 退役過時 Twine／Tweego 製作路徑：刪除 `works/xingkong/production/twine/`（含 `xingkong.twee`）與轉換腳本 `tools/twee_to_xingkong_json.py`。可玩 SoT 維持 `works/xingkong/story/*.json`（＋ `work.json`）；播放器 `src/` 不變。
+
 ## v1.5 2026-10-11
 
 - 文案：對照原文第一身文風修正（`open1` 保留並加長碎唸；`ch10-secret` 拉回黑加侖子內心戲；`ch16-dare` 加「第十一回合，阿俊問綺珊」；`ch15-grill` 第一身；結局場去掉破第四牆線名標籤，收成第一身餘韻）。

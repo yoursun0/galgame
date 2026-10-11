@@ -1,6 +1,6 @@
 # 品質試玩 JSON 對齊備註（#8）
 
-對照：`adaptation-plan.md`、`routes.md`、`twine/xingkong.twee`。  
+對照：`adaptation-plan.md`、`routes.md`；可玩 SoT＝`../story/*.json`（Twine／`.twee` 已退役）。  
 分支：`agent/puppy/issue-8-playtest`。未改 player。
 
 ## 試玩路徑
@@ -34,7 +34,7 @@
 ## 未動
 
 - `branch` 及 `s*`／`z*`／`q*` 線結局檔仍在倉庫（完整版藍本），試玩路徑不進入。
-- player 程式、tweego／html。
+- player 程式（Tweego／Twine html 已退役，唔再維護）。
 
 
 ## Puppy 整合（P0 CG）
