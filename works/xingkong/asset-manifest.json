@@ -706,5 +706,17 @@
     "approved": true,
     "character": "youmu",
     "expr": "05-resolve"
+  },
+  {
+    "id": "cg-witness-orion",
+    "path": "assets/cg/cg-witness-orion.jpg",
+    "type": "cg",
+    "approved": true
+  },
+  {
+    "id": "ending-ch12-alone",
+    "path": "assets/cg/ending-ch12-alone.jpg",
+    "type": "cg",
+    "approved": true
   }
 ]
