@@ -1,5 +1,16 @@
 # Release Notes
 
+## v1.1 2026-10-11
+
+- 新增／更新 `docs/UAT.md`：全書《星空情緣》＋三線結局納入驗收範圍；立繪必須對齊對白角色。
+- README「驗收」一節只保留公開連結與 Ship then UAT 指引（唔寫內部人事分工）。
+- 本檔由 `RELEASE_NOTE.md` 更名為 `RELEASE_NOTES.md`（若適用）。
+
+## v1.0
+
+Helic 宣告當時 `main` 為 V1.0（本筆記錄於 UAT 文件合併時補上標籤；細節見該時點 `main` 歷史）。
+
+
 ## v0.1 2026-10-02
 
 一開始的prototype, 沒有背景沒有音樂，很差。
