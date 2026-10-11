@@ -69,111 +69,27 @@
       "position": "near"
     },
     {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "03-glare",
+      "position": "far"
+    },
+    {
       "kind": "cg",
       "action": "hide"
     },
     {
       "kind": "narration",
-      "text": "同一張桌子。綺珊還沒放過他。"
+      "text": "咖啡涼了。芷君還在瞪他。"
     },
     {
-      "kind": "actor",
-      "action": "hide",
-      "id": "lingchen"
+      "kind": "narration",
+      "text": "遲到半小時——不全是中天開會。家綸切蛋糕時，素婷坐到旁邊，他看著，腳像釘住。"
     },
     {
-      "kind": "dialogue",
-      "speaker": "qishan",
-      "text": "你又是的，怎麼可以第一次約會女朋友就遲到啦！還要遲到足足半個小時！簡直不成樣子！",
-      "expr": "01-grin"
-    },
-    {
-      "kind": "actor",
-      "action": "hide",
-      "id": "qishan"
-    },
-    {
-      "kind": "dialogue",
-      "speaker": "lingchen",
-      "text": "你胡說甚麼了？不是約會女朋友，是普通朋友約吃飯罷了。",
-      "expr": "01-shrug"
-    },
-    {
-      "kind": "actor",
-      "action": "hide",
-      "id": "lingchen"
-    },
-    {
-      "kind": "dialogue",
-      "speaker": "qishan",
-      "text": "怎麼也好啦！男生約會女生，應該是男生等女生。你遲了足足半小時，就是犯了天條！",
-      "expr": "04-loud"
-    },
-    {
-      "kind": "actor",
-      "action": "hide",
-      "id": "qishan"
-    },
-    {
-      "kind": "dialogue",
-      "speaker": "lingchen",
-      "text": "我也知道自己犯了天條啦，但是沒法子呀！",
-      "expr": "02-blush"
-    },
-    {
-      "kind": "actor",
-      "action": "hide",
-      "id": "lingchen"
-    },
-    {
-      "kind": "dialogue",
-      "speaker": "qishan",
-      "text": "還好意思笑！你究竟搞甚麼搞得這麼遲啊！",
-      "expr": "05-wink"
-    },
-    {
-      "kind": "actor",
-      "action": "hide",
-      "id": "qishan"
-    },
-    {
-      "kind": "dialogue",
-      "speaker": "lingchen",
-      "text": "不是告訴你了嗎？中天開會啊。",
-      "expr": "04-cold"
-    },
-    {
-      "kind": "actor",
-      "action": "hide",
-      "id": "lingchen"
-    },
-    {
-      "kind": "dialogue",
-      "speaker": "qishan",
-      "text": "別撒賴了。你們中天開會不知多有效率，而且你跟伊人有約，絕對有權早走的嘛！",
-      "expr": "03-angry"
-    },
-    {
-      "kind": "actor",
-      "action": "hide",
-      "id": "qishan"
-    },
-    {
-      "kind": "dialogue",
-      "speaker": "lingchen",
-      "text": "那麼人家黑加侖子生日嘛！當朋友的當然要跟他慶祝，怎麼可以蛋糕也不吃就走？",
-      "expr": "05-fire"
-    },
-    {
-      "kind": "actor",
-      "action": "hide",
-      "id": "lingchen"
-    },
-    {
-      "kind": "dialogue",
-      "speaker": "qishan",
-      "text": "車！我才不相信你是為了黑加侖子！我看你還不是為了那個素婷。",
-      "expr": "02-laugh"
+      "kind": "narration",
+      "text": "現在對上芷君，要不要把這一段照直說出來？"
     },
     {
       "kind": "choice",

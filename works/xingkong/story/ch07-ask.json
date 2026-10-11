@@ -69,6 +69,13 @@
       "position": "near"
     },
     {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "03-glare",
+      "position": "far"
+    },
+    {
       "kind": "cg",
       "action": "hide"
     },
@@ -77,18 +84,6 @@
       "speaker": "lingchen",
       "text": "要不你來告訴我，你要怎樣才肯原諒我吧。",
       "expr": "01-shrug"
-    },
-    {
-      "kind": "actor",
-      "action": "hide",
-      "id": "lingchen"
-    },
-    {
-      "kind": "actor",
-      "action": "show",
-      "id": "zhijun",
-      "expr": "03-glare",
-      "position": "near"
     },
     {
       "kind": "narration",
@@ -101,20 +96,10 @@
       "expr": "01-shrug"
     },
     {
-      "kind": "actor",
-      "action": "hide",
-      "id": "lingchen"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
       "text": "跟你看電影？你想的美！",
       "expr": "02-hips"
-    },
-    {
-      "kind": "actor",
-      "action": "hide",
-      "id": "zhijun"
     },
     {
       "kind": "dialogue",
@@ -123,20 +108,10 @@
       "expr": "02-blush"
     },
     {
-      "kind": "actor",
-      "action": "hide",
-      "id": "lingchen"
-    },
-    {
       "kind": "dialogue",
       "speaker": "zhijun",
       "text": "你就只會說！在香港這兒燈火通明，那有甚麼星星看？",
       "expr": "03-glare"
-    },
-    {
-      "kind": "actor",
-      "action": "hide",
-      "id": "zhijun"
     },
     {
       "kind": "dialogue",

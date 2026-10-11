@@ -69,30 +69,23 @@
       "position": "near"
     },
     {
+      "kind": "actor",
+      "action": "show",
+      "id": "zhijun",
+      "expr": "02-hips",
+      "position": "far"
+    },
+    {
       "kind": "cg",
       "action": "hide"
     },
     {
-      "kind": "dialogue",
-      "speaker": "lingchen",
-      "text": "不是家綸。素婷主動坐到他旁邊。我看著，走不了。",
-      "expr": "05-fire"
-    },
-    {
-      "kind": "actor",
-      "action": "hide",
-      "id": "lingchen"
-    },
-    {
-      "kind": "actor",
-      "action": "show",
-      "id": "qishan",
-      "expr": "02-laugh",
-      "position": "near"
+      "kind": "narration",
+      "text": "芷君靜了一下。沒有笑他，也沒有立刻原諒。"
     },
     {
       "kind": "narration",
-      "text": "綺珊沒有再笑他「黑加侖子」。"
+      "text": "芷君 Quiet 了一下。沒有笑他，也沒有立刻原諒。"
     },
     {
       "kind": "jump",
