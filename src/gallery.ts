@@ -8,8 +8,12 @@ export type GalleryCard = {
   unlocked: boolean;
   /** Null when locked so a full name cannot be rendered. */
   label: string;
-  /** Null when locked so an image URL cannot be resolved. */
+  /** Null when locked so an image URL cannot be resolved. CG／音樂 asset id；結局卡為 null。 */
   assetId: string | null;
+  /** Puppy #72: ending id when this is an unlocked ending card. */
+  endingId?: string | null;
+  /** Puppy #72: scene that contains the ending instruction (replay jump). */
+  sceneId?: string | null;
 };
 
 export type RecallCard = {
@@ -34,6 +38,7 @@ export function presentGallery(
   const cgUnlocked = new Set(progress.cg);
   const musicUnlocked = new Set(progress.music);
   const endingUnlocked = new Set(progress.endings);
+  const titles = work.manifest.endingTitles ?? {};
 
   const cg = assets
     .filter((asset) => asset.type === "cg")
@@ -43,7 +48,27 @@ export function presentGallery(
     .filter((asset) => asset.type === "bgm")
     .map((asset) => card(musicUnlocked.has(asset.id), asset.id));
 
-  const endings = endingIds(work).map((id) => card(endingUnlocked.has(id), id));
+  const endings = listEndings(work).map(({ id, sceneId }) => {
+    const unlocked = endingUnlocked.has(id);
+    if (!unlocked) {
+      return {
+        unlocked: false,
+        label: LOCKED_LABEL,
+        assetId: null,
+        endingId: null,
+        sceneId: null,
+      };
+    }
+    // Puppy #72: readable title; fall back to raw id if map missing (九把刀可後補).
+    const label = titles[id]?.trim() || id;
+    return {
+      unlocked: true,
+      label,
+      assetId: null,
+      endingId: id,
+      sceneId,
+    };
+  });
 
   const recalls = (work.manifest.recalls ?? []).map((script) => {
     const unlocked = recallUnlocked(script, cgUnlocked, endingUnlocked);
@@ -67,21 +92,33 @@ export function recallUnlocked(
   return true;
 }
 
+/** Puppy #72: scene id that holds this ending instruction, or null. */
+export function sceneForEnding(work: Work, endingId: string): string | null {
+  for (const scene of work.scenes) {
+    for (const instruction of scene.instructions) {
+      if (instruction.kind === "ending" && instruction.id === endingId) {
+        return scene.id;
+      }
+    }
+  }
+  return null;
+}
+
 function card(unlocked: boolean, secret: string): GalleryCard {
   if (!unlocked) return { unlocked: false, label: LOCKED_LABEL, assetId: null };
   return { unlocked: true, label: secret, assetId: secret };
 }
 
-function endingIds(work: Work): string[] {
-  const ids: string[] = [];
+function listEndings(work: Work): { id: string; sceneId: string }[] {
+  const out: { id: string; sceneId: string }[] = [];
   const seen = new Set<string>();
   for (const scene of work.scenes) {
     for (const instruction of scene.instructions) {
       if (instruction.kind !== "ending") continue;
       if (seen.has(instruction.id)) continue;
       seen.add(instruction.id);
-      ids.push(instruction.id);
+      out.push({ id: instruction.id, sceneId: scene.id });
     }
   }
-  return ids;
+  return out;
 }
