@@ -82,7 +82,7 @@
       "kind": "actor",
       "action": "show",
       "id": "lingchen",
-      "expr": "01-shrug",
+      "expr": "05-fire",
       "position": "near"
     },
     {
@@ -99,7 +99,7 @@
       "kind": "actor",
       "action": "show",
       "id": "zhijun",
-      "expr": "01-laugh",
+      "expr": "02-hips",
       "position": "near"
     },
     {

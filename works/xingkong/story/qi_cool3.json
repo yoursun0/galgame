@@ -65,7 +65,7 @@
       "kind": "actor",
       "action": "show",
       "id": "qishan",
-      "expr": "01-grin",
+      "expr": "05-wink",
       "position": "near"
     },
     {
@@ -81,7 +81,7 @@
       "kind": "actor",
       "action": "show",
       "id": "lingchen",
-      "expr": "01-shrug",
+      "expr": "04-cold",
       "position": "near"
     },
     {

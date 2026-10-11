@@ -65,7 +65,7 @@
       "kind": "actor",
       "action": "show",
       "id": "suting",
-      "expr": "01-smile",
+      "expr": "05-spring",
       "position": "near"
     },
     {
@@ -81,7 +81,7 @@
       "kind": "actor",
       "action": "show",
       "id": "qishan",
-      "expr": "01-grin",
+      "expr": "03-angry",
       "position": "near"
     },
     {
@@ -102,7 +102,7 @@
       "kind": "actor",
       "action": "show",
       "id": "jialun",
-      "expr": "01-murmur",
+      "expr": "02-happy",
       "position": "near"
     },
     {

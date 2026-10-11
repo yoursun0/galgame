@@ -65,7 +65,7 @@
       "kind": "actor",
       "action": "show",
       "id": "lingchen",
-      "expr": "01-shrug",
+      "expr": "02-blush",
       "position": "near"
     },
     {
@@ -89,7 +89,7 @@
       "kind": "actor",
       "action": "show",
       "id": "ajun",
-      "expr": "01-cold",
+      "expr": "02-laugh",
       "position": "near"
     },
     {
@@ -106,7 +106,7 @@
       "kind": "actor",
       "action": "show",
       "id": "lingchen",
-      "expr": "01-shrug",
+      "expr": "04-cold",
       "position": "near"
     },
     {
@@ -123,7 +123,7 @@
       "kind": "actor",
       "action": "show",
       "id": "ajun",
-      "expr": "01-cold",
+      "expr": "03-nosy",
       "position": "near"
     },
     {
@@ -144,7 +144,7 @@
       "kind": "actor",
       "action": "show",
       "id": "lingchen",
-      "expr": "01-shrug",
+      "expr": "05-fire",
       "position": "near"
     },
     {
@@ -161,7 +161,7 @@
       "kind": "actor",
       "action": "show",
       "id": "ajun",
-      "expr": "01-cold",
+      "expr": "04-gasp",
       "position": "near"
     },
     {
@@ -182,7 +182,7 @@
       "kind": "actor",
       "action": "show",
       "id": "jialun",
-      "expr": "01-murmur",
+      "expr": "03-stammer",
       "position": "near"
     },
     {
@@ -216,7 +216,7 @@
       "kind": "actor",
       "action": "show",
       "id": "jialun",
-      "expr": "01-murmur",
+      "expr": "04-sad",
       "position": "near"
     },
     {
@@ -250,7 +250,7 @@
       "kind": "actor",
       "action": "show",
       "id": "jialun",
-      "expr": "01-murmur",
+      "expr": "05-nod",
       "position": "near"
     },
     {
@@ -267,7 +267,7 @@
       "kind": "actor",
       "action": "show",
       "id": "lingchen",
-      "expr": "01-shrug",
+      "expr": "02-blush",
       "position": "near"
     },
     {

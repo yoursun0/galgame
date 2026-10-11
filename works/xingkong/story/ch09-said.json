@@ -3,7 +3,7 @@
   "instructions": [
     {
       "kind": "background",
-      "asset": "bg-soc"
+      "asset": "bg-canteen"
     },
     {
       "kind": "audio",

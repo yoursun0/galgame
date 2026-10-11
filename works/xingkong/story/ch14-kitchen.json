@@ -65,7 +65,7 @@
       "kind": "actor",
       "action": "show",
       "id": "lingchen",
-      "expr": "01-shrug",
+      "expr": "05-fire",
       "position": "near"
     },
     {
@@ -81,7 +81,7 @@
       "kind": "actor",
       "action": "show",
       "id": "qishan",
-      "expr": "01-grin",
+      "expr": "03-angry",
       "position": "near"
     },
     {
@@ -115,7 +115,7 @@
       "kind": "actor",
       "action": "show",
       "id": "qishan",
-      "expr": "01-grin",
+      "expr": "02-laugh",
       "position": "near"
     },
     {
@@ -174,7 +174,7 @@
       "kind": "actor",
       "action": "show",
       "id": "zhijun",
-      "expr": "01-laugh",
+      "expr": "02-hips",
       "position": "near"
     },
     {
@@ -191,7 +191,7 @@
       "kind": "actor",
       "action": "show",
       "id": "lingchen",
-      "expr": "01-shrug",
+      "expr": "02-blush",
       "position": "near"
     },
     {
@@ -208,7 +208,7 @@
       "kind": "actor",
       "action": "show",
       "id": "zhijun",
-      "expr": "01-laugh",
+      "expr": "03-glare",
       "position": "near"
     },
     {
@@ -225,7 +225,7 @@
       "kind": "actor",
       "action": "show",
       "id": "lingchen",
-      "expr": "01-shrug",
+      "expr": "04-cold",
       "position": "near"
     },
     {
@@ -242,7 +242,7 @@
       "kind": "actor",
       "action": "show",
       "id": "zhijun",
-      "expr": "01-laugh",
+      "expr": "05-tearsmile",
       "position": "near"
     },
     {
@@ -272,7 +272,7 @@
       "kind": "actor",
       "action": "show",
       "id": "lingchen",
-      "expr": "01-shrug",
+      "expr": "05-fire",
       "position": "near"
     },
     {
@@ -289,7 +289,7 @@
       "kind": "actor",
       "action": "show",
       "id": "zhijun",
-      "expr": "01-laugh",
+      "expr": "04-puff",
       "position": "near"
     },
     {
@@ -319,7 +319,7 @@
       "kind": "actor",
       "action": "show",
       "id": "ajun",
-      "expr": "01-cold",
+      "expr": "04-gasp",
       "position": "near"
     },
     {
@@ -374,7 +374,7 @@
       "kind": "actor",
       "action": "show",
       "id": "zhijun",
-      "expr": "01-laugh",
+      "expr": "02-hips",
       "position": "near"
     },
     {

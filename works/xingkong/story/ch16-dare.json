@@ -127,7 +127,7 @@
       "kind": "actor",
       "action": "show",
       "id": "huizhang",
-      "expr": "01-calm",
+      "expr": "04-laugh",
       "position": "near"
     },
     {
@@ -144,7 +144,7 @@
       "kind": "actor",
       "action": "show",
       "id": "suting",
-      "expr": "01-smile",
+      "expr": "03-worry",
       "position": "near"
     },
     {
@@ -178,7 +178,7 @@
       "kind": "actor",
       "action": "show",
       "id": "suting",
-      "expr": "01-smile",
+      "expr": "05-spring",
       "position": "near"
     },
     {
@@ -203,7 +203,7 @@
       "kind": "actor",
       "action": "show",
       "id": "zhijun",
-      "expr": "01-laugh",
+      "expr": "02-hips",
       "position": "near"
     },
     {
@@ -241,7 +241,7 @@
       "kind": "actor",
       "action": "show",
       "id": "qishan",
-      "expr": "01-grin",
+      "expr": "05-wink",
       "position": "near"
     },
     {

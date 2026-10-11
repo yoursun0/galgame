@@ -90,7 +90,7 @@
       "kind": "actor",
       "action": "show",
       "id": "suting",
-      "expr": "01-smile",
+      "expr": "04-tears",
       "position": "near"
     },
     {
@@ -167,7 +167,7 @@
       "kind": "actor",
       "action": "show",
       "id": "suting",
-      "expr": "01-smile",
+      "expr": "02-sigh",
       "position": "near"
     },
     {
@@ -184,7 +184,7 @@
       "kind": "actor",
       "action": "show",
       "id": "lingchen",
-      "expr": "01-shrug",
+      "expr": "02-blush",
       "position": "near"
     },
     {
@@ -201,7 +201,7 @@
       "kind": "actor",
       "action": "show",
       "id": "ajun",
-      "expr": "01-cold",
+      "expr": "04-gasp",
       "position": "near"
     },
     {
@@ -218,7 +218,7 @@
       "kind": "actor",
       "action": "show",
       "id": "suting",
-      "expr": "01-smile",
+      "expr": "03-worry",
       "position": "near"
     },
     {
@@ -252,7 +252,7 @@
       "kind": "actor",
       "action": "show",
       "id": "dabi",
-      "expr": "01-hum",
+      "expr": "04-snort",
       "position": "near"
     },
     {
@@ -269,7 +269,7 @@
       "kind": "actor",
       "action": "show",
       "id": "suting",
-      "expr": "01-smile",
+      "expr": "05-spring",
       "position": "near"
     },
     {
@@ -303,7 +303,7 @@
       "kind": "actor",
       "action": "show",
       "id": "lingchen",
-      "expr": "01-shrug",
+      "expr": "04-cold",
       "position": "near"
     },
     {
@@ -320,7 +320,7 @@
       "kind": "actor",
       "action": "show",
       "id": "suting",
-      "expr": "01-smile",
+      "expr": "04-tears",
       "position": "near"
     },
     {

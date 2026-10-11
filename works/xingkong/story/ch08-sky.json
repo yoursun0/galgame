@@ -65,7 +65,7 @@
       "kind": "actor",
       "action": "show",
       "id": "lingchen",
-      "expr": "01-shrug",
+      "expr": "05-fire",
       "position": "near"
     },
     {
@@ -85,7 +85,7 @@
       "kind": "actor",
       "action": "show",
       "id": "jialun",
-      "expr": "01-murmur",
+      "expr": "04-sad",
       "position": "near"
     },
     {
