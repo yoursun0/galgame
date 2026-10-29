@@ -27,7 +27,15 @@ describe("offline helpers", () => {
 
   test("buildPrecacheList includes shell docs and skips sw/maps", () => {
     const list = buildPrecacheList(
-      ["index.html", "assets/app.js", "assets/app.js.map", "sw.js", "icons/icon-192.png"],
+      [
+        "index.html",
+        "assets/app.js",
+        "assets/app.js.map",
+        "sw.js",
+        "icons/icon-192.png",
+        "intro/frontpage_open_30s_web.mp4",
+        "intro/frontpage_open_30s_web.webm",
+      ],
       "/galgame/",
     );
     expect(list).toContain("/galgame/index.html");
@@ -36,6 +44,7 @@ describe("offline helpers", () => {
     expect(list).toContain("/galgame/icons/icon-192.png");
     expect(list.some((url) => url.endsWith("sw.js"))).toBe(false);
     expect(list.some((url) => url.endsWith(".map"))).toBe(false);
+    expect(list.some((url) => url.includes("/intro/"))).toBe(false);
   });
 
   test("offlineReady flag", () => {

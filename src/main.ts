@@ -44,7 +44,7 @@ import {
 import { mountStage } from "./stage.ts";
 import { loadTheme } from "./theme.ts";
 import { captureStageThumbnail, isThumbnailDataUrl } from "./thumbnail.ts";
-import { isWorkOfflineReady, registerServiceWorker } from "./offline.ts";
+import { isWorkOfflineReady, registerServiceWorker, withBase } from "./offline.ts";
 import type { AssetRecord, PlayState, Scene, Work, WorkManifest } from "./types.ts";
 
 /**
@@ -1560,7 +1560,160 @@ function shellCss(): string {
         padding: 6px 4px;
       }
     }
+
+      #intro {
+        position: fixed;
+        inset: 0;
+        z-index: 80;
+        background: #0a0a12;
+      }
+      #intro video {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        background: #0a0a12;
+      }
+      #intro .intro-scrim {
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        background:
+          linear-gradient(to bottom, rgba(10, 10, 18, 0.78), transparent 28%),
+          linear-gradient(to top, rgba(10, 10, 18, 0.82), transparent 42%);
+      }
+      #intro .intro-brand {
+        position: absolute;
+        z-index: 2;
+        top: max(16px, env(safe-area-inset-top));
+        left: max(18px, env(safe-area-inset-left));
+        margin: 0;
+        color: #e8bb75;
+        letter-spacing: 4px;
+        font-size: 12px;
+      }
+      #intro .intro-skip {
+        position: absolute;
+        z-index: 4;
+        right: max(16px, env(safe-area-inset-right));
+        bottom: max(18px, env(safe-area-inset-bottom));
+        min-width: 120px;
+        border-radius: 999px;
+        border: 1px solid #e8bb75;
+        background: #e8bb75;
+        color: #15202b;
+        font-weight: bold;
+        padding: 12px 24px;
+        font: inherit;
+        cursor: pointer;
+      }
+      #intro .intro-skip:focus-visible {
+        outline: 2px solid #fff8e7;
+        outline-offset: 2px;
+      }
   `;
+}
+
+
+const INTRO_SEEN_KEY = "xingkong-intro-seen";
+const INTRO_WEBM = "intro/frontpage_open_30s_web.webm";
+const INTRO_MP4 = "intro/frontpage_open_30s_web.mp4";
+
+function introAssetUrl(rel: string): string {
+  return withBase(import.meta.env.BASE_URL || "/", rel);
+}
+
+function introAlreadySeen(): boolean {
+  try {
+    if (matchMedia("(prefers-reduced-motion: reduce)").matches) return true;
+  } catch {
+    /* ignore */
+  }
+  try {
+    return sessionStorage.getItem(INTRO_SEEN_KEY) === "1";
+  } catch {
+    return false;
+  }
+}
+
+/** Once-per-tab-session frontpage open; Skip / ended / error → mark seen. */
+function playFrontpageIntro(): Promise<void> {
+  if (introAlreadySeen()) return Promise.resolve();
+  return new Promise((resolve) => {
+    const wrap = document.createElement("div");
+    wrap.id = "intro";
+    wrap.setAttribute("role", "dialog");
+    wrap.setAttribute("aria-modal", "true");
+    wrap.setAttribute("aria-label", "開場影片");
+    const video = document.createElement("video");
+    video.id = "introVideo";
+    video.muted = true;
+    video.playsInline = true;
+    video.preload = "auto";
+    video.setAttribute("aria-label", "開場影片");
+    const scrim = document.createElement("div");
+    scrim.className = "intro-scrim";
+    scrim.setAttribute("aria-hidden", "true");
+    const brand = document.createElement("p");
+    brand.className = "intro-brand";
+    brand.textContent = "星空情緣 · 開場";
+    const skip = document.createElement("button");
+    skip.type = "button";
+    skip.className = "intro-skip";
+    skip.id = "introSkip";
+    skip.textContent = "跳過 Skip";
+    wrap.append(video, scrim, brand, skip);
+    document.body.append(wrap);
+
+    let done = false;
+    let fellBack = false;
+    const end = () => {
+      if (done) return;
+      done = true;
+      try {
+        sessionStorage.setItem(INTRO_SEEN_KEY, "1");
+      } catch {
+        /* private mode */
+      }
+      try {
+        video.pause();
+      } catch {
+        /* ignore */
+      }
+      video.removeAttribute("src");
+      video.load();
+      wrap.remove();
+      resolve();
+    };
+    skip.addEventListener("click", end);
+    video.addEventListener("ended", end);
+    video.addEventListener("error", () => {
+      if (!fellBack && !(video.currentSrc || "").includes(".mp4")) {
+        fellBack = true;
+        video.src = introAssetUrl(INTRO_MP4);
+        const play = video.play();
+        if (play) play.catch(() => {
+          video.controls = true;
+        });
+        return;
+      }
+      end();
+    });
+    const tryPlay = () => {
+      video.muted = true;
+      const play = video.play();
+      if (play)
+        play.catch(() => {
+          video.controls = true;
+        });
+    };
+    video.addEventListener("canplay", tryPlay, { once: true });
+    video.src = video.canPlayType("video/webm")
+      ? introAssetUrl(INTRO_WEBM)
+      : introAssetUrl(INTRO_MP4);
+    video.load();
+  });
 }
 
 async function boot(): Promise<void> {
@@ -1578,6 +1731,7 @@ async function boot(): Promise<void> {
   }
   applySettings();
   renderHud();
+  await playFrontpageIntro();
   await renderTitle();
   if (import.meta.env.PROD) {
     const ok = await registerServiceWorker(import.meta.env.BASE_URL);

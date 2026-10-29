@@ -26,6 +26,8 @@ export function buildPrecacheList(files: string[], base = "/"): string[] {
   for (const file of files) {
     const rel = file.replaceAll("\\", "/").replace(/^\.\//, "");
     if (!rel || rel === "sw.js" || rel.endsWith(".map")) continue;
+    // Frontpage open is once-per-session; keep it out of install precache so SW stays lean.
+    if (rel === "intro" || rel.startsWith("intro/")) continue;
     urls.add(withBase(b, rel));
   }
   return [...urls].sort();
